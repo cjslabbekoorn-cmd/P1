@@ -23,9 +23,17 @@ Deactiveer de plugin in wp-admin. Lukt dat niet, hernoem dan via FTP de map `wp-
 
 De Elementor-zoekwidget heeft zelf live-resultaten (template 17393). `relevanssi-live-ajax-search` is daarvoor niet nodig. Die plugin haakt in op alle zoekvelden van de site en zoekt dan in alle berichttypes. Advies: ook uitzetten, en controleren of de zoekfunctie ergens anders op de site hem nodig heeft.
 
+## Vergelijking met Relevanssi op staging (24-09-2026)
+
+Alle 130 kennisbank-artikelen van staging zijn in een test-WordPress gezet. Daarna zijn 16 zoekopdrachten vergeleken met de live-resultaten van de widget op staging, waar Relevanssi nog actief was.
+
+- **Welke artikelen er gevonden worden:** bij elke zoekopdracht dezelfde als Relevanssi.
+- **Volgorde:** in de top 10 grotendeels gelijk, met 116 van de 138 artikelen overlap. De exacte plek verschilt soms. Een nagebouwde Relevanssi-formule kwam niet dichterbij.
+- **Verschil:** Relevanssi vulde de lijst op staging na de echte treffers aan met artikelen waarin het zoekwoord niet voorkomt. Bij "cookies" kwamen er na 6 treffers bijvoorbeeld "betaalmethodes" en "toegankelijkheid". Die bevatten "cookies" alleen in footer en metadata. De plugin toont alleen echte treffers.
+
 ## Hoe de relevantie werkt
 
-- Eerst moeten alle zoekwoorden voorkomen. Levert dat niets op, dan volstaat één zoekwoord.
+- Eén zoekwoord volstaat (OF), net als bij Relevanssi op deze site. Artikelen met meer zoekwoorden scoren hoger. Met de filter `aycl_zoek_operator` (waarde `en`) moeten eerst alle woorden voorkomen.
 - Gewicht per treffer:
   - titel 5, samenvatting 2, inhoud 1;
   - een heel woord telt zwaarder dan een deel van een woord ("inlog" vindt ook "inloggen");

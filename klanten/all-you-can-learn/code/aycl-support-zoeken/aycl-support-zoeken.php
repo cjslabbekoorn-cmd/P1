@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AYCL Support Zoeken
  * Description: Relevantie-zoeken voor de kennisbank (CPT support), als lichte vervanger van Relevanssi. Werkt alleen voor de Elementor-zoekwidget met Query ID "relevanssi_search" en laat alle andere zoekopdrachten op de site met rust.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Positie1
@@ -25,9 +25,12 @@ defined( 'ABSPATH' ) || exit;
  *    sorteren op relevantie en pagineren. Alle andere queries (JetSmartFilters,
  *    admin, gewone WordPress-zoekopdrachten) komen hier nooit langs.
  *
- * Relevantie (vergelijkbaar met de standaardinstellingen van Relevanssi):
- * - Eerst moeten alle zoekwoorden voorkomen (EN). Levert dat niets op, dan
- *   volstaat één zoekwoord (OF).
+ * Relevantie (afgestemd op Relevanssi zoals die op staging was ingesteld):
+ * - Eén zoekwoord volstaat (OF); artikelen met meer zoekwoorden scoren hoger.
+ *   Met de filter aycl_zoek_operator ('en') moeten eerst alle woorden
+ *   voorkomen, met OF als terugval.
+ * - Anders dan Relevanssi op staging vult de plugin de lijst niet aan met
+ *   artikelen waarin het zoekwoord niet voorkomt.
  * - Gewicht per treffer: titel 5, samenvatting 2, inhoud 1. Een heel woord
  *   telt zwaarder dan een deel van een woord ("inlog" vindt ook "inloggen").
  * - De hele zoekzin in de titel geeft een extra bonus.
@@ -189,8 +192,15 @@ function aycl_zoek_uitvoeren( WP_Query $query, string $zoekterm, array $termen )
 		);
 	}
 
-	$resultaten = aycl_zoek_rangschik( $kandidaten, $termen, $zin, true );
-	if ( ! $resultaten && count( $termen ) > 1 ) {
+	// Standaard OF, net als Relevanssi op deze site: artikelen met meer
+	// zoekwoorden scoren vanzelf hoger. Met 'en' moeten eerst alle woorden
+	// voorkomen, met OF als terugval als dat niets oplevert.
+	$operator = apply_filters( 'aycl_zoek_operator', 'of' );
+	$resultaten = array();
+	if ( 'en' === $operator ) {
+		$resultaten = aycl_zoek_rangschik( $kandidaten, $termen, $zin, true );
+	}
+	if ( ! $resultaten ) {
 		$resultaten = aycl_zoek_rangschik( $kandidaten, $termen, $zin, false );
 	}
 	$ids = array_keys( $resultaten );
