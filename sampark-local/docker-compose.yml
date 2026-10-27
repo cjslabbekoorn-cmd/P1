@@ -1,0 +1,90 @@
+name: sampark
+
+services:
+  db:
+    image: mariadb:11.4
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${DB_NAME:-sampark}
+      MARIADB_USER: ${DB_USER:-sampark}
+      MARIADB_PASSWORD: ${DB_PASSWORD:-sampark}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WP_PORT:-8080}:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: ${DB_NAME:-sampark}
+      WORDPRESS_DB_USER: ${DB_USER:-sampark}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-sampark}
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_ENVIRONMENT_TYPE', 'local');
+        define('WP_DEBUG', true);
+        define('WP_DEBUG_LOG', true);
+        define('WP_DEBUG_DISPLAY', false);
+        define('WP_MEMORY_LIMIT', '512M');
+    volumes:
+      - wp_data:/var/www/html
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins:ro
+      - ./php.ini:/usr/local/etc/php/conf.d/sampark.ini:ro
+
+  # Eenmalig/handmatig: docker compose run --rm wpcli <wp-commando>
+  wpcli:
+    image: wordpress:cli-php8.3
+    profiles: ["tools"]
+    user: "33:33"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: ${DB_NAME:-sampark}
+      WORDPRESS_DB_USER: ${DB_USER:-sampark}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-sampark}
+      WP_URL: ${WP_URL:-http://localhost:8080}
+      WP_ADMIN_USER: ${WP_ADMIN_USER:-admin}
+      WP_ADMIN_PASSWORD: ${WP_ADMIN_PASSWORD:-admin}
+      WP_ADMIN_EMAIL: ${WP_ADMIN_EMAIL:-dev@positie1.local}
+      HOME: /tmp
+    volumes:
+      - wp_data:/var/www/html
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins:ro
+      - ./php.ini:/usr/local/etc/php/conf.d/sampark.ini:ro
+      - ./scripts:/scripts:ro
+      - ./plugins/premium:/premium:ro
+      - ./backups:/backups
+
+  phpmyadmin:
+    image: phpmyadmin:5
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "${PMA_PORT:-8081}:80"
+    environment:
+      PMA_HOST: db
+      UPLOAD_LIMIT: 256M
+
+  # Vangt alle mail van WordPress/WooCommerce/Superforms af
+  mailpit:
+    image: axllent/mailpit:latest
+    restart: unless-stopped
+    ports:
+      - "${MAIL_PORT:-8025}:8025"
+
+volumes:
+  db_data:
+  wp_data:
