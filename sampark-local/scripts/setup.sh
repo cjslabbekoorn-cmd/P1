@@ -222,11 +222,13 @@ if wp plugin is-active code-snippets; then
 fi
 
 # Afrekenen: klassieke winkelwagen en checkout, want de sponsorregel herberekent bij wisselen van betaalmethode.
-# "cheque" heet in de winkel "Inbegrepen in mijn sponsorpakket"; overschrijving staat lokaal in voor Mollie.
+# "cheque" heet in de winkel "Inbegrepen in mijn sponsorpakket"; "bacs" (bankoverschrijving uit WooCommerce zelf) is "Op factuur".
+# iDEAL komt op staging/live uit Mollie.
 wp post update "$(wp option get woocommerce_cart_page_id)" --post_content='<!-- wp:shortcode -->[woocommerce_cart]<!-- /wp:shortcode -->' >/dev/null
 wp post update "$(wp option get woocommerce_checkout_page_id)" --post_content='<!-- wp:shortcode -->[woocommerce_checkout]<!-- /wp:shortcode -->' >/dev/null
 wp option update woocommerce_cheque_settings '{"enabled":"yes","title":"Inbegrepen in mijn sponsorpakket","description":"Alleen voor sponsors met een Sona- of Chandee-pakket: deelname aan het golftoernooi of de rally zit in je pakket.","instructions":""}' --format=json >/dev/null
-wp option update woocommerce_bacs_settings '{"enabled":"yes","title":"Bankoverschrijving (lokaal, in plaats van Mollie iDEAL)","description":"","instructions":""}' --format=json >/dev/null
+wp option update woocommerce_bacs_settings '{"enabled":"yes","title":"Op factuur","description":"Je ontvangt de bestelbevestiging met onze bankgegevens per e-mail. Maak het bedrag binnen 14 dagen over.","instructions":"Maak het bedrag binnen 14 dagen over onder vermelding van het bestelnummer. Je deelname of bestelling is definitief zodra de betaling binnen is."}' --format=json >/dev/null
+wp option update woocommerce_bacs_accounts '[{"account_name":"Stichting Sampark","account_number":"","bank_name":"ABN AMRO","sort_code":"","iban":"NL25 ABNA 0578 9231 73","bic":"ABNANL2A"}]' --format=json >/dev/null
 
 if wp plugin is-active super-forms; then
 	log "Super Forms: de vier formulieren van staging"

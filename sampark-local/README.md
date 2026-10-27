@@ -77,10 +77,10 @@ Afgesproken set (27-10-2026). Het setupscript installeert alles behalve de live-
 | GTM4WP | blijft | container `GTM-5G2QJQS`; lokaal uit, zet `GTM_ID` in `.env` om te testen |
 | Code Snippets | blijft | de 3 Sampark-snippets uit `snippets/` (zie hieronder) |
 | PDF Invoices & Packing Slips | blijft | nodig voor het snippet "factuur en pakbon"; niet lokaal |
-| Invoice Gateway for WooCommerce | blijft | betaalmethode "op factuur"; niet lokaal |
 | Mollie, WP Rocket, Wordfence, Cookiebot | alleen staging/live | niet lokaal |
 | Woo Discount Rules (+ Pro) | gaat eruit | vervangen door het snippet "deelname via sponsorpakket" |
 | Ultimate Dashboard | gaat eruit | |
+| Invoice Gateway for WooCommerce | gaat eruit | "Op factuur" is de standaard WooCommerce-betaalmethode Bankoverschrijving, hernoemd |
 | JetElements, JetSmartFilters, Product Add-Ons, Donations for WooCommerce | gaat eruit | niet gebruikt in de nieuwe opzet |
 | WP All Import, All-in-One WP Migration, Jetpack | na de migratie weg | |
 
