@@ -9,6 +9,19 @@ add_action( 'wp_enqueue_scripts', function () {
 	$css = <<<'CSS'
 /* Kaarten: knop altijd onderaan, ook bij ongelijke tekstlengte */
 .sp-card > .elementor-widget-button:last-child, .sp-card > .elementor-widget-wrap > .elementor-widget-button:last-child { margin-top: auto; }
+/* JetEngine Listing Grid: kaarten even hoog, knop onderaan */
+.jet-listing-grid__item > .jet-engine-listing-overlay-wrap,
+.jet-listing-grid__item > .jet-engine-listing-overlay-wrap > .elementor,
+.jet-listing-grid__item > .jet-engine-listing-overlay-wrap > .elementor > .e-con { height: 100%; }
+.sp-card > .elementor-widget-jet-listing-dynamic-link:last-child { margin-top: auto; }
+/* JetEngine Map Listing in huisstijl */
+.jet-map-listing { border-radius: 20px; overflow: hidden; }
+.jet-map-listing .leaflet-tile-pane { filter: sepia(.35) saturate(.75) brightness(1.03); }
+.jet-map-listing .leaflet-popup-content-wrapper { border-radius: 16px; }
+.jet-map-listing .jet-map-marker { color: #963322; }
+.jet-map-listing .marker-cluster { background: rgba(150, 51, 34, .25) !important; }
+.jet-map-listing .marker-cluster div { background: #963322 !important; color: #F5EDE3 !important;
+	font-family: "Patrick Hand", sans-serif; font-size: 16px; }
 /* Statuschip in event-kaarten */
 .sp-chip { display: inline-block; padding: 4px 12px; border-radius: 999px; background: #ECC0AE; color: #963322;
 	font-family: "Patrick Hand", sans-serif; text-transform: uppercase; font-size: 15px; letter-spacing: .3px; }

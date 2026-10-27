@@ -1,0 +1,708 @@
+{
+ "projects": [
+  {
+   "slug": "khukdi-school",
+   "title": "Khukdi School",
+   "type": "school",
+   "regio": "budaun",
+   "order": 0,
+   "excerpt": "In het oude schoolgebouw van Khukdi waren maar vijf leslokalen beschikbaar. Voor 407 kinderen. Dat betekende dat sommige klassen buiten les kregen, met alles wat het weer daar aan meebrengt: hitte, stof en regen. Wie buiten zit, leert minder.",
+   "content": "<h2>Een school die klopt</h2><p>Het nieuwe gebouw telt maar liefst vijftien klaslokalen. Op de begane grond zijn zes lokalen, een sportzaal, kantoren en een ruimte voor de schoolzuster. Op de eerste etage nog eens negen lokalen, een bibliotheek en een computerruimte. Er zijn meerdere sanitaire voorzieningen, waardoor kinderen ook het belang van hygiëne meekrijgen.</p><p>Voor het eerst kan iedere leerling in Khukdi zijn lessen volgen in een echt klaslokaal, zonder gehinderd te worden door weersinvloeden.</p>",
+   "thumb": "proj_khukdi",
+   "gallery": [
+    "proj_khukdi",
+    "proj_zon"
+   ],
+   "meta": {
+    "tagline": "Van vijf lokalen naar vijftien",
+    "aantal": 407,
+    "eenheid": "leerlingen",
+    "soort_werk": "Nieuwbouw",
+    "dorp": "Khukdi",
+    "extra_titel": "Energie van de zon",
+    "extra_tekst": "Khukdi is ook onze meest duurzame school. Dankzij een geslaagd zonnepanelenproject wekt de school haar eigen energie op. Dat is belangrijk in een regio waar de stroom regelmatig uitvalt. Zo blijven de computers draaien en de lampen branden, ook als het net het laat afweten.",
+    "we_financieren": [
+     "docenten",
+     "lesmateriaal",
+     "schoolarts",
+     "fietsen"
+    ],
+    "feiten": [
+     {
+      "waarde": "407",
+      "label": "leerlingen"
+     },
+     {
+      "waarde": "15",
+      "label": "klaslokalen"
+     },
+     {
+      "waarde": "1",
+      "label": "bibliotheek"
+     },
+     {
+      "waarde": "Zon",
+      "label": "eigen stroom"
+     }
+    ],
+    "voorzieningen": [
+     {
+      "voorziening": "15 klaslokalen"
+     },
+     {
+      "voorziening": "Sportzaal"
+     },
+     {
+      "voorziening": "Bibliotheek"
+     },
+     {
+      "voorziening": "Computerruimte"
+     },
+     {
+      "voorziening": "Ruimte voor de schoolzuster"
+     },
+     {
+      "voorziening": "Sanitaire voorzieningen"
+     },
+     {
+      "voorziening": "Zonnepanelen"
+     }
+    ],
+    "momenten": [
+     {
+      "moment": "Vroeger",
+      "tekst": "Vijf lokalen voor 407 kinderen; sommige klassen kregen buiten les."
+     },
+     {
+      "moment": "Nieuwbouw",
+      "tekst": "Een gebouw met vijftien lokalen, een bibliotheek en een computerruimte."
+     },
+     {
+      "moment": "Zonnepanelen",
+      "tekst": "De school wekt haar eigen stroom op."
+     }
+    ]
+   },
+   "lat": 28.07,
+   "lng": 79.02
+  },
+  {
+   "slug": "kundanpur-school",
+   "title": "Kundanpur School",
+   "type": "school",
+   "regio": "budaun",
+   "order": 1,
+   "excerpt": "Voor bezoekers uit Nederland is Kundanpur meestal de eerste school die ze zien. De bus rijdt het dorp Islamnagar binnen en dan gaat het snel: een tikka op het voorhoofd, een bloemenkrans om de nek, en honderden kinderen die in de rij staan om je welkom te heten.",
+   "content": "<h2>Opgeknapt door vrijwilligers</h2><p>Wie na de ontvangst een rondje door het dorp loopt, begrijpt meteen waarom deze school er staat. De huizen zijn eenvoudig, het werk is zwaar, en voor veel gezinnen is onderwijs geen vanzelfsprekendheid maar een keuze die geld kost. Op de Sampark De Paul school krijgen 329 kinderen die kans wél.</p>",
+   "thumb": "proj_kundanpur",
+   "gallery": [
+    "proj_kundanpur",
+    "hero_contact"
+   ],
+   "meta": {
+    "tagline": "Waar het begint",
+    "aantal": 329,
+    "eenheid": "leerlingen",
+    "soort_werk": "Renovatie",
+    "dorp": "Islamnagar",
+    "extra_titel": "Onderwijs stopt hier niet zomaar",
+    "extra_tekst": "Toen de scholen tijdens de lockdown gesloten bleven, ging het door: onze leraren trokken de dorpen in en gaven les in kleine groepjes, zo'n vijftig tot zestig leerlingen per dag.",
+    "we_financieren": [
+     "docenten",
+     "sport",
+     "lesmateriaal",
+     "schoolarts",
+     "vaste_lasten",
+     "fietsen"
+    ],
+    "feiten": [
+     {
+      "waarde": "329",
+      "label": "leerlingen"
+     },
+     {
+      "waarde": "Renovatie",
+      "label": "gebouw"
+     },
+     {
+      "waarde": "Islamnagar",
+      "label": "dorp"
+     },
+     {
+      "waarde": "VCT",
+      "label": "lokale partner"
+     }
+    ],
+    "voorzieningen": [],
+    "momenten": [
+     {
+      "moment": "Renovatie",
+      "tekst": "Vrijwilligers knapten de school op."
+     },
+     {
+      "moment": "Lockdown",
+      "tekst": "Leraren gaven les in de dorpen, aan vijftig tot zestig leerlingen per dag."
+     },
+     {
+      "moment": "Nu",
+      "tekst": "329 kinderen gaan elke dag naar school."
+     }
+    ]
+   },
+   "lat": 28.3289,
+   "lng": 78.7258
+  },
+  {
+   "slug": "bilsi-school",
+   "title": "Bilsi School",
+   "type": "school",
+   "regio": "budaun",
+   "order": 2,
+   "excerpt": "Op de school in Bilsi krijgen 359 kinderen les. Wat een school goed maakt, zijn niet alleen de muren. Het zijn de mensen die er voor de klas staan. Juist daar hebben we in Bilsi extra op ingezet.",
+   "content": "<h2>Twee weken die het verschil maakten</h2><p>In januari 2014 reisde een groep Nederlandse vrijwilligers af naar Budaun. Twee weken lang werkten zij aan de scholen in Bilsi en Ghadia. Naast het opknappen van lokalen en meubilair was er nadrukkelijk aandacht voor de kwaliteit van het onderwijs zelf: vrijwilligers gaven de leraren feedback op hun manier van lesgeven, en de docenten konden Engelse lessen volgen. Dat is een vaardigheid die in India deuren opent naar vervolgonderwijs en werk.</p><p>Ook de kinderen leerden iets nieuws. De vrijwilligers lieten zien waarom hygiëne telt, van handen wassen vóór het eten tot het schoonhouden van de klas. En er werd volop gelachen: de groep organiseerde een sportdag waar de hele school aan meedeed.</p>",
+   "thumb": "proj_bilsi",
+   "gallery": [
+    "proj_bilsi",
+    "over_verhaal"
+   ],
+   "meta": {
+    "tagline": "Leren begint bij de leraar",
+    "aantal": 359,
+    "eenheid": "leerlingen",
+    "soort_werk": "Renovatie",
+    "dorp": "Bilsi",
+    "extra_titel": "Hoe het nu gaat",
+    "extra_tekst": "Sinds de renovatie blijft Sampark betrokken bij Bilsi. Samen met onze lokale partner dragen we bij aan de salarissen van docenten, lesmateriaal, de schoolarts en fietsen voor geslaagden.",
+    "we_financieren": [
+     "docenten",
+     "lesmateriaal",
+     "schoolarts",
+     "fietsen"
+    ],
+    "feiten": [
+     {
+      "waarde": "359",
+      "label": "leerlingen"
+     },
+     {
+      "waarde": "2014",
+      "label": "renovatie"
+     },
+     {
+      "waarde": "2 weken",
+      "label": "vrijwilligerswerk"
+     },
+     {
+      "waarde": "VCT",
+      "label": "lokale partner"
+     }
+    ],
+    "voorzieningen": [],
+    "momenten": [
+     {
+      "moment": "Januari 2014",
+      "tekst": "Twee weken renovatie door Nederlandse vrijwilligers, feedback voor leraren en Engelse les."
+     },
+     {
+      "moment": "Sportdag",
+      "tekst": "De hele school deed mee aan de sportdag van de vrijwilligers."
+     },
+     {
+      "moment": "Nu",
+      "tekst": "359 kinderen krijgen les, met steun voor docenten en lesmateriaal."
+     }
+    ]
+   },
+   "lat": 28.1277,
+   "lng": 78.9092
+  },
+  {
+   "slug": "ghadia-school",
+   "title": "Ghadia School",
+   "type": "school",
+   "regio": "budaun",
+   "order": 3,
+   "excerpt": "In het dorp Ghadia, in de regio Budaun, krijgen dagelijks 482 kinderen les. Voor veel van hen is deze school de eerste in de familie die ze van binnen zien. Hun ouders werken op het land of in de bouw en hebben zelf nooit leren lezen. Hier begint dat verhaal opnieuw, bij hun kinderen.",
+   "content": "<h2>Vrijwilligers die de handen uit de mouwen staken</h2><p>Het jaar 2014 stond in het teken van renovatie. In januari reisde een groep Nederlandse vrijwilligers af naar India en werkte twee weken lang aan de scholen in Ghadia en Bilsi. Er werd gestuct en gesausd, meubilair opgeknapt en lokalen versierd. In de tuin verrezen moestuintjes en een speelplek.</p><p>Maar het ging om meer dan verf en stenen. De vrijwilligers gaven leraren feedback op hun manier van lesgeven en verzorgden Engelse lessen. Ze lieten kinderen zien waarom handen wassen vóór het eten zo belangrijk is. En er was tijd voor lachen: de week werd afgesloten met een sportdag die niemand snel vergeet.</p>",
+   "thumb": "proj_ghadia",
+   "gallery": [
+    "proj_ghadia",
+    "proj_solar"
+   ],
+   "meta": {
+    "tagline": "Een school midden op het platteland",
+    "aantal": 482,
+    "eenheid": "leerlingen",
+    "soort_werk": "Renovatie",
+    "dorp": "Ghadia",
+    "extra_titel": "Hoe het nu gaat",
+    "extra_tekst": "Sinds de renovatie blijven wij betrokken bij Ghadia. Samen met onze lokale partner zorgen we voor salarissen van docenten, lesmateriaal, gezondheidszorg en fietsen voor geslaagden. Zo blijft de school niet alleen overeind, maar groeit hij mee met de kinderen die er zitten.",
+    "we_financieren": [
+     "docenten",
+     "lesmateriaal",
+     "gezondheidszorg",
+     "fietsen"
+    ],
+    "feiten": [
+     {
+      "waarde": "482",
+      "label": "leerlingen"
+     },
+     {
+      "waarde": "2014",
+      "label": "renovatie"
+     },
+     {
+      "waarde": "Moestuin",
+      "label": "en speelplek"
+     },
+     {
+      "waarde": "Solar",
+      "label": "lampjes"
+     }
+    ],
+    "voorzieningen": [
+     {
+      "voorziening": "Gerenoveerde lokalen"
+     },
+     {
+      "voorziening": "Moestuintjes"
+     },
+     {
+      "voorziening": "Speelplek"
+     }
+    ],
+    "momenten": [
+     {
+      "moment": "Januari 2014",
+      "tekst": "Renovatie: stucwerk, meubilair, moestuintjes en een speelplek."
+     },
+     {
+      "moment": "Solarlampjes",
+      "tekst": "Leerlingen krijgen een lampje om thuis te kunnen studeren."
+     },
+     {
+      "moment": "Nu",
+      "tekst": "482 kinderen krijgen dagelijks les."
+     }
+    ]
+   },
+   "lat": 28.2,
+   "lng": 79.06
+  },
+  {
+   "slug": "computerspecialist",
+   "title": "Computerspecialist",
+   "type": "opleiding",
+   "regio": "new-delhi",
+   "order": 10,
+   "excerpt": "De trek van het platteland naar de grote steden is groot, maar veel mensen vinden daar geen baan en belanden in de sloppenwijken. Om jongvolwassenen meer kans op een betere toekomst te geven, biedt Sampark in New Delhi gewilde beroepsopleidingen aan.",
+   "content": "<p>De trek van het platteland naar de grote steden is groot, maar veel mensen vinden daar geen baan en belanden in de sloppenwijken. Om jongvolwassenen meer kans op een betere toekomst te geven, biedt Sampark in New Delhi gewilde beroepsopleidingen aan.</p>",
+   "thumb": "proj_computer",
+   "gallery": [
+    "proj_computer"
+   ],
+   "meta": {
+    "tagline": "Digitale vaardigheden voor een kantoorbaan.",
+    "aantal": 20,
+    "eenheid": "studenten",
+    "soort_werk": "Doorlopend",
+    "dorp": "New Delhi"
+   },
+   "lat": 28.6139,
+   "lng": 77.209
+  },
+  {
+   "slug": "modinette",
+   "title": "Modinette",
+   "type": "opleiding",
+   "regio": "new-delhi",
+   "order": 11,
+   "excerpt": "De trek van het platteland naar de grote steden is groot, maar veel mensen vinden daar geen baan en belanden in de sloppenwijken. Om jongvolwassenen meer kans op een betere toekomst te geven, biedt Sampark in New Delhi gewilde beroepsopleidingen aan.",
+   "content": "<p>De trek van het platteland naar de grote steden is groot, maar veel mensen vinden daar geen baan en belanden in de sloppenwijken. Om jongvolwassenen meer kans op een betere toekomst te geven, biedt Sampark in New Delhi gewilde beroepsopleidingen aan.</p>",
+   "thumb": "proj_modinette",
+   "gallery": [
+    "proj_modinette"
+   ],
+   "meta": {
+    "tagline": "Kleding maken en een eigen inkomen.",
+    "aantal": 29,
+    "eenheid": "studenten",
+    "soort_werk": "Doorlopend",
+    "dorp": "New Delhi"
+   },
+   "lat": 28.6139,
+   "lng": 77.209
+  },
+  {
+   "slug": "schoonheidsspecialiste",
+   "title": "Schoonheidsspecialiste",
+   "type": "opleiding",
+   "regio": "new-delhi",
+   "order": 12,
+   "excerpt": "De trek van het platteland naar de grote steden is groot, maar veel mensen vinden daar geen baan en belanden in de sloppenwijken. Om jongvolwassenen meer kans op een betere toekomst te geven, biedt Sampark in New Delhi gewilde beroepsopleidingen aan.",
+   "content": "<p>De trek van het platteland naar de grote steden is groot, maar veel mensen vinden daar geen baan en belanden in de sloppenwijken. Om jongvolwassenen meer kans op een betere toekomst te geven, biedt Sampark in New Delhi gewilde beroepsopleidingen aan.</p>",
+   "thumb": "proj_beauty",
+   "gallery": [
+    "proj_beauty"
+   ],
+   "meta": {
+    "tagline": "Een vak met vraag in de stad.",
+    "aantal": 24,
+    "eenheid": "studenten",
+    "soort_werk": "Doorlopend",
+    "dorp": "New Delhi"
+   },
+   "lat": 28.6139,
+   "lng": 77.209
+  },
+  {
+   "slug": "fietsen",
+   "title": "Fietsen voor geslaagden",
+   "type": "initiatief",
+   "regio": "budaun",
+   "order": 20,
+   "excerpt": "Zodat het vervolgonderwijs bereikbaar is.",
+   "content": "<p>Zodat het vervolgonderwijs bereikbaar is.</p>",
+   "thumb": "proj_fietsen",
+   "gallery": [
+    "proj_fietsen"
+   ],
+   "meta": {
+    "tagline": "Zodat het vervolgonderwijs bereikbaar is.",
+    "soort_werk": "Doorlopend",
+    "externe_link": ""
+   }
+  },
+  {
+   "slug": "zonnepanelen",
+   "title": "Zonnepanelen",
+   "type": "initiatief",
+   "regio": "budaun",
+   "order": 21,
+   "excerpt": "Een school die haar eigen energie opwekt.",
+   "content": "<p>Een school die haar eigen energie opwekt.</p>",
+   "thumb": "proj_zon",
+   "gallery": [
+    "proj_zon"
+   ],
+   "meta": {
+    "tagline": "Een school die haar eigen energie opwekt.",
+    "soort_werk": "Doorlopend",
+    "externe_link": ""
+   }
+  },
+  {
+   "slug": "solarlampjes",
+   "title": "Solarlampjes",
+   "type": "initiatief",
+   "regio": "budaun",
+   "order": 22,
+   "excerpt": "Licht om thuis te kunnen studeren.",
+   "content": "<p>Licht om thuis te kunnen studeren.</p>",
+   "thumb": "proj_solar",
+   "gallery": [
+    "proj_solar"
+   ],
+   "meta": {
+    "tagline": "Licht om thuis te kunnen studeren.",
+    "soort_werk": "Doorlopend",
+    "externe_link": ""
+   }
+  },
+  {
+   "slug": "stichting-accrete",
+   "title": "Stichting Accrete",
+   "type": "initiatief",
+   "regio": "budaun",
+   "order": 23,
+   "excerpt": "Leerlingen in Nederland en India verbonden.",
+   "content": "<p>Leerlingen in Nederland en India verbonden.</p>",
+   "thumb": "proj_accrete",
+   "gallery": [
+    "proj_accrete"
+   ],
+   "meta": {
+    "tagline": "Leerlingen in Nederland en India verbonden.",
+    "soort_werk": "Doorlopend",
+    "externe_link": "https://ichthus.accrete.nl/basisschool/stichtingsampark"
+   }
+  }
+ ],
+ "events": [
+  {
+   "slug": "padel-toernooi",
+   "order": 1,
+   "title": "Padel toernooi",
+   "thumb": "event_padel",
+   "excerpt": "Een sportieve middag bij Peakz Padel Zwolle. € 89 per team van twee.",
+   "content": "<p>Of je nu net begint met padel of al aardig wat wedstrijden hebt gespeeld, iedereen is welkom. We spelen in drie categorieën: Starter, Intermediate en Advanced.</p><p>Deelname kost € 89 per team van twee personen, inclusief twee consumptiebonnen per persoon. Inschrijven gaat via Peakz Padel.</p>",
+   "meta": {
+    "status": "open",
+    "datum_start": "2026-11-21",
+    "tijd": "12.00 – 17.00 uur",
+    "locatie_tekst": "Peakz Padel Zwolle, Hanzelaan 95, Zwolle",
+    "prijs_label": "€ 89 per team van twee",
+    "externe_inschrijflink": "https://www.peakzpadel.nl/reserveren/kalender-event?id=f450c14a-f944-4996-9f84-fc4d85b76739"
+   }
+  },
+  {
+   "slug": "wijnactie",
+   "order": 4,
+   "title": "Wijnactie",
+   "thumb": "event_wijn",
+   "excerpt": "Rood, wit en alcoholvrij. € 43,50 per doos van zes flessen, opbrengst naar de scholen.",
+   "content": "<p>Ieder jaar stellen we vanuit Stichting Sampark een tweetal wijnen samen, en dit jaar ook een alcoholvrije. Afhalen of laten thuisbezorgen.</p>",
+   "meta": {
+    "status": "doorlopend",
+    "datum_label": "Het hele jaar",
+    "prijs_label": "€ 43,50 per doos"
+   }
+  },
+  {
+   "slug": "sampark-rally",
+   "order": 2,
+   "title": "Sampark Rally",
+   "thumb": "event_rally",
+   "excerpt": "Een dag met je eigen klassieker door Oost-Nederland. € 600 per equipe.",
+   "content": "<p>Een compleet verzorgde dag voor twee personen in een eigen auto, afgesloten met een diner en de prijsuitreiking.</p>",
+   "meta": {
+    "status": "aangekondigd",
+    "datum_label": "September 2027 · datum volgt",
+    "prijs_label": "€ 600 per equipe",
+    "max_deelnemers": 60
+   }
+  },
+  {
+   "slug": "golftoernooi",
+   "order": 3,
+   "title": "Golftoernooi",
+   "thumb": "event_golf",
+   "excerpt": "Wedstrijd, clinic of masterclass op Het Rijk van Nunspeet. Vanaf € 300 p.p.",
+   "content": "<p>Speel mee in de wedstrijd om de wisselbeker, of doe mee aan een clinic voor beginners of een masterclass voor gevorderden.</p>",
+   "meta": {
+    "status": "aangekondigd",
+    "datum_label": "Oktober 2027 · datum volgt",
+    "locatie_tekst": "Het Rijk van Nunspeet",
+    "prijs_label": "€ 300 p.p. of € 1.200 per tafel",
+    "programma": [
+     {
+      "tijd": "09:30 – 11:00",
+      "onderdeel": "Ontvangst wedstrijdspelers"
+     },
+     {
+      "tijd": "11:30 – 16:30",
+      "onderdeel": "Wedstrijd (shotgun)"
+     },
+     {
+      "tijd": "12:00 – 16:30",
+      "onderdeel": "Lunch en clinics"
+     },
+     {
+      "tijd": "18:00 – 21:00",
+      "onderdeel": "Diner en prijsuitreiking"
+     }
+    ]
+   }
+  },
+  {
+   "slug": "project-en-cultuurreis",
+   "order": 5,
+   "title": "Project- en cultuurreis",
+   "thumb": "event_reis",
+   "excerpt": "Reis mee naar India en zie met eigen ogen wat jouw steun doet.",
+   "content": "<p>Regelmatig organiseert Stichting Sampark een reis naar India. Deelnemers maken kennis met het kleurrijke leven daar en zien met eigen ogen het verschil dat hulp kan maken.</p>",
+   "meta": {
+    "status": "doorlopend",
+    "datum_label": "Op aanvraag"
+   }
+  }
+ ],
+ "sponsors": [
+  {
+   "title": "Venture Group",
+   "thumb": "logo_venture",
+   "website": "https://venture-group.nl/",
+   "order": 0
+  },
+  {
+   "title": "Groothuis Bouwgroep",
+   "thumb": "logo_groothuis",
+   "website": "https://www.groothuisbouwgroep.nl/",
+   "order": 1
+  },
+  {
+   "title": "Schieven Keizer",
+   "thumb": "logo_schieven",
+   "website": "https://schievenkeizer.nl/",
+   "order": 2
+  },
+  {
+   "title": "We for You",
+   "thumb": "logo_w4y",
+   "website": "",
+   "order": 3
+  },
+  {
+   "title": "Venttri",
+   "thumb": "logo_venttri",
+   "website": "https://www.venttri.nl/",
+   "order": 4
+  },
+  {
+   "title": "Het Rijk van Nunspeet",
+   "thumb": "logo_rijk",
+   "website": "https://www.golfenophetrijk.nl/nunspeet.html",
+   "order": 5
+  },
+  {
+   "title": "Arcus IT",
+   "thumb": "logo_arcus",
+   "website": "https://arcusit.nl/",
+   "order": 6
+  },
+  {
+   "title": "KVS",
+   "thumb": "logo_kvs",
+   "website": "https://kvsbv.nl/",
+   "order": 7
+  },
+  {
+   "title": "Pleijsier Bouw en Onderhoud",
+   "thumb": "logo_pleijsier",
+   "website": "https://pleijsierbouwenonderhoud.nl/",
+   "order": 8
+  },
+  {
+   "title": "Positie1",
+   "thumb": "logo_positie1",
+   "website": "https://positie1.nl/",
+   "order": 9
+  }
+ ],
+ "news": [
+  {
+   "slug": "nat-maar-onvergetelijk-golftoernooi-2025",
+   "title": "Nat, maar onvergetelijk: Golftoernooi 2025!",
+   "date": "2025-11-11 10:00:00",
+   "thumb": "news_golf_2025",
+   "cat": "evenementen",
+   "events": [
+    "golftoernooi"
+   ],
+   "excerpt": "Het jaarlijkse Samparkgolftoernooi was er weer eentje om niet snel te vergeten."
+  },
+  {
+   "slug": "scholen-krijgen-bezoek-uit-canada",
+   "title": "Scholen krijgen bezoek uit Canada!",
+   "date": "2025-09-25 11:00:00",
+   "thumb": "news_canada",
+   "cat": "scholen-leerlingen",
+   "projects": [
+    "kundanpur-school"
+   ],
+   "excerpt": "Mark en Sharon Jansen van Mores Textiles kwamen op bezoek bij onze scholen in India."
+  },
+  {
+   "slug": "afscheid-abhishek-pandey",
+   "title": "Afscheid Abhishek Pandey",
+   "date": "2025-09-25 10:00:00",
+   "thumb": "news_abhishek",
+   "cat": "stichting",
+   "excerpt": "We namen op bijzondere wijze afscheid van onze gewaardeerde schoolcoördinator."
+  },
+  {
+   "slug": "zonnepanelen-sampark-school-khukdi",
+   "title": "Zonnepanelen op de school in Khukdi",
+   "date": "2020-10-20 10:00:00",
+   "thumb": "proj_zon",
+   "cat": "scholen-leerlingen",
+   "projects": [
+    "khukdi-school",
+    "zonnepanelen"
+   ],
+   "excerpt": "Hoe de school in Khukdi haar eigen energie is gaan opwekken."
+  }
+ ],
+ "options": {
+  "cijfer_leerlingen": 1577,
+  "cijfer_cursussen": 600,
+  "cijfer_fietsen": 125,
+  "cijfer_studenten_delhi": 73,
+  "adres": "Schering 31-33\n8281 JW Genemuiden",
+  "telefoon": "038 385 50 00",
+  "email": "info@sampark.nl",
+  "bereikbaarheid": "Op kantoordagen tussen 9.00 en 17.00 uur",
+  "kvk": "08169359",
+  "rsin": "818925887",
+  "iban": "NL25 ABNA 0578 9231 73",
+  "campagne_aan": "true",
+  "campagne_titel": "Wijnactie",
+  "campagne_tekst": "Rood, wit en alcoholvrij",
+  "campagne_link": "/evenementen/wijnactie/",
+  "bestuur": [
+   {
+    "naam": "Irma van Dalfsen",
+    "functie": "Voorzitter",
+    "foto": "board_irma"
+   },
+   {
+    "naam": "Lianne Molhoek",
+    "functie": "Secretaris",
+    "foto": "board_lianne"
+   },
+   {
+    "naam": "Pieter Veuger",
+    "functie": "Penningmeester",
+    "foto": "board_pieter"
+   },
+   {
+    "naam": "Arjen Hoekman",
+    "functie": "Projectcommissie",
+    "foto": "board_arjen"
+   },
+   {
+    "naam": "Henk Eilander",
+    "functie": "Fondsenwerving",
+    "foto": "board_henk"
+   },
+   {
+    "naam": "Richard Nijhof",
+    "functie": "Fondsenwerving",
+    "foto": "board_richard"
+   },
+   {
+    "naam": "Eric Haasjes",
+    "functie": "Fondsenwerving",
+    "foto": "board_eric"
+   },
+   {
+    "naam": "Margreet van Dalfsen",
+    "functie": "Vrijwilligers",
+    "foto": "board_margreet"
+   }
+  ],
+  "tijdlijn": [
+   {
+    "jaar": "2007",
+    "titel": "Oprichting",
+    "tekst": "Venture Group richt Stichting Sampark op om iets terug te doen voor India."
+   },
+   {
+    "jaar": "2014",
+    "titel": "Renovaties",
+    "tekst": "Vrijwilligers knappen in twee weken de scholen in Bilsi en Ghadia op."
+   },
+   {
+    "jaar": "[jaar]",
+    "titel": "Nieuwbouw Khukdi",
+    "tekst": "Een nieuwe school met vijftien lokalen. Jaartal nog te bevestigen."
+   },
+   {
+    "jaar": "2025",
+    "titel": "Nieuw bestuur",
+    "tekst": "Eric Haasjes en Richard Nijhof versterken de fondsenwerving."
+   }
+  ]
+ }
+}

@@ -329,7 +329,12 @@
       "flex_direction_mobile": "column",
       "flex_wrap": "wrap",
       "_title": "LISTING · evenementen · status IN (aangekondigd, open, vol) · sorteer datum_start ASC",
-      "flex_align_items": "stretch"
+      "flex_align_items": "stretch",
+      "_sp_jet": {
+       "listing": "eventkaart",
+       "query": "q_events_binnenkort",
+       "cols": 3
+      }
      },
      "elements": [
       {
@@ -1036,7 +1041,12 @@
       "flex_direction_mobile": "column",
       "flex_wrap": "wrap",
       "_title": "LISTING · evenementen · status=doorlopend",
-      "flex_align_items": "stretch"
+      "flex_align_items": "stretch",
+      "_sp_jet": {
+       "listing": "eventkaart",
+       "query": "q_events_doorlopend",
+       "cols": 2
+      }
      },
      "elements": [
       {
@@ -1533,7 +1543,12 @@
       "flex_direction_mobile": "column",
       "flex_wrap": "wrap",
       "_title": "LISTING · nieuws (3 nieuwste, of gerelateerd via relatie)",
-      "flex_align_items": "stretch"
+      "flex_align_items": "stretch",
+      "_sp_jet": {
+       "listing": "nieuwskaart",
+       "query": "q_nieuws_events",
+       "cols": 3
+      }
      },
      "elements": [
       {

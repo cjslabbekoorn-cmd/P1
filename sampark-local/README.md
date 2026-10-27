@@ -13,7 +13,7 @@ Lokale WordPress-omgeving voor de nieuwe stichtingsampark.nl, volgens `docs/samp
 
 1. Installeer en start **Docker Desktop**.
 2. Zet de premium plugins in `plugins/premium/`, als zip of als map (bijvoorbeeld via FTP gedownload uit `wp-content/plugins/` van staging):
-   - `elementor-pro` (4.1.x, gelijk aan staging; 3.x past niet op Elementor 4)
+   - `elementor-pro` (4.1.x, gelijk aan staging; 3.x past niet op Elementor 4) — nog nodig voor header, footer en de single-templates
    - `jet-engine`, `jet-elements`, `jet-smart-filters`
    - `super-forms` plus de Super Forms-add-ons voor WooCommerce
    Deze bestanden staan niet in git (licenties). Elementor zelf wordt op 4.1.5 gezet, de versie van staging.
@@ -58,30 +58,32 @@ Let op: `build-site.php` overschrijft de Elementor-inhoud van deze pagina's. Wil
 
 Blokken die een JetEngine Listing Grid worden, hebben in de Elementor Navigator een titel die begint met `LISTING ·`, met de query erbij. De kaarten erin zijn het ontwerp van het listing item. De JSON-bestanden zijn ook los te importeren op staging (Elementor › Templates › Importeren); de beeld-placeholders (`{{img:…}}`) zijn dan wel leeg.
 
-## Handmatig in JetEngine
+## JetEngine (automatisch)
 
-Positie1 richt dit altijd via de JetEngine-interface in, zodat het exporteerbaar en overdraagbaar blijft. Zet bij elk datumveld **Save as timestamp** aan.
+Staat JetEngine in `plugins/premium/`, dan richt `scripts/jetengine-setup.php` het in via de eigen tools van JetEngine (de MCP-features `add-cpt`, `add-taxonomy`, `add-glossary`, `add-query`, `manage-modules`) en de dataklassen voor relaties, de Options Page en listings. Alles staat daarna gewoon in de JetEngine-interface.
 
-**Post Types**
-- `evenementen` (archief uit, slug `evenementen`; de pagina /evenementen/ is het overzicht): status (select: aangekondigd / open / vol / doorlopend / afgelopen), datum_start, datum_eind, tijd, locatie, inschrijving_tot, prijs_label, max_deelnemers, externe_inschrijflink, programma (repeater: tijd + onderdeel), galerij.
-- `projecten` (archief uit, rewrite-slug `ons-werk`; de pagina /ons-werk/ is het overzicht): tagline, aantal, eenheid (leerlingen / studenten), soort_werk (nieuwbouw / renovatie / doorlopend), sinds, dorp, locatie (Map-veld: lat/lng, voor de kaart), feiten (repeater: waarde + label, 4 stuks), voorzieningen (repeater of textarea), we_financieren (checkbox), momenten (repeater: moment + tekst), extra_titel + extra_tekst, externe_link, galerij.
-  De kaart op /ons-werk/ en op elke school wordt een JetEngine Map Listing (provider Leaflet/OpenStreetMap, marker clustering aan, popup = listing item met foto, aantal en knop). Lokaal staat er een Leaflet-prototype in een HTML-widget (titel `KAART ·`) dat hetzelfde gedrag laat zien.
-- `sponsors` (*publicly queryable* uit): logo, website, actief (switcher), volgorde.
+- **Modules:** Maps Listings, Dynamic Visibility, Grid- en Slider-galerij aan; de rest uit.
+- **Kaart:** provider Leaflet, geocoding OpenStreetMap (geen API-sleutel).
+- **Posttypes:**
+  - `projecten` (URL `/ons-werk/…`, geen archief): tagline, aantal, eenheid, soort werk, dorp, **locatie (Map-veld)**, feiten (repeater), tweede kop + tekst, voorzieningen, wat Sampark betaalt (checkbox), momenten (repeater), externe link, galerij.
+  - `evenementen` (URL `/evenementen/…`, geen archief): status, datum, einddatum, datumtekst, inschrijven tot, tijd, locatie, prijs, max. deelnemers, externe inschrijflink, programma (repeater), galerij. Sortering op volgorde (Pagina-attributen), zodat evenementen zonder vaste datum niet wegvallen.
+  - `sponsors` (niet publiek): website, tonen aan/uit.
+- **Taxonomieën:** `projecttype` (scholen / opleidingen / initiatieven), `regio`, `sponsorniveau`.
+- **Glossary:** Evenementstatus (aangekondigd, inschrijving open, vol, het hele jaar, afgelopen).
+- **Options Page "Stichting":** kerncijfers, contact en registratie, campagnebadge, bestuur en tijdlijn, ANBI-teksten en -documenten.
+- **Relaties:** Evenement → Product, Evenement ↔ Bericht, Project ↔ Bericht, Sponsor ↔ Evenement.
+- **11 queries** (Query Builder) en **6 listings**: projectkaart, evenementkaart, sponsorlogo, nieuwskaart, sponsorpakket en de kaart-popup.
+- **Inhoud:** de 4 scholen, 3 opleidingen en 4 initiatieven met alle velden en coördinaten, 5 evenementen, 10 sponsors, 4 nieuwsberichten en de Options Page. Bestaande inhoud wordt nooit overschreven.
 
-**Taxonomies**
-- `projecttype` op projecten: School, Opleiding, Initiatief.
-- `regio` op projecten: Budaun, New Delhi.
-- `sponsorniveau` op sponsors: Sona, Chandee, Peetal, Partner.
+Daarna bouwt `build-site.php` de pagina's opnieuw. De `LISTING ·`-blokken worden echte **JetEngine Listing Grids** en de kaart wordt een **JetEngine Map Listing** met clustering en popup.
 
-**Relations**
-- Evenement → Product (one to many)
-- Evenement ↔ Bericht (many to many)
-- Project ↔ Bericht (many to many)
-- Sponsor ↔ Evenement (many to many)
+**Naar staging:** `docker compose run --rm wpcli eval-file /scripts/jetengine-export.php` schrijft `jetengine/sampark-jetengine.json`. Importeer dat op staging via JetEngine › Dashboard › Skins › Import. Let op: staging heeft al posttypes `projecten` en `evenementen` met eigen velden. Kies bij de import per item "vervangen" of "overslaan", en vergelijk eerst de veldnamen, zodat er geen bestaande data verloren gaat. Listing Grids op pagina's moeten na import opnieuw naar de juiste listing en query wijzen, omdat de ID's op staging anders zijn.
 
-**Options Page "Stichting"**: kerncijfers, contact (adres, telefoon, e-mail, bereikbaarheid), registratie (KvK, RSIN, IBAN), campagne (switcher, tekst, link), bestuur (repeater), tijdlijn (repeater), anbi_documenten (repeater), anbi_teksten.
+**Tijdelijk zonder Elementor Pro:** `mu-plugins/sampark-preview-singles.php` toont op `/ons-werk/{school}/` de gebouwde schoolpagina in plaats van de kale projectsingle. Verwijder die mu-plugin zodra er een Theme Builder Single-template voor projecten is.
 
-Exporteer de JetEngine-configuratie na het inrichten (JetEngine → Dashboard → Import/Export) en zet het JSON-bestand in `jetengine/`. Dan kan een volgende ontwikkelaar het in één keer importeren.
+## Super Forms
+
+Super Forms 6.3 wordt geïnstalleerd, met de meegeleverde add-ons (waaronder WooCommerce). De productformulieren van staging staan er nog niet in. Exporteer ze op staging (Super Forms › Forms › Export) en importeer ze lokaal, of zet het exportbestand in `plugins/premium/`. Dan zet ik ze op de producten.
 
 ## Dagelijks gebruik
 

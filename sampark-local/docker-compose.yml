@@ -67,6 +67,7 @@ services:
       - ./scripts:/scripts:ro
       - ./elementor:/elementor:ro
       - ./assets:/assets:ro
+      - ./jetengine:/jetengine
       - ./plugins/premium:/premium:ro
       - ./backups:/backups
 

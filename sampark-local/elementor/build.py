@@ -339,18 +339,27 @@ def stat(icon_key, number, label, suffix="", width=30):
                      title=f"Cijfer · {label}", align="center", gap_px=8, width=width)
 
 
-def listing(title_note, *cards, cols=3):
+def listing(title_note, *cards, cols=3, jet=None):
+    # "titel @@listing,query,kolommen" koppelt het blok aan een JetEngine Listing Grid
+    if "@@" in title_note:
+        title_note, spec = title_note.split(" @@")
+        lst, qry, n = spec.split(",")
+        jet = (lst, qry, int(n))
     """Container die het Listing Grid voorstelt; inhoud = ontwerp van het listing item."""
     w = {2: 48, 3: 31, 4: 23}[cols]
     for c in cards:
         c["settings"]["width"] = size(w, "%")
         c["settings"]["width_mobile"] = size(100, "%")
         c["settings"]["width_tablet"] = size(48 if cols > 2 else 100, "%")
+    extra = {"flex_align_items": "stretch"}
+    if jet:
+        # build-site.php vervangt dit blok door een JetEngine Listing Grid als JetEngine actief is
+        extra["_sp_jet"] = {"listing": jet[0], "query": jet[1], "cols": jet[2] if len(jet) > 2 else cols}
     return container(*cards, title=f"LISTING · {title_note}", direction="row", wrap=True, gap_px=24,
-                     extra={"flex_align_items": "stretch"})
+                     extra=extra)
 
 
-def logo_wall(keys, bg="#FFFFFF"):
+def logo_wall(keys, bg="#FFFFFF", jet=("sponsorlogo", "q_sponsors", 6)):
     logos = [container(image(k, height=80, radius=0, fit="contain"), title=f"Logo · {k}", bg=bg,
                        radius=999, pad=dims(24), align="center", justify="center",
                        extra={"width": size(140), "width_tablet": size(130), "width_mobile": size(120),
@@ -358,10 +367,11 @@ def logo_wall(keys, bg="#FFFFFF"):
                               "min_height_mobile": size(120)})
              for k in keys]
     return container(*logos, title="LISTING · sponsors (actief=true, sorteer op niveau + volgorde)",
-                     direction="row", wrap=True, justify="center", gap_px=20, mobile_column=False)
+                     direction="row", wrap=True, justify="center", gap_px=20, mobile_column=False,
+                     extra={"_sp_jet": {"listing": jet[0], "query": jet[1], "cols": jet[2]}} if jet else None)
 
 
-def news_cards():
+def news_cards(query="q_nieuws"):
     items = [
         ("news_golf_2025", "11 november 2025", "Nat, maar onvergetelijk: Golftoernooi 2025!",
          "Het jaarlijkse Samparkgolftoernooi was er weer eentje om niet snel te vergeten.",
@@ -374,7 +384,7 @@ def news_cards():
          "/afscheid-abhishek-pandey/"),
     ]
     return listing("nieuws (3 nieuwste, of gerelateerd via relatie)",
-                   *[media_card(k, d, t, b, l) for k, d, t, b, l in items])
+                   *[media_card(k, d, t, b, l) for k, d, t, b, l in items], jet=("nieuwskaart", query, 3))
 
 
 EVENTS = {
@@ -475,7 +485,7 @@ page("home", "Home",
                                 "Een dag achter het stuur, een balletje slaan of een glas wijn met vrienden: bij Sampark begint hulp vaak met plezier."),
                    button("Alle evenementen", "/evenementen/", style="outline", icon=True, nowrap=True),
                    direction="row", justify="space-between", align="flex-end", gap_px=24),
-         listing("evenementen · status IN (aangekondigd, open, doorlopend) · sorteer datum_start ASC · max 3",
+         listing("evenementen · status IN (aangekondigd, open, doorlopend) · sorteer datum_start ASC · max 3 @@eventkaart,q_events_home,3",
                  event_card("padel", "Inschrijving open"), event_card("wijn", "Het hele jaar"),
                  event_card("rally", "Aangekondigd")),
          title="Evenementen"),
@@ -835,7 +845,7 @@ page("ons-werk", "Ons werk",
      section(
          section_head("Scholen in Budaun", "Vier scholen op het platteland",
                       "Rond Budaun maken we vier scholen mogelijk. Door te bouwen, te renoveren en te blijven investeren groeit elke school mee met de kinderen."),
-         listing("projecten · projecttype=school · sorteer titel",
+         listing("projecten · projecttype=school · sorteer titel @@projectkaart,q_scholen,4",
                  project_card("proj_khukdi", "407 leerlingen · Nieuwbouw", "Khukdi School", "Van vijf lokalen naar vijftien.", "/ons-werk/khukdi-school/"),
                  project_card("proj_kundanpur", "329 leerlingen · Renovatie", "Kundanpur School", "Waar het begint.", "/ons-werk/kundanpur-school/"),
                  project_card("proj_bilsi", "359 leerlingen · Renovatie", "Bilsi School", "Leren begint bij de leraar.", "/ons-werk/bilsi-school/"),
@@ -845,7 +855,7 @@ page("ons-werk", "Ons werk",
      section(
          section_head("Opleidingen in New Delhi", "Een vak leren in de stad",
                       "Veel jongeren trekken van het platteland naar de stad en belanden zonder werk in de sloppenwijken. Met gerichte opleidingen geven we ze een eerlijke kans op een baan."),
-         listing("projecten · projecttype=opleiding",
+         listing("projecten · projecttype=opleiding @@projectkaart,q_opleidingen,3",
                  project_card("proj_computer", "20 studenten", "Computerspecialist", "Digitale vaardigheden voor een kantoorbaan.", "/ons-werk/computerspecialist/"),
                  project_card("proj_modinette", "29 studenten", "Modinette", "Kleding maken en een eigen inkomen.", "/ons-werk/modinette/"),
                  project_card("proj_beauty", "24 studenten", "Schoonheidsspecialiste", "Een vak met vraag in de stad.", "/ons-werk/schoonheidsspecialiste/")),
@@ -853,7 +863,7 @@ page("ons-werk", "Ons werk",
          divider_bottom=("curve", "#FFFFFF", 50), extra={"_element_id": "opleidingen"}),
      section(
          section_head("Initiatieven", "Kleine projecten, groot verschil"),
-         listing("projecten · projecttype=initiatief",
+         listing("projecten · projecttype=initiatief @@projectkaart,q_initiatieven,4",
                  project_card("proj_fietsen", "Elk jaar", "Fietsen voor geslaagden", "Zodat het vervolgonderwijs bereikbaar is.", "/ons-werk/fietsen/"),
                  project_card("proj_zon", "Khukdi School", "Zonnepanelen", "Een school die haar eigen energie opwekt.", "/ons-werk/zonnepanelen/"),
                  project_card("proj_solar", "Ghadia", "Solarlampjes", "Licht om thuis te kunnen studeren.", "/ons-werk/solarlampjes/"),
@@ -875,19 +885,19 @@ page("evenementen", "Evenementen",
                "hero_events", eye="Doe mee"),
      section(
          section_head("Binnenkort", "Schrijf je in"),
-         listing("evenementen · status IN (aangekondigd, open, vol) · sorteer datum_start ASC",
+         listing("evenementen · status IN (aangekondigd, open, vol) · sorteer datum_start ASC @@eventkaart,q_events_binnenkort,3",
                  event_card("padel", "Inschrijving open"), event_card("rally", "Aangekondigd"),
                  event_card("golf", "Aangekondigd")),
          title="Binnenkort"),
      section(
          section_head("Het hele jaar", "Altijd mogelijk"),
-         listing("evenementen · status=doorlopend", event_card("wijn", "Het hele jaar"),
+         listing("evenementen · status=doorlopend @@eventkaart,q_events_doorlopend,2",event_card("wijn", "Het hele jaar"),
                  event_card("reis", "Op aanvraag"), cols=2),
          title="Doorlopend", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
          divider_bottom=("curve", "#FFFFFF", 50)),
      section(
          section_head("Terugblikken", "Zo was het vorig jaar"),
-         news_cards(),
+         news_cards("q_nieuws_events"),
          title="Terugblikken (nieuws · categorie=evenementen)"),
      cta_band("Zichtbaar als sponsor bij een evenement?", "Met een Sona- of Chandee-pakket doe je mee én staat je bedrijf bij het evenement vermeld.",
               [button("Bekijk de sponsorpakketten", "/steun-ons/bedrijven/", style="light")], eye="Voor bedrijven"),
@@ -968,7 +978,7 @@ page("bedrijven", "Voor bedrijven",
          title="Waarom"),
      section(
          section_head("Sponsorpakketten", "Kies het pakket dat bij je past", align="center"),
-         listing("WC Product Query · product_cat=sponsorpakket · sorteer prijs DESC",
+         listing("WC Product Query · product_cat=sponsorpakket · sorteer prijs DESC @@pakketkaart,q_pakketten,3",
                  card(eyebrow("€ 2.500 per jaar"), heading("Sona (Goud)", "h3", size_px=28),
                       icon_list(["Alles uit Peetal", "Deelname golftoernooi én Sampark Rally", "Naamsvermelding bij het gekozen evenement"]),
                       button("Kies Sona", "/product/sona-goud/", full=True), title="Kaart · Sona", bg="e64974d"),
@@ -1075,6 +1085,249 @@ page("contact", "Contact",
          title="Contact"),
      seo=("Contact | Stichting Sampark", "Neem contact op met Stichting Sampark in Genemuiden."))
 
+
+# ---------------------------------------------------------------- JetEngine listing items
+# Ontwerp van de kaarten als JetEngine-listing (Elementor). jetengine-setup.php maakt de listings
+# aan en zet deze inhoud erin. Alleen JetEngine Dynamic-widgets, dus geen Elementor Pro nodig.
+
+
+def dyn_field(source, key, tag="div", typo=None, color="text", size_px=None, fmt=None, hide=True,
+              filt=None, upper=False, extra=None):
+    st = {"dynamic_field_source": source, "field_tag": tag, "hide_if_empty": "yes" if hide else "",
+          "__globals__": {"field_color": g_color(color)}}
+    if source == "object":
+        st["dynamic_field_post_object"] = key
+    else:
+        st["dynamic_field_post_meta"] = key
+    if fmt:
+        st["dynamic_field_custom"] = "yes"
+        st["dynamic_field_format"] = fmt
+    if typo:
+        st["__globals__"]["field_typography_typography"] = g_type(typo)
+    if size_px:
+        st["field_typography_typography"] = "custom"
+        st["field_typography_font_size"] = size(size_px)
+    if upper:
+        st["field_typography_text_transform"] = "uppercase"
+    if filt:
+        st["dynamic_field_filter"] = "yes"
+        st.update(filt)
+    if extra:
+        st.update(extra)
+    return widget("jet-listing-dynamic-field", st)
+
+
+def dyn_image(source="post_thumbnail", height=220, fit="cover", radius=14, link=True, link_source="_permalink",
+              new_tab=False):
+    st = {"dynamic_image_source": source, "dynamic_image_size": "large", "image_width": size(100, "%"),
+          "image_height": size(height), "image_object_fit": fit, "image_border_radius": dims(radius),
+          "hide_if_empty": "", "lazy_load_image": "yes"}
+    if link:
+        st.update({"linked_image": "yes", "image_link_source": link_source})
+        if new_tab:
+            st["open_in_new"] = "yes"
+    return widget("jet-listing-dynamic-image", st)
+
+
+def dyn_link(label, style="outline", source="_permalink"):
+    st = {"dynamic_link_source": source, "link_label": label, "link_wrapper_tag": "div",
+          "link_padding": dims(10, 22), "link_border_radius": dims(4),
+          "link_typography_typography": "custom", "link_typography_font_family": "Patrick Hand",
+          "link_typography_text_transform": "uppercase", "link_typography_font_size": size(16)}
+    if style == "outline":
+        st.update({"link_border_border": "solid", "link_border_width": dims(1)})
+        st["__globals__"] = {"link_color": g_color("accent"), "link_border_color": g_color("accent"),
+                             "link_icon_color": g_color("accent")}
+    else:
+        st.update({"link_bg_background": "classic", "link_bg_hover_background": "classic"})
+        st["__globals__"] = {"link_color": g_color("658acb6"), "link_bg_color": g_color("accent"),
+                             "link_bg_hover_color": g_color("primary"), "link_icon_color": g_color("658acb6")}
+    return widget("jet-listing-dynamic-link", st)
+
+
+def listing_card(*kids, title, bg="658acb6", pad=20):
+    c = container(*kids, title=title, bg_global=bg, radius=20, pad=dims(pad), gap_px=12, css_classes="sp-card",
+                  extra={"min_height": size(100, "%")})
+    return [c]
+
+
+CHIP = {"field_bg_background": "classic", "field_bg_color": "#ECC0AE", "field_padding": dims(4, 12),
+        "field_border_radius": dims(999), "field_display": "inline",
+        "field_typography_typography": "custom", "field_typography_font_family": "Patrick Hand",
+        "field_typography_text_transform": "uppercase", "field_typography_font_size": size(15)}
+
+LISTINGS = {
+    "projectkaart": ("Projectkaart", "projecten", listing_card(
+        dyn_image(),
+        container(dyn_field("meta", "aantal", tag="span", typo="accent", color="accent", size_px=18),
+                  dyn_field("meta", "eenheid", tag="span", typo="accent", color="accent", size_px=18),
+                  dyn_field("meta", "soort_werk", tag="span", typo="accent", color="accent", size_px=18, fmt="· %s"),
+                  direction="row", gap_px=6, mobile_column=False, wrap=True, title="Kenmerken"),
+        dyn_field("object", "post_title", tag="h3", typo="primary", size_px=26),
+        dyn_field("meta", "tagline", tag="p"),
+        dyn_link("Bekijk dit project"),
+        title="Projectkaart")),
+    "eventkaart": ("Evenementkaart", "evenementen", listing_card(
+        dyn_image(height=200),
+        dyn_field("meta", "status", tag="span", color="primary",
+                  filt={"filter_callback": "jet_engine_label_by_glossary", "labels_by_glossary": "{{glossary:status}}"},
+                  extra=CHIP),
+        dyn_field("meta", "datum_start", tag="span", typo="accent", color="accent", size_px=18,
+                  filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+        dyn_field("meta", "datum_label", tag="span", typo="accent", color="accent", size_px=18),
+        dyn_field("object", "post_title", tag="h3", typo="primary", size_px=26),
+        dyn_field("object", "post_excerpt", tag="p"),
+        dyn_link("Meer informatie", style="primary"),
+        title="Evenementkaart")),
+    "sponsorlogo": ("Sponsorlogo", "sponsors", [container(
+        dyn_image(height=80, fit="contain", radius=0, link=True, link_source="website", new_tab=True),
+        title="Logo", bg="#FFFFFF", radius=999, pad=dims(24), align="center", justify="center",
+        extra={"width": size(140), "min_height": size(140), "width_mobile": size(120), "min_height_mobile": size(120)})]),
+    "nieuwskaart": ("Nieuwskaart", "post", listing_card(
+        dyn_image(),
+        dyn_field("object", "post_date", tag="span", typo="accent", color="accent", size_px=18,
+                  filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+        dyn_field("object", "post_title", tag="h3", typo="primary", size_px=24),
+        dyn_field("object", "post_excerpt", tag="p"),
+        dyn_link("Lees meer"),
+        title="Nieuwskaart")),
+    "pakketkaart": ("Sponsorpakket", "product", listing_card(
+        dyn_field("meta", "_price", tag="span", typo="accent", color="accent", size_px=18,
+                  fmt="€ %s per jaar", filt={"filter_callback": "number_format", "num_dec_point": ",",
+                                            "num_thousands_sep": ".", "num_decimals": 0}),
+        dyn_field("object", "post_title", tag="h3", typo="primary", size_px=28),
+        dyn_field("object", "post_excerpt", tag="div"),
+        dyn_link("Kies dit pakket", style="primary"),
+        title="Pakketkaart", bg="e64974d", pad=28)),
+    "kaartpopup": ("Kaart-popup school", "projecten", [container(
+        dyn_image(height=120, radius=10),
+        container(dyn_field("meta", "aantal", tag="span", typo="accent", color="accent", size_px=16),
+                  dyn_field("meta", "eenheid", tag="span", typo="accent", color="accent", size_px=16),
+                  direction="row", gap_px=6, mobile_column=False, title="Aantal"),
+        dyn_field("object", "post_title", tag="h4", typo="primary", size_px=20),
+        dyn_link("Bekijk de school", style="primary"),
+        title="Popup", gap_px=8, pad=dims(4))]),
+}
+
+
+def write_listings():
+    out = OUT.parent / "listings"
+    out.mkdir(exist_ok=True)
+    for key, (title, source, content) in LISTINGS.items():
+        (out / f"{key}.json").write_text(json.dumps({"key": key, "title": title, "source": source,
+                                                     "content": content}, ensure_ascii=False, indent=1))
+
+
+# ---------------------------------------------------------------- inhoud voor JetEngine (content.json)
+
+FUND_KEYS = [("docent", "docenten"), ("sport", "sport"), ("lesmateriaal", "lesmateriaal"), ("schoolarts", "schoolarts"),
+             ("gezondheid", "gezondheidszorg"), ("fiets", "fietsen"), ("elektriciteit", "vaste_lasten")]
+
+
+def fund_keys(labels):
+    keys = []
+    for label in labels:
+        low = label.lower()
+        for k, v in FUND_KEYS:
+            if k in low and v not in keys:
+                keys.append(v)
+    return keys
+
+
+def content_json():
+    projects = []
+    for i, sch in enumerate(SCHOOLS):
+        body = f"<h2>{sch['story_title']}</h2>" + "".join(f"<p>{p}</p>" for p in sch["story"])
+        projects.append({
+            "slug": sch["slug"], "title": sch["name"], "type": "school", "regio": "budaun", "order": i,
+            "excerpt": sch["intro"], "content": body, "thumb": sch["img"], "gallery": sch["gallery"],
+            "meta": {"tagline": sch["tagline"], "aantal": sch["pupils"], "eenheid": "leerlingen",
+                     "soort_werk": sch["work"], "dorp": sch["village"], "extra_titel": sch["extra_title"],
+                     "extra_tekst": sch["extra"], "we_financieren": fund_keys(sch["funds"]),
+                     "feiten": [{"waarde": v, "label": l} for v, l in sch["facts"]],
+                     "voorzieningen": [{"voorziening": v} for v in sch["facilities"]],
+                     "momenten": [{"moment": m, "tekst": t} for m, t in sch["moments"]]},
+            "lat": sch["lat"], "lng": sch["lng"]})
+    delhi_intro = ("De trek van het platteland naar de grote steden is groot, maar veel mensen vinden daar geen baan en "
+                   "belanden in de sloppenwijken. Om jongvolwassenen meer kans op een betere toekomst te geven, "
+                   "biedt Sampark in New Delhi gewilde beroepsopleidingen aan.")
+    for i, (slug, title, n, tag, img) in enumerate([
+            ("computerspecialist", "Computerspecialist", 20, "Digitale vaardigheden voor een kantoorbaan.", "proj_computer"),
+            ("modinette", "Modinette", 29, "Kleding maken en een eigen inkomen.", "proj_modinette"),
+            ("schoonheidsspecialiste", "Schoonheidsspecialiste", 24, "Een vak met vraag in de stad.", "proj_beauty")]):
+        projects.append({"slug": slug, "title": title, "type": "opleiding", "regio": "new-delhi", "order": 10 + i,
+                         "excerpt": delhi_intro, "content": f"<p>{delhi_intro}</p>", "thumb": img, "gallery": [img],
+                         "meta": {"tagline": tag, "aantal": n, "eenheid": "studenten", "soort_werk": "Doorlopend",
+                                  "dorp": "New Delhi"},
+                         "lat": DELHI["lat"], "lng": DELHI["lng"]})
+    for i, (slug, title, tag, img, link) in enumerate([
+            ("fietsen", "Fietsen voor geslaagden", "Zodat het vervolgonderwijs bereikbaar is.", "proj_fietsen", ""),
+            ("zonnepanelen", "Zonnepanelen", "Een school die haar eigen energie opwekt.", "proj_zon", ""),
+            ("solarlampjes", "Solarlampjes", "Licht om thuis te kunnen studeren.", "proj_solar", ""),
+            ("stichting-accrete", "Stichting Accrete", "Leerlingen in Nederland en India verbonden.", "proj_accrete",
+             "https://ichthus.accrete.nl/basisschool/stichtingsampark")]):
+        projects.append({"slug": slug, "title": title, "type": "initiatief", "regio": "budaun", "order": 20 + i,
+                         "excerpt": tag, "content": f"<p>{tag}</p>", "thumb": img, "gallery": [img],
+                         "meta": {"tagline": tag, "soort_werk": "Doorlopend", "externe_link": link}})
+    events = [
+        {"slug": "padel-toernooi", "order": 1, "title": "Padel toernooi", "thumb": "event_padel",
+         "excerpt": "Een sportieve middag bij Peakz Padel Zwolle. € 89 per team van twee.",
+         "content": "<p>Of je nu net begint met padel of al aardig wat wedstrijden hebt gespeeld, iedereen is welkom. We spelen in drie categorieën: Starter, Intermediate en Advanced.</p><p>Deelname kost € 89 per team van twee personen, inclusief twee consumptiebonnen per persoon. Inschrijven gaat via Peakz Padel.</p>",
+         "meta": {"status": "open", "datum_start": "2026-11-21", "tijd": "12.00 – 17.00 uur",
+                  "locatie_tekst": "Peakz Padel Zwolle, Hanzelaan 95, Zwolle", "prijs_label": "€ 89 per team van twee",
+                  "externe_inschrijflink": "https://www.peakzpadel.nl/reserveren/kalender-event?id=f450c14a-f944-4996-9f84-fc4d85b76739"}},
+        {"slug": "wijnactie", "order": 4, "title": "Wijnactie", "thumb": "event_wijn",
+         "excerpt": "Rood, wit en alcoholvrij. € 43,50 per doos van zes flessen, opbrengst naar de scholen.",
+         "content": "<p>Ieder jaar stellen we vanuit Stichting Sampark een tweetal wijnen samen, en dit jaar ook een alcoholvrije. Afhalen of laten thuisbezorgen.</p>",
+         "meta": {"status": "doorlopend", "datum_label": "Het hele jaar", "prijs_label": "€ 43,50 per doos"}},
+        {"slug": "sampark-rally", "order": 2, "title": "Sampark Rally", "thumb": "event_rally",
+         "excerpt": "Een dag met je eigen klassieker door Oost-Nederland. € 600 per equipe.",
+         "content": "<p>Een compleet verzorgde dag voor twee personen in een eigen auto, afgesloten met een diner en de prijsuitreiking.</p>",
+         "meta": {"status": "aangekondigd", "datum_label": "September 2027 · datum volgt", "prijs_label": "€ 600 per equipe", "max_deelnemers": 60}},
+        {"slug": "golftoernooi", "order": 3, "title": "Golftoernooi", "thumb": "event_golf",
+         "excerpt": "Wedstrijd, clinic of masterclass op Het Rijk van Nunspeet. Vanaf € 300 p.p.",
+         "content": "<p>Speel mee in de wedstrijd om de wisselbeker, of doe mee aan een clinic voor beginners of een masterclass voor gevorderden.</p>",
+         "meta": {"status": "aangekondigd", "datum_label": "Oktober 2027 · datum volgt", "locatie_tekst": "Het Rijk van Nunspeet",
+                  "prijs_label": "€ 300 p.p. of € 1.200 per tafel",
+                  "programma": [{"tijd": "09:30 – 11:00", "onderdeel": "Ontvangst wedstrijdspelers"},
+                                {"tijd": "11:30 – 16:30", "onderdeel": "Wedstrijd (shotgun)"},
+                                {"tijd": "12:00 – 16:30", "onderdeel": "Lunch en clinics"},
+                                {"tijd": "18:00 – 21:00", "onderdeel": "Diner en prijsuitreiking"}]}},
+        {"slug": "project-en-cultuurreis", "order": 5, "title": "Project- en cultuurreis", "thumb": "event_reis",
+         "excerpt": "Reis mee naar India en zie met eigen ogen wat jouw steun doet.",
+         "content": "<p>Regelmatig organiseert Stichting Sampark een reis naar India. Deelnemers maken kennis met het kleurrijke leven daar en zien met eigen ogen het verschil dat hulp kan maken.</p>",
+         "meta": {"status": "doorlopend", "datum_label": "Op aanvraag"}},
+    ]
+    sponsors = [("Venture Group", "logo_venture", "https://venture-group.nl/"), ("Groothuis Bouwgroep", "logo_groothuis", "https://www.groothuisbouwgroep.nl/"),
+                ("Schieven Keizer", "logo_schieven", "https://schievenkeizer.nl/"), ("We for You", "logo_w4y", ""),
+                ("Venttri", "logo_venttri", "https://www.venttri.nl/"), ("Het Rijk van Nunspeet", "logo_rijk", "https://www.golfenophetrijk.nl/nunspeet.html"),
+                ("Arcus IT", "logo_arcus", "https://arcusit.nl/"), ("KVS", "logo_kvs", "https://kvsbv.nl/"),
+                ("Pleijsier Bouw en Onderhoud", "logo_pleijsier", "https://pleijsierbouwenonderhoud.nl/"), ("Positie1", "logo_positie1", "https://positie1.nl/")]
+    news = [
+        {"slug": "nat-maar-onvergetelijk-golftoernooi-2025", "title": "Nat, maar onvergetelijk: Golftoernooi 2025!", "date": "2025-11-11 10:00:00",
+         "thumb": "news_golf_2025", "cat": "evenementen", "events": ["golftoernooi"],
+         "excerpt": "Het jaarlijkse Samparkgolftoernooi was er weer eentje om niet snel te vergeten."},
+        {"slug": "scholen-krijgen-bezoek-uit-canada", "title": "Scholen krijgen bezoek uit Canada!", "date": "2025-09-25 11:00:00",
+         "thumb": "news_canada", "cat": "scholen-leerlingen", "projects": ["kundanpur-school"],
+         "excerpt": "Mark en Sharon Jansen van Mores Textiles kwamen op bezoek bij onze scholen in India."},
+        {"slug": "afscheid-abhishek-pandey", "title": "Afscheid Abhishek Pandey", "date": "2025-09-25 10:00:00",
+         "thumb": "news_abhishek", "cat": "stichting",
+         "excerpt": "We namen op bijzondere wijze afscheid van onze gewaardeerde schoolcoördinator."},
+        {"slug": "zonnepanelen-sampark-school-khukdi", "title": "Zonnepanelen op de school in Khukdi", "date": "2020-10-20 10:00:00",
+         "thumb": "proj_zon", "cat": "scholen-leerlingen", "projects": ["khukdi-school", "zonnepanelen"],
+         "excerpt": "Hoe de school in Khukdi haar eigen energie is gaan opwekken."},
+    ]
+    options = {"cijfer_leerlingen": 1577, "cijfer_cursussen": 600, "cijfer_fietsen": 125, "cijfer_studenten_delhi": 73,
+               "adres": "Schering 31-33\n8281 JW Genemuiden", "telefoon": "038 385 50 00", "email": "info@sampark.nl",
+               "bereikbaarheid": "Op kantoordagen tussen 9.00 en 17.00 uur", "kvk": "08169359", "rsin": "818925887",
+               "iban": "NL25 ABNA 0578 9231 73", "campagne_aan": "true", "campagne_titel": "Wijnactie",
+               "campagne_tekst": "Rood, wit en alcoholvrij", "campagne_link": "/evenementen/wijnactie/",
+               "bestuur": [{"naam": n, "functie": f, "foto": k} for n, f, k in BOARD],
+               "tijdlijn": [{"jaar": y, "titel": t, "tekst": b} for y, t, b in TIMELINE]}
+    return {"projects": projects, "events": events, "sponsors": [{"title": t, "thumb": k, "website": w, "order": i}
+                                                                  for i, (t, k, w) in enumerate(sponsors)],
+            "news": news, "options": options}
+
 # ---------------------------------------------------------------- schrijven
 
 
@@ -1087,7 +1340,9 @@ def main():
                "parent": p["parent"], "menu_order": i, "seo": p["seo"], "content": p["content"],
                "page_settings": {"hide_title": "yes"}}
         (OUT / f"{p['slug']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
-    print(f"{len(PAGES)} pagina's geschreven naar {OUT}")
+    write_listings()
+    (OUT.parent / "content.json").write_text(json.dumps(content_json(), ensure_ascii=False, indent=1))
+    print(f"{len(PAGES)} pagina's en {len(LISTINGS)} listings geschreven naar {OUT.parent}")
 
 
 if __name__ == "__main__":

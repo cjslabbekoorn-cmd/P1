@@ -1945,7 +1945,12 @@
       "flex_direction_mobile": "column",
       "flex_wrap": "wrap",
       "_title": "LISTING · evenementen · status IN (aangekondigd, open, doorlopend) · sorteer datum_start ASC · max 3",
-      "flex_align_items": "stretch"
+      "flex_align_items": "stretch",
+      "_sp_jet": {
+       "listing": "eventkaart",
+       "query": "q_events_home",
+       "cols": 3
+      }
      },
      "elements": [
       {
@@ -3096,7 +3101,12 @@
       "flex_direction_mobile": "row",
       "flex_wrap": "wrap",
       "flex_justify_content": "center",
-      "_title": "LISTING · sponsors (actief=true, sorteer op niveau + volgorde)"
+      "_title": "LISTING · sponsors (actief=true, sorteer op niveau + volgorde)",
+      "_sp_jet": {
+       "listing": "sponsorlogo",
+       "query": "q_sponsors",
+       "cols": 6
+      }
      },
      "elements": [
       {
@@ -4400,7 +4410,12 @@
       "flex_direction_mobile": "column",
       "flex_wrap": "wrap",
       "_title": "LISTING · nieuws (3 nieuwste, of gerelateerd via relatie)",
-      "flex_align_items": "stretch"
+      "flex_align_items": "stretch",
+      "_sp_jet": {
+       "listing": "nieuwskaart",
+       "query": "q_nieuws",
+       "cols": 3
+      }
      },
      "elements": [
       {

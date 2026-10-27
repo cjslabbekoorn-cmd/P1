@@ -1,0 +1,161 @@
+{
+ "key": "pakketkaart",
+ "title": "Sponsorpakket",
+ "source": "product",
+ "content": [
+  {
+   "id": "70262c7",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "12",
+     "row": "12",
+     "isLinked": true,
+     "unit": "px",
+     "size": 12
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "28",
+     "right": "28",
+     "bottom": "28",
+     "left": "28",
+     "isLinked": true
+    },
+    "background_background": "classic",
+    "border_radius": {
+     "unit": "px",
+     "top": "20",
+     "right": "20",
+     "bottom": "20",
+     "left": "20",
+     "isLinked": true
+    },
+    "_title": "Pakketkaart",
+    "css_classes": "sp-card",
+    "min_height": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=e64974d"
+    }
+   },
+   "elements": [
+    {
+     "id": "fc96c2a",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-field",
+     "settings": {
+      "dynamic_field_source": "meta",
+      "field_tag": "span",
+      "hide_if_empty": "yes",
+      "__globals__": {
+       "field_color": "globals/colors?id=accent",
+       "field_typography_typography": "globals/typography?id=accent"
+      },
+      "dynamic_field_post_meta": "_price",
+      "dynamic_field_custom": "yes",
+      "dynamic_field_format": "€ %s per jaar",
+      "field_typography_typography": "custom",
+      "field_typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "dynamic_field_filter": "yes",
+      "filter_callback": "number_format",
+      "num_dec_point": ",",
+      "num_thousands_sep": ".",
+      "num_decimals": 0
+     },
+     "elements": []
+    },
+    {
+     "id": "600a21d",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-field",
+     "settings": {
+      "dynamic_field_source": "object",
+      "field_tag": "h3",
+      "hide_if_empty": "yes",
+      "__globals__": {
+       "field_color": "globals/colors?id=text",
+       "field_typography_typography": "globals/typography?id=primary"
+      },
+      "dynamic_field_post_object": "post_title",
+      "field_typography_typography": "custom",
+      "field_typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "7993d0d",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-field",
+     "settings": {
+      "dynamic_field_source": "object",
+      "field_tag": "div",
+      "hide_if_empty": "yes",
+      "__globals__": {
+       "field_color": "globals/colors?id=text"
+      },
+      "dynamic_field_post_object": "post_excerpt"
+     },
+     "elements": []
+    },
+    {
+     "id": "ab824af",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-link",
+     "settings": {
+      "dynamic_link_source": "_permalink",
+      "link_label": "Kies dit pakket",
+      "link_wrapper_tag": "div",
+      "link_padding": {
+       "unit": "px",
+       "top": "10",
+       "right": "22",
+       "bottom": "10",
+       "left": "22",
+       "isLinked": false
+      },
+      "link_border_radius": {
+       "unit": "px",
+       "top": "4",
+       "right": "4",
+       "bottom": "4",
+       "left": "4",
+       "isLinked": true
+      },
+      "link_typography_typography": "custom",
+      "link_typography_font_family": "Patrick Hand",
+      "link_typography_text_transform": "uppercase",
+      "link_typography_font_size": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "link_bg_background": "classic",
+      "link_bg_hover_background": "classic",
+      "__globals__": {
+       "link_color": "globals/colors?id=658acb6",
+       "link_bg_color": "globals/colors?id=accent",
+       "link_bg_hover_color": "globals/colors?id=primary",
+       "link_icon_color": "globals/colors?id=658acb6"
+      }
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

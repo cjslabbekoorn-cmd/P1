@@ -1,0 +1,100 @@
+{
+ "key": "sponsorlogo",
+ "title": "Sponsorlogo",
+ "source": "sponsors",
+ "content": [
+  {
+   "id": "158f306",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "24",
+     "right": "24",
+     "bottom": "24",
+     "left": "24",
+     "isLinked": true
+    },
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "border_radius": {
+     "unit": "px",
+     "top": "999",
+     "right": "999",
+     "bottom": "999",
+     "left": "999",
+     "isLinked": true
+    },
+    "flex_align_items": "center",
+    "flex_justify_content": "center",
+    "_title": "Logo",
+    "width": {
+     "unit": "px",
+     "size": 140,
+     "sizes": []
+    },
+    "min_height": {
+     "unit": "px",
+     "size": 140,
+     "sizes": []
+    },
+    "width_mobile": {
+     "unit": "px",
+     "size": 120,
+     "sizes": []
+    },
+    "min_height_mobile": {
+     "unit": "px",
+     "size": 120,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "8788ede",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-image",
+     "settings": {
+      "dynamic_image_source": "post_thumbnail",
+      "dynamic_image_size": "large",
+      "image_width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "image_height": {
+       "unit": "px",
+       "size": 80,
+       "sizes": []
+      },
+      "image_object_fit": "contain",
+      "image_border_radius": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "hide_if_empty": "",
+      "lazy_load_image": "yes",
+      "linked_image": "yes",
+      "image_link_source": "website",
+      "open_in_new": "yes"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

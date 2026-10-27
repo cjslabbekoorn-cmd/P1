@@ -669,7 +669,12 @@
       "flex_direction_mobile": "column",
       "flex_wrap": "wrap",
       "_title": "LISTING · WC Product Query · product_cat=sponsorpakket · sorteer prijs DESC",
-      "flex_align_items": "stretch"
+      "flex_align_items": "stretch",
+      "_sp_jet": {
+       "listing": "pakketkaart",
+       "query": "q_pakketten",
+       "cols": 3
+      }
      },
      "elements": [
       {
@@ -1270,7 +1275,12 @@
       "flex_direction_mobile": "row",
       "flex_wrap": "wrap",
       "flex_justify_content": "center",
-      "_title": "LISTING · sponsors (actief=true, sorteer op niveau + volgorde)"
+      "_title": "LISTING · sponsors (actief=true, sorteer op niveau + volgorde)",
+      "_sp_jet": {
+       "listing": "sponsorlogo",
+       "query": "q_sponsors",
+       "cols": 6
+      }
      },
      "elements": [
       {

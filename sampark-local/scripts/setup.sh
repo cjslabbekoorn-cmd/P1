@@ -57,7 +57,19 @@ for zip in /premium/*.zip; do
 	[ -e "$zip" ] || continue
 	found=1
 	echo "  $zip"
-	wp plugin install "$zip" --activate --force
+	# Zelf uitpakken: zips van een Mac bevatten een __MACOSX-map die wp plugin install in de war brengt
+	tmp=$(mktemp -d)
+	export SP_ZIP="$zip" SP_TMP="$tmp"
+	wp eval 'WP_Filesystem(); $r = unzip_file( getenv( "SP_ZIP" ), getenv( "SP_TMP" ) ); if ( is_wp_error( $r ) ) { WP_CLI::error( $r->get_error_message() ); }'
+	for pdir in "$tmp"/*/; do
+		slug=$(basename "$pdir")
+		[ "$slug" = "__MACOSX" ] && continue
+		ls "$pdir"*.php >/dev/null 2>&1 || continue
+		mkdir -p "/var/www/html/wp-content/plugins/$slug"
+		cp -R "$pdir." "/var/www/html/wp-content/plugins/$slug/"
+		wp plugin activate "$slug"
+	done
+	rm -r "$tmp"
 done
 for dir in /premium/*/; do
 	ls "$dir"*.php >/dev/null 2>&1 || continue
@@ -103,6 +115,7 @@ page() {
 
 log "Huisstijl, beelden en pagina's (bouwplan v2)"
 wp eval-file /scripts/build-site.php
+
 
 NIEUWS_ID=$(page nieuws "Nieuws")
 VOORW_ID=$(page algemene-voorwaarden "Algemene voorwaarden")
@@ -193,6 +206,18 @@ product witte-wijn "Witte wijn" 43.50 "$C_WIJN" "Per doos (6 flessen)."
 product alcoholvrij "Alcoholvrij mousserend" 0 "$C_WIJN" "Per doos (6 flessen). Prijs nog invullen." draft
 product ticket-sampark-rally "Ticket Sampark Rally" 600 "$C_RALLY" "1 ticket per auto, twee deelnemers."
 product golftoernooi "Golftoernooi" 300 "$C_GOLF" "Per deelnemer. Een tafel voor 4 personen is € 1.200."
+
+# ---------------------------------------------------------------- JetEngine
+# Na de nieuwscategorieën en producten, want de inhoud en queries verwijzen daarnaar
+if wp plugin is-active jet-engine; then
+	log "JetEngine: posttypes, velden, relaties, Options Page, queries, listings en inhoud"
+	# twee keer: queries die in de eerste ronde zijn aangemaakt, zijn pas in de tweede ronde geladen
+	wp eval-file /scripts/jetengine-setup.php
+	wp eval-file /scripts/jetengine-setup.php >/dev/null
+	log "Pagina's opnieuw opbouwen met JetEngine Listing Grids en Map Listing"
+	wp eval-file /scripts/build-site.php >/dev/null
+	wp rewrite flush --hard >/dev/null 2>&1 || true
+fi
 
 # ---------------------------------------------------------------- menu's
 log "Menu's"

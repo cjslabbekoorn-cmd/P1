@@ -244,6 +244,55 @@ $fill = function ( string $json ) use ( $media ) {
 	return $json;
 };
 
+// Met JetEngine actief: statische voorbeeldblokken vervangen door echte Listing Grids en de kaart
+// door een JetEngine Map Listing. Zonder JetEngine blijven de statische blokken staan.
+$jet = function_exists( 'jet_engine' ) ? get_option( 'sampark_jet', [] ) : [];
+$jetify = function ( array $elements ) use ( &$jetify, $jet ) {
+	foreach ( $elements as $i => $el ) {
+		$spec = $el['settings']['_sp_jet'] ?? null;
+		if ( $spec && ! empty( $jet['listings'][ $spec['listing'] ] ) && ! empty( $jet['queries'][ $spec['query'] ] ) ) {
+			$cols = (int) $spec['cols'];
+			$elements[ $i ] = [
+				'id' => $el['id'], 'elType' => 'widget', 'widgetType' => 'jet-listing-grid', 'elements' => [],
+				'settings' => [
+					'_title' => $el['settings']['_title'] ?? 'Listing Grid',
+					'lisitng_id' => (string) $jet['listings'][ $spec['listing'] ],
+					'columns' => (string) $cols, 'columns_tablet' => (string) min( 2, $cols ), 'columns_mobile' => '1',
+					'custom_query' => 'yes', 'custom_query_id' => (string) $jet['queries'][ $spec['query'] ],
+					'posts_num' => 12, 'equal_columns_height' => 'yes',
+					'horizontal_gap' => [ 'unit' => 'px', 'size' => 24 ], 'vertical_gap' => [ 'unit' => 'px', 'size' => 24 ],
+					'not_found_message' => 'Hier staat nu niets.',
+				],
+			];
+			continue;
+		}
+		if ( 'html' === ( $el['widgetType'] ?? '' ) && str_starts_with( $el['settings']['_title'] ?? '', 'KAART' )
+			&& ! empty( $jet['listings']['kaartpopup'] ) && ! empty( $jet['queries']['q_kaart'] ) ) {
+			$h = preg_match( '/sp-map__canvas" style="min-height:(\d+)px/', $el['settings']['html'], $mm ) ? (int) $mm[1] : 520;
+			$elements[ $i ] = [
+				'id' => $el['id'], 'elType' => 'widget', 'widgetType' => 'jet-engine-maps-listing', 'elements' => [],
+				'settings' => [
+					'_title' => 'Kaart · JetEngine Map Listing (projecten met Map-veld locatie)',
+					'lisitng_id' => (string) $jet['listings']['kaartpopup'],
+					'custom_query' => 'yes', 'custom_query_id' => (string) $jet['queries']['q_kaart'],
+					'address_field' => 'locatie', 'posts_num' => 50,
+					'map_height' => [ 'unit' => 'px', 'size' => $h ], 'auto_center' => 'yes', 'max_zoom' => 12, 'min_zoom' => 4,
+					'marker_clustering' => 'yes', 'cluster_radius' => 60,
+					'marker_type' => 'icon', 'marker_icon' => [ 'value' => 'fas fa-map-marker-alt', 'library' => 'fa-solid' ],
+					'marker_icon_size' => [ 'unit' => 'px', 'size' => 34 ], 'marker_icon_color' => '#963322',
+					'marker_bg_color' => 'rgba(0,0,0,0)', 'marker_color' => '#963322',
+					'popup_width' => 260, 'popup_pin_color' => '#ffffff',
+				],
+			];
+			continue;
+		}
+		if ( ! empty( $el['elements'] ) ) {
+			$elements[ $i ]['elements'] = $jetify( $el['elements'] );
+		}
+	}
+	return $elements;
+};
+
 $files = glob( SP_PAGES . '*.json' );
 usort( $files, fn( $a, $b ) => ( json_decode( file_get_contents( $a ), true )['menu_order'] ?? 0 ) <=> ( json_decode( file_get_contents( $b ), true )['menu_order'] ?? 0 ) );
 
@@ -269,7 +318,7 @@ foreach ( $files as $file ) {
 		WP_CLI::warning( "Pagina {$doc['slug']}: " . $id->get_error_message() );
 		continue;
 	}
-	$data = $fill( wp_json_encode( $doc['content'], JSON_UNESCAPED_UNICODE ) );
+	$data = $fill( wp_json_encode( $jet ? $jetify( $doc['content'] ) : $doc['content'], JSON_UNESCAPED_UNICODE ) );
 	update_post_meta( $id, '_elementor_data', wp_slash( $data ) );
 	update_post_meta( $id, '_elementor_edit_mode', 'builder' );
 	update_post_meta( $id, '_elementor_template_type', 'wp-page' );
