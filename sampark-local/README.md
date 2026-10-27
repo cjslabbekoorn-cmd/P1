@@ -1,6 +1,6 @@
 # Sampark lokaal (Docker Desktop)
 
-Lokale WordPress-omgeving om de nieuwe structuur van stichtingsampark.nl op te bouwen, volgens `docs/sampark/structuurvoorstel.html`.
+Lokale WordPress-omgeving voor de nieuwe stichtingsampark.nl, volgens `docs/sampark/bouwplan.html` (v2). Het eerste voorstel met de analyse staat in `docs/sampark/structuurvoorstel.html`.
 
 | Dienst      | Adres                         |
 |-------------|-------------------------------|
@@ -35,20 +35,35 @@ Het setupscript kun je altijd opnieuw draaien, bijvoorbeeld nadat je zips hebt t
 
 - WordPress in het Nederlands, permalinks `/%postname%/`, tijdzone Amsterdam, niet indexeerbaar.
 - Thema Hello Elementor, plus WooCommerce, Elementor, Yoast SEO en Redirection. De zips uit `plugins/premium/` worden geïnstalleerd.
-- Pagina's: Home (voorpagina), Nieuws (berichtenpagina), Steun ons, Sponsors, Over ons met ANBI & financiën, Contact, Algemene voorwaarden, Privacyverklaring, Sitemap, en de Woo-pagina's (`/shop/`, `/winkelwagen/`, `/afrekenen/`, `/mijn-account/`).
+- De huisstijl als Elementor-kit, 1-op-1 van staging: kleuren, Spectral / Patrick Hand / Aptos, knoppen, formuliervelden, afbeeldingsradius en containerbreedte. Oude kleuren van de vorige site zijn weggelaten.
+- Ongeveer 50 beelden van staging (hero's, scholen, opleidingen, bestuur, sponsorlogo's) en de getekende iconen uit `assets/icons/`.
+- De pagina's uit het bouwplan (`docs/sampark/bouwplan.html`), gebouwd met Elementor-containers: Home, Ons werk, Evenementen, Steun ons met Doneren en Voor bedrijven, Over ons met ANBI & financiën, en Contact. Plus Nieuws (berichtenpagina), de juridische pagina's en de Woo-pagina's (`/winkelwagen/`, `/afrekenen/`, `/mijn-account/`, `/shop/`).
 - Nieuwscategorieën: Scholen & leerlingen, Evenementen, Sponsors & partners, Stichting (standaard).
 - Productcategorieën en de 10 producten met prijzen. "Alcoholvrij mousserend" staat als concept, omdat de prijs nog ingevuld moet worden.
-- Menu's: Hoofdmenu, Footer – Direct naar, Footer – Juridisch. Wijs ze toe in het Elementor Nav Menu-widget van de header/footer.
+- Menu's: Hoofdmenu (met submenu's onder Steun ons en Over ons), Topbalk, Footer – Direct naar, Footer – Juridisch.
 
-`/projecten/` en `/evenementen/` bestaan nog niet; die maakt JetEngine aan als CPT-archief (zie hieronder).
+Header en footer zijn lokaal die van Hello Elementor, met wat CSS uit `mu-plugins/sampark-styles.php`. In de echte build worden het Theme Builder-templates (Pro), en die CSS gaat naar Site Settings › Custom CSS.
+
+## Pagina's aanpassen of opnieuw genereren
+
+De pagina-indeling staat als code in `elementor/build.py`. Dat script schrijft per pagina een Elementor-JSON naar `elementor/pages/`. `scripts/build-site.php` zet die in WordPress en vult de beelden in.
+
+```sh
+python3 elementor/build.py                                     # JSON opnieuw genereren
+docker compose run --rm wpcli eval-file /scripts/build-site.php  # pagina's bijwerken
+```
+
+Let op: `build-site.php` overschrijft de Elementor-inhoud van deze pagina's. Wil je een pagina met de hand in Elementor verder bouwen, haal hem dan uit `elementor/pages/` of draai het script niet meer.
+
+Blokken die een JetEngine Listing Grid worden, hebben in de Elementor Navigator een titel die begint met `LISTING ·`, met de query erbij. De kaarten erin zijn het ontwerp van het listing item. De JSON-bestanden zijn ook los te importeren op staging (Elementor › Templates › Importeren); de beeld-placeholders (`{{img:…}}`) zijn dan wel leeg.
 
 ## Handmatig in JetEngine
 
 Positie1 richt dit altijd via de JetEngine-interface in, zodat het exporteerbaar en overdraagbaar blijft. Zet bij elk datumveld **Save as timestamp** aan.
 
 **Post Types**
-- `evenementen` (archief aan, slug `evenementen`): status (select: aangekondigd / open / vol / doorlopend / afgelopen), datum_start, datum_eind, tijd, locatie, inschrijving_tot, prijs_label, max_deelnemers, programma (repeater: tijd + onderdeel), galerij.
-- `projecten` (archief aan, slug `projecten`): tagline, aantal, soort_werk (nieuwbouw / renovatie / doorlopend), sinds, we_financieren (checkbox), externe_link, galerij.
+- `evenementen` (archief uit, slug `evenementen`; de pagina /evenementen/ is het overzicht): status (select: aangekondigd / open / vol / doorlopend / afgelopen), datum_start, datum_eind, tijd, locatie, inschrijving_tot, prijs_label, max_deelnemers, externe_inschrijflink, programma (repeater: tijd + onderdeel), galerij.
+- `projecten` (archief uit, rewrite-slug `ons-werk`; de pagina /ons-werk/ is het overzicht): tagline, aantal, eenheid (leerlingen / studenten), soort_werk (nieuwbouw / renovatie / doorlopend), sinds, we_financieren (checkbox), externe_link, galerij.
 - `sponsors` (*publicly queryable* uit): logo, website, actief (switcher), volgorde.
 
 **Taxonomies**

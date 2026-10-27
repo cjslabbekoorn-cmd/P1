@@ -64,6 +64,8 @@ services:
       - ./mu-plugins:/var/www/html/wp-content/mu-plugins:ro
       - ./php.ini:/usr/local/etc/php/conf.d/sampark.ini:ro
       - ./scripts:/scripts:ro
+      - ./elementor:/elementor:ro
+      - ./assets:/assets:ro
       - ./plugins/premium:/premium:ro
       - ./backups:/backups
 

@@ -1,0 +1,975 @@
+{
+ "version": "0.4",
+ "title": "ANBI & financiën",
+ "type": "page",
+ "slug": "anbi",
+ "parent": "over-ons",
+ "menu_order": 7,
+ "seo": [
+  "ANBI-gegevens en jaarverslagen | Stichting Sampark",
+  "RSIN, bestuur, beloningsbeleid, beleidsplan en jaarrekeningen van Stichting Sampark."
+ ],
+ "content": [
+  {
+   "id": "b3568fa",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "background_image": {
+     "url": "{{img:hero_anbi}}",
+     "id": "{{imgid:hero_anbi}}"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 440,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "1e5552e",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "9f37b5c",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "aa27480",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Transparantie",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "49982ed",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "ANBI & financiën",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f30ae0c",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Alle gegevens die we als Algemeen Nut Beogende Instelling publiceren, op één plek.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "80c6908",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "ANBI-gegevens"
+   },
+   "elements": [
+    {
+     "id": "c3992e9",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "66463c8",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Gegevens",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "37de1be",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Gegevens",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e4aeabe",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<dl class='sp-dl'><dt>Naam</dt><dd>Stichting Sampark</dd><dt>RSIN</dt><dd>818925887</dd><dt>KvK</dt><dd>08169359</dd><dt>Adres</dt><dd>Schering 31-33, 8281 JW Genemuiden</dd><dt>Telefoon</dt><dd>038 385 50 00</dd><dt>E-mail</dt><dd>info@sampark.nl</dd><dt>IBAN</dt><dd>NL25 ABNA 0578 9231 73</dd></dl>",
+          "_title": "Dynamic tags · Options › registratie/contact"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "b2f627f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f65052a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Doelstelling",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3211c49",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Het ondersteunen van projecten en initiatieven in India die zich richten op het bestrijden van analfabetisme en armoede, door het aanbieden van scholing: basisonderwijs, voortgezet onderwijs en beroepsopleidingen.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "d72c4c8",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Beloningsbeleid",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f81cba9",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Bestuursleden ontvangen geen beloning. Venture Group stelt medewerkers en middelen beschikbaar.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "c480c06",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Beleidsplan en activiteiten",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c850e97",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>[Tekst uit Options › anbi_teksten: beleidsplan en verslag van de activiteiten.]</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2874800",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Documenten",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "1092257",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "95a8e96",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Documenten",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "27b24cb",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Jaarverslagen en jaarrekeningen",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "482891b",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · Options › anbi_documenten (repeater) · sorteer jaar DESC",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "a8f7dd2",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Document · 2024",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "cec91ab",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "2024",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "468880b",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Jaarrekening</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "b464e1b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Download (pdf)",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7373053",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Document · 2023",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "33ffe58",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "2023",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0ba7f50",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Jaarrekening</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "2cfcf98",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Download (pdf)",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "72ab64a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Document · 2022",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "1865ce6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "2022",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "d78c005",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Jaarrekening</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "a9de5fe",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Download (pdf)",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

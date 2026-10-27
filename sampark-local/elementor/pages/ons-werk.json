@@ -1,0 +1,3289 @@
+{
+ "version": "0.4",
+ "title": "Ons werk",
+ "type": "page",
+ "slug": "ons-werk",
+ "parent": null,
+ "menu_order": 1,
+ "seo": [
+  "Ons werk | Scholen en opleidingen in India | Stichting Sampark",
+  "Vier scholen rond Budaun, drie beroepsopleidingen in New Delhi en initiatieven als fietsen en zonnepanelen."
+ ],
+ "content": [
+  {
+   "id": "bab6ff7",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "background_image": {
+     "url": "{{img:hero_onswerk}}",
+     "id": "{{imgid:hero_onswerk}}"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 440,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "d5ee421",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "28c2032",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "8755e03",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Scholen, opleidingen en initiatieven",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "00778e5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ons werk",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c5eb169",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Onderwijs is de voorwaarde voor een betere toekomst. Daarom bouwen we aan scholen op het platteland en opleidingen in de stad.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "4ba1f78",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Aanpak"
+   },
+   "elements": [
+    {
+     "id": "fc22130",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "f7e6c85",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "b56bdd4",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Onze aanpak",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "bb77508",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Samen met lokale partners",
+          "header_size": "h2"
+         },
+         "elements": []
+        },
+        {
+         "id": "d588ec6",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>We werken samen met de Vincentian Charitable Trust uit New Delhi. Zij zorgen ervoor dat de scholen elke dag open zijn. Wij betalen mee aan wat daarvoor nodig is: van docentsalarissen tot fietsen voor geslaagden.</p><p>Doordat het bestuur onbezoldigd werkt, gaat 95% van elke gift direct naar hulp.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "aa80a40",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "_title": "Cijfers"
+       },
+       "elements": [
+        {
+         "id": "e042bc4",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "8",
+           "row": "8",
+           "isLinked": true,
+           "unit": "px",
+           "size": 8
+          },
+          "content_width": "full",
+          "width": {
+           "unit": "%",
+           "size": 48,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "flex_align_items": "center",
+          "_title": "Cijfer · Leerlingen"
+         },
+         "elements": [
+          {
+           "id": "6fa5f04",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": {
+              "url": "{{img:icon_rugtas}}",
+              "id": "{{imgid:icon_rugtas}}"
+             },
+             "library": "svg"
+            },
+            "size": {
+             "unit": "px",
+             "size": 64,
+             "sizes": []
+            },
+            "align": "center",
+            "__globals__": {
+             "primary_color": "globals/colors?id=cf55c96"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "7d5907c",
+           "elType": "widget",
+           "widgetType": "counter",
+           "settings": {
+            "starting_number": 0,
+            "ending_number": 1577,
+            "suffix": "",
+            "thousand_separator": "yes",
+            "thousand_separator_char": ".",
+            "title": "Leerlingen",
+            "__globals__": {
+             "number_color": "globals/colors?id=primary",
+             "title_color": "globals/colors?id=text",
+             "typography_number_typography": "globals/typography?id=primary"
+            },
+            "typography_title_typography": "custom",
+            "typography_title_font_family": "aptos",
+            "typography_title_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_title_text_transform": "none",
+            "typography_title_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            },
+            "typography_title_font_weight": "400",
+            "typography_number_typography": "custom",
+            "typography_number_font_size": {
+             "unit": "px",
+             "size": 56,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "336e831",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "8",
+           "row": "8",
+           "isLinked": true,
+           "unit": "px",
+           "size": 8
+          },
+          "content_width": "full",
+          "width": {
+           "unit": "%",
+           "size": 48,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "flex_align_items": "center",
+          "_title": "Cijfer · Studenten in Delhi"
+         },
+         "elements": [
+          {
+           "id": "c9dda72",
+           "elType": "widget",
+           "widgetType": "icon",
+           "settings": {
+            "selected_icon": {
+             "value": {
+              "url": "{{img:icon_computer}}",
+              "id": "{{imgid:icon_computer}}"
+             },
+             "library": "svg"
+            },
+            "size": {
+             "unit": "px",
+             "size": 64,
+             "sizes": []
+            },
+            "align": "center",
+            "__globals__": {
+             "primary_color": "globals/colors?id=cf55c96"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "3c368bd",
+           "elType": "widget",
+           "widgetType": "counter",
+           "settings": {
+            "starting_number": 0,
+            "ending_number": 73,
+            "suffix": "",
+            "thousand_separator": "yes",
+            "thousand_separator_char": ".",
+            "title": "Studenten in Delhi",
+            "__globals__": {
+             "number_color": "globals/colors?id=primary",
+             "title_color": "globals/colors?id=text",
+             "typography_number_typography": "globals/typography?id=primary"
+            },
+            "typography_title_typography": "custom",
+            "typography_title_font_family": "aptos",
+            "typography_title_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_title_text_transform": "none",
+            "typography_title_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            },
+            "typography_title_font_weight": "400",
+            "typography_number_typography": "custom",
+            "typography_number_font_size": {
+             "unit": "px",
+             "size": 56,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d3c999a",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Scholen",
+    "_element_id": "scholen"
+   },
+   "elements": [
+    {
+     "id": "cdaf907",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "885524a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Scholen in Budaun",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "dff18e8",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Vier scholen op het platteland",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "e1e2496",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Rond Budaun maken we vier scholen mogelijk. Door te bouwen, te renoveren en te blijven investeren groeit elke school mee met de kinderen.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a04b313",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · projecten · projecttype=school · sorteer titel",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "3aba6c8",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Khukdi School",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "db6ba83",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_khukdi}}",
+           "id": "{{imgid:proj_khukdi}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "06feb82",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "407 leerlingen · Nieuwbouw",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "93dfd7b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Khukdi School",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f4058b6",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Van vijf lokalen naar vijftien.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "a2d49e1",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/khukdi-school/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "ae70873",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Kundanpur School",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "97590f5",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_kundanpur}}",
+           "id": "{{imgid:proj_kundanpur}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "538386d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "329 leerlingen · Renovatie",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "388d1e5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Kundanpur School",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "fc122da",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Waar het begint.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "6094921",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/kundanpur-school/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "8f950e7",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Bilsi School",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "9718e05",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_bilsi}}",
+           "id": "{{imgid:proj_bilsi}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "1fbe83c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "359 leerlingen · Renovatie",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "2818e4d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Bilsi School",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "674ee10",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Leren begint bij de leraar.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "ca89582",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/bilsi-school/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6c14612",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Ghadia School",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f304faa",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_ghadia}}",
+           "id": "{{imgid:proj_ghadia}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "82056af",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "482 leerlingen · Renovatie",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c71e997",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ghadia School",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "bfff37e",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een school midden op het platteland.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "abe9ad2",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/ghadia-school/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a9f8f69",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Opleidingen",
+    "_element_id": "opleidingen",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "564ca21",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "b902ed4",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Opleidingen in New Delhi",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "ff2114f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Een vak leren in de stad",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "5d7d76f",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Veel jongeren trekken van het platteland naar de stad en belanden zonder werk in de sloppenwijken. Met gerichte opleidingen geven we ze een eerlijke kans op een baan.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "8bfa5cc",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · projecten · projecttype=opleiding",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "6ad3b7f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Computerspecialist",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "6d83c87",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_computer}}",
+           "id": "{{imgid:proj_computer}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "374bf3c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "20 studenten",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "19070e0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Computerspecialist",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "18d90ff",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Digitale vaardigheden voor een kantoorbaan.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "47663db",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/computerspecialist/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "f35845d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Modinette",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "9a7df6f",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_modinette}}",
+           "id": "{{imgid:proj_modinette}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "68ae6f9",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "29 studenten",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e7b6ea6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Modinette",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "00a2c59",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Kleding maken en een eigen inkomen.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "bf77a6b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/modinette/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "579cd1f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Schoonheidsspecialiste",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "6b7fc91",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_beauty}}",
+           "id": "{{imgid:proj_beauty}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "2fcf32e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "24 studenten",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "2efeec0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Schoonheidsspecialiste",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "15fdae3",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een vak met vraag in de stad.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "174e3ce",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/schoonheidsspecialiste/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1f9e997",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Initiatieven",
+    "_element_id": "initiatieven"
+   },
+   "elements": [
+    {
+     "id": "680ac4f",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "53b19aa",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Initiatieven",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "ba2e9df",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Kleine projecten, groot verschil",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "dc48adc",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · projecten · projecttype=initiatief",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "c1c256d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Fietsen voor geslaagden",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "6c451c5",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_fietsen}}",
+           "id": "{{imgid:proj_fietsen}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "a0aceab",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Elk jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "439ff74",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Fietsen voor geslaagden",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "311a165",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Zodat het vervolgonderwijs bereikbaar is.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "9ada9b0",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/fietsen/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "e412317",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Zonnepanelen",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "945adc2",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_zon}}",
+           "id": "{{imgid:proj_zon}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "da7d77f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Khukdi School",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f3c98c6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Zonnepanelen",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "eb4c565",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een school die haar eigen energie opwekt.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "50b5d8d",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/zonnepanelen/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "b86d3f7",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Solarlampjes",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "d549a4b",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_solar}}",
+           "id": "{{imgid:proj_solar}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "20fbc5c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ghadia",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0160c6a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Solarlampjes",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c70f749",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Licht om thuis te kunnen studeren.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "bab509b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/solarlampjes/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "4ee374d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Stichting Accrete",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "4c60087",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_accrete}}",
+           "id": "{{imgid:proj_accrete}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "88edf60",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Partner",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "717ac57",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Stichting Accrete",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "6231221",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Leerlingen in Nederland en India verbonden.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "1e87cc8",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk dit project",
+          "link": {
+           "url": "/ons-werk/stichting-accrete/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d842bf7",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "110",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 60,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "CTA band",
+    "__globals__": {
+     "background_color": "globals/colors?id=primary"
+    }
+   },
+   "elements": [
+    {
+     "id": "ad3395a",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "16",
+       "row": "16",
+       "isLinked": true,
+       "unit": "px",
+       "size": 16
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 760,
+       "sizes": []
+      },
+      "flex_align_items": "center",
+      "_title": "CTA inhoud"
+     },
+     "elements": [
+      {
+       "id": "ec1324a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Steun ons",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=cf55c96",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "f862ff1",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Bouw mee aan een school",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3f92e26",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Voor € 60 per jaar betaal je het lesgeld en de schoolspullen van één kind.</p>",
+        "align": "center",
+        "__globals__": {
+         "text_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "7f100b7",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "content_width": "full",
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "3ecf9e6",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Sponsor een kind",
+          "link": {
+           "url": "/product/sponsor-een-kind/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=primary",
+           "button_background_hover_color": "globals/colors?id=e64974d",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "1c29959",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Doneer eenmalig",
+          "link": {
+           "url": "/steun-ons/doneren/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=658acb6",
+           "button_background_hover_color": "globals/colors?id=658acb6",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

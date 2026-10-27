@@ -1,0 +1,664 @@
+{
+ "version": "0.4",
+ "title": "Doneren",
+ "type": "page",
+ "slug": "doneren",
+ "parent": "steun-ons",
+ "menu_order": 4,
+ "seo": [
+  "Doneer aan Stichting Sampark | Onderwijs voor kinderen in India",
+  "Doe een eenmalige gift. 95% gaat direct naar onderwijs in India en je gift is aftrekbaar."
+ ],
+ "content": [
+  {
+   "id": "8b53935",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "background_image": {
+     "url": "{{img:hero_doneer}}",
+     "id": "{{imgid:hero_doneer}}"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 440,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "af2ef76",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "c4d776e",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "9d92674",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Eenmalige gift",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "cf88571",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Doneer",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e84d010",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Met je gift betaal je mee aan docenten, lesmateriaal en fietsen voor kinderen in India.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "6bd1ee8",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Doneren"
+   },
+   "elements": [
+    {
+     "id": "25b2822",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "flex-start"
+     },
+     "elements": [
+      {
+       "id": "66808e3",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 45,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "7f86ae8",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Kies je bedrag",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "191154a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Wat jouw gift betekent",
+          "header_size": "h2"
+         },
+         "elements": []
+        },
+        {
+         "id": "135b2e5",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "text": "€ 10 · lesmateriaal voor een klas",
+            "selected_icon": {
+             "value": "fas fa-heart",
+             "library": "fa-solid"
+            },
+            "_id": "4dc2704"
+           },
+           {
+            "text": "€ 25 · een schooluniform",
+            "selected_icon": {
+             "value": "fas fa-heart",
+             "library": "fa-solid"
+            },
+            "_id": "144cf99"
+           },
+           {
+            "text": "€ 60 · een jaar onderwijs voor één kind",
+            "selected_icon": {
+             "value": "fas fa-heart",
+             "library": "fa-solid"
+            },
+            "_id": "d7d522d"
+           },
+           {
+            "text": "€ 100 · bijdrage aan een fiets voor een geslaagde",
+            "selected_icon": {
+             "value": "fas fa-heart",
+             "library": "fa-solid"
+            },
+            "_id": "14f9fe3"
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "icon_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0a4d215",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p><em>Bedragen ter illustratie, af te stemmen met het bestuur.</em></p>",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "ea4cf47",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Donatieblok",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=#FFFFFF"
+        }
+       },
+       "elements": [
+        {
+         "id": "a07e8bd",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Superforms · product Eenmalige donatie",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "127fe83",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Doneer nu",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c03b925",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Op de live site staat hier het Superforms-formulier van het product <strong>Eenmalige donatie</strong> (via een Woo product-shortcode of een knop naar het product met het bedrag als URL-parameter).</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "f85454e",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "10",
+           "row": "10",
+           "isLinked": true,
+           "unit": "px",
+           "size": 10
+          },
+          "content_width": "full",
+          "flex_direction_tablet": "row",
+          "flex_direction_mobile": "row",
+          "flex_wrap": "wrap"
+         },
+         "elements": [
+          {
+           "id": "1cb053d",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "€ 10",
+            "link": {
+             "url": "/product/donatie/?bedrag=10",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#00000000",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "__globals__": {
+             "border_color": "globals/colors?id=accent",
+             "button_text_color": "globals/colors?id=accent",
+             "button_background_hover_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=658acb6"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "26321c0",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "€ 25",
+            "link": {
+             "url": "/product/donatie/?bedrag=25",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#00000000",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "__globals__": {
+             "border_color": "globals/colors?id=accent",
+             "button_text_color": "globals/colors?id=accent",
+             "button_background_hover_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=658acb6"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "9456832",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "€ 50",
+            "link": {
+             "url": "/product/donatie/?bedrag=50",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#00000000",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "__globals__": {
+             "border_color": "globals/colors?id=accent",
+             "button_text_color": "globals/colors?id=accent",
+             "button_background_hover_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=658acb6"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "c377da1",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "€ 100",
+            "link": {
+             "url": "/product/donatie/?bedrag=100",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#00000000",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "__globals__": {
+             "border_color": "globals/colors?id=accent",
+             "button_text_color": "globals/colors?id=accent",
+             "button_background_hover_color": "globals/colors?id=accent",
+             "hover_color": "globals/colors?id=658acb6"
+            }
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "db8372e",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Ander bedrag",
+          "link": {
+           "url": "/product/donatie/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

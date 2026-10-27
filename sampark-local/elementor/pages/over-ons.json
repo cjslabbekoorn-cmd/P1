@@ -1,0 +1,2358 @@
+{
+ "version": "0.4",
+ "title": "Over ons",
+ "type": "page",
+ "slug": "over-ons",
+ "parent": null,
+ "menu_order": 6,
+ "seo": [
+  "Over Stichting Sampark | Sinds 2007 onderwijs in India",
+  "Wie we zijn, ons bestuur, onze partners in India en onze geschiedenis."
+ ],
+ "content": [
+  {
+   "id": "d14276a",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "background_image": {
+     "url": "{{img:hero_over}}",
+     "id": "{{imgid:hero_over}}"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 440,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "fa74d04",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "515a2a7",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "be857e0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Wie we zijn",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "1cf4425",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Over ons",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "db3a726",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Sinds 2007 zet Stichting Sampark zich in voor kinderen en jongvolwassenen in India. Sampark betekent verbinding.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "883e7ea",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Verhaal"
+   },
+   "elements": [
+    {
+     "id": "59b90e1",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "a760880",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "47dcd64",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Ons verhaal",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "091b21a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Educatie is een voorwaarde",
+          "header_size": "h2"
+         },
+         "elements": []
+        },
+        {
+         "id": "1b63ad1",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>De stichting ontstond doordat Venture Group al jaren actief is in India en iets terug wilde doen voor de lokale bevolking. Vanuit de overtuiging dat onderwijs de basis is voor een betere toekomst, richten we ons daar volledig op.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "3dc4876",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f015782",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:over_verhaal}}",
+           "id": "{{imgid:over_verhaal}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 380,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 285,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "79f95af",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Bestuur",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "ab8549e",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "81ebe4a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Bestuur",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "1e82dcd",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "De mensen achter Sampark",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "a8e1919",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Het bestuur werkt onbezoldigd.</p>",
+        "align": "center",
+        "__globals__": {
+         "text_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "9147369",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "32",
+       "row": "32",
+       "isLinked": true,
+       "unit": "px",
+       "size": 32
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "row",
+      "flex_wrap": "wrap",
+      "flex_justify_content": "center",
+      "_title": "LISTING · Options › bestuur (repeater)"
+     },
+     "elements": [
+      {
+       "id": "39e69f8",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Irma van Dalfsen",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f276cc4",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_irma}}",
+           "id": "{{imgid:board_irma}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "a2108ad",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Irma van Dalfsen",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "45a7ce8",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Voorzitter",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "707841b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Lianne Molhoek",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "9e73fcb",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_lianne}}",
+           "id": "{{imgid:board_lianne}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "2e015db",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lianne Molhoek",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "a12b1cc",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Secretaris",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "8da96c1",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Pieter Veuger",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "fb2111f",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_pieter}}",
+           "id": "{{imgid:board_pieter}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "8c2d4dc",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Pieter Veuger",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c342758",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Penningmeester",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7407038",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Arjen Hoekman",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "55b4702",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_arjen}}",
+           "id": "{{imgid:board_arjen}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "f94b584",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Arjen Hoekman",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "ea09aa6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Projectcommissie",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "1ea72ba",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Henk Eilander",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "841a505",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_henk}}",
+           "id": "{{imgid:board_henk}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "0ea49ba",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Henk Eilander",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c18fc80",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Fondsenwerving",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "0f2643d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Richard Nijhof",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "daa8271",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_richard}}",
+           "id": "{{imgid:board_richard}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "5258f4b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Richard Nijhof",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "1e82332",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Fondsenwerving",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a05d359",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Eric Haasjes",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "d14219d",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_eric}}",
+           "id": "{{imgid:board_eric}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "3617ea6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Eric Haasjes",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "cbfa5c5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Fondsenwerving",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a2f1c9b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "6",
+         "row": "6",
+         "isLinked": true,
+         "unit": "px",
+         "size": 6
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Bestuurslid · Margreet van Dalfsen",
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "027cb33",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:board_margreet}}",
+           "id": "{{imgid:board_margreet}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "3d91467",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Margreet van Dalfsen",
+          "header_size": "h4",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3229c02",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Vrijwilligers",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "center"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d6d0b6b",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Partners"
+   },
+   "elements": [
+    {
+     "id": "c754125",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "d95ebf5",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Partners",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "9924249",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Samen met India",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "d4ab094",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>We werken samen met de Vincentian Charitable Trust (VCT) uit New Delhi en het management van Sampark India. Zij zijn dagelijks bij de scholen en opleidingen betrokken.</p>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2ed75fb",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Tijdlijn"
+   },
+   "elements": [
+    {
+     "id": "04ec63f",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "6fef9e7",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Tijdlijn",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "37c930f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Bijna twintig jaar Sampark",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "bd64b46",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · Options › tijdlijn (repeater)"
+     },
+     "elements": [
+      {
+       "id": "60d8d95",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Tijdlijn · 2007",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "0b7fbdb",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "2007",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 40,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 29,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0350ecc",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Oprichting",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "92a93eb",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Venture Group richt Stichting Sampark op om iets terug te doen voor India.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "da3c9e8",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Tijdlijn · 2014",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "5a5e71c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "2014",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 40,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 29,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "cb2ac15",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Renovaties",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e03ca92",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Vrijwilligers knappen in twee weken de scholen in Bilsi en Ghadia op.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "70e6115",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Tijdlijn · 2019",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "1dc924c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "2019",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 40,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 29,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "db93b22",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Nieuwbouw Khukdi",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "02b399a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>De nieuwe school met vijftien lokalen opent haar deuren.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "8683cbb",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Tijdlijn · 2025",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "032816c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "2025",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 40,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 29,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "8807294",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Nieuw bestuur",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "22ff7f5",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Eric Haasjes en Richard Nijhof versterken de fondsenwerving.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "24bb375",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "110",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 60,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "CTA band",
+    "__globals__": {
+     "background_color": "globals/colors?id=primary"
+    }
+   },
+   "elements": [
+    {
+     "id": "0b4cf98",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "16",
+       "row": "16",
+       "isLinked": true,
+       "unit": "px",
+       "size": 16
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 760,
+       "sizes": []
+      },
+      "flex_align_items": "center",
+      "_title": "CTA inhoud"
+     },
+     "elements": [
+      {
+       "id": "acf2635",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Transparant over elke euro",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "d3a94c5",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Lees onze jaarverslagen, het beleidsplan en alle gegevens die we als ANBI publiceren.</p>",
+        "align": "center",
+        "__globals__": {
+         "text_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "9ad6aae",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "content_width": "full",
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "3119582",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Naar ANBI & financiën",
+          "link": {
+           "url": "/over-ons/anbi/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=primary",
+           "button_background_hover_color": "globals/colors?id=e64974d",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

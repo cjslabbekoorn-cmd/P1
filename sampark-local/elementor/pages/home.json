@@ -1,0 +1,4989 @@
+{
+ "version": "0.4",
+ "title": "Home",
+ "type": "page",
+ "slug": "home",
+ "parent": null,
+ "menu_order": 0,
+ "seo": [
+  "Stichting Sampark | Help een kind in India naar school",
+  "Sinds 2007 geeft Stichting Sampark kinderen in India toegang tot onderwijs. Doneer, sponsor een kind of doe mee aan onze evenementen."
+ ],
+ "content": [
+  {
+   "id": "a52354c",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "background_image": {
+     "url": "{{img:hero_home}}",
+     "id": "{{imgid:hero_home}}"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 560,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "aa95097",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "d428d6a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "6bc1e9b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Stichting Sampark",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "45dd71d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Help een kind naar school",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "622bc6f",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Voor € 5 per maand geef je een kind in India de kans om te leren. Sinds 2007 bouwen we samen met lokale partners aan vier scholen en drie beroepsopleidingen.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "041699c",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "content_width": "full",
+          "flex_direction_tablet": "row",
+          "flex_direction_mobile": "row",
+          "flex_wrap": "wrap",
+          "_title": "Knoppen"
+         },
+         "elements": [
+          {
+           "id": "8bcee3c",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Doneer nu",
+            "link": {
+             "url": "/steun-ons/doneren/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "a19add2",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Sponsor een kind",
+            "link": {
+             "url": "/product/sponsor-een-kind/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=658acb6",
+             "button_text_color": "globals/colors?id=primary",
+             "button_background_hover_color": "globals/colors?id=e64974d",
+             "hover_color": "globals/colors?id=primary"
+            }
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6b30863",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "14",
+         "right": "28",
+         "bottom": "14",
+         "left": "20",
+         "isLinked": false
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "_title": "Campagnebadge (Dynamic Visibility: Options › campagne aan)",
+        "width": {
+         "unit": "px",
+         "size": 300,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 280,
+         "sizes": []
+        },
+        "flex_align_self": "center",
+        "__globals__": {
+         "background_color": "globals/colors?id=secondary"
+        }
+       },
+       "elements": [
+        {
+         "id": "f27d9ac",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": {
+            "url": "{{img:icon_wijn}}",
+            "id": "{{imgid:icon_wijn}}"
+           },
+           "library": "svg"
+          },
+          "position": "left",
+          "position_mobile": "left",
+          "position_tablet": "left",
+          "text_align_mobile": "left",
+          "title_text": "Wijnactie",
+          "description_text": "Rood, wit en alcoholvrij",
+          "title_size": "p",
+          "icon_size": {
+           "unit": "px",
+           "size": 44,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "link": {
+           "url": "/evenementen/wijnactie/"
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "__globals__": {
+           "primary_color": "globals/colors?id=text",
+           "title_color": "globals/colors?id=text",
+           "description_color": "globals/colors?id=text",
+           "title_typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "091026c",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "24",
+     "bottom": "48",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Impact"
+   },
+   "elements": [
+    {
+     "id": "65f3777",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "32",
+       "row": "32",
+       "isLinked": true,
+       "unit": "px",
+       "size": 32
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_justify_content": "space-between",
+      "_title": "Kerncijfers (Options Page › kerncijfers)"
+     },
+     "elements": [
+      {
+       "id": "e656604",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "8",
+         "row": "8",
+         "isLinked": true,
+         "unit": "px",
+         "size": 8
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Cijfer · Leerlingen op onze vier scholen"
+       },
+       "elements": [
+        {
+         "id": "a0cfff2",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": {
+            "url": "{{img:icon_rugtas}}",
+            "id": "{{imgid:icon_rugtas}}"
+           },
+           "library": "svg"
+          },
+          "size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "align": "center",
+          "__globals__": {
+           "primary_color": "globals/colors?id=cf55c96"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "cee02dc",
+         "elType": "widget",
+         "widgetType": "counter",
+         "settings": {
+          "starting_number": 0,
+          "ending_number": 1577,
+          "suffix": "",
+          "thousand_separator": "yes",
+          "thousand_separator_char": ".",
+          "title": "Leerlingen op onze vier scholen",
+          "__globals__": {
+           "number_color": "globals/colors?id=primary",
+           "title_color": "globals/colors?id=text",
+           "typography_number_typography": "globals/typography?id=primary"
+          },
+          "typography_title_typography": "custom",
+          "typography_title_font_family": "aptos",
+          "typography_title_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_title_text_transform": "none",
+          "typography_title_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          },
+          "typography_title_font_weight": "400",
+          "typography_number_typography": "custom",
+          "typography_number_font_size": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "e5814a4",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "8",
+         "row": "8",
+         "isLinked": true,
+         "unit": "px",
+         "size": 8
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Cijfer · Voltooide cursussen in Delhi"
+       },
+       "elements": [
+        {
+         "id": "0ea52a2",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": {
+            "url": "{{img:icon_computer}}",
+            "id": "{{imgid:icon_computer}}"
+           },
+           "library": "svg"
+          },
+          "size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "align": "center",
+          "__globals__": {
+           "primary_color": "globals/colors?id=cf55c96"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "eb07911",
+         "elType": "widget",
+         "widgetType": "counter",
+         "settings": {
+          "starting_number": 0,
+          "ending_number": 600,
+          "suffix": "+",
+          "thousand_separator": "yes",
+          "thousand_separator_char": ".",
+          "title": "Voltooide cursussen in Delhi",
+          "__globals__": {
+           "number_color": "globals/colors?id=primary",
+           "title_color": "globals/colors?id=text",
+           "typography_number_typography": "globals/typography?id=primary"
+          },
+          "typography_title_typography": "custom",
+          "typography_title_font_family": "aptos",
+          "typography_title_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_title_text_transform": "none",
+          "typography_title_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          },
+          "typography_title_font_weight": "400",
+          "typography_number_typography": "custom",
+          "typography_number_font_size": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "9de8a7e",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "8",
+         "row": "8",
+         "isLinked": true,
+         "unit": "px",
+         "size": 8
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_align_items": "center",
+        "_title": "Cijfer · Fietsen per jaar voor geslaagden"
+       },
+       "elements": [
+        {
+         "id": "f94ac6a",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": {
+            "url": "{{img:icon_fiets}}",
+            "id": "{{imgid:icon_fiets}}"
+           },
+           "library": "svg"
+          },
+          "size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "align": "center",
+          "__globals__": {
+           "primary_color": "globals/colors?id=cf55c96"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "30fa8d7",
+         "elType": "widget",
+         "widgetType": "counter",
+         "settings": {
+          "starting_number": 0,
+          "ending_number": 125,
+          "suffix": "",
+          "thousand_separator": "yes",
+          "thousand_separator_char": ".",
+          "title": "Fietsen per jaar voor geslaagden",
+          "__globals__": {
+           "number_color": "globals/colors?id=primary",
+           "title_color": "globals/colors?id=text",
+           "typography_number_typography": "globals/typography?id=primary"
+          },
+          "typography_title_typography": "custom",
+          "typography_title_font_family": "aptos",
+          "typography_title_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_title_text_transform": "none",
+          "typography_title_line_height": {
+           "unit": "em",
+           "size": 1.4,
+           "sizes": []
+          },
+          "typography_title_font_weight": "400",
+          "typography_number_typography": "custom",
+          "typography_number_font_size": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "f161198",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Ons werk"
+   },
+   "elements": [
+    {
+     "id": "7262830",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "c1e2716",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Ons werk",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "e1074af",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Onderwijs als begin van een betere toekomst",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "9a87222",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>We richten ons op één ding: kinderen en jongvolwassenen in India de kans geven om te leren. Op het platteland rond Budaun en in de stad New Delhi.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "e144c6b",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · projecttype (3 termen, met aantal projecten)",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "2c7f682",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Scholen op het platteland",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f30ead2",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_khukdi}}",
+           "id": "{{imgid:proj_khukdi}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "6b6ee24",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "4 scholen · Budaun",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e10d740",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Scholen op het platteland",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b85ebcc",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Ruim 1.500 kinderen krijgen dagelijks les op de scholen in Khukdi, Kundanpur, Bilsi en Ghadia.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "725ff9d",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk de scholen",
+          "link": {
+           "url": "/ons-werk/#scholen",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7e18741",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Een vak leren in de stad",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "451a09b",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_computer}}",
+           "id": "{{imgid:proj_computer}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "dcb807d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "3 opleidingen · New Delhi",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "09385af",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Een vak leren in de stad",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5ff55bb",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Computerspecialist, modinette en schoonheidsspecialiste: opleidingen die echt tot werk leiden.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "422ac3e",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk de opleidingen",
+          "link": {
+           "url": "/ons-werk/#opleidingen",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "598023b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Fietsen, zon en licht",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f7c2951",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_fietsen}}",
+           "id": "{{imgid:proj_fietsen}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "5302940",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Initiatieven",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "db51929",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Fietsen, zon en licht",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "a8d415a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Fietsen voor geslaagden, zonnepanelen op Khukdi en solarlampjes om thuis te studeren.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "6710777",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk de initiatieven",
+          "link": {
+           "url": "/ons-werk/#initiatieven",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "e6d79d0",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Transparantie",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "efe6439",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "center",
+      "_title": "Twee kolommen"
+     },
+     "elements": [
+      {
+       "id": "371468f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Tekst"
+       },
+       "elements": [
+        {
+         "id": "f7f2534",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Waar je geld naartoe gaat",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "76dc382",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "95% gaat direct naar hulp",
+          "header_size": "h2"
+         },
+         "elements": []
+        },
+        {
+         "id": "4ba0028",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Het bestuur werkt onbezoldigd en Venture Group draagt de organisatiekosten. Daardoor komt vrijwel elke euro terecht bij de scholen en opleidingen.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "2b4fe70",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "text": "Salarissen van docenten",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "6c5309b"
+           },
+           {
+            "text": "Lesmateriaal en sportattributen",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "b0a22fd"
+           },
+           {
+            "text": "Schoolarts en schoolreis",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "0a75ed4"
+           },
+           {
+            "text": "Fietsen voor geslaagden",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "3186d08"
+           },
+           {
+            "text": "Computers en naaimachines voor Delhi",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "1f2c86a"
+           },
+           {
+            "text": "Huur, elektriciteit en onderhoud",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "e89824f"
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "icon_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5bd0180",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "ANBI en jaarverslagen",
+          "link": {
+           "url": "/over-ons/anbi/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6f2970e",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Beeld"
+       },
+       "elements": [
+        {
+         "id": "e2998d1",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:proj_khukdi_gebouw}}",
+           "id": "{{imgid:proj_khukdi_gebouw}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 520,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 390,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "72a3e8b",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Evenementen"
+   },
+   "elements": [
+    {
+     "id": "a3f390d",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "flex-end",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "a382718",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "8",
+         "row": "8",
+         "isLinked": true,
+         "unit": "px",
+         "size": 8
+        },
+        "content_width": "full",
+        "_title": "Sectiekop",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "max_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "c88311b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Doe mee",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "left"
+         },
+         "elements": []
+        },
+        {
+         "id": "8def303",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Steun ons met plezier",
+          "header_size": "h2",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "66191a5",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een dag achter het stuur, een balletje slaan of een glas wijn met vrienden: bij Sampark begint hulp vaak met plezier.</p>",
+          "align": "left",
+          "__globals__": {
+           "text_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a2e84f4",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Alle evenementen",
+        "link": {
+         "url": "/evenementen/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "_flex_size": "none",
+        "background_color": "#00000000",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "__globals__": {
+         "border_color": "globals/colors?id=accent",
+         "button_text_color": "globals/colors?id=accent",
+         "button_background_hover_color": "globals/colors?id=accent",
+         "hover_color": "globals/colors?id=658acb6"
+        },
+        "selected_icon": {
+         "value": "fas fa-arrow-right",
+         "library": "fa-solid"
+        },
+        "icon_align": "row-reverse",
+        "icon_indent": {
+         "unit": "px",
+         "size": 8,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a2b33c7",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · evenementen · status IN (aangekondigd, open, doorlopend) · sorteer datum_start ASC · max 3",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "a3598ac",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Padel toernooi",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "e60a0de",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:event_padel}}",
+           "id": "{{imgid:event_padel}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "673a8c4",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<span class=\"sp-chip\">Inschrijving open</span>",
+          "_title": "Status (dynamic)"
+         },
+         "elements": []
+        },
+        {
+         "id": "315d700",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "21 november 2026 · Zwolle",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "467e99c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Padel toernooi",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "89c85ca",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een sportieve middag bij Peakz Padel Zwolle. € 89 per team van twee.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "59c9311",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Schrijf je in",
+          "link": {
+           "url": "/evenementen/padel-toernooi/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "b328149",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Wijnactie",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "cb9ed17",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:event_wijn}}",
+           "id": "{{imgid:event_wijn}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "d4061ba",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<span class=\"sp-chip\">Het hele jaar</span>",
+          "_title": "Status (dynamic)"
+         },
+         "elements": []
+        },
+        {
+         "id": "4e2fe6d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Het hele jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "df6c184",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Wijnactie",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "1c300a6",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Rood, wit en alcoholvrij. € 43,50 per doos van zes flessen, opbrengst naar de scholen.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "ba867ff",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bestel je wijn",
+          "link": {
+           "url": "/evenementen/wijnactie/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "67269c6",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Sampark Rally",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "63c1107",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:event_rally}}",
+           "id": "{{imgid:event_rally}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "3bfa537",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<span class=\"sp-chip\">Aangekondigd</span>",
+          "_title": "Status (dynamic)"
+         },
+         "elements": []
+        },
+        {
+         "id": "b6b290b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "September 2027 · datum volgt",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "8a7ee6d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Sampark Rally",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "43021d4",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een dag met je eigen klassieker door Oost-Nederland. € 600 per equipe.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "b25c8c8",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk de rally",
+          "link": {
+           "url": "/evenementen/sampark-rally/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d434ef9",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Steun ons"
+   },
+   "elements": [
+    {
+     "id": "068b0be",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "d9de4e4",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Steun ons",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "a828358",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Kies hoe je wilt helpen",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "ae72aab",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "_title": "Drie keuzes",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "c831875",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Doneer",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "2749488",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Eenmalig",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "cfa799f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Doneer",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3136b01",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Elk bedrag helpt. Giften aan Sampark zijn aftrekbaar, want we zijn een ANBI.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "7460e3d",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Doneer nu",
+          "link": {
+           "url": "/steun-ons/doneren/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6f8fa75",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Sponsor een kind",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "0f16a0d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "€ 60 per jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "1227360",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Sponsor een kind",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c55c59d",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Je betaalt een jaar lesgeld en schoolbenodigdheden voor één kind.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "ff8f982",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Sponsor een kind",
+          "link": {
+           "url": "/product/sponsor-een-kind/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "202b71d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Bedrijven",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "1f51452",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Vanaf € 500 per jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "918f282",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Voor bedrijven",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b0c7569",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een sponsorpakket met naamsvermelding en deelname aan onze evenementen.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "3c7bbd2",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk de pakketten",
+          "link": {
+           "url": "/steun-ons/bedrijven/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "01c82ae",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Sponsors",
+    "__globals__": {
+     "background_color": "globals/colors?id=cf55c96"
+    }
+   },
+   "elements": [
+    {
+     "id": "89ec0b0",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "3e8e8f1",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Onze sponsors",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "8fd336c",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Deze bedrijven gingen je voor",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1de1116",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "20",
+       "row": "20",
+       "isLinked": true,
+       "unit": "px",
+       "size": 20
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "row",
+      "flex_wrap": "wrap",
+      "flex_justify_content": "center",
+      "_title": "LISTING · sponsors (actief=true, sorteer op niveau + volgorde)"
+     },
+     "elements": [
+      {
+       "id": "0892cf9",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_venture",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "7f41a65",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_venture}}",
+           "id": "{{imgid:logo_venture}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6908f26",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_groothuis",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "95fe32e",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_groothuis}}",
+           "id": "{{imgid:logo_groothuis}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "c5e3c57",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_schieven",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "9426121",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_schieven}}",
+           "id": "{{imgid:logo_schieven}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a92e6ce",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_w4y",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "453d7d0",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_w4y}}",
+           "id": "{{imgid:logo_w4y}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "e236046",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_venttri",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "a440cea",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_venttri}}",
+           "id": "{{imgid:logo_venttri}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "c6a05eb",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_rijk",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "1d0b0ea",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_rijk}}",
+           "id": "{{imgid:logo_rijk}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "b89c5dd",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_arcus",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "63e2f61",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_arcus}}",
+           "id": "{{imgid:logo_arcus}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a1f8b32",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_kvs",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "8573295",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_kvs}}",
+           "id": "{{imgid:logo_kvs}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a45cb28",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_pleijsier",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "dc05e1d",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_pleijsier}}",
+           "id": "{{imgid:logo_pleijsier}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a7bc4a4",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_positie1",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "0e6d964",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_positie1}}",
+           "id": "{{imgid:logo_positie1}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "3988c7f",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "a268c14",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Word sponsor",
+        "link": {
+         "url": "/steun-ons/bedrijven/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "__globals__": {
+         "background_color": "globals/colors?id=primary",
+         "button_text_color": "globals/colors?id=658acb6",
+         "button_background_hover_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "12f97a5",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Nieuws"
+   },
+   "elements": [
+    {
+     "id": "903ce92",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "flex-end",
+      "flex_justify_content": "space-between"
+     },
+     "elements": [
+      {
+       "id": "07bbab8",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "8",
+         "row": "8",
+         "isLinked": true,
+         "unit": "px",
+         "size": 8
+        },
+        "content_width": "full",
+        "_title": "Sectiekop",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "max_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "8a262c3",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Nieuws",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "align": "left"
+         },
+         "elements": []
+        },
+        {
+         "id": "13a999f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Het laatste uit India en Nederland",
+          "header_size": "h2",
+          "align": "left",
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "ece71d9",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Alle nieuwsberichten",
+        "link": {
+         "url": "/nieuws/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "_flex_size": "none",
+        "background_color": "#00000000",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "__globals__": {
+         "border_color": "globals/colors?id=accent",
+         "button_text_color": "globals/colors?id=accent",
+         "button_background_hover_color": "globals/colors?id=accent",
+         "hover_color": "globals/colors?id=658acb6"
+        },
+        "selected_icon": {
+         "value": "fas fa-arrow-right",
+         "library": "fa-solid"
+        },
+        "icon_align": "row-reverse",
+        "icon_indent": {
+         "unit": "px",
+         "size": 8,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a0ea707",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · nieuws (3 nieuwste, of gerelateerd via relatie)",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "cc3908f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Nat, maar onvergetelijk: Golftoernooi 2025!",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "d7961fb",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:news_golf_2025}}",
+           "id": "{{imgid:news_golf_2025}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "e889915",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "11 november 2025",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f2bc84e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Nat, maar onvergetelijk: Golftoernooi 2025!",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "52a19af",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Het jaarlijkse Samparkgolftoernooi was er weer eentje om niet snel te vergeten.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "f5be95b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Lees meer",
+          "link": {
+           "url": "/nat-maar-onvergetelijk-golftoernooi-2025/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "1db441d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Scholen krijgen bezoek uit Canada!",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "08acd66",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:news_canada}}",
+           "id": "{{imgid:news_canada}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "b92f869",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "25 september 2025",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0a9181c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Scholen krijgen bezoek uit Canada!",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0265c65",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Mark en Sharon Jansen van Mores Textiles kwamen op bezoek bij onze scholen in India.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "421c7f9",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Lees meer",
+          "link": {
+           "url": "/scholen-krijgen-bezoek-uit-canada/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "e0b028e",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Afscheid Abhishek Pandey",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "edaba62",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:news_abhishek}}",
+           "id": "{{imgid:news_abhishek}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 220,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 165,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "a584868",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "25 september 2025",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "db1b35d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Afscheid Abhishek Pandey",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b500060",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>We namen op bijzondere wijze afscheid van onze gewaardeerde schoolcoördinator.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "ad0399c",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Lees meer",
+          "link": {
+           "url": "/afscheid-abhishek-pandey/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

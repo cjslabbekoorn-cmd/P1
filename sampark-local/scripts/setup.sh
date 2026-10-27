@@ -81,16 +81,26 @@ page() {
 	echo "$id"
 }
 
-log "Pagina's volgens structuurvoorstel"
-HOME_ID=$(page home "Home")
+log "Huisstijl, beelden en pagina's (bouwplan v2)"
+wp eval-file /scripts/build-site.php
+
 NIEUWS_ID=$(page nieuws "Nieuws")
-STEUN_ID=$(page steun-ons "Steun ons")
-SPONSORS_ID=$(page sponsors "Sponsors")
-OVER_ID=$(page over-ons "Over ons")
-ANBI_ID=$(page anbi "ANBI & financiën" over-ons)
-CONTACT_ID=$(page contact "Contact")
 VOORW_ID=$(page algemene-voorwaarden "Algemene voorwaarden")
 page sitemap "Sitemap" >/dev/null
+HOME_ID=$(page_id home)
+STEUN_ID=$(page_id steun-ons)
+DONEER_ID=$(page_id doneren)
+BEDRIJF_ID=$(page_id bedrijven)
+WERK_ID=$(page_id ons-werk)
+EVENT_ID=$(page_id evenementen)
+OVER_ID=$(page_id over-ons)
+ANBI_ID=$(page_id anbi)
+CONTACT_ID=$(page_id contact)
+
+# Pagina's uit het eerste voorstel die in v2 zijn opgegaan in Steun ons
+for slug in sponsors; do
+	for id in $(wp post list --post_type=page --name="$slug" --post_status=any --field=ID); do wp post delete "$id" --force >/dev/null; done
+done
 
 # Privacybeleid van WordPress zelf hergebruiken
 PRIVACY_ID=$(wp option get wp_page_for_privacy_policy)
@@ -173,14 +183,26 @@ menu() {
 	wp menu create "$1" --porcelain
 }
 M=$(menu "Hoofdmenu")
-wp menu item add-custom "$M" "Projecten" "/projecten/" >/dev/null
-wp menu item add-custom "$M" "Evenementen" "/evenementen/" >/dev/null
-for id in "$STEUN_ID" "$NIEUWS_ID" "$OVER_ID"; do wp menu item add-post "$M" "$id" >/dev/null; done
+wp menu item add-post "$M" "$WERK_ID" >/dev/null
+wp menu item add-post "$M" "$EVENT_ID" >/dev/null
+STEUN_ITEM=$(wp menu item add-post "$M" "$STEUN_ID" --porcelain)
+for id in "$DONEER_ID" "$BEDRIJF_ID"; do wp menu item add-post "$M" "$id" --parent-id="$STEUN_ITEM" >/dev/null; done
+wp menu item add-custom "$M" "Sponsor een kind" "/product/sponsor-een-kind/" --parent-id="$STEUN_ITEM" >/dev/null
+wp menu item add-post "$M" "$NIEUWS_ID" >/dev/null
+OVER_ITEM=$(wp menu item add-post "$M" "$OVER_ID" --porcelain)
+for id in "$ANBI_ID" "$CONTACT_ID"; do wp menu item add-post "$M" "$id" --parent-id="$OVER_ITEM" >/dev/null; done
+wp menu location assign "$M" menu-1 >/dev/null 2>&1 || true
+
+M=$(menu "Topbalk")
+wp menu item add-post "$M" "$BEDRIJF_ID" --title="Voor bedrijven" >/dev/null
+wp menu item add-post "$M" "$CONTACT_ID" >/dev/null
+wp menu item add-post "$M" "$(wp option get woocommerce_myaccount_page_id)" >/dev/null
 
 M=$(menu "Footer – Direct naar")
-for id in "$STEUN_ID" "$SPONSORS_ID" "$ANBI_ID" "$CONTACT_ID" "$(wp option get woocommerce_myaccount_page_id)"; do
+for id in "$WERK_ID" "$EVENT_ID" "$DONEER_ID" "$BEDRIJF_ID" "$ANBI_ID" "$CONTACT_ID"; do
 	wp menu item add-post "$M" "$id" >/dev/null
 done
+wp menu location assign "$M" menu-2 >/dev/null 2>&1 || true
 
 M=$(menu "Footer – Juridisch")
 for id in "$VOORW_ID" "$PRIVACY_ID" "$(page_id sitemap)"; do

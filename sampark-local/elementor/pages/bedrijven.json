@@ -1,0 +1,2356 @@
+{
+ "version": "0.4",
+ "title": "Voor bedrijven",
+ "type": "page",
+ "slug": "bedrijven",
+ "parent": "steun-ons",
+ "menu_order": 5,
+ "seo": [
+  "Sponsor worden als bedrijf | Stichting Sampark",
+  "Sponsorpakketten vanaf € 500 per jaar met naamsvermelding, deelname aan evenementen en MVO-materiaal."
+ ],
+ "content": [
+  {
+   "id": "a3e04df",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "background_image": {
+     "url": "{{img:hero_bedrijven}}",
+     "id": "{{imgid:hero_bedrijven}}"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 440,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "6cda3e3",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "4708a8a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "9f42c9c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Voor bedrijven",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c7170d3",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Sponsor als bedrijf",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "92b697a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een hecht zakelijk netwerk dat structureel bijdraagt aan onderwijs in India. Met naamsvermelding, evenementen en materiaal voor je MVO-verhaal.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "0c068d3",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Waarom"
+   },
+   "elements": [
+    {
+     "id": "1a5b1e4",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "a8abb4b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "7a81dd3",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Waarom sponsoren",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "97e21c9",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Maatschappelijk ondernemen met een gezicht",
+          "header_size": "h2"
+         },
+         "elements": []
+        },
+        {
+         "id": "348294e",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "text": "Naamsvermelding op onze website en bij evenementen",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "8da5aa4"
+           },
+           {
+            "text": "Deelname aan de Sampark Rally en het golftoernooi",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "51023f6"
+           },
+           {
+            "text": "Materiaal voor je eigen MVO-communicatie",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "f5c6ea2"
+           },
+           {
+            "text": "Een netwerk van ondernemers uit de regio",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "bc9b66d"
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "icon_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "02c68a5",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Contactpersoon",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": [
+        {
+         "id": "d8efd32",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Contact",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "28cd704",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lianne Molhoek",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c0107a8",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Secretaris van het bestuur<br>038 385 50 00<br>info@sampark.nl</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "47cf7c0",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Neem contact op",
+          "link": {
+           "url": "/contact/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1b4fa76",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Pakketten",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "180d831",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "0ed537f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Sponsorpakketten",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "74ff02d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Kies het pakket dat bij je past",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "33e0aca",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · WC Product Query · product_cat=sponsorpakket · sorteer prijs DESC",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "6a4b4b7",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Sona",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=e64974d"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "ad580c5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "€ 2.500 per jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "670c884",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Sona (Goud)",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "a34f7da",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "text": "Alles uit Peetal",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "ad54632"
+           },
+           {
+            "text": "Deelname golftoernooi én Sampark Rally",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "50552e3"
+           },
+           {
+            "text": "Naamsvermelding bij het gekozen evenement",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "ef6ba4c"
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "icon_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e486ad8",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Kies Sona",
+          "link": {
+           "url": "/product/sona-goud/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "64e3989",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Chandee",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=e64974d"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "861a53d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "€ 1.750 per jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e90114c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Chandee (Zilver)",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "ceca70f",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "text": "Alles uit Peetal",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "43ab246"
+           },
+           {
+            "text": "Deelname golftoernooi óf Sampark Rally",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "7df54ed"
+           },
+           {
+            "text": "Naamsvermelding bij dat evenement",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "08fd703"
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "icon_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f7ad80d",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Kies Chandee",
+          "link": {
+           "url": "/product/chandee-zilver/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "1077415",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Peetal",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=e64974d"
+        },
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "549f54d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "€ 500 per jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "109bf4f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Peetal (Brons)",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "1123eeb",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "text": "Naamsvermelding op onze website",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "9dffd81"
+           },
+           {
+            "text": "Klikbare Sampark-banner voor je eigen site",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "305f480"
+           },
+           {
+            "text": "Sampark-uitingen voor je MVO",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "_id": "8eebb0a"
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "icon_color": "globals/colors?id=accent",
+           "text_color": "globals/colors?id=text"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "fb0e3ab",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Kies Peetal",
+          "link": {
+           "url": "/product/peetal-brons/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "9c5f83b",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Sponsors"
+   },
+   "elements": [
+    {
+     "id": "a579537",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "89818c8",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Onze sponsors",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "f2f8843",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Zij gingen je voor",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "c2ce6c9",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "20",
+       "row": "20",
+       "isLinked": true,
+       "unit": "px",
+       "size": 20
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "row",
+      "flex_wrap": "wrap",
+      "flex_justify_content": "center",
+      "_title": "LISTING · sponsors (actief=true, sorteer op niveau + volgorde)"
+     },
+     "elements": [
+      {
+       "id": "54f3334",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_venture",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "61904b0",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_venture}}",
+           "id": "{{imgid:logo_venture}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "462d273",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_groothuis",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "49bc499",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_groothuis}}",
+           "id": "{{imgid:logo_groothuis}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "ec8f7ef",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_schieven",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "00aad50",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_schieven}}",
+           "id": "{{imgid:logo_schieven}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7d1f5cb",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_w4y",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "fe807d6",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_w4y}}",
+           "id": "{{imgid:logo_w4y}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a40d4ea",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_venttri",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "22d8a67",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_venttri}}",
+           "id": "{{imgid:logo_venttri}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "47227b1",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_rijk",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "415f186",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_rijk}}",
+           "id": "{{imgid:logo_rijk}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "c0ea8be",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_arcus",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f2d7307",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_arcus}}",
+           "id": "{{imgid:logo_arcus}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "92a6d98",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_kvs",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "14036c0",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_kvs}}",
+           "id": "{{imgid:logo_kvs}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "753097b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_pleijsier",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "bbb2ab6",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_pleijsier}}",
+           "id": "{{imgid:logo_pleijsier}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "bfc572c",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "24",
+         "right": "24",
+         "bottom": "24",
+         "left": "24",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F5EDE3",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "center",
+        "_title": "Logo · logo_positie1",
+        "width": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 140,
+         "sizes": []
+        },
+        "min_height_tablet": {
+         "unit": "px",
+         "size": 130,
+         "sizes": []
+        },
+        "min_height_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "d6ba387",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_positie1}}",
+           "id": "{{imgid:logo_positie1}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 80,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 60,
+           "sizes": []
+          },
+          "object-fit": "contain"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

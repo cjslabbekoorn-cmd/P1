@@ -1,0 +1,1207 @@
+{
+ "version": "0.4",
+ "title": "Steun ons",
+ "type": "page",
+ "slug": "steun-ons",
+ "parent": null,
+ "menu_order": 3,
+ "seo": [
+  "Steun ons | Doneer of sponsor een kind | Stichting Sampark",
+  "Doneer, sponsor een kind voor € 60 per jaar of word bedrijfssponsor. Giften aan Sampark zijn aftrekbaar (ANBI)."
+ ],
+ "content": [
+  {
+   "id": "3158f08",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "background_image": {
+     "url": "{{img:hero_steun}}",
+     "id": "{{imgid:hero_steun}}"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 440,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero"
+   },
+   "elements": [
+    {
+     "id": "37e9573",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "0f3ad5a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "789ed2b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Jouw bijdrage telt",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5300e72",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Steun ons",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "abc327a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Of je nu € 10 geeft, een kind een jaar naar school laat gaan of als bedrijf structureel bijdraagt: 95% van je steun gaat direct naar onderwijs in India.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "ad4f1f4",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Keuzes"
+   },
+   "elements": [
+    {
+     "id": "2b01aaa",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "LISTING · statisch (4 vaste keuzes)",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "115f82b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Doneer",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "3e381db",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:steun_doneer}}",
+           "id": "{{imgid:steun_doneer}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "461710d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Eenmalig",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "9e1fc17",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Doneer",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "4c3245b",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Kies zelf je bedrag. Je ontvangt direct een bevestiging per mail.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "98130e6",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Doneer nu",
+          "link": {
+           "url": "/steun-ons/doneren/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "445c9e0",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Sponsor een kind",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "2886088",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:steun_kind}}",
+           "id": "{{imgid:steun_kind}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "731f8c3",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "€ 60 per jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b0693e4",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Sponsor een kind",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "584189a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Een jaar lesgeld en schoolspullen voor één kind.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "231bb3d",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Sponsor een kind",
+          "link": {
+           "url": "/product/sponsor-een-kind/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "8ad9bc4",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Voor bedrijven",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "c643e91",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:steun_bedrijf}}",
+           "id": "{{imgid:steun_bedrijf}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "62ba726",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Vanaf € 500 per jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "51bc31e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Voor bedrijven",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "2f9cb40",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Sponsorpakketten met naamsvermelding en evenementen.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "9647e09",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk de pakketten",
+          "link": {
+           "url": "/steun-ons/bedrijven/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "8107d55",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Kaart · Doe mee",
+        "css_classes": "sp-card",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "095cab0",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:steun_event}}",
+           "id": "{{imgid:steun_event}}",
+           "alt": ""
+          },
+          "image_size": "large",
+          "width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "14",
+           "right": "14",
+           "bottom": "14",
+           "left": "14",
+           "isLinked": true
+          },
+          "height": {
+           "unit": "px",
+           "size": 200,
+           "sizes": []
+          },
+          "height_mobile": {
+           "unit": "px",
+           "size": 150,
+           "sizes": []
+          },
+          "object-fit": "cover"
+         },
+         "elements": []
+        },
+        {
+         "id": "a8e2ec0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Het hele jaar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "6144ded",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Doe mee",
+          "header_size": "h3",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "cae6113",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Rally, golf, padel of de wijnactie.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "1649c67",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk de evenementen",
+          "link": {
+           "url": "/evenementen/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "align": "justify"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "82230f1",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "ANBI en vragen",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "b7b16ec",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "5a4b25a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "716daeb",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "ANBI",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "657c167",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Je gift is aftrekbaar",
+          "header_size": "h2"
+         },
+         "elements": []
+        },
+        {
+         "id": "f600fe2",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Stichting Sampark is door de Belastingdienst erkend als Algemeen Nut Beogende Instelling. Giften kun je aftrekken van de inkomsten- of vennootschapsbelasting. Ons RSIN is 818925887.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "94a4d2e",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Bekijk onze ANBI-gegevens",
+          "link": {
+           "url": "/over-ons/anbi/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          },
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          },
+          "icon_align": "row-reverse",
+          "icon_indent": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "e46de7e",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "d12ae76",
+         "elType": "widget",
+         "widgetType": "toggle",
+         "settings": {
+          "tabs": [
+           {
+            "tab_title": "Waar gaat mijn geld naartoe?",
+            "tab_content": "<p>Naar salarissen van docenten, lesmateriaal, de schoolarts, fietsen voor geslaagden en de vaste lasten van de scholen en opleidingen.</p>",
+            "_id": "d4324cb"
+           },
+           {
+            "tab_title": "Hoeveel gaat er naar de organisatie?",
+            "tab_content": "<p>Vrijwel niets. Het bestuur werkt onbezoldigd en Venture Group draagt de organisatiekosten. 95% gaat direct naar hulp.</p>",
+            "_id": "8b7025f"
+           },
+           {
+            "tab_title": "Kan ik ook per bank overmaken?",
+            "tab_content": "<p>Ja, op NL25 ABNA 0578 9231 73 ten name van Stichting Sampark in Genemuiden.</p>",
+            "_id": "d46532c"
+           },
+           {
+            "tab_title": "Krijg ik een bevestiging?",
+            "tab_content": "<p>Ja, na je betaling ontvang je direct een bevestiging per mail. Die kun je bewaren voor je belastingaangifte.</p>",
+            "_id": "91846d1"
+           }
+          ],
+          "border_width": {
+           "unit": "px",
+           "size": 0,
+           "sizes": []
+          },
+          "space_between": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text",
+           "tab_active_color": "globals/colors?id=primary",
+           "title_background": "globals/colors?id=658acb6",
+           "content_color": "globals/colors?id=text"
+          },
+          "title_padding": {
+           "unit": "px",
+           "top": "18",
+           "right": "24",
+           "bottom": "18",
+           "left": "24",
+           "isLinked": false
+          },
+          "content_padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "24",
+           "bottom": "18",
+           "left": "24",
+           "isLinked": false
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}
