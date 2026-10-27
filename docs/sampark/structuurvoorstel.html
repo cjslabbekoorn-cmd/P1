@@ -1,0 +1,341 @@
+<title>Sampark structuurvoorstel</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: één leeskolom (max 860px) met brede tabellen/boom in eigen scrollcontainer; huisstijl Sampark (baksteenrood, warm papier, donkerbruin). */
+:root{
+  --bg:#fbf8f4; --surface:#f3ebe1; --fg:#3a1e17; --muted:#7a5d52; --line:#e2d4c6;
+  --accent:#963322; --accent-soft:#f1dcd3;
+  --new:#2f6b4f; --new-bg:#e1efe7; --change:#8a5a00; --change-bg:#f6ead0; --del:#9b2c2c; --del-bg:#f6dede; --keep:#55606b; --keep-bg:#e7eaee;
+  --display:"Spectral",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1c1412; --surface:#271c19; --fg:#f1e6de; --muted:#b9a196; --line:#3d2c27;
+  --accent:#e07a5f; --accent-soft:#3a221c;
+  --new:#7fcfa5; --new-bg:#1d3329; --change:#e9bf6a; --change-bg:#3a2e17; --del:#f29b9b; --del-bg:#3d1f1f; --keep:#b7c0c9; --keep-bg:#2a2f35; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1c1412; --surface:#271c19; --fg:#f1e6de; --muted:#b9a196; --line:#3d2c27;
+  --accent:#e07a5f; --accent-soft:#3a221c;
+  --new:#7fcfa5; --new-bg:#1d3329; --change:#e9bf6a; --change-bg:#3a2e17; --del:#f29b9b; --del-bg:#3d1f1f; --keep:#b7c0c9; --keep-bg:#2a2f35; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 80px}
+.wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,2.8rem)}
+h2{font-size:1.75rem;color:var(--accent)}
+h3{font-size:1.2rem;margin-top:8px}
+p{margin:0;max-width:66ch}
+section{display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.lead{font-size:1.15rem;color:var(--fg)}
+.meta{color:var(--muted);font-size:.92rem}
+code,.mono{font-family:var(--mono);font-size:.86em}
+code{background:var(--surface);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+ul,ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.summary{background:var(--surface);border-radius:10px;padding:24px;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.summary div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.summary strong{font-family:var(--display);font-size:1.1rem}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:620px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--surface)}
+tr:last-child td{border-bottom:0}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.t-hoog{background:var(--del-bg);color:var(--del)}
+.t-midden{background:var(--change-bg);color:var(--change)}
+.t-laag{background:var(--keep-bg);color:var(--keep)}
+.t-nieuw{background:var(--new-bg);color:var(--new)}
+.t-wijzig{background:var(--change-bg);color:var(--change)}
+.t-weg{background:var(--del-bg);color:var(--del)}
+.t-blijft{background:var(--keep-bg);color:var(--keep)}
+.legend{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:.88rem;color:var(--muted)}
+.tree{font-size:.95rem;padding:18px 20px;min-width:560px}
+.tree ul{list-style:none;padding-left:22px;border-left:1px solid var(--line);margin-left:6px;gap:4px;margin-top:4px}
+.tree>ul{border-left:0;padding-left:0;margin-left:0}
+.tree li{display:block}
+.tree .row{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.tree .name{font-weight:600}
+.tree .url{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.tree .note{font-size:.85rem;color:var(--muted)}
+.models{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.model{border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.model header{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.model h3{margin:0}
+.model .kind{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.model dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.88rem}
+.model dt{font-family:var(--mono);font-size:.8rem;color:var(--fg)}
+.model dd{margin:0;color:var(--muted);min-width:0}
+.phase{display:grid;grid-template-columns:120px 1fr;gap:16px;padding-block:14px;border-top:1px solid var(--line)}
+.phase:first-of-type{border-top:0}
+.phase .when{font-family:var(--display);font-weight:600;color:var(--accent)}
+.callout{border-left:3px solid var(--accent);background:var(--accent-soft);padding:14px 18px;border-radius:0 8px 8px 0}
+@media (max-width:560px){.phase{grid-template-columns:1fr;gap:6px}body{font-size:16px}}
+</style>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:14px">
+  <span class="eyebrow">Positie1 · Stichting Sampark · oktober 2026</span>
+  <h1>Structuurvoorstel stichtingsampark.nl</h1>
+  <p class="lead">Analyse van live en staging, met een verbeterde sitestructuur en datamodel. Alles in dit voorstel is te bouwen met Elementor Pro (Theme Builder) en JetEngine (CPT's, meta boxes, relaties, Query Builder, Listing Grid, Options Pages, Dynamic Visibility). De productpagina's blijven WooCommerce met Superforms.</p>
+  <p class="meta">Bronnen: sitemaps, REST-API (posttypes en taxonomieën) en de HTML van alle publieke pagina's op <code>www.stichtingsampark.nl</code> en <code>staging.stichtingsampark.nl</code>, opgehaald op 27 oktober 2026. Backend-instellingen (JetEngine-velden, Superforms-configuratie) heb ik niet kunnen inzien.</p>
+</header>
+
+<section>
+  <span class="eyebrow">In het kort</span>
+  <h2>De site volgt de techniek, niet de bezoeker</h2>
+  <p>Het redesign op staging ziet er goed uit, maar de structuur eronder is nog die van de oude site: losse WordPress-objecten (evenementen, producten, berichten, pagina's) die niet aan elkaar gekoppeld zijn. Daardoor staat informatie dubbel, raken pagina's verouderd en is de route naar steunen niet duidelijk.</p>
+  <div class="summary">
+    <div><strong>Eén bron per gegeven</strong><span>Evenementtekst, prijzen, sponsorlogo's, kerncijfers en contactgegevens staan nu op twee of meer plekken. Elk gegeven krijgt één plek in JetEngine en wordt overal dynamisch getoond.</span></div>
+    <div><strong>Koppelen met relaties</strong><span>Evenement ↔ product, evenement ↔ nieuws, project ↔ nieuws en sponsor ↔ evenement. Daarmee vullen pagina's zichzelf met inschrijfknoppen, terugblikken en sponsorvermeldingen.</span></div>
+    <div><strong>Eén route naar steunen</strong><span>Doneren, sponsor een kind, bedrijfssponsoring en meedoen aan een evenement komen samen onder 'Steun ons', met een vaste Doneren-knop in de header.</span></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Analyse</span>
+  <h2>Wat we tegenkwamen</h2>
+  <p>Gesorteerd op impact. Punten met <span class="tag t-hoog">hoog</span> zou ik vóór de livegang oplossen.</p>
+  <div class="scroll"><table>
+    <thead><tr><th style="width:90px">Impact</th><th>Bevinding</th><th>Gevolg</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag t-hoog">hoog</span></td><td>Op staging hebben 5 van de 9 producten geen formulier en geen bestelknop: <code>sona-goud</code>, <code>chandee-zilver</code>, <code>peetal-brons</code>, <code>sponsor-een-kind</code> en <code>witte-wijn</code>. Alleen de kop "Bestelformulier" staat er.</td><td>Sponsorpakketten, sponsor een kind en witte wijn zijn niet te bestellen. Dit zijn juist de producten met de hoogste opbrengst.</td></tr>
+      <tr><td><span class="tag t-hoog">hoog</span></td><td>Live en staging zijn uit elkaar gelopen. Live heeft het <strong>Padel toernooi</strong> (21-11-2026, staat op de live homepage), de alcoholvrije wijn (<code>free-pass-white-sparkling-alcoholvrij</code>) en het bericht "Wijnactie dit jaar ook alcoholvrij". Staging heeft die niet.</td><td>Bij livegang verdwijnt een evenement dat over een maand plaatsvindt, plus een lopend product.</td></tr>
+      <tr><td><span class="tag t-hoog">hoog</span></td><td>Evenementen hebben geen status. De rally (16-09-2026) en het golftoernooi (26-10-2026) zijn voorbij, maar tonen nog "Schrijf je in!". Het ticketproduct staat op "11 op voorraad". De homepage zegt "Geen evenementen gepland" terwijl de wijnactie loopt.</td><td>Bezoekers kunnen zich inschrijven voor iets wat al geweest is. De homepage oogt leeg.</td></tr>
+      <tr><td><span class="tag t-hoog">hoog</span></td><td>Doneren staat niet in het menu. <code>/doneren/</code> is een lege pagina. De echte donatie zit in <code>/product/donatie/</code> en is alleen bereikbaar via onderaan de Sponsors-pagina, als kaart met de datum "5 september 2022".</td><td>De belangrijkste conversie van een goede doelen-site is lastig te vinden.</td></tr>
+      <tr><td><span class="tag t-midden">midden</span></td><td>Evenement en product staan dubbel. De rally- en golfteksten staan in de CPT <code>evenementen</code> én als productbeschrijving. Datum, locatie en prijs ("600,-") zijn handmatig ingevuld bij het evenement en los bij het product (€ 600,00).</td><td>Elk jaar twee plekken bijwerken, met kans op verschillende informatie.</td></tr>
+      <tr><td><span class="tag t-midden">midden</span></td><td>Alle 37 nieuwsberichten staan in de categorie <code>Uncategorized</code>. Er is geen koppeling met scholen of evenementen.</td><td>Er kan niet gefilterd worden en een schoolpagina kan het nieuws over die school niet tonen. Terugblikken ("Dit was de 2025 rally!") zijn niet te zien op de rally-pagina.</td></tr>
+      <tr><td><span class="tag t-midden">midden</span></td><td>22 sponsorlogo's staan hardcoded op de homepage én op de Sponsors-pagina. De pakketten Sona en Chandee beloven "naamsvermelding bij het gekozen evenement", maar daar is geen structuur voor.</td><td>Een nieuwe sponsor betekent twee pagina's aanpassen. Wat aan sponsors beloofd is, wordt niet automatisch waargemaakt.</td></tr>
+      <tr><td><span class="tag t-midden">midden</span></td><td>Projecten zijn half gestructureerd. De 4 scholen zijn CPT-items, maar de Delhi-opleidingen (Computerspecialist, Modinette, Schoonheidsspecialiste) en de andere projecten (fietsen, zonnepanelen, solar lampjes, Stichting Accrete) staan hardcoded op de archiefpagina. "Zonnepanelen" linkt naar een nieuwsbericht en "Accrete" naar een externe site.</td><td>Deze projecten hebben geen eigen pagina en zijn niet terug te vinden of te koppelen.</td></tr>
+      <tr><td><span class="tag t-midden">midden</span></td><td>De kerncijfers (leerlingen, voltooide cursussen, fietsen per jaar) staan handmatig op Home en Over ons. Het aantal leerlingen per school staat los bij elke school.</td><td>Cijfers lopen uit de pas. Dat kost geloofwaardigheid.</td></tr>
+      <tr><td><span class="tag t-midden">midden</span></td><td>De Project- en cultuurreis staat op twee plekken: pagina <code>/projectencultuurreis/</code> (fotoalbum van 2018) en evenement <code>/evenementen/project_en_cultuurreis/</code> (met underscores in de slug).</td><td>Dubbele content en een onnette URL.</td></tr>
+      <tr><td><span class="tag t-midden">midden</span></td><td>De financiële verantwoording bestaat uit één link naar de jaarrekening (op Over ons en Contact). De tijdlijn op Over ons stopt in 2020. De ANBI-gegevens (RSIN, bestuur, beleid, beloning, verslag) staan verspreid.</td><td>Een ANBI moet deze gegevens vindbaar publiceren. Donateurs en bedrijven zoeken ernaar.</td></tr>
+      <tr><td><span class="tag t-laag">laag</span></td><td>Restpagina's op staging: <code>/details/</code> (lorem ipsum), <code>/overzicht/</code>, <code>/winkel/</code> (leeg), <code>/sponsors-contact-form/</code> (oud Elementor-formulier) en <code>/shop/</code> (Woo-archief met alle producten door elkaar).</td><td>Ze staan in de sitemap en worden dus straks geïndexeerd.</td></tr>
+      <tr><td><span class="tag t-laag">laag</span></td><td>De sitemap bevat <code>udb_admin_page</code> (Ultimate Dashboard) en een lege <code>ewcpm_post_type</code>. Er zijn lege productcategorieën (<code>geen-categorie</code> en <code>https-www-stichtingsampark-nl-product-skutsjesilen</code>).</td><td>Vervuiling in Yoast en in de beheeromgeving.</td></tr>
+      <tr><td><span class="tag t-laag">laag</span></td><td>De wijnactie-knop op de staging-homepage linkt naar het live-domein. Op de evenementpagina staat een uittreksel met "Lees verder" dat direct daaronder volledig herhaald wordt.</td><td>Kleine slordigheden in de templates.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Voorstel</span>
+  <h2>Nieuwe sitestructuur</h2>
+  <p>Hoofdmenu: <strong>Projecten · Evenementen · Steun ons · Nieuws · Over ons</strong>, met een vaste knop <strong>Doneren</strong>. Contact staat in de topbalk en de footer. Bestaande URL's blijven zoveel mogelijk staan, zodat er weinig redirects nodig zijn.</p>
+  <div class="legend"><span class="tag t-blijft">blijft</span> bestaat al <span class="tag t-wijzig">wijzigen</span> aanpassen <span class="tag t-nieuw">nieuw</span> toevoegen <span class="tag t-weg">weg</span> verwijderen + redirect</div>
+  <div class="scroll"><div class="tree">
+  <ul>
+    <li><div class="row"><span class="name">Home</span><span class="url">/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Evenementenlijst op status, sponsors en cijfers dynamisch</span></div></li>
+    <li><div class="row"><span class="name">Projecten</span><span class="url">/projecten/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Archief met drie secties op taxonomie projecttype</span></div>
+      <ul>
+        <li><div class="row"><span class="name">Scholen in Budaun</span><span class="tag t-blijft">blijft</span><span class="note">Khukdi, Kundanpur, Bilsi, Ghadia</span></div></li>
+        <li><div class="row"><span class="name">Opleidingen in Delhi</span><span class="tag t-nieuw">nieuw</span><span class="note">Computerspecialist, Modinette, Schoonheidsspecialiste als CPT-items</span></div></li>
+        <li><div class="row"><span class="name">Initiatieven</span><span class="tag t-nieuw">nieuw</span><span class="note">Fietsen voor geslaagden, Zonnepanelen, Solar lampjes, Stichting Accrete</span></div></li>
+      </ul></li>
+    <li><div class="row"><span class="name">Evenementen</span><span class="url">/evenementen/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Eerst 'Binnenkort', daarna 'Terugkerend', daarna 'Geweest'</span></div>
+      <ul>
+        <li><div class="row"><span class="name">Sampark Rally</span><span class="url">/evenementen/sampark-rally/</span><span class="tag t-blijft">blijft</span></div></li>
+        <li><div class="row"><span class="name">Golftoernooi</span><span class="url">/evenementen/golftoernooi/</span><span class="tag t-blijft">blijft</span></div></li>
+        <li><div class="row"><span class="name">Wijnactie</span><span class="url">/evenementen/wijnactie/</span><span class="tag t-blijft">blijft</span><span class="note">+ alcoholvrij product</span></div></li>
+        <li><div class="row"><span class="name">Padel toernooi</span><span class="url">/evenementen/padel-toernooi/</span><span class="tag t-nieuw">nieuw</span><span class="note">Overzetten van live</span></div></li>
+        <li><div class="row"><span class="name">Project- en cultuurreis</span><span class="url">/evenementen/project-en-cultuurreis/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Slug met streepjes; fotoalbum 2018 naar galerijveld</span></div></li>
+        <li><div class="row"><span class="name">→ Inschrijven / bestellen</span><span class="url">/product/…</span><span class="tag t-blijft">blijft</span><span class="note">Woo + Superforms, gekoppeld via relatie</span></div></li>
+      </ul></li>
+    <li><div class="row"><span class="name">Steun ons</span><span class="url">/steun-ons/</span><span class="tag t-nieuw">nieuw</span><span class="note">Keuzepagina: particulier of bedrijf</span></div>
+      <ul>
+        <li><div class="row"><span class="name">Doneren</span><span class="url">/product/donatie/</span><span class="tag t-blijft">blijft</span><span class="note">Headerknop; <code>/doneren/</code> wordt een 301 hierheen</span></div></li>
+        <li><div class="row"><span class="name">Sponsor een kind</span><span class="url">/product/sponsor-een-kind/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Superforms toevoegen</span></div></li>
+        <li><div class="row"><span class="name">Bedrijfssponsoring</span><span class="url">/sponsors/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Pakketten + logowand uit CPT sponsors</span></div></li>
+        <li><div class="row"><span class="name">Meedoen aan een evenement</span><span class="tag t-nieuw">nieuw</span><span class="note">Blok met listing van open evenementen</span></div></li>
+      </ul></li>
+    <li><div class="row"><span class="name">Nieuws</span><span class="url">/nieuws/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Categorielinks bovenaan</span></div>
+      <ul>
+        <li><div class="row"><span class="name">Categoriearchieven</span><span class="url">/category/…/</span><span class="tag t-nieuw">nieuw</span><span class="note">Scholen &amp; leerlingen · Evenementen · Sponsors &amp; partners · Stichting</span></div></li>
+      </ul></li>
+    <li><div class="row"><span class="name">Over ons</span><span class="url">/over-ons/</span><span class="tag t-wijzig">wijzigen</span><span class="note">Bestuur, tijdlijn en cijfers uit de Options Page</span></div>
+      <ul>
+        <li><div class="row"><span class="name">ANBI &amp; financiën</span><span class="url">/anbi/</span><span class="tag t-nieuw">nieuw</span><span class="note">Verplichte gegevens + jaarverslagen per jaar</span></div></li>
+      </ul></li>
+    <li><div class="row"><span class="name">Contact</span><span class="url">/contact/</span><span class="tag t-blijft">blijft</span></div></li>
+    <li><div class="row"><span class="name">Service</span><span class="note">Winkelwagen, Afrekenen, Mijn account, Bestelling ontvangen, Algemene voorwaarden, Privacy, Sitemap</span><span class="tag t-blijft">blijft</span></div></li>
+    <li><div class="row"><span class="name">Opruimen</span><span class="note"><code>/details/</code>, <code>/overzicht/</code>, <code>/winkel/</code>, <code>/sponsors-contact-form/</code>, <code>/projectencultuurreis/</code>, <code>/doneren/</code></span><span class="tag t-weg">weg</span></div></li>
+  </ul>
+  </div></div>
+</section>
+
+<section>
+  <span class="eyebrow">Datamodel</span>
+  <h2>JetEngine-structuur</h2>
+  <p>Twee bestaande CPT's uitbreiden, één CPT en één Options Page toevoegen en vier relaties leggen. Datumvelden altijd met <em>Save as timestamp</em> aan, anders werkt sorteren en filteren in de Query Builder niet.</p>
+  <div class="models">
+    <article class="model">
+      <header><h3>Evenementen</h3><span class="kind">CPT · bestaand</span></header>
+      <dl>
+        <dt>status</dt><dd>select: aangekondigd / inschrijving open / vol / doorlopend / afgelopen</dd>
+        <dt>datum_start</dt><dd>date, timestamp</dd>
+        <dt>datum_eind</dt><dd>date, timestamp (optioneel)</dd>
+        <dt>tijd</dt><dd>text, bv. "9:00 – 21:00"</dd>
+        <dt>locatie</dt><dd>text</dd>
+        <dt>inschrijving_tot</dt><dd>date, timestamp</dd>
+        <dt>prijs_label</dt><dd>text, bv. "€ 300 p.p. of € 1.200 per tafel"</dd>
+        <dt>max_deelnemers</dt><dd>number</dd>
+        <dt>programma</dt><dd>repeater: tijd + onderdeel</dd>
+        <dt>galerij</dt><dd>gallery (vervangt fotopagina 2018)</dd>
+      </dl>
+    </article>
+    <article class="model">
+      <header><h3>Projecten</h3><span class="kind">CPT · bestaand</span></header>
+      <dl>
+        <dt>projecttype</dt><dd>taxonomie: school / opleiding / initiatief</dd>
+        <dt>regio</dt><dd>taxonomie: Budaun / New Delhi</dd>
+        <dt>tagline</dt><dd>text, bv. "Van vijf lokalen naar vijftien"</dd>
+        <dt>aantal</dt><dd>number (leerlingen of studenten)</dd>
+        <dt>soort_werk</dt><dd>select: nieuwbouw / renovatie / doorlopend</dd>
+        <dt>sinds</dt><dd>number, jaartal</dd>
+        <dt>we_financieren</dt><dd>checkbox: salarissen, lesmateriaal, schoolarts, fietsen, …</dd>
+        <dt>externe_link</dt><dd>url (bv. Accrete)</dd>
+        <dt>galerij</dt><dd>gallery</dd>
+      </dl>
+    </article>
+    <article class="model">
+      <header><h3>Sponsors</h3><span class="kind">CPT · nieuw</span></header>
+      <dl>
+        <dt>titel</dt><dd>bedrijfsnaam</dd>
+        <dt>logo</dt><dd>media</dd>
+        <dt>website</dt><dd>url</dd>
+        <dt>niveau</dt><dd>taxonomie: Sona / Chandee / Peetal / partner</dd>
+        <dt>actief</dt><dd>switcher, voor de logowand</dd>
+        <dt>volgorde</dt><dd>number</dd>
+      </dl>
+      <p class="meta">Publiek: uit (<em>publicly queryable</em> off), alleen gebruikt in listings.</p>
+    </article>
+    <article class="model">
+      <header><h3>Nieuws</h3><span class="kind">posts · bestaand</span></header>
+      <dl>
+        <dt>categorie</dt><dd>Scholen &amp; leerlingen / Evenementen / Sponsors &amp; partners / Stichting</dd>
+        <dt>relaties</dt><dd>met projecten en evenementen (zie hieronder)</dd>
+      </dl>
+      <p class="meta">De 37 bestaande berichten eenmalig indelen. Dat is ongeveer een uur werk.</p>
+    </article>
+    <article class="model">
+      <header><h3>Stichting</h3><span class="kind">Options Page · nieuw</span></header>
+      <dl>
+        <dt>kerncijfers</dt><dd>leerlingen, cursussen, fietsen per jaar</dd>
+        <dt>contact</dt><dd>adres, telefoon, e-mail, bereikbaarheid</dd>
+        <dt>registratie</dt><dd>KvK, RSIN, IBAN</dd>
+        <dt>campagne</dt><dd>switcher + tekst + link (topbanner "Wijnactie! Bestel hier je wijn")</dd>
+        <dt>bestuur</dt><dd>repeater: naam, functie, foto</dd>
+        <dt>tijdlijn</dt><dd>repeater: jaar, titel, tekst</dd>
+        <dt>anbi_documenten</dt><dd>repeater: jaar, soort, bestand</dd>
+        <dt>anbi_teksten</dt><dd>beleidsplan, beloningsbeleid, activiteiten</dd>
+      </dl>
+    </article>
+    <article class="model">
+      <header><h3>Producten</h3><span class="kind">WooCommerce · bestaand</span></header>
+      <dl>
+        <dt>product_cat</dt><dd>donatie / sponsorpakket / wijnactie / samparkrally / golftoernooi / padel</dd>
+        <dt>formulier</dt><dd>Superforms, zoals op staging</dd>
+        <dt>beschrijving</dt><dd>alleen korte tekst; het verhaal staat bij het evenement</dd>
+      </dl>
+      <p class="meta">Slugs zonder jaartal (<code>ticket-sampark-rally</code>), zodat het product elk jaar hergebruikt wordt en links blijven werken.</p>
+    </article>
+  </div>
+
+  <h3>Relaties (JetEngine Relations)</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Relatie</th><th>Type</th><th>Wat het oplevert</th></tr></thead>
+    <tbody>
+      <tr><td>Evenement → Product</td><td>one to many</td><td>Inschrijfknop en prijs op de evenementpagina, en een link terug naar het evenement op de productpagina. Bij de wijnactie: rood, wit en alcoholvrij.</td></tr>
+      <tr><td>Evenement ↔ Nieuws</td><td>many to many</td><td>Blok "Terugblikken" op de evenementpagina ("Dit was de 2025 rally!").</td></tr>
+      <tr><td>Project ↔ Nieuws</td><td>many to many</td><td>Blok "Nieuws over deze school" op de projectpagina.</td></tr>
+      <tr><td>Sponsor ↔ Evenement</td><td>many to many</td><td>Blok "Mogelijk gemaakt door" op de evenementpagina. Zo krijgen Sona- en Chandee-sponsors de beloofde naamsvermelding.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Bouw</span>
+  <h2>Templates en queries</h2>
+  <p>Per onderdeel welke Elementor Pro- en JetEngine-onderdelen het dragen. Er zijn geen extra plugins nodig.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Onderdeel</th><th>Bouwwijze</th><th>Query / logica</th></tr></thead>
+    <tbody>
+      <tr><td>Header + footer</td><td>Theme Builder. Contactgegevens, KvK, RSIN en IBAN als Dynamic Tags uit de Options Page.</td><td>Campagnebanner met Dynamic Visibility op de switcher <code>campagne</code>.</td></tr>
+      <tr><td>Home: aankomende evenementen</td><td>Listing Grid evenementen-kaart</td><td>Query Builder Posts: meta <code>status</code> IN (aangekondigd, open, vol, doorlopend), sorteren op <code>datum_start</code> ASC. Met de status vervalt de afhankelijkheid van de datum, en de wijnactie ('doorlopend') blijft zichtbaar.</td></tr>
+      <tr><td>Home + Sponsors: logowand</td><td>Listing Grid sponsors, carrousel op Home</td><td>Posts: <code>sponsors</code>, meta <code>actief</code> = true, sorteren op niveau en volgorde.</td></tr>
+      <tr><td>Kerncijfers</td><td>Elementor Counter met Dynamic Tag</td><td>Options Page <code>kerncijfers</code>, eenmaal ingevuld en getoond op Home en Over ons.</td></tr>
+      <tr><td>Evenementenarchief</td><td>Archive template CPT evenementen, drie Listing Grids</td><td>Drie queries op <code>status</code>: open/aangekondigd, doorlopend en afgelopen. Bij afgelopen tonen we een terugblik.</td></tr>
+      <tr><td>Evenement single</td><td>Single template CPT evenementen</td><td>Inschrijfknop via de Related Items-query (Evenement → Product). Dynamic Visibility: knop alleen bij <code>status</code> = open, anders de tekst "Inschrijving gesloten" of "Volgend jaar weer". Programma als repeater-listing. Terugblikken en sponsors via relaties. "Andere evenementen": exclude <code>%current_id%</code>.</td></tr>
+      <tr><td>Product single</td><td>Woo single template (bestaand) + Superforms</td><td>Blok "Over dit evenement" via de omgekeerde relatie Product → Evenement. De lange productbeschrijving vervalt.</td></tr>
+      <tr><td>Projectenarchief</td><td>Archive template CPT projecten, drie Listing Grids</td><td>Tax query <code>projecttype</code> = school / opleiding / initiatief. Bij <code>externe_link</code> linkt de kaart naar buiten.</td></tr>
+      <tr><td>Project single</td><td>Single template CPT projecten</td><td>"Nieuws over deze school" via relatie. "Andere projecten": dezelfde term, exclude current. CTA naar sponsor een kind.</td></tr>
+      <tr><td>Steun ons</td><td>Gewone Elementor-pagina</td><td>Vier blokken. Het pakket-overzicht is een Listing Grid met WC Product Query op <code>product_cat</code> = sponsorpakket.</td></tr>
+      <tr><td>Nieuws</td><td>Archive template posts (geldt ook voor categoriearchieven)</td><td>Categorielinks bovenaan, Listing Grid met de huidige query en paginering.</td></tr>
+      <tr><td>Over ons / ANBI</td><td>Gewone pagina's met Dynamic Tags</td><td>Repeater-queries uit de Options Page voor bestuur, tijdlijn en ANBI-documenten.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="callout">De status zetten we bewust handmatig. Een automatisch 'afgelopen' op basis van de datum kan ook (een tweede meta clause <code>datum_start</code> ≥ <code>today</code>, type timestamp), maar de wijnactie en de reis hebben geen vaste datum. Eén veld dat het bestuur zelf beheert is begrijpelijker.</p>
+</section>
+
+<section>
+  <span class="eyebrow">Redirects</span>
+  <h2>Oude URL's</h2>
+  <p>In te stellen in Yoast Premium of Redirection. Ook de URL's die alleen op live bestaan meenemen.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Oud</th><th>Nieuw</th><th>Waarom</th></tr></thead>
+    <tbody>
+      <tr><td><code>/doneren/</code></td><td><code>/product/donatie/</code></td><td>Lege pagina</td></tr>
+      <tr><td><code>/winkel/</code>, <code>/overzicht/</code></td><td><code>/steun-ons/</code></td><td>Leeg of dubbel</td></tr>
+      <tr><td><code>/sponsors-contact-form/</code></td><td><code>/sponsors/</code></td><td>Vervangen door producten</td></tr>
+      <tr><td><code>/projectencultuurreis/</code>, <code>/evenementen/project_en_cultuurreis/</code></td><td><code>/evenementen/project-en-cultuurreis/</code></td><td>Samengevoegd, nette slug</td></tr>
+      <tr><td><code>/golftoernooi/</code>, <code>/classic-rally/</code>, <code>/padel-tournooi/</code> (live)</td><td><code>/evenementen/…/</code></td><td>Oude pagina's naast de CPT</td></tr>
+      <tr><td><code>/events-contact-form/</code>, <code>/bestelformulier-wijnen/</code> (live)</td><td><code>/evenementen/</code>, <code>/evenementen/wijnactie/</code></td><td>Oude formulieren</td></tr>
+      <tr><td><code>/product/ticket-samparkrally-2024/</code>, <code>-2026/</code></td><td><code>/product/ticket-sampark-rally/</code></td><td>Eén product zonder jaartal</td></tr>
+      <tr><td><code>/product/ruteiro-verdejo-2025/</code>, <code>/product/palazzo-mio-…/</code> (live)</td><td><code>/product/witte-wijn/</code>, <code>/product/rode-wijn/</code></td><td>Evergreen wijnproducten</td></tr>
+      <tr><td><code>/details/</code></td><td>verwijderen (410)</td><td>Lorem ipsum</td></tr>
+      <tr><td><code>/shop/</code></td><td>noindex, niet linken</td><td>Woo heeft de shoppagina nodig</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Planning</span>
+  <h2>Volgorde van werken</h2>
+  <div>
+    <div class="phase"><span class="when">Vóór livegang</span><ul>
+      <li>Superforms toevoegen aan Sona, Chandee, Peetal, Sponsor een kind en Witte wijn. Daarna elk product één keer testen tot en met de bevestigingsmail.</li>
+      <li>Padel toernooi, de alcoholvrije wijn en het bijbehorende nieuwsbericht van live naar staging zetten. Tot de livegang een contentfreeze op live afspreken.</li>
+      <li>Statusveld bij evenementen, homepage-query en Dynamic Visibility op de inschrijfknop.</li>
+      <li>Doneren-knop in de header, <code>/steun-ons/</code> aanmaken, restpagina's opruimen en redirects instellen.</li>
+      <li>Yoast: <code>udb_admin_page</code>, <code>ewcpm_post_type</code> en <code>/shop/</code> uit de sitemap halen. Lege productcategorieën verwijderen. Link van de wijnactie-knop corrigeren.</li>
+    </ul></div>
+    <div class="phase"><span class="when">Sprint 2</span><ul>
+      <li>CPT sponsors met logowand, relatie Sponsor ↔ Evenement.</li>
+      <li>Relatie Evenement → Product, productbeschrijvingen inkorten.</li>
+      <li>Nieuwscategorieën plus de relaties Nieuws ↔ Evenement en Nieuws ↔ Project. Bestaande berichten indelen.</li>
+      <li>Options Page Stichting: kerncijfers, contactgegevens en campagnebanner.</li>
+    </ul></div>
+    <div class="phase"><span class="when">Sprint 3</span><ul>
+      <li>Projecttaxonomie en de Delhi-opleidingen en initiatieven als CPT-items.</li>
+      <li>ANBI-pagina, bestuur en tijdlijn uit de Options Page. Tijdlijn aanvullen na 2020 (input van het bestuur nodig).</li>
+      <li>Project- en cultuurreis samenvoegen, inclusief galerij.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Open vragen</span>
+  <h2>Voor de stichting</h2>
+  <ul>
+    <li>Moet "Sponsor een kind" (€ 60 per jaar, gecommuniceerd als € 5 per maand) een terugkerende betaling worden? Dan is een abonnementsoplossing nodig. Dat valt buiten Woo + Superforms en vraagt een aparte keuze.</li>
+    <li>Wie houdt de evenementstatus en de kerncijfers bij? Dat bepaalt of we de status handmatig houden of op datum automatiseren.</li>
+    <li>Willen sponsors met een eigen logo-link op de evenementpagina? Dat bepaalt hoe ver we de relatie Sponsor ↔ Evenement uitwerken.</li>
+  </ul>
+</section>
+
+</div>
