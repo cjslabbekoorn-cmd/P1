@@ -334,6 +334,34 @@ foreach ( $files as $file ) {
 	WP_CLI::log( sprintf( '  %s /%s/ (%d)', $existing ? '~' : '+', $path, $id ) );
 }
 
+// ------------------------------------------------------------------ Theme Builder-templates (Elementor Pro)
+
+if ( defined( 'ELEMENTOR_PRO_VERSION' ) ) {
+	foreach ( glob( '/elementor/templates/*.json' ) as $file ) {
+		$doc = json_decode( file_get_contents( $file ), true );
+		$existing = get_posts( [ 'post_type' => 'elementor_library', 'post_status' => 'any', 'numberposts' => 1, 'fields' => 'ids',
+			'meta_key' => '_sampark_key', 'meta_value' => $doc['key'] ] );
+		$tid = $existing ? $existing[0] : wp_insert_post( [ 'post_type' => 'elementor_library', 'post_status' => 'publish',
+			'post_title' => $doc['title'] ] );
+		if ( ! $tid || is_wp_error( $tid ) ) {
+			WP_CLI::warning( "Template {$doc['key']} niet aangemaakt" );
+			continue;
+		}
+		$content = $jet ? $jetify( $doc['content'] ) : $doc['content'];
+		update_post_meta( $tid, '_sampark_key', $doc['key'] );
+		update_post_meta( $tid, '_elementor_template_type', $doc['type'] );
+		update_post_meta( $tid, '_elementor_edit_mode', 'builder' );
+		update_post_meta( $tid, '_elementor_data', wp_slash( $fill( wp_json_encode( $content, JSON_UNESCAPED_UNICODE ) ) ) );
+		update_post_meta( $tid, '_elementor_page_settings', $doc['page_settings'] ?: [] );
+		update_post_meta( $tid, '_elementor_conditions', $doc['conditions'] );
+		update_post_meta( $tid, '_elementor_version', ELEMENTOR_VERSION );
+		update_post_meta( $tid, '_elementor_pro_version', ELEMENTOR_PRO_VERSION );
+		wp_set_object_terms( $tid, $doc['type'], 'elementor_library_type' );
+		WP_CLI::log( sprintf( '  %s template %s (%d)', $existing ? '~' : '+', $doc['title'], $tid ) );
+	}
+	\ElementorPro\Modules\ThemeBuilder\Module::instance()->get_conditions_manager()->get_cache()->regenerate();
+}
+
 if ( class_exists( '\Elementor\Plugin' ) ) {
 	\Elementor\Plugin::$instance->files_manager->clear_cache();
 }

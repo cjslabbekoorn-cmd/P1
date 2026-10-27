@@ -1,0 +1,939 @@
+{
+ "version": "0.4",
+ "title": "Footer",
+ "type": "footer",
+ "key": "footer",
+ "conditions": [
+  "include/general"
+ ],
+ "content": [
+  {
+   "id": "0c33eca",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "_title": "Footer",
+    "__globals__": {
+     "background_color": "globals/colors?id=text"
+    }
+   },
+   "elements": [
+    {
+     "id": "75945de",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "32",
+       "row": "32",
+       "isLinked": true,
+       "unit": "px",
+       "size": 32
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "padding": {
+       "unit": "px",
+       "top": "72",
+       "right": "24",
+       "bottom": "48",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "56",
+       "right": "20",
+       "bottom": "32",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_justify_content": "space-between",
+      "_title": "Kolommen"
+     },
+     "elements": [
+      {
+       "id": "823e6a5",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "10",
+         "row": "10",
+         "isLinked": true,
+         "unit": "px",
+         "size": 10
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 24,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Merk",
+        "width_tablet": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "a5415e9",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_sampark}}",
+           "id": "{{imgid:logo_sampark}}",
+           "alt": "Stichting Sampark"
+          },
+          "image_size": "medium",
+          "width": {
+           "unit": "px",
+           "size": 170,
+           "sizes": []
+          },
+          "align": "left",
+          "_css_classes": "sp-logo-light",
+          "link_to": "custom",
+          "link": {
+           "url": "/"
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "_title": "Logo"
+         },
+         "elements": []
+        },
+        {
+         "id": "0b07fcf",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Biedt kinderen een toekomst.",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=cf55c96",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3d27ac3",
+         "elType": "widget",
+         "widgetType": "social-icons",
+         "settings": {
+          "social_icon_list": [
+           {
+            "_id": "b2f2970",
+            "social_icon": {
+             "value": "fab fa-facebook-f",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "https://www.facebook.com/StichtingSampark",
+             "is_external": "on"
+            },
+            "item_icon_color": "custom"
+           },
+           {
+            "_id": "3d0e1e5",
+            "social_icon": {
+             "value": "fab fa-instagram",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "https://www.instagram.com/stichtingsampark/",
+             "is_external": "on"
+            },
+            "item_icon_color": "custom"
+           },
+           {
+            "_id": "4b9b90e",
+            "social_icon": {
+             "value": "fab fa-linkedin-in",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "https://www.linkedin.com/company/stichting-sampark/",
+             "is_external": "on"
+            },
+            "item_icon_color": "custom"
+           },
+           {
+            "_id": "3995901",
+            "social_icon": {
+             "value": "fab fa-youtube",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "https://www.youtube.com/channel/UCAt0_VtY9orOiD4r5Hv_82w",
+             "is_external": "on"
+            },
+            "item_icon_color": "custom"
+           }
+          ],
+          "align": "left",
+          "icon_color": "custom",
+          "icon_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "icon_padding": {
+           "unit": "em",
+           "size": 0.6,
+           "sizes": []
+          },
+          "icon_spacing": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          },
+          "shape": "circle",
+          "__globals__": {
+           "icon_primary_color": "globals/colors?id=658acb6",
+           "icon_secondary_color": "globals/colors?id=text"
+          },
+          "_title": "Social"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7766a45",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "10",
+         "row": "10",
+         "isLinked": true,
+         "unit": "px",
+         "size": 10
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 21,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Contact (Options Page)",
+        "width_tablet": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "69ec9b0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Contact",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "e9a7ddd",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "options_page",
+          "dynamic_field_option": "stichting::adres",
+          "field_tag": "div",
+          "hide_if_empty": "yes",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "__globals__": {
+           "field_color": "globals/colors?id=658acb6"
+          },
+          "dynamic_field_filter": "yes",
+          "filter_callback": "wpautop",
+          "_title": "Options › adres"
+         },
+         "elements": []
+        },
+        {
+         "id": "0c115e0",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "options_page",
+          "dynamic_field_option": "stichting::telefoon",
+          "field_tag": "div",
+          "hide_if_empty": "yes",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "__globals__": {
+           "field_color": "globals/colors?id=658acb6"
+          },
+          "_title": "Options › telefoon"
+         },
+         "elements": []
+        },
+        {
+         "id": "8fb9fe4",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "options_page",
+          "dynamic_field_option": "stichting::email",
+          "field_tag": "div",
+          "hide_if_empty": "yes",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "__globals__": {
+           "field_color": "globals/colors?id=658acb6"
+          },
+          "_title": "Options › email"
+         },
+         "elements": []
+        },
+        {
+         "id": "d510c65",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "options_page",
+          "dynamic_field_option": "stichting::bereikbaarheid",
+          "field_tag": "div",
+          "hide_if_empty": "yes",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "__globals__": {
+           "field_color": "globals/colors?id=cf55c96"
+          },
+          "_title": "Options › bereikbaarheid"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "77f1f85",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "10",
+         "row": "10",
+         "isLinked": true,
+         "unit": "px",
+         "size": 10
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 18,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Direct naar",
+        "width_tablet": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "2409cad",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Direct naar",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "9ac85c9",
+         "elType": "widget",
+         "widgetType": "nav-menu",
+         "settings": {
+          "menu": "footer-direct-naar",
+          "layout": "vertical",
+          "align_items": "start",
+          "pointer": "none",
+          "submenu_icon": {
+           "value": "fas fa-chevron-down",
+           "library": "fa-solid"
+          },
+          "dropdown": "none",
+          "toggle": "burger",
+          "full_width": "stretch",
+          "toggle_align": "right",
+          "menu_typography_typography": "custom",
+          "menu_typography_font_family": "aptos",
+          "menu_typography_font_weight": "400",
+          "menu_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "padding_horizontal_menu_item": {
+           "unit": "px",
+           "size": 0,
+           "sizes": []
+          },
+          "padding_vertical_menu_item": {
+           "unit": "px",
+           "size": 4,
+           "sizes": []
+          },
+          "pointer_width": {
+           "unit": "px",
+           "size": 2,
+           "sizes": []
+          },
+          "dropdown_border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": true
+          },
+          "dropdown_top_distance": {
+           "unit": "px",
+           "size": 6,
+           "sizes": []
+          },
+          "dropdown_typography_typography": "custom",
+          "dropdown_typography_font_family": "aptos",
+          "dropdown_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "dropdown_typography_text_transform": "none",
+          "padding_vertical_dropdown_item": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "color_menu_item": "globals/colors?id=658acb6",
+           "color_menu_item_hover": "globals/colors?id=cf55c96",
+           "pointer_color_menu_item_hover": "globals/colors?id=accent",
+           "color_menu_item_active": "globals/colors?id=cf55c96",
+           "pointer_color_menu_item_active": "globals/colors?id=accent",
+           "color_dropdown_item": "globals/colors?id=text",
+           "background_color_dropdown_item": "globals/colors?id=658acb6",
+           "color_dropdown_item_hover": "globals/colors?id=658acb6",
+           "background_color_dropdown_item_hover": "globals/colors?id=accent",
+           "toggle_color": "globals/colors?id=text",
+           "toggle_background_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7b8305b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "10",
+         "row": "10",
+         "isLinked": true,
+         "unit": "px",
+         "size": 10
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 25,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Nieuwsbrief",
+        "width_tablet": {
+         "unit": "%",
+         "size": 46,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "1a30675",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Nieuwsbrief",
+          "header_size": "h4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "9c79a7d",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Twee keer per jaar nieuws uit India en over onze evenementen.</p>",
+          "__globals__": {
+           "text_color": "globals/colors?id=658acb6"
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5951c5a",
+         "elType": "widget",
+         "widgetType": "form",
+         "settings": {
+          "form_name": "Nieuwsbrief",
+          "form_fields": [
+           {
+            "_id": "a4ab24c",
+            "custom_id": "email",
+            "field_type": "email",
+            "field_label": "E-mailadres",
+            "placeholder": "Je e-mailadres",
+            "required": "true",
+            "width": "100"
+           }
+          ],
+          "show_labels": "",
+          "button_text": "Inschrijven",
+          "button_width": "100",
+          "submit_actions": [
+           "email"
+          ],
+          "email_to": "info@sampark.nl",
+          "email_subject": "Nieuwe aanmelding nieuwsbrief",
+          "email_content": "[all-fields]",
+          "success_message": "Dank je wel! Je bent aangemeld.",
+          "row_gap": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "field_border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": true
+          },
+          "__globals__": {
+           "button_background_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=658acb6",
+           "button_background_hover_color": "globals/colors?id=primary",
+           "field_text_color": "globals/colors?id=text",
+           "field_background_color": "globals/colors?id=658acb6"
+          },
+          "_title": "Nieuwsbrief (Elementor Form · actie: e-mail; Mailchimp na keuze)"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1ec19c8",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "Onderbalk",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "rgba(245,237,227,0.15)"
+     },
+     "elements": [
+      {
+       "id": "6829f47",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "20",
+         "row": "20",
+         "isLinked": true,
+         "unit": "px",
+         "size": 20
+        },
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 1140,
+         "sizes": []
+        },
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "column",
+        "flex_wrap": "wrap",
+        "padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "24",
+         "bottom": "18",
+         "left": "24",
+         "isLinked": false
+        },
+        "flex_align_items": "center",
+        "flex_justify_content": "space-between",
+        "_title": "Onderbalk inhoud"
+       },
+       "elements": [
+        {
+         "id": "058edff",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "18",
+           "row": "18",
+           "isLinked": true,
+           "unit": "px",
+           "size": 18
+          },
+          "content_width": "full",
+          "flex_direction_tablet": "row",
+          "flex_direction_mobile": "row",
+          "flex_wrap": "wrap",
+          "_title": "Registratie"
+         },
+         "elements": [
+          {
+           "id": "bff3fa6",
+           "elType": "widget",
+           "widgetType": "jet-listing-dynamic-field",
+           "settings": {
+            "dynamic_field_source": "options_page",
+            "dynamic_field_option": "stichting::kvk",
+            "field_tag": "span",
+            "hide_if_empty": "yes",
+            "field_typography_typography": "custom",
+            "field_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "__globals__": {
+             "field_color": "globals/colors?id=cf55c96"
+            },
+            "dynamic_field_custom": "yes",
+            "dynamic_field_format": "KvK %s",
+            "_title": "Options › kvk"
+           },
+           "elements": []
+          },
+          {
+           "id": "fb95e92",
+           "elType": "widget",
+           "widgetType": "jet-listing-dynamic-field",
+           "settings": {
+            "dynamic_field_source": "options_page",
+            "dynamic_field_option": "stichting::rsin",
+            "field_tag": "span",
+            "hide_if_empty": "yes",
+            "field_typography_typography": "custom",
+            "field_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "__globals__": {
+             "field_color": "globals/colors?id=cf55c96"
+            },
+            "dynamic_field_custom": "yes",
+            "dynamic_field_format": "RSIN %s",
+            "_title": "Options › rsin"
+           },
+           "elements": []
+          },
+          {
+           "id": "230aca2",
+           "elType": "widget",
+           "widgetType": "jet-listing-dynamic-field",
+           "settings": {
+            "dynamic_field_source": "options_page",
+            "dynamic_field_option": "stichting::iban",
+            "field_tag": "span",
+            "hide_if_empty": "yes",
+            "field_typography_typography": "custom",
+            "field_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "__globals__": {
+             "field_color": "globals/colors?id=cf55c96"
+            },
+            "dynamic_field_custom": "yes",
+            "dynamic_field_format": "IBAN %s",
+            "_title": "Options › iban"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "c30b8a6",
+         "elType": "widget",
+         "widgetType": "nav-menu",
+         "settings": {
+          "menu": "footer-juridisch",
+          "layout": "horizontal",
+          "align_items": "end",
+          "pointer": "underline",
+          "submenu_icon": {
+           "value": "fas fa-chevron-down",
+           "library": "fa-solid"
+          },
+          "dropdown": "none",
+          "toggle": "burger",
+          "full_width": "stretch",
+          "toggle_align": "right",
+          "menu_typography_typography": "custom",
+          "menu_typography_font_family": "aptos",
+          "menu_typography_font_weight": "400",
+          "menu_typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "padding_horizontal_menu_item": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          },
+          "padding_vertical_menu_item": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "pointer_width": {
+           "unit": "px",
+           "size": 2,
+           "sizes": []
+          },
+          "dropdown_border_radius": {
+           "unit": "px",
+           "top": "12",
+           "right": "12",
+           "bottom": "12",
+           "left": "12",
+           "isLinked": true
+          },
+          "dropdown_top_distance": {
+           "unit": "px",
+           "size": 6,
+           "sizes": []
+          },
+          "dropdown_typography_typography": "custom",
+          "dropdown_typography_font_family": "aptos",
+          "dropdown_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "dropdown_typography_text_transform": "none",
+          "padding_vertical_dropdown_item": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "__globals__": {
+           "color_menu_item": "globals/colors?id=cf55c96",
+           "color_menu_item_hover": "globals/colors?id=658acb6",
+           "pointer_color_menu_item_hover": "globals/colors?id=accent",
+           "color_menu_item_active": "globals/colors?id=658acb6",
+           "pointer_color_menu_item_active": "globals/colors?id=accent",
+           "color_dropdown_item": "globals/colors?id=text",
+           "background_color_dropdown_item": "globals/colors?id=658acb6",
+           "color_dropdown_item_hover": "globals/colors?id=658acb6",
+           "background_color_dropdown_item_hover": "globals/colors?id=accent",
+           "toggle_color": "globals/colors?id=text",
+           "toggle_background_color": "globals/colors?id=658acb6"
+          },
+          "_title": "Juridisch"
+         },
+         "elements": []
+        },
+        {
+         "id": "c562e17",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "{{img:logo_anbi}}",
+           "id": "{{imgid:logo_anbi}}",
+           "alt": "ANBI"
+          },
+          "width": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "image_border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "_flex_size": "none",
+          "_title": "ANBI-logo"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {}
+}

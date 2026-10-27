@@ -43,7 +43,11 @@ Het setupscript kun je altijd opnieuw draaien, bijvoorbeeld nadat je zips hebt t
 - Productcategorieën en de 10 producten met prijzen. "Alcoholvrij mousserend" staat als concept, omdat de prijs nog ingevuld moet worden.
 - Menu's: Hoofdmenu (met submenu's onder Steun ons en Over ons), Topbalk, Footer – Direct naar, Footer – Juridisch.
 
-Header en footer zijn lokaal die van Hello Elementor, met wat CSS uit `mu-plugins/sampark-styles.php`. In de echte build worden het Theme Builder-templates (Pro), en die CSS gaat naar Site Settings › Custom CSS.
+**Header en footer** zijn Theme Builder-templates (Elementor Pro), gemaakt door `build-site.php` vanuit `elementor/templates/`:
+- Header: topbalk (Voor bedrijven, Contact, Mijn account; verborgen op mobiel) en een sticky hoofdbalk met logo, hoofdmenu met uitklapmenu's, Doneer-knop en winkelmandje. Op mobiel staan logo, Doneer, winkelmandje en de menuknop op één regel.
+- Footer: logo, tagline en social media, contactgegevens en KvK/RSIN/IBAN live uit de Options Page "Stichting" (JetEngine), het menu "Direct naar", een nieuwsbriefformulier (Elementor Form; nu met e-mail naar info@, Mailchimp na keuze), het juridische menu en het ANBI-logo.
+
+Zonder Elementor Pro valt de site terug op de header en footer van Hello Elementor (met wat CSS uit `mu-plugins/sampark-styles.php`). Die CSS hoort in productie in Site Settings › Custom CSS.
 
 ## Pagina's aanpassen of opnieuw genereren
 

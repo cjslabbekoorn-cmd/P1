@@ -191,6 +191,12 @@ def button(label, url, style="primary", align=None, full=False, icon=False, nowr
     elif style == "dark":
         s["__globals__"] = {"background_color": g_color("primary"), "button_text_color": g_color("658acb6"),
                             "button_background_hover_color": g_color("text")}
+    elif style == "link-light":
+        s.update({"background_color": "#00000000", "button_padding": dims(4, 0), "typography_typography": "custom",
+                  "typography_font_family": "aptos", "typography_text_transform": "none", "typography_font_size": size(14),
+                  "typography_font_weight": "600"})
+        s["__globals__"] = {"button_text_color": g_color("658acb6"), "hover_color": g_color("cf55c96"),
+                            "button_background_hover_color": g_color("primary")}
     elif style == "outline-light":
         s["background_color"] = "#00000000"
         s["border_border"] = "solid"
@@ -1328,6 +1334,173 @@ def content_json():
                                                                   for i, (t, k, w) in enumerate(sponsors)],
             "news": news, "options": options}
 
+
+# ---------------------------------------------------------------- Theme Builder: header en footer (Elementor Pro)
+
+TEMPLATES = []
+
+
+def template(key, title, kind, content, conditions=("include/general",)):
+    TEMPLATES.append({"key": key, "title": title, "type": kind, "conditions": list(conditions), "content": content})
+
+
+def nav_menu(menu, layout="horizontal", align="end", dropdown="tablet", color="text", hover="primary", size_px=16,
+             weight="600", pad_h=14, title=None):
+    st = {"menu": menu, "layout": layout, "align_items": align, "pointer": "underline" if layout == "horizontal" else "none",
+          "submenu_icon": {"value": "fas fa-chevron-down", "library": "fa-solid"}, "dropdown": dropdown, "toggle": "burger",
+          "full_width": "stretch", "toggle_align": "right",
+          "menu_typography_typography": "custom", "menu_typography_font_family": "aptos",
+          "menu_typography_font_weight": weight, "menu_typography_font_size": size(size_px),
+          "padding_horizontal_menu_item": size(pad_h), "padding_vertical_menu_item": size(10 if layout == "horizontal" else 4),
+          "pointer_width": size(2), "dropdown_border_radius": dims(12), "dropdown_top_distance": size(6),
+          "dropdown_typography_typography": "custom", "dropdown_typography_font_family": "aptos",
+          "dropdown_typography_font_size": size(15), "dropdown_typography_text_transform": "none", "padding_vertical_dropdown_item": size(10),
+          "__globals__": {"color_menu_item": g_color(color), "color_menu_item_hover": g_color(hover),
+                          "pointer_color_menu_item_hover": g_color("accent"), "color_menu_item_active": g_color(hover),
+                          "pointer_color_menu_item_active": g_color("accent"),
+                          "color_dropdown_item": g_color("text"), "background_color_dropdown_item": g_color("658acb6"),
+                          "color_dropdown_item_hover": g_color("658acb6"), "background_color_dropdown_item_hover": g_color("accent"),
+                          "toggle_color": g_color("text"), "toggle_background_color": g_color("658acb6")}}
+    if layout == "vertical":
+        st["dropdown"] = "none"
+    return widget("nav-menu", st, title=title)
+
+
+def option_field(field, tag="span", color="658acb6", size_px=15, fmt=None):
+    st = {"dynamic_field_source": "options_page", "dynamic_field_option": f"stichting::{field}", "field_tag": tag,
+          "hide_if_empty": "yes", "field_typography_typography": "custom", "field_typography_font_size": size(size_px),
+          "__globals__": {"field_color": g_color(color)}}
+    if fmt:
+        st["dynamic_field_custom"] = "yes"
+        st["dynamic_field_format"] = fmt
+    if field == "adres":
+        st["dynamic_field_filter"] = "yes"
+        st["filter_callback"] = "wpautop"
+    return widget("jet-listing-dynamic-field", st, title=f"Options › {field}")
+
+
+TOP_LINKS = [("Voor bedrijven", "/steun-ons/bedrijven/"), ("Contact", "/contact/"), ("Mijn account", "/mijn-account/")]
+
+def header_nav():
+    w = nav_menu("hoofdmenu", title="Hoofdmenu")
+    w["settings"].update({"_flex_size": "grow", "_flex_size_tablet": "none", "_flex_size_mobile": "none",
+                          "_flex_order_tablet": "end", "_flex_order_mobile": "end"})
+    return w
+
+
+header_content = [
+    container(
+        container(
+            text("<p>Sinds 2007 onderwijs in India · ANBI-erkend</p>", color="658acb6", size_px=14),
+            container(*[button(l, u, style="link-light") for l, u in TOP_LINKS], title="Topbalk links", direction="row",
+                      gap_px=18, mobile_column=False, align="center"),
+            title="Topbalk inhoud", boxed=True, direction="row", justify="space-between", align="center", gap_px=16,
+            pad=dims(6, 24), mobile_column=False),
+        title="Topbalk", bg_global="primary", extra={"hide_mobile": "hidden-mobile"}),
+    container(
+        container(
+            widget("image", {"image": {"url": "{{img:logo_sampark}}", "id": "{{imgid:logo_sampark}}", "alt": "Stichting Sampark"},
+                             "image_size": "medium", "width": size(170), "width_mobile": size(112),
+                             "link_to": "custom", "link": {"url": "/", "is_external": "", "nofollow": ""},
+                             "image_border_radius": dims(0), "_flex_size": "none"}, title="Logo"),
+            header_nav(),
+            button("Doneer", "/steun-ons/doneren/", nowrap=True),
+            widget("woocommerce-menu-cart", {"icon": "bag-medium", "items_indicator": "bubble", "hide_empty_indicator": "yes",
+                                             "show_subtotal": "", "toggle_icon_size": size(22), "_flex_size": "none",
+                                             "toggle_button_border_width": size(0), "toggle_button_padding": dims(8),
+                                             "__globals__": {"toggle_button_icon_color": g_color("text"),
+                                                             "toggle_button_background_color": g_color("658acb6"),
+                                                             "items_indicator_background_color": g_color("accent"),
+                                                             "items_indicator_text_color": g_color("658acb6")}},
+                   title="Winkelmandje"),
+            title="Hoofdbalk inhoud", boxed=True, direction="row", justify="space-between", align="center", gap_px=16,
+            pad=dims(10, 24), pad_mobile=dims(8, 16), mobile_column=False,
+            extra={"flex_wrap": "nowrap", "flex_wrap_mobile": "nowrap", "flex_gap_mobile": gap(8)}),
+        title="Hoofdbalk", bg_global="658acb6",
+        extra={"sticky": "top", "sticky_on": ["desktop", "tablet", "mobile"], "sticky_effects_offset": 40,
+               "box_shadow_box_shadow_type": "yes",
+               "box_shadow_box_shadow": {"horizontal": 0, "vertical": 2, "blur": 12, "spread": 0, "color": "rgba(70,33,26,0.08)"}}),
+]
+template("header", "Header", "header", header_content)
+
+SOCIALS = [("fab fa-facebook-f", "https://www.facebook.com/StichtingSampark", "Facebook"),
+           ("fab fa-instagram", "https://www.instagram.com/stichtingsampark/", "Instagram"),
+           ("fab fa-linkedin-in", "https://www.linkedin.com/company/stichting-sampark/", "LinkedIn"),
+           ("fab fa-youtube", "https://www.youtube.com/channel/UCAt0_VtY9orOiD4r5Hv_82w", "YouTube")]
+
+footer_col = lambda *kids, title, width=23: container(*kids, title=title, gap_px=10, width=width,
+                                                      extra={"width_tablet": size(46, "%")})
+foot_head = lambda t: heading(t, "h4", color="658acb6", size_px=22)
+
+footer_content = [
+    container(
+        container(
+            footer_col(
+                widget("image", {"image": {"url": "{{img:logo_sampark}}", "id": "{{imgid:logo_sampark}}", "alt": "Stichting Sampark"},
+                                 "image_size": "medium", "width": size(170), "align": "left", "_css_classes": "sp-logo-light",
+                                 "link_to": "custom", "link": {"url": "/"}, "image_border_radius": dims(0)}, title="Logo"),
+                heading("Biedt kinderen een toekomst.", "p", color="cf55c96", typo="accent", size_px=22),
+                widget("social-icons", {"social_icon_list": [{"_id": _id(n), "social_icon": {"value": ic, "library": "fa-brands"},
+                                                              "link": {"url": u, "is_external": "on"}, "item_icon_color": "custom"}
+                                                             for ic, u, n in SOCIALS],
+                                        "align": "left", "icon_color": "custom", "icon_size": size(16), "icon_padding": size(0.6, "em"),
+                                        "icon_spacing": size(8), "shape": "circle",
+                                        "__globals__": {"icon_primary_color": g_color("658acb6"), "icon_secondary_color": g_color("text")}},
+                       title="Social"),
+                title="Merk", width=24),
+            footer_col(foot_head("Contact"), option_field("adres", tag="div"), option_field("telefoon", tag="div"),
+                       option_field("email", tag="div"), option_field("bereikbaarheid", tag="div", color="cf55c96", size_px=14),
+                       title="Contact (Options Page)", width=21),
+            footer_col(foot_head("Direct naar"), nav_menu("footer-direct-naar", layout="vertical", align="start", color="658acb6",
+                                                          hover="cf55c96", size_px=15, weight="400", pad_h=0),
+                       title="Direct naar", width=18),
+            footer_col(foot_head("Nieuwsbrief"),
+                       text("<p>Twee keer per jaar nieuws uit India en over onze evenementen.</p>", color="658acb6", size_px=15),
+                       widget("form", {"form_name": "Nieuwsbrief", "form_fields": [
+                           {"_id": _id("nb-email"), "custom_id": "email", "field_type": "email", "field_label": "E-mailadres",
+                            "placeholder": "Je e-mailadres", "required": "true", "width": "100"}],
+                           "show_labels": "", "button_text": "Inschrijven", "button_width": "100",
+                           "submit_actions": ["email"], "email_to": "info@sampark.nl",
+                           "email_subject": "Nieuwe aanmelding nieuwsbrief", "email_content": "[all-fields]",
+                           "success_message": "Dank je wel! Je bent aangemeld.",
+                           "row_gap": size(10), "field_border_radius": dims(12),
+                           "__globals__": {"button_background_color": g_color("accent"), "button_text_color": g_color("658acb6"),
+                                           "button_background_hover_color": g_color("primary"),
+                                           "field_text_color": g_color("text"), "field_background_color": g_color("658acb6")}},
+                              title="Nieuwsbrief (Elementor Form · actie: e-mail; Mailchimp na keuze)"),
+                       title="Nieuwsbrief", width=25),
+            title="Kolommen", boxed=True, direction="row", gap_px=32, wrap=True, justify="space-between",
+            pad=dims(72, 24, 48, 24), pad_mobile=dims(56, 20, 32, 20)),
+        container(
+            container(
+                container(option_field("kvk", fmt="KvK %s", size_px=14, color="cf55c96"),
+                          option_field("rsin", fmt="RSIN %s", size_px=14, color="cf55c96"),
+                          option_field("iban", fmt="IBAN %s", size_px=14, color="cf55c96"),
+                          title="Registratie", direction="row", gap_px=18, wrap=True, mobile_column=False),
+                nav_menu("footer-juridisch", align="end", dropdown="none", color="cf55c96", hover="658acb6", size_px=14,
+                         weight="400", pad_h=8, title="Juridisch"),
+                widget("image", {"image": {"url": "{{img:logo_anbi}}", "id": "{{imgid:logo_anbi}}", "alt": "ANBI"},
+                                 "width": size(64), "image_border_radius": dims(0), "_flex_size": "none"}, title="ANBI-logo"),
+                title="Onderbalk inhoud", boxed=True, direction="row", justify="space-between", align="center", gap_px=20,
+                wrap=True, pad=dims(18, 24)),
+            title="Onderbalk", extra={"border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "0",
+                                                                            "bottom": "0", "left": "0", "isLinked": False},
+                                      "border_color": "rgba(245,237,227,0.15)"}),
+        title="Footer", bg_global="text"),
+]
+template("footer", "Footer", "footer", footer_content)
+
+
+def write_templates():
+    out = OUT.parent / "templates"
+    out.mkdir(exist_ok=True)
+    for old in out.glob("*.json"):
+        old.unlink()
+    for t in TEMPLATES:
+        doc = {"version": "0.4", "title": t["title"], "type": t["type"], "key": t["key"],
+               "conditions": t["conditions"], "content": t["content"], "page_settings": {}}
+        (out / f"{t['key']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
+
 # ---------------------------------------------------------------- schrijven
 
 
@@ -1341,6 +1514,7 @@ def main():
                "page_settings": {"hide_title": "yes"}}
         (OUT / f"{p['slug']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
     write_listings()
+    write_templates()
     (OUT.parent / "content.json").write_text(json.dumps(content_json(), ensure_ascii=False, indent=1))
     print(f"{len(PAGES)} pagina's en {len(LISTINGS)} listings geschreven naar {OUT.parent}")
 

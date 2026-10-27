@@ -25,6 +25,14 @@ add_action( 'wp_enqueue_scripts', function () {
 /* Statuschip in event-kaarten */
 .sp-chip { display: inline-block; padding: 4px 12px; border-radius: 999px; background: #ECC0AE; color: #963322;
 	font-family: "Patrick Hand", sans-serif; text-transform: uppercase; font-size: 15px; letter-spacing: .3px; }
+/* Footer: logo in crème op donker */
+.sp-logo-light img { filter: brightness(0) invert(.94); }
+.elementor-location-footer .jet-listing-dynamic-field__content p { margin: 0; }
+/* Topbalk: tekst op één regel */
+.elementor-location-header .elementor-widget-text-editor p { white-space: nowrap; margin: 0; }
+@media (max-width: 767px) { .elementor-location-header .elementor-button { padding: 10px 16px; } }
+/* Topbalk-links zonder schaduw van de kit-knoppen */
+.elementor-location-header .elementor-button:hover { box-shadow: none; }
 /* Gegevenslijst ANBI */
 .sp-dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 0; }
 .sp-dl dt { font-weight: 600; }
