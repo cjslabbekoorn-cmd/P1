@@ -12,11 +12,12 @@ Lokale WordPress-omgeving voor de nieuwe stichtingsampark.nl, volgens `docs/samp
 ## Eerste keer
 
 1. Installeer en start **Docker Desktop**.
-2. Zet de premium plugins als zip in `plugins/premium/`:
-   - `elementor-pro.zip`
-   - `jet-engine.zip`
-   - `super-forms.zip` plus de Super Forms add-on voor WooCommerce die op staging gebruikt wordt
-   Deze zips staan niet in git (licenties).
+2. Zet de premium plugins in `plugins/premium/`, als zip of als map (bijvoorbeeld via FTP gedownload uit `wp-content/plugins/` van staging):
+   - `elementor-pro` (4.1.x, gelijk aan staging; 3.x past niet op Elementor 4)
+   - `jet-engine`, `jet-elements`, `jet-smart-filters`
+   - `super-forms` plus de Super Forms-add-ons voor WooCommerce
+   Deze bestanden staan niet in git (licenties). Elementor zelf wordt op 4.1.5 gezet, de versie van staging.
+   Fonts: Aptos komt uit Adobe Fonts-project `nnd7fbm` (instelbaar met `ADOBE_FONTS_PROJECT` in `.env`).
 3. Open een terminal in deze map (`sampark-local/`) en draai:
 
    ```sh

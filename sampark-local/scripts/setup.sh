@@ -37,7 +37,13 @@ wp plugin delete akismet hello >/dev/null 2>&1 || true
 # ---------------------------------------------------------------- thema + plugins
 log "Thema en gratis plugins"
 wp theme install hello-elementor --activate
-for p in woocommerce elementor wordpress-seo redirection; do
+# Elementor gelijk aan staging (4.1.5), zodat Elementor Pro 4.1.x van staging erop past
+ELEMENTOR_VERSION="${ELEMENTOR_VERSION:-4.1.5}"
+if [ "$(wp plugin get elementor --field=version 2>/dev/null || true)" != "$ELEMENTOR_VERSION" ]; then
+	wp plugin install elementor --version="$ELEMENTOR_VERSION" --force
+fi
+wp plugin activate elementor
+for p in woocommerce wordpress-seo redirection; do
 	wp plugin is-installed "$p" || wp plugin install "$p"
 	wp plugin activate "$p"
 done
@@ -45,7 +51,7 @@ wp language plugin install --all nl_NL >/dev/null 2>&1 || true
 wp language theme install --all nl_NL >/dev/null 2>&1 || true
 wp theme delete twentytwentythree twentytwentyfour twentytwentyfive >/dev/null 2>&1 || true
 
-log "Premium plugins uit plugins/premium/"
+log "Premium plugins uit plugins/premium/ (zips of mappen, bv. via FTP van staging)"
 found=0
 for zip in /premium/*.zip; do
 	[ -e "$zip" ] || continue
@@ -53,7 +59,21 @@ for zip in /premium/*.zip; do
 	echo "  $zip"
 	wp plugin install "$zip" --activate --force
 done
-[ "$found" = 1 ] || echo "  Geen zips gevonden. Zet Elementor Pro, JetEngine en Super Forms in plugins/premium/ en draai dit script opnieuw."
+for dir in /premium/*/; do
+	ls "$dir"*.php >/dev/null 2>&1 || continue
+	slug=$(basename "$dir")
+	[ -n "$slug" ] || continue
+	found=1
+	echo "  $slug/ (map)"
+	mkdir -p "/var/www/html/wp-content/plugins/$slug"
+	cp -R "$dir." "/var/www/html/wp-content/plugins/$slug/"
+	wp plugin activate "$slug"
+done
+[ "$found" = 1 ] || echo "  Niets gevonden. Zet Elementor Pro, JetEngine en Super Forms (zip of map) in plugins/premium/ en draai dit script opnieuw."
+
+# Adobe Fonts (Aptos). Elementor Pro laadt de kit zelf via deze instelling;
+# zonder Pro laadt mu-plugins/sampark-styles.php hem.
+wp option update elementor_typekit-kit-id "${ADOBE_FONTS_PROJECT:-nnd7fbm}" >/dev/null
 
 # ---------------------------------------------------------------- WooCommerce
 log "WooCommerce"

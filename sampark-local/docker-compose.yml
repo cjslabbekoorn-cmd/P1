@@ -58,6 +58,7 @@ services:
       WP_ADMIN_USER: ${WP_ADMIN_USER:-admin}
       WP_ADMIN_PASSWORD: ${WP_ADMIN_PASSWORD:-admin}
       WP_ADMIN_EMAIL: ${WP_ADMIN_EMAIL:-dev@positie1.local}
+      ADOBE_FONTS_PROJECT: ${ADOBE_FONTS_PROJECT:-nnd7fbm}
       HOME: /tmp
     volumes:
       - wp_data:/var/www/html

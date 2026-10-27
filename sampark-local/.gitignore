@@ -1,4 +1,5 @@
 .env
-plugins/premium/*.zip
+plugins/premium/*
+!plugins/premium/.gitkeep
 backups/*
 !backups/.gitkeep

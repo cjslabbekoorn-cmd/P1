@@ -256,8 +256,8 @@ details .scroll{margin-top:4px}
     <tr><td>Iconen</td><td>De getekende iconen uit de huisstijl (rugtas, computer, fiets, wijn, auto, golf, cultuur) als SVG met <code>currentColor</code>, zodat Elementor ze in elke kleur kan zetten</td></tr>
   </tbody></table></div>
   <div class="callout">
-    <strong>Aandachtspunt: Aptos wordt niet geladen</strong>
-    <span>Staging zet de lopende tekst op "aptos", maar laadt dat font nergens. Wie Aptos niet zelf geïnstalleerd heeft (vrijwel iedereen buiten recente Windows en Office), ziet een willekeurig systeemfont. Aptos staat niet op Google Fonts. Er zijn twee opties: Aptos als webfont zelf hosten via Elementor Custom Fonts, als de licentie dat toestaat, of Nunito Sans uit het handboek gebruiken als lopende tekst. Hiervoor is een keuze nodig.</span>
+    <strong>Aptos via Adobe Fonts (project nnd7fbm)</strong>
+    <span>Staging zet de lopende tekst op "aptos", maar laadt nu een oudere Adobe-kit met alleen futura-pt. Daardoor ziet wie Aptos niet zelf heeft een systeemfont. Project <code>nnd7fbm</code> bevat Aptos (400 en 700, ook cursief), Aptos Display, Aptos Narrow en futura-pt. Stel dit project-ID in onder Elementor › Instellingen › Integraties › Adobe Fonts, zowel lokaal (doet het setupscript) als op staging. Lokaal getest: Aptos laadt.</span>
   </div>
   <p class="meta">Ook geladen maar niet gebruikt op staging: futura-pt (Adobe), Finger Paint en Caveat. Die kunnen weg, wat scheelt in laadtijd.</p>
 </section>
@@ -284,7 +284,7 @@ details .scroll{margin-top:4px}
   <div class="steps">
     <div class="step"><span class="when">Nu nodig</span><ul>
       <li>De zips van Elementor Pro, JetEngine en Super Forms (met de WooCommerce-add-on) in <code>sampark-local/plugins/premium/</code>, of hier in de chat geüpload. Dan bouw ik de rest af.</li>
-      <li>Een keuze over Aptos: zelf hosten of Nunito Sans.</li>
+      <li>Elementor Pro 4.1.x (de versie van staging; 3.19.2 past niet op Elementor 4).</li>
     </ul></div>
     <div class="step"><span class="when">Met de plugins</span><ul>
       <li>JetEngine: CPT's, taxonomieën, relaties en de Options Page, plus een export naar <code>sampark-local/jetengine/</code>.</li>

@@ -26,6 +26,11 @@ add_action( 'wp_enqueue_scripts', function () {
 .site-footer { background: #46211A; color: #F5EDE3; }
 .site-footer a { color: #ECC0AE; }
 CSS;
+	// Adobe Fonts (Aptos). Met Elementor Pro laadt de Adobe Fonts-integratie de kit zelf.
+	$kit = get_option( 'elementor_typekit-kit-id' );
+	if ( $kit && ! defined( 'ELEMENTOR_PRO_VERSION' ) ) {
+		wp_enqueue_style( 'sampark-adobe-fonts', 'https://use.typekit.net/' . rawurlencode( $kit ) . '.css', [], null );
+	}
 	wp_register_style( 'sampark', false );
 	wp_enqueue_style( 'sampark' );
 	wp_add_inline_style( 'sampark', $css );
