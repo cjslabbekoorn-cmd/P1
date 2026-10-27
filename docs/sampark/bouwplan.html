@@ -173,6 +173,19 @@ details .scroll{margin-top:4px}
     <tr><td><em>Single</em>: andere projecten</td><td>Zelfde projecttype</td><td>Listing Grid, Tax Query met de huidige term, exclude <code>%current_id%</code></td></tr>
   </tbody></table></div></details>
 
+  <details open><summary>School-single (uitgebreid) en de kaart</summary><div class="scroll"><table>
+    <thead><tr><th>Sectie</th><th>Inhoud</th><th>Bouw</th></tr></thead><tbody>
+    <tr><td>Hero</td><td>Foto, "School · dorp, Budaun", naam, intro, knoppen Sponsor een kind en Doneer voor deze school</td><td>Theme Builder Single (CPT projecten, term school), Dynamic Tags</td></tr>
+    <tr><td>Feiten</td><td>4 kerngetallen, bv. 407 leerlingen · 15 klaslokalen · 1 bibliotheek · eigen stroom</td><td>Listing op repeater <code>feiten</code> (waarde + label)</td></tr>
+    <tr><td>Verhaal</td><td>Het verhaal, een tweede kop (bv. Energie van de zon), foto en voorzieningen</td><td>Post Content + <code>extra_titel</code>/<code>extra_tekst</code> + <code>voorzieningen</code></td></tr>
+    <tr><td>Wat Sampark hier betaalt</td><td>Kaarten met icoon per post (docenten, lesmateriaal, schoolarts, fietsen, elektriciteit)</td><td>Checkbox <code>we_financieren</code>; icoon per optie via een Listing op de opties of Dynamic Visibility per kaart</td></tr>
+    <tr><td>Door de jaren heen</td><td>3 momenten uit de geschiedenis van de school</td><td>Listing op repeater <code>momenten</code></td></tr>
+    <tr><td>Waar we zijn</td><td>Kaartje ingezoomd op de school, met de andere scholen eromheen</td><td>JetEngine Map Listing, centreren op het Map-veld <code>locatie</code> van de huidige post</td></tr>
+    <tr><td>In beeld / Nieuws / Andere scholen</td><td>Galerij, gekoppelde berichten, de andere drie scholen</td><td>Gallery-veld, Related Items, Tax Query met exclude</td></tr>
+    <tr><td><em>Ons werk</em>: kaart van India</td><td>India in beeld met twee regio's (Budaun · 4 scholen, New Delhi · 3 opleidingen). Klik op een regio om in te zoomen en op een school voor een popup met foto, aantal leerlingen en de knop Bekijk de school. Een lijst ernaast werkt ook met het toetsenbord.</td><td>JetEngine Map Listing: provider Leaflet (OpenStreetMap, geen API-sleutel), marker clustering aan, eigen markericoon, popup = listing item. De tegels krijgen via Custom CSS een warme tint.</td></tr>
+  </tbody></table></div>
+  <p class="meta">Locaties: Bilsi en Islamnagar (Kundanpur) komen uit OpenStreetMap. Khukdi en Ghadia staan daar niet in en zijn nu bij benadering geplaatst; de stichting moet de juiste coördinaten aanleveren of op de kaart in het Map-veld aanklikken.</p></details>
+
   <details><summary>Evenementen + evenement-single</summary><div class="scroll"><table>
     <thead><tr><th>Sectie</th><th>Inhoud</th><th>Bouw</th></tr></thead><tbody>
     <tr><td>Binnenkort</td><td>Aangekondigd, open of vol</td><td>Listing Grid, meta <code>status</code> IN (…), sorteren op <code>datum_start</code></td></tr>

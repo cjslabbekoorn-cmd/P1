@@ -64,7 +64,8 @@ Positie1 richt dit altijd via de JetEngine-interface in, zodat het exporteerbaar
 
 **Post Types**
 - `evenementen` (archief uit, slug `evenementen`; de pagina /evenementen/ is het overzicht): status (select: aangekondigd / open / vol / doorlopend / afgelopen), datum_start, datum_eind, tijd, locatie, inschrijving_tot, prijs_label, max_deelnemers, externe_inschrijflink, programma (repeater: tijd + onderdeel), galerij.
-- `projecten` (archief uit, rewrite-slug `ons-werk`; de pagina /ons-werk/ is het overzicht): tagline, aantal, eenheid (leerlingen / studenten), soort_werk (nieuwbouw / renovatie / doorlopend), sinds, we_financieren (checkbox), externe_link, galerij.
+- `projecten` (archief uit, rewrite-slug `ons-werk`; de pagina /ons-werk/ is het overzicht): tagline, aantal, eenheid (leerlingen / studenten), soort_werk (nieuwbouw / renovatie / doorlopend), sinds, dorp, locatie (Map-veld: lat/lng, voor de kaart), feiten (repeater: waarde + label, 4 stuks), voorzieningen (repeater of textarea), we_financieren (checkbox), momenten (repeater: moment + tekst), extra_titel + extra_tekst, externe_link, galerij.
+  De kaart op /ons-werk/ en op elke school wordt een JetEngine Map Listing (provider Leaflet/OpenStreetMap, marker clustering aan, popup = listing item met foto, aantal en knop). Lokaal staat er een Leaflet-prototype in een HTML-widget (titel `KAART ·`) dat hetzelfde gedrag laat zien.
 - `sponsors` (*publicly queryable* uit): logo, website, actief (switcher), volgorde.
 
 **Taxonomies**

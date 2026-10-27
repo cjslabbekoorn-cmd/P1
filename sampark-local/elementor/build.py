@@ -512,6 +512,303 @@ page("home", "Home",
 # ONS WERK ---------------------------------------------------------------
 
 
+# ---------------------------------------------------------------- scholen en kaart
+
+LEAFLET_CSS = (Path(__file__).parent.parent / "assets" / "vendor" / "leaflet-1.9.4.min.css").read_text()
+
+DEFAULT_FUNDS = ["Salarissen van docenten", "Lesmateriaal", "Schoolarts", "Fietsen voor geslaagden"]
+
+# Locaties: Bilsi en Islamnagar komen uit OpenStreetMap (plaatsniveau). Khukdi en Ghadia staan niet
+# in OSM; hun positie is bij benadering en moet in het JetEngine Map-veld worden ingevuld.
+SCHOOLS = [
+    {"slug": "khukdi-school", "name": "Khukdi School", "tagline": "Van vijf lokalen naar vijftien",
+     "pupils": 407, "work": "Nieuwbouw", "village": "Khukdi", "lat": 28.07, "lng": 79.02, "approx": True,
+     "img": "proj_khukdi", "gallery": ["proj_khukdi", "proj_zon"],
+     "intro": "In het oude schoolgebouw van Khukdi waren maar vijf leslokalen beschikbaar. Voor 407 kinderen. Dat betekende dat sommige klassen buiten les kregen, met alles wat het weer daar aan meebrengt: hitte, stof en regen. Wie buiten zit, leert minder.",
+     "facts": [("407", "leerlingen"), ("15", "klaslokalen"), ("1", "bibliotheek"), ("Zon", "eigen stroom")],
+     "story_title": "Een school die klopt",
+     "story": ["Het nieuwe gebouw telt maar liefst vijftien klaslokalen. Op de begane grond zijn zes lokalen, een sportzaal, kantoren en een ruimte voor de schoolzuster. Op de eerste etage nog eens negen lokalen, een bibliotheek en een computerruimte. Er zijn meerdere sanitaire voorzieningen, waardoor kinderen ook het belang van hygiëne meekrijgen.",
+               "Voor het eerst kan iedere leerling in Khukdi zijn lessen volgen in een echt klaslokaal, zonder gehinderd te worden door weersinvloeden."],
+     "extra_title": "Energie van de zon",
+     "extra": "Khukdi is ook onze meest duurzame school. Dankzij een geslaagd zonnepanelenproject wekt de school haar eigen energie op. Dat is belangrijk in een regio waar de stroom regelmatig uitvalt. Zo blijven de computers draaien en de lampen branden, ook als het net het laat afweten.",
+     "facilities": ["15 klaslokalen", "Sportzaal", "Bibliotheek", "Computerruimte", "Ruimte voor de schoolzuster", "Sanitaire voorzieningen", "Zonnepanelen"],
+     "funds": DEFAULT_FUNDS,
+     "moments": [("Vroeger", "Vijf lokalen voor 407 kinderen; sommige klassen kregen buiten les."),
+                 ("Nieuwbouw", "Een gebouw met vijftien lokalen, een bibliotheek en een computerruimte."),
+                 ("Zonnepanelen", "De school wekt haar eigen stroom op.")],
+     "news": [("proj_zon", "Khukdi School", "Zonnepanelen op de school in Khukdi", "Hoe de school haar eigen energie is gaan opwekken.", "/zonnepanelen-sampark-school-khukdi/")]},
+    {"slug": "kundanpur-school", "name": "Kundanpur School", "tagline": "Waar het begint",
+     "pupils": 329, "work": "Renovatie", "village": "Islamnagar", "lat": 28.3289, "lng": 78.7258, "approx": False,
+     "img": "proj_kundanpur", "gallery": ["proj_kundanpur", "hero_contact"],
+     "intro": "Voor bezoekers uit Nederland is Kundanpur meestal de eerste school die ze zien. De bus rijdt het dorp Islamnagar binnen en dan gaat het snel: een tikka op het voorhoofd, een bloemenkrans om de nek, en honderden kinderen die in de rij staan om je welkom te heten.",
+     "facts": [("329", "leerlingen"), ("Renovatie", "gebouw"), ("Islamnagar", "dorp"), ("VCT", "lokale partner")],
+     "story_title": "Opgeknapt door vrijwilligers",
+     "story": ["Wie na de ontvangst een rondje door het dorp loopt, begrijpt meteen waarom deze school er staat. De huizen zijn eenvoudig, het werk is zwaar, en voor veel gezinnen is onderwijs geen vanzelfsprekendheid maar een keuze die geld kost. Op de Sampark De Paul school krijgen 329 kinderen die kans wél."],
+     "extra_title": "Onderwijs stopt hier niet zomaar",
+     "extra": "Toen de scholen tijdens de lockdown gesloten bleven, ging het door: onze leraren trokken de dorpen in en gaven les in kleine groepjes, zo'n vijftig tot zestig leerlingen per dag.",
+     "facilities": [],
+     "funds": ["Salarissen van docenten", "Lesmateriaal en sportattributen", "Schoolarts", "Vaste lasten zoals elektriciteit", "Fietsen voor geslaagden"],
+     "moments": [("Renovatie", "Vrijwilligers knapten de school op."),
+                 ("Lockdown", "Leraren gaven les in de dorpen, aan vijftig tot zestig leerlingen per dag."),
+                 ("Nu", "329 kinderen gaan elke dag naar school.")],
+     "news": []},
+    {"slug": "bilsi-school", "name": "Bilsi School", "tagline": "Leren begint bij de leraar",
+     "pupils": 359, "work": "Renovatie", "village": "Bilsi", "lat": 28.1277, "lng": 78.9092, "approx": False,
+     "img": "proj_bilsi", "gallery": ["proj_bilsi", "over_verhaal"],
+     "intro": "Op de school in Bilsi krijgen 359 kinderen les. Wat een school goed maakt, zijn niet alleen de muren. Het zijn de mensen die er voor de klas staan. Juist daar hebben we in Bilsi extra op ingezet.",
+     "facts": [("359", "leerlingen"), ("2014", "renovatie"), ("2 weken", "vrijwilligerswerk"), ("VCT", "lokale partner")],
+     "story_title": "Twee weken die het verschil maakten",
+     "story": ["In januari 2014 reisde een groep Nederlandse vrijwilligers af naar Budaun. Twee weken lang werkten zij aan de scholen in Bilsi en Ghadia. Naast het opknappen van lokalen en meubilair was er nadrukkelijk aandacht voor de kwaliteit van het onderwijs zelf: vrijwilligers gaven de leraren feedback op hun manier van lesgeven, en de docenten konden Engelse lessen volgen. Dat is een vaardigheid die in India deuren opent naar vervolgonderwijs en werk.",
+               "Ook de kinderen leerden iets nieuws. De vrijwilligers lieten zien waarom hygiëne telt, van handen wassen vóór het eten tot het schoonhouden van de klas. En er werd volop gelachen: de groep organiseerde een sportdag waar de hele school aan meedeed."],
+     "extra_title": "Hoe het nu gaat",
+     "extra": "Sinds de renovatie blijft Sampark betrokken bij Bilsi. Samen met onze lokale partner dragen we bij aan de salarissen van docenten, lesmateriaal, de schoolarts en fietsen voor geslaagden.",
+     "facilities": [],
+     "funds": DEFAULT_FUNDS,
+     "moments": [("Januari 2014", "Twee weken renovatie door Nederlandse vrijwilligers, feedback voor leraren en Engelse les."),
+                 ("Sportdag", "De hele school deed mee aan de sportdag van de vrijwilligers."),
+                 ("Nu", "359 kinderen krijgen les, met steun voor docenten en lesmateriaal.")],
+     "news": []},
+    {"slug": "ghadia-school", "name": "Ghadia School", "tagline": "Een school midden op het platteland",
+     "pupils": 482, "work": "Renovatie", "village": "Ghadia", "lat": 28.20, "lng": 79.06, "approx": True,
+     "img": "proj_ghadia", "gallery": ["proj_ghadia", "proj_solar"],
+     "intro": "In het dorp Ghadia, in de regio Budaun, krijgen dagelijks 482 kinderen les. Voor veel van hen is deze school de eerste in de familie die ze van binnen zien. Hun ouders werken op het land of in de bouw en hebben zelf nooit leren lezen. Hier begint dat verhaal opnieuw, bij hun kinderen.",
+     "facts": [("482", "leerlingen"), ("2014", "renovatie"), ("Moestuin", "en speelplek"), ("Solar", "lampjes")],
+     "story_title": "Vrijwilligers die de handen uit de mouwen staken",
+     "story": ["Het jaar 2014 stond in het teken van renovatie. In januari reisde een groep Nederlandse vrijwilligers af naar India en werkte twee weken lang aan de scholen in Ghadia en Bilsi. Er werd gestuct en gesausd, meubilair opgeknapt en lokalen versierd. In de tuin verrezen moestuintjes en een speelplek.",
+               "Maar het ging om meer dan verf en stenen. De vrijwilligers gaven leraren feedback op hun manier van lesgeven en verzorgden Engelse lessen. Ze lieten kinderen zien waarom handen wassen vóór het eten zo belangrijk is. En er was tijd voor lachen: de week werd afgesloten met een sportdag die niemand snel vergeet."],
+     "extra_title": "Hoe het nu gaat",
+     "extra": "Sinds de renovatie blijven wij betrokken bij Ghadia. Samen met onze lokale partner zorgen we voor salarissen van docenten, lesmateriaal, gezondheidszorg en fietsen voor geslaagden. Zo blijft de school niet alleen overeind, maar groeit hij mee met de kinderen die er zitten.",
+     "facilities": ["Gerenoveerde lokalen", "Moestuintjes", "Speelplek"],
+     "funds": ["Salarissen van docenten", "Lesmateriaal", "Gezondheidszorg", "Fietsen voor geslaagden"],
+     "moments": [("Januari 2014", "Renovatie: stucwerk, meubilair, moestuintjes en een speelplek."),
+                 ("Solarlampjes", "Leerlingen krijgen een lampje om thuis te kunnen studeren."),
+                 ("Nu", "482 kinderen krijgen dagelijks les.")],
+     "news": []},
+]
+
+DELHI = {"slug": "delhi-centre", "name": "Delhi Centre", "type": "centre", "region": "New Delhi",
+         "lat": 28.6139, "lng": 77.2090, "approx": True, "img": "proj_computer",
+         "meta": "73 studenten · 3 opleidingen", "url": "/ons-werk/#opleidingen",
+         "courses": [("Computerspecialist", "/ons-werk/computerspecialist/"), ("Modinette", "/ons-werk/modinette/"),
+                     ("Schoonheidsspecialiste", "/ons-werk/schoonheidsspecialiste/")]}
+
+MAP_CSS = """
+.sp-map{display:grid;grid-template-columns:300px 1fr;gap:24px;align-items:stretch}
+.sp-map--compact{grid-template-columns:1fr}
+.sp-map__list{display:flex;flex-direction:column;gap:18px}
+.sp-map__group h4{font-family:"Patrick Hand",sans-serif;text-transform:uppercase;color:#BD5C38;font-size:18px;font-weight:400;margin:0 0 8px}
+.sp-map__group ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.sp-map .sp-map__btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;cursor:pointer;
+  background:#F5EDE3!important;border:1px solid transparent!important;border-radius:14px!important;padding:12px 16px!important;color:#46211A!important;
+  font-family:inherit!important;text-transform:none!important;box-shadow:none!important;transition:border-color .2s,background .2s}
+.sp-map .sp-map__btn:hover,.sp-map .sp-map__btn:focus-visible,.sp-map .sp-map__btn[aria-pressed=true]{border-color:#BD5C38!important;background:#fff!important;outline:none}
+.sp-map__btn strong{font-family:Spectral,serif;font-weight:500;font-size:19px;display:block;color:#46211A}
+.sp-map__btn small{color:#7a5d52;font-size:14px;font-family:aptos,sans-serif}
+.sp-map__btn i{width:12px;height:12px;border-radius:50%;flex:none;background:#963322}
+.sp-map__btn[data-type=centre] i{background:#ED7404}
+.sp-map__canvas{min-height:520px;border-radius:20px;overflow:hidden;background:#F5EDE3;z-index:0}
+.sp-map__canvas .leaflet-tile-pane{filter:sepia(.35) saturate(.75) brightness(1.03)}
+.sp-pin{background:none;border:0}
+.sp-pin b{display:block;width:22px;height:22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#963322;border:3px solid #fff;box-shadow:0 2px 6px rgba(70,33,26,.35)}
+.sp-pin--centre b{background:#ED7404}
+.sp-pin--current b{width:30px;height:30px;background:#BD5C38}
+.sp-pin--region{cursor:pointer}
+.sp-pin--region .dot{position:absolute;inset:0;border-radius:50%;background:#963322;border:3px solid #fff;box-shadow:0 2px 8px rgba(70,33,26,.4)}
+.sp-pin--region.is-centre .dot{background:#ED7404}
+.sp-pin--region .lbl{position:absolute;top:50%;transform:translateY(-50%);white-space:nowrap;padding:6px 12px;border-radius:999px;
+  background:#963322;color:#F5EDE3;font-family:"Patrick Hand",sans-serif;text-transform:uppercase;font-size:16px;line-height:1.2;box-shadow:0 3px 10px rgba(70,33,26,.3)}
+.sp-pin--region.is-centre .lbl{background:#ED7404;color:#46211A}
+.sp-pin--region.side-right .lbl{left:26px}
+.sp-pin--region.side-left .lbl{right:26px}
+.sp-pin--region:focus-visible{outline:none}.sp-pin--region:focus-visible .lbl{outline:2px solid #46211A;outline-offset:2px}
+.sp-pop{display:flex;flex-direction:column;gap:6px;font-family:inherit;color:#46211A}
+.sp-pop img{width:100%;height:120px;object-fit:cover;border-radius:10px;display:block}
+.sp-pop em{font-style:normal;font-family:"Patrick Hand",sans-serif;text-transform:uppercase;color:#BD5C38;font-size:15px}
+.sp-pop strong{font-family:Spectral,serif;font-weight:500;font-size:20px;line-height:1.2}
+.sp-pop small{color:#7a5d52}
+.sp-pop a.sp-pop__btn{display:inline-block;margin-top:4px;background:#BD5C38;color:#F5EDE3!important;text-decoration:none;font-family:"Patrick Hand",sans-serif;text-transform:uppercase;padding:8px 16px;border-radius:4px;text-align:center}
+.sp-pop ul{margin:0;padding-left:18px}
+.leaflet-popup-content-wrapper{border-radius:16px}
+.leaflet-popup-content{margin:12px;width:230px!important}
+@media (max-width:900px){.sp-map{grid-template-columns:1fr}.sp-map__list{order:2}.sp-map__canvas{min-height:420px}}
+"""
+
+MAP_JS = r"""
+(function(){
+  function boot(el){
+    if(!window.L){return setTimeout(function(){boot(el)},120);}
+    if(el.dataset.ready){return;} el.dataset.ready='1';
+    var pts=JSON.parse(el.getAttribute('data-points')), focus=el.getAttribute('data-focus');
+    var canvas=el.querySelector('.sp-map__canvas');
+    var map=L.map(canvas,{scrollWheelZoom:false,minZoom:4,maxZoom:+(el.getAttribute('data-maxzoom')||12),attributionControl:true});
+    L.tileLayer(el.getAttribute('data-tiles'),{maxZoom:+(el.getAttribute('data-maxzoom')||12),attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+    function pin(cls){return L.divIcon({className:'sp-pin '+cls,html:'<b></b>',iconSize:[24,24],iconAnchor:[6,22],popupAnchor:[6,-20]});}
+    function card(p){
+      var h='<div class="sp-pop">'+(p.img?'<img src="'+p.img+'" alt="">':'')+'<em>'+p.meta+'</em><strong>'+p.name+'</strong>';
+      if(p.approx){h+='<small>Locatie bij benadering</small>';}
+      if(p.courses){h+='<ul>'+p.courses.map(function(c){return '<li><a href="'+c[1]+'">'+c[0]+'</a></li>'}).join('')+'</ul>';}
+      return h+'<a class="sp-pop__btn" href="'+p.url+'">'+(p.type==='school'?'Bekijk de school':'Bekijk de opleidingen')+'</a></div>';
+    }
+    var points=L.layerGroup(), regions=L.layerGroup(), groups={};
+    pts.forEach(function(p){
+      var cls=p.slug===focus?'sp-pin--current':(p.type==='centre'?'sp-pin--centre':'');
+      p.marker=L.marker([p.lat,p.lng],{icon:pin(cls),title:p.name,alt:p.name,keyboard:true}).bindPopup(card(p)).addTo(points);
+      (groups[p.region]=groups[p.region]||[]).push(p);
+    });
+    var meanLng=pts.reduce(function(a,p){return a+p.lng},0)/pts.length;
+    Object.keys(groups).forEach(function(name){
+      var g=groups[name], lat=0, lng=0; g.forEach(function(p){lat+=p.lat;lng+=p.lng;});
+      var side=(lng/g.length)<meanLng?' side-left':' side-right';
+      var label=g[0].type==='centre'?name+' · 3 opleidingen':name+' · '+g.length+' scholen';
+      L.marker([lat/g.length,lng/g.length],{icon:L.divIcon({className:'sp-pin sp-pin--region'+side+(g[0].type==='centre'?' is-centre':''),html:'<span class="dot"></span><span class="lbl">'+label+'</span>',iconSize:[18,18],iconAnchor:[9,9]}),keyboard:true,title:label})
+        .on('click',function(){ if(g.length>1){map.flyToBounds(L.latLngBounds(g.map(function(p){return [p.lat,p.lng]})).pad(.6),{maxZoom:10});} else {map.flyTo([g[0].lat,g[0].lng],9); setTimeout(function(){g[0].marker.openPopup()},900);} })
+        .addTo(regions);
+    });
+    function sync(){ if(map.getZoom()>=8){map.removeLayer(regions);points.addTo(map);} else {map.removeLayer(points);regions.addTo(map);} }
+    map.on('zoomend',sync);
+    if(focus){ var f=pts.filter(function(p){return p.slug===focus})[0]; map.setView([f.lat,f.lng],9); }
+    else { map.fitBounds([[8,68.5],[35.5,97.5]]); }
+    sync();
+    el.querySelectorAll('[data-goto]').forEach(function(b){
+      b.addEventListener('click',function(){
+        var p=pts.filter(function(x){return x.slug===b.getAttribute('data-goto')})[0];
+        el.querySelectorAll('[data-goto]').forEach(function(o){o.setAttribute('aria-pressed','false')}); b.setAttribute('aria-pressed','true');
+        map.flyTo([p.lat,p.lng],p.type==='centre'?11:10);
+        map.once('moveend',function(){ p.marker.openPopup(); });
+      });
+    });
+  }
+  function all(){document.querySelectorAll('.sp-map').forEach(boot);}
+  if(document.readyState!=='loading'){all();} else {document.addEventListener('DOMContentLoaded',all);}
+  window.addEventListener('elementor/frontend/init',all);
+})();
+"""
+
+
+def map_points():
+    pts = [{"slug": s["slug"], "name": s["name"], "type": "school", "region": "Budaun", "lat": s["lat"],
+            "lng": s["lng"], "approx": s["approx"], "img": f"{{{{img:{s['img']}}}}}",
+            "meta": f"{s['pupils']} leerlingen · {s['work']}", "url": f"/ons-werk/{s['slug']}/"} for s in SCHOOLS]
+    d = dict(DELHI)
+    d["img"] = f"{{{{img:{d['img']}}}}}"
+    return pts + [d]
+
+
+def india_map(focus=None, with_list=True, height=560):
+    import html as _h
+    pts = map_points()
+    lst = ""
+    if with_list:
+        rows = "".join(f'<li><button type="button" class="sp-map__btn" data-type="school" data-goto="{p["slug"]}" aria-pressed="false">'
+                       f'<span><strong>{p["name"]}</strong><small>{p["meta"]}</small></span><i></i></button></li>'
+                       for p in pts if p["type"] == "school")
+        lst = (f'<div class="sp-map__list"><div class="sp-map__group"><h4>Budaun · Uttar Pradesh</h4><ul>{rows}</ul></div>'
+               f'<div class="sp-map__group"><h4>New Delhi</h4><ul><li><button type="button" class="sp-map__btn" data-type="centre" '
+               f'data-goto="delhi-centre" aria-pressed="false"><span><strong>Delhi Centre</strong><small>{DELHI["meta"]}</small></span><i></i></button></li></ul></div></div>')
+    data = _h.escape(json.dumps(pts, ensure_ascii=False), quote=True)
+    code = (f"<style>{LEAFLET_CSS}{MAP_CSS}</style>"
+            f'<div class="sp-map{"" if with_list else " sp-map--compact"}" data-points="{data}" data-focus="{focus or ""}" '
+            f'data-maxzoom="12" data-tiles="https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png">{lst}'
+            f'<div class="sp-map__canvas" style="min-height:{height}px" role="region" aria-label="Kaart met de scholen van Sampark in India"></div></div>'
+            f'<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>'
+            f"<script>{MAP_JS}</script>")
+    return html(code, title="KAART · JetEngine Map Listing (Leaflet/OSM) · projecten met Map-veld · clustering aan")
+
+
+FUND_ICONS = [("docent", "fas fa-chalkboard-teacher"), ("sport", "fas fa-futbol"), ("lesmateriaal", "fas fa-book-open"),
+              ("schoolarts", "fas fa-stethoscope"), ("gezondheid", "fas fa-heartbeat"), ("fiets", "fas fa-bicycle"),
+              ("elektriciteit", "fas fa-bolt")]
+
+
+def fund_icon(label):
+    low = label.lower()
+    for key, ic in FUND_ICONS:
+        if key in low:
+            return ic
+    return "fas fa-check"
+
+
+def fa_icon(value, color="accent", px=36):
+    return widget("icon", {"selected_icon": {"value": value, "library": "fa-solid"}, "size": size(px),
+                           "align": "left", "__globals__": {"primary_color": g_color(color)}})
+
+
+def fact_tile(value, label):
+    num = widget("heading", {"title": value, "header_size": "p", "align": "center",
+                             "typography_typography": "custom", "typography_font_family": "Spectral",
+                             "typography_font_weight": "500", "typography_font_size": size(46),
+                             "typography_font_size_mobile": size(34), "typography_line_height": size(1.1, "em"),
+                             "__globals__": {"title_color": g_color("primary")}})
+    return container(num,
+                     text(f"<p>{label}</p>", align="center"),
+                     title=f"Feit · {label}", align="center", gap_px=0, width=23,
+                     extra={"width_mobile": size(46, "%")})
+
+
+def school_page(s):
+    others = [o for o in SCHOOLS if o["slug"] != s["slug"]]
+    paras = "".join(f"<p>{p}</p>" for p in s["story"])
+    facilities = [container(eyebrow("Voorzieningen"), icon_list(s["facilities"], icon_value="fas fa-school"), gap_px=8)] if s["facilities"] else []
+    news = (listing("nieuws · Related Items via relatie Project ↔ Bericht · verbergen als leeg",
+                    *[media_card(*n) for n in s["news"]], cols=3) if s["news"] else
+            text("<p><em>Nog geen berichten gekoppeld. Deze sectie verschijnt zodra er nieuws aan de school is gekoppeld (relatie Project ↔ Bericht).</em></p>"))
+    page(s["slug"], s["name"],
+         hero(s["name"], s["intro"], s["img"], eye=f"School · {s['village']}, Budaun",
+              buttons=(button("Sponsor een kind", "/product/sponsor-een-kind/"),
+                       button("Doneer voor deze school", "/steun-ons/doneren/", style="light")), height=520),
+         section(container(*[fact_tile(v, l) for v, l in s["facts"]], title="Feiten (meta-velden)", direction="row",
+                           justify="space-between", gap_px=16, wrap=True, mobile_column=False),
+                 title="Feiten", pad=(40, 24)),
+         section(
+             container(
+                 container(eyebrow("Het verhaal"), heading(s["story_title"], "h2"), text(paras),
+                           heading(s["extra_title"], "h3", size_px=26), text(f"<p>{s['extra']}</p>"),
+                           title="Verhaal (post content)", width=55, gap_px=14),
+                 container(image(s["gallery"][0], height=420), *facilities, title="Beeld en voorzieningen", width=40, gap_px=24),
+                 direction="row", gap_px=48, align="flex-start"),
+             title="Verhaal"),
+         section(
+             section_head("Jouw steun", "Wat Sampark hier betaalt",
+                          "Samen met de Vincentian Charitable Trust houden we de school elke dag open."),
+             container(*[card(fa_icon(fund_icon(f)), heading(f, "h4", size_px=22), title=f"Post · {f}", width=23,
+                              pad=22, gap_px=10, bg="e64974d")
+                         for f in s["funds"]],
+                       title="LISTING · checkbox we_financieren", direction="row", wrap=True, gap_px=20,
+                       extra={"flex_align_items": "stretch"}),
+             title="Wat we betalen", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
+             divider_bottom=("curve", "#FFFFFF", 50)),
+         section(
+             section_head("Door de jaren heen", f"Het verhaal van {s['name']}"),
+             container(*[card(eyebrow(m), text(f"<p>{t}</p>"), title=f"Moment · {m}", width=31)
+                         for m, t in s["moments"]],
+                       title="LISTING · repeater momenten (moment + tekst)", direction="row", gap_px=20, wrap=True),
+             title="Tijdlijn"),
+         section(
+             section_head("Waar we zijn", f"{s['village']}, district Budaun",
+                          "Op ongeveer 200 kilometer (hemelsbreed) ten oosten van New Delhi, in de deelstaat Uttar Pradesh."),
+             india_map(focus=s["slug"], with_list=False, height=420),
+             title="Locatie"),
+         section(
+             section_head("In beeld", "Foto's van de school"),
+             container(*[container(image(k, height=300), width=48, title=f"Foto · {k}") for k in s["gallery"]],
+                       title="Galerij (gallery-veld)", direction="row", gap_px=20),
+             title="Galerij", pad=(40, 24)),
+         section(section_head("Nieuws", f"Nieuws over {s['name']}"), news, title="Nieuws"),
+         cta_band(f"Help de kinderen van {s['village']}",
+                  "Voor € 60 per jaar betaal je het lesgeld en de schoolspullen van één kind.",
+                  [button("Sponsor een kind", "/product/sponsor-een-kind/", style="light"),
+                   button("Doneer eenmalig", "/steun-ons/doneren/", style="outline-light")], eye="Steun deze school"),
+         section(
+             section_head("Andere scholen", "Bekijk ook"),
+             listing("projecten · zelfde projecttype · exclude huidige",
+                     *[project_card(o["img"], f"{o['pupils']} leerlingen · {o['work']}", o["name"], o["tagline"] + ".",
+                                    f"/ons-werk/{o['slug']}/") for o in others]),
+             title="Andere scholen"),
+         parent="ons-werk",
+         seo=(f"{s['name']} in {s['village']}, India | Stichting Sampark",
+              f"{s['name']}: {s['pupils']} leerlingen in de regio Budaun. {s['tagline']}."))
+
+
 def project_card(img, meta, title, tagline, link):
     return card(image(img, height=220, radius=14), eyebrow(meta), heading(title, "h3", size_px=26),
                 text(f"<p>{tagline}</p>"), button("Bekijk dit project", link, style="outline", icon=True),
@@ -530,6 +827,11 @@ page("ons-werk", "Ons werk",
                        title="Cijfers", direction="row", width=40, gap_px=16, mobile_column=False),
              direction="row", gap_px=48, align="center"),
          title="Aanpak"),
+     section(
+         section_head("Waar we werken", "Klik op een school",
+                      "Vier scholen in het district Budaun en een opleidingscentrum in New Delhi. Klik op een regio om in te zoomen, en op een school voor meer informatie."),
+         india_map(),
+         title="Kaart", pad=(40, 24)),
      section(
          section_head("Scholen in Budaun", "Vier scholen op het platteland",
                       "Rond Budaun maken we vier scholen mogelijk. Door te bouwen, te renoveren en te blijven investeren groeit elke school mee met de kinderen."),
@@ -563,6 +865,9 @@ page("ons-werk", "Ons werk",
                button("Doneer eenmalig", "/steun-ons/doneren/", style="outline-light")], eye="Steun ons"),
      seo=("Ons werk | Scholen en opleidingen in India | Stichting Sampark",
           "Vier scholen rond Budaun, drie beroepsopleidingen in New Delhi en initiatieven als fietsen en zonnepanelen."))
+
+for _s in SCHOOLS:
+    school_page(_s)
 
 # EVENEMENTEN -------------------------------------------------------------
 page("evenementen", "Evenementen",
@@ -691,7 +996,7 @@ BOARD = [("Irma van Dalfsen", "Voorzitter", "board_irma"), ("Lianne Molhoek", "S
 
 TIMELINE = [("2007", "Oprichting", "Venture Group richt Stichting Sampark op om iets terug te doen voor India."),
             ("2014", "Renovaties", "Vrijwilligers knappen in twee weken de scholen in Bilsi en Ghadia op."),
-            ("2019", "Nieuwbouw Khukdi", "De nieuwe school met vijftien lokalen opent haar deuren."),
+            ("[jaar]", "Nieuwbouw Khukdi", "Een nieuwe school met vijftien lokalen. Jaartal nog te bevestigen."),
             ("2025", "Nieuw bestuur", "Eric Haasjes en Richard Nijhof versterken de fondsenwerving.")]
 
 page("over-ons", "Over ons",

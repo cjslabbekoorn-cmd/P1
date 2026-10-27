@@ -4,14 +4,14 @@
  "type": "page",
  "slug": "steun-ons",
  "parent": null,
- "menu_order": 3,
+ "menu_order": 7,
  "seo": [
   "Steun ons | Doneer of sponsor een kind | Stichting Sampark",
   "Doneer, sponsor een kind voor € 60 per jaar of word bedrijfssponsor. Giften aan Sampark zijn aftrekbaar (ANBI)."
  ],
  "content": [
   {
-   "id": "3158f08",
+   "id": "3918b81",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -62,7 +62,7 @@
    },
    "elements": [
     {
-     "id": "37e9573",
+     "id": "2131e63",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -103,7 +103,7 @@
      },
      "elements": [
       {
-       "id": "0f3ad5a",
+       "id": "d8e566d",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -129,7 +129,7 @@
        },
        "elements": [
         {
-         "id": "789ed2b",
+         "id": "6b5b93f",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -154,7 +154,7 @@
          "elements": []
         },
         {
-         "id": "5300e72",
+         "id": "fa309b7",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -179,7 +179,7 @@
          "elements": []
         },
         {
-         "id": "abc327a",
+         "id": "2dda717",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -206,7 +206,7 @@
    "isInner": false
   },
   {
-   "id": "ad4f1f4",
+   "id": "a9655db",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -244,7 +244,7 @@
    },
    "elements": [
     {
-     "id": "2b01aaa",
+     "id": "695b4e7",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -264,7 +264,7 @@
      },
      "elements": [
       {
-       "id": "115f82b",
+       "id": "f9ce6d8",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -316,7 +316,7 @@
        },
        "elements": [
         {
-         "id": "3e381db",
+         "id": "a02acd6",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -354,7 +354,7 @@
          "elements": []
         },
         {
-         "id": "461710d",
+         "id": "ad49259",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -379,7 +379,7 @@
          "elements": []
         },
         {
-         "id": "9e1fc17",
+         "id": "0a01f88",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -400,7 +400,7 @@
          "elements": []
         },
         {
-         "id": "4c3245b",
+         "id": "04b56fb",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -409,7 +409,7 @@
          "elements": []
         },
         {
-         "id": "98130e6",
+         "id": "c3e4711",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -427,7 +427,7 @@
        "isInner": false
       },
       {
-       "id": "445c9e0",
+       "id": "abc6c0f",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -479,7 +479,7 @@
        },
        "elements": [
         {
-         "id": "2886088",
+         "id": "4472050",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -517,7 +517,7 @@
          "elements": []
         },
         {
-         "id": "731f8c3",
+         "id": "6fb5992",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -542,7 +542,7 @@
          "elements": []
         },
         {
-         "id": "b0693e4",
+         "id": "a396836",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -563,7 +563,7 @@
          "elements": []
         },
         {
-         "id": "584189a",
+         "id": "fca825e",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -572,7 +572,7 @@
          "elements": []
         },
         {
-         "id": "231bb3d",
+         "id": "e8e5a7e",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -590,7 +590,7 @@
        "isInner": false
       },
       {
-       "id": "8ad9bc4",
+       "id": "9d9a2dc",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -642,7 +642,7 @@
        },
        "elements": [
         {
-         "id": "c643e91",
+         "id": "c5dbf1b",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -680,7 +680,7 @@
          "elements": []
         },
         {
-         "id": "62ba726",
+         "id": "28e2ad4",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -705,7 +705,7 @@
          "elements": []
         },
         {
-         "id": "51bc31e",
+         "id": "e632e7d",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -726,7 +726,7 @@
          "elements": []
         },
         {
-         "id": "2f9cb40",
+         "id": "88a270c",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -735,7 +735,7 @@
          "elements": []
         },
         {
-         "id": "9647e09",
+         "id": "2217ae6",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -753,7 +753,7 @@
        "isInner": false
       },
       {
-       "id": "8107d55",
+       "id": "03c884c",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -805,7 +805,7 @@
        },
        "elements": [
         {
-         "id": "095cab0",
+         "id": "3075c91",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -843,7 +843,7 @@
          "elements": []
         },
         {
-         "id": "a8e2ec0",
+         "id": "2bb4155",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -868,7 +868,7 @@
          "elements": []
         },
         {
-         "id": "6144ded",
+         "id": "836767f",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -889,7 +889,7 @@
          "elements": []
         },
         {
-         "id": "cae6113",
+         "id": "71debd6",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -898,7 +898,7 @@
          "elements": []
         },
         {
-         "id": "1649c67",
+         "id": "0b1ffb2",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -922,7 +922,7 @@
    "isInner": false
   },
   {
-   "id": "82230f1",
+   "id": "56009e3",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -976,7 +976,7 @@
    },
    "elements": [
     {
-     "id": "b7b16ec",
+     "id": "d56b9fc",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -993,7 +993,7 @@
      },
      "elements": [
       {
-       "id": "5a4b25a",
+       "id": "704afe0",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1018,7 +1018,7 @@
        },
        "elements": [
         {
-         "id": "716daeb",
+         "id": "54e621d",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1043,7 +1043,7 @@
          "elements": []
         },
         {
-         "id": "657c167",
+         "id": "9e4b039",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1053,7 +1053,7 @@
          "elements": []
         },
         {
-         "id": "f600fe2",
+         "id": "b47d6b2",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -1062,7 +1062,7 @@
          "elements": []
         },
         {
-         "id": "94a4d2e",
+         "id": "14143f2",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -1105,7 +1105,7 @@
        "isInner": false
       },
       {
-       "id": "e46de7e",
+       "id": "c2aee86",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1130,7 +1130,7 @@
        },
        "elements": [
         {
-         "id": "d12ae76",
+         "id": "712027d",
          "elType": "widget",
          "widgetType": "toggle",
          "settings": {
@@ -1138,22 +1138,22 @@
            {
             "tab_title": "Waar gaat mijn geld naartoe?",
             "tab_content": "<p>Naar salarissen van docenten, lesmateriaal, de schoolarts, fietsen voor geslaagden en de vaste lasten van de scholen en opleidingen.</p>",
-            "_id": "d4324cb"
+            "_id": "34ff99b"
            },
            {
             "tab_title": "Hoeveel gaat er naar de organisatie?",
             "tab_content": "<p>Vrijwel niets. Het bestuur werkt onbezoldigd en Venture Group draagt de organisatiekosten. 95% gaat direct naar hulp.</p>",
-            "_id": "8b7025f"
+            "_id": "11f7075"
            },
            {
             "tab_title": "Kan ik ook per bank overmaken?",
             "tab_content": "<p>Ja, op NL25 ABNA 0578 9231 73 ten name van Stichting Sampark in Genemuiden.</p>",
-            "_id": "d46532c"
+            "_id": "28fb846"
            },
            {
             "tab_title": "Krijg ik een bevestiging?",
             "tab_content": "<p>Ja, na je betaling ontvang je direct een bevestiging per mail. Die kun je bewaren voor je belastingaangifte.</p>",
-            "_id": "91846d1"
+            "_id": "e13ce8a"
            }
           ],
           "border_width": {
