@@ -189,3 +189,30 @@ function sampark_bedrag_naar_float( $waarde ) {
 
 	return $bedrag > 0 ? $bedrag : null;
 }
+
+
+/**
+ * Ook bij het laden van de winkelwagen uit de sessie de prijs zetten. Anders toont
+ * het mini-winkelwagentje in de header nog de vaste prijs (die rendert vóór de
+ * totaalberekening).
+ */
+add_filter( 'woocommerce_get_cart_item_from_session', 'sampark_donatie_prijs_uit_sessie', 20, 1 );
+
+function sampark_donatie_prijs_uit_sessie( $cart_item ) {
+
+	$producten  = sampark_donatie_producten();
+	$product_id = isset( $cart_item['product_id'] ) ? (int) $cart_item['product_id'] : 0;
+
+	if ( empty( $cart_item['data'] ) || ! is_a( $cart_item['data'], 'WC_Product' )
+		|| ( ! empty( $producten ) && ! in_array( $product_id, $producten, true ) ) ) {
+		return $cart_item;
+	}
+
+	$bedrag = sampark_zoek_bedrag( $cart_item, SAMPARK_DONATIE_LABEL );
+
+	if ( null !== $bedrag ) {
+		$cart_item['data']->set_price( $bedrag );
+	}
+
+	return $cart_item;
+}

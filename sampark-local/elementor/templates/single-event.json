@@ -1,0 +1,2111 @@
+{
+ "version": "0.4",
+ "title": "Single · Evenement",
+ "type": "single-post",
+ "key": "single-event",
+ "conditions": [
+  "include/singular/evenementen"
+ ],
+ "content": [
+  {
+   "id": "4136cc8",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 520,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero (uitgelichte afbeelding)",
+    "background_background": "classic",
+    "background_position": "center center",
+    "background_size": "cover",
+    "__dynamic__": {
+     "background_image": "[elementor-tag id=\"55406e1\" name=\"post-featured-image\" settings=\"%7B%7D\"]"
+    }
+   },
+   "elements": [
+    {
+     "id": "dbd1f79",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "c078409",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 60,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "b04e565",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "span",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=primary"
+          },
+          "dynamic_field_post_meta": "status",
+          "dynamic_field_filter": "yes",
+          "filter_callback": "jet_engine_label_by_glossary",
+          "labels_by_glossary": "{{glossary:status}}",
+          "field_bg_background": "classic",
+          "field_bg_color": "#ECC0AE",
+          "field_padding": {
+           "unit": "px",
+           "top": "4",
+           "right": "12",
+           "bottom": "4",
+           "left": "12",
+           "isLinked": false
+          },
+          "field_border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "field_display": "inline",
+          "field_typography_typography": "custom",
+          "field_typography_font_family": "Patrick Hand",
+          "field_typography_text_transform": "uppercase",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "_flex_size": "none"
+         },
+         "elements": []
+        },
+        {
+         "id": "9045a71",
+         "elType": "widget",
+         "widgetType": "theme-post-title",
+         "settings": {
+          "title": "",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "__dynamic__": {
+           "title": "[elementor-tag id=\"4fbf53d\" name=\"post-title\" settings=\"%7B%7D\"]"
+          },
+          "_title": "Titel (post title)"
+         },
+         "elements": []
+        },
+        {
+         "id": "9dc691a",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "object",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=658acb6"
+          },
+          "dynamic_field_post_object": "post_excerpt",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "750a5b8",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "content_width": "full",
+          "flex_direction_tablet": "row",
+          "flex_direction_mobile": "row",
+          "flex_wrap": "wrap",
+          "_title": "Knoppen"
+         },
+         "elements": [
+          {
+           "id": "a5eca85",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Doe mee",
+            "link": {
+             "url": "#inschrijven",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "62e154c",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Alle evenementen",
+            "link": {
+             "url": "/evenementen/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=658acb6",
+             "button_text_color": "globals/colors?id=primary",
+             "button_background_hover_color": "globals/colors?id=e64974d",
+             "hover_color": "globals/colors?id=primary"
+            }
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "25e78d5",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "24",
+     "bottom": "40",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "40",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Praktisch"
+   },
+   "elements": [
+    {
+     "id": "a15b305",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "20",
+       "row": "20",
+       "isLinked": true,
+       "unit": "px",
+       "size": 20
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "_title": "Praktische informatie",
+      "flex_align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "61554e0",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "4",
+         "row": "4",
+         "isLinked": true,
+         "unit": "px",
+         "size": 4
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Info · Wanneer",
+        "css_classes": "sp-info",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        },
+        "jedv_enabled": "yes",
+        "jedv_type": "show",
+        "jedv_relation": "OR",
+        "jedv_conditions": [
+         {
+          "_id": "2b57593",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"e52461e\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22datum_start%22%7D\"]"
+          }
+         },
+         {
+          "_id": "4fe03ac",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"a2d156b\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22datum_label%22%7D\"]"
+          }
+         }
+        ]
+       },
+       "elements": [
+        {
+         "id": "793acd0",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "far fa-calendar-alt",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "4f1d7ae",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Wanneer",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "fcdc7aa",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "datum_start",
+          "dynamic_field_filter": "yes",
+          "filter_callback": "jet_engine_date",
+          "date_format": "j F Y"
+         },
+         "elements": []
+        },
+        {
+         "id": "636428f",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "datum_label"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7f322da",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "4",
+         "row": "4",
+         "isLinked": true,
+         "unit": "px",
+         "size": 4
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Info · Tijd",
+        "css_classes": "sp-info",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        },
+        "jedv_enabled": "yes",
+        "jedv_type": "show",
+        "jedv_relation": "OR",
+        "jedv_conditions": [
+         {
+          "_id": "bd4bca9",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"c7bf3ba\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22tijd%22%7D\"]"
+          }
+         }
+        ]
+       },
+       "elements": [
+        {
+         "id": "3e05d41",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "far fa-clock",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "f34f13d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Tijd",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "a59f24d",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "tijd"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "c9df44f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "4",
+         "row": "4",
+         "isLinked": true,
+         "unit": "px",
+         "size": 4
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Info · Waar",
+        "css_classes": "sp-info",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        },
+        "jedv_enabled": "yes",
+        "jedv_type": "show",
+        "jedv_relation": "OR",
+        "jedv_conditions": [
+         {
+          "_id": "8435275",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"2d5356a\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22locatie_tekst%22%7D\"]"
+          }
+         }
+        ]
+       },
+       "elements": [
+        {
+         "id": "7864b26",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-map-marker-alt",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b1ee7dc",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Waar",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "220fbcd",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "locatie_tekst"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "8c81bfd",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "4",
+         "row": "4",
+         "isLinked": true,
+         "unit": "px",
+         "size": 4
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Info · Kosten",
+        "css_classes": "sp-info",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        },
+        "jedv_enabled": "yes",
+        "jedv_type": "show",
+        "jedv_relation": "OR",
+        "jedv_conditions": [
+         {
+          "_id": "b2f232c",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"998e8dc\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22prijs_label%22%7D\"]"
+          }
+         }
+        ]
+       },
+       "elements": [
+        {
+         "id": "3385611",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-euro-sign",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5f423d0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Kosten",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "396a7f6",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "prijs_label"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "e0e4a21",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "4",
+         "row": "4",
+         "isLinked": true,
+         "unit": "px",
+         "size": 4
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Info · Inschrijven tot",
+        "css_classes": "sp-info",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        },
+        "jedv_enabled": "yes",
+        "jedv_type": "show",
+        "jedv_relation": "OR",
+        "jedv_conditions": [
+         {
+          "_id": "b455b8e",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"6f57def\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22inschrijving_tot%22%7D\"]"
+          }
+         }
+        ]
+       },
+       "elements": [
+        {
+         "id": "af9913c",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-hourglass-half",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "6b5b93f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Inschrijven tot",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "c0088ec",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "inschrijving_tot",
+          "dynamic_field_filter": "yes",
+          "filter_callback": "jet_engine_date",
+          "date_format": "j F Y"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "80af9a4",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "4",
+         "row": "4",
+         "isLinked": true,
+         "unit": "px",
+         "size": 4
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Info · Deelnemers",
+        "css_classes": "sp-info",
+        "width_tablet": {
+         "unit": "%",
+         "size": 48,
+         "sizes": []
+        },
+        "jedv_enabled": "yes",
+        "jedv_type": "show",
+        "jedv_relation": "OR",
+        "jedv_conditions": [
+         {
+          "_id": "947028a",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"680a9ea\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22max_deelnemers%22%7D\"]"
+          }
+         }
+        ]
+       },
+       "elements": [
+        {
+         "id": "27c1c41",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-users",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "61b03bb",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Deelnemers",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "ce12305",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "max_deelnemers",
+          "dynamic_field_custom": "yes",
+          "dynamic_field_format": "Maximaal %s"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "4cac4d3",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Over"
+   },
+   "elements": [
+    {
+     "id": "22fb0ce",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "flex-start"
+     },
+     "elements": [
+      {
+       "id": "c8c416d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Beschrijving"
+       },
+       "elements": [
+        {
+         "id": "475a61f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Over dit evenement",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "32d73a5",
+         "elType": "widget",
+         "widgetType": "theme-post-content",
+         "settings": {
+          "__globals__": {
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Inhoud (post content)"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "2d6c1dd",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "border_radius": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "_title": "Programma",
+        "__globals__": {
+         "background_color": "globals/colors?id=658acb6"
+        },
+        "jedv_enabled": "yes",
+        "jedv_type": "show",
+        "jedv_relation": "AND",
+        "jedv_conditions": [
+         {
+          "_id": "47364ff",
+          "jedv_condition": "exists",
+          "__dynamic__": {
+           "jedv_field": "[elementor-tag id=\"5224c73\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22programma%22%7D\"]"
+          }
+         }
+        ]
+       },
+       "elements": [
+        {
+         "id": "e0eb238",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Programma",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3c00c7f",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-repeater",
+         "settings": {
+          "dynamic_field_source": "programma",
+          "dynamic_field_format": "<div class=\"sp-prog\"><span>%tijd%</span><strong>%onderdeel%</strong></div>",
+          "item_tag": "div",
+          "items_delimiter": "",
+          "hide_if_empty": "yes",
+          "_css_classes": "sp-programma",
+          "_title": "Programma (repeater)"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d54439d",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Inschrijven",
+    "_element_id": "inschrijven",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    },
+    "css_classes": "sp-hide-empty"
+   },
+   "elements": [
+    {
+     "id": "49a64f9",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "c7896a4",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Doe mee",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "2dff4cb",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Inschrijven of bestellen",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "b6fcf8b",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "LISTING · producten via relatie Evenement → Product",
+      "_sp_jet": {
+       "listing": "inschrijfkaart",
+       "query": "q_event_producten",
+       "cols": 3,
+       "hide_empty": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "0d9432d",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "Externe inschrijving",
+      "css_classes": "sp-keep",
+      "jedv_enabled": "yes",
+      "jedv_type": "show",
+      "jedv_relation": "AND",
+      "jedv_conditions": [
+       {
+        "_id": "1e00b82",
+        "jedv_condition": "exists",
+        "__dynamic__": {
+         "jedv_field": "[elementor-tag id=\"53d603e\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22externe_inschrijflink%22%7D\"]"
+        }
+       }
+      ]
+     },
+     "elements": [
+      {
+       "id": "2d52154",
+       "elType": "widget",
+       "widgetType": "jet-listing-dynamic-link",
+       "settings": {
+        "dynamic_link_source": "externe_inschrijflink",
+        "link_label": "Schrijf je in via de organisator",
+        "link_wrapper_tag": "div",
+        "link_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "22",
+         "bottom": "10",
+         "left": "22",
+         "isLinked": false
+        },
+        "link_border_radius": {
+         "unit": "px",
+         "top": "4",
+         "right": "4",
+         "bottom": "4",
+         "left": "4",
+         "isLinked": true
+        },
+        "link_typography_typography": "custom",
+        "link_typography_font_family": "Patrick Hand",
+        "link_typography_text_transform": "uppercase",
+        "link_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "link_bg_background": "classic",
+        "link_bg_hover_background": "classic",
+        "__globals__": {
+         "link_color": "globals/colors?id=658acb6",
+         "link_bg_color": "globals/colors?id=accent",
+         "link_bg_hover_color": "globals/colors?id=primary",
+         "link_icon_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "13b9a3c",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "24",
+     "bottom": "40",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "40",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Galerij",
+    "jedv_enabled": "yes",
+    "jedv_type": "show",
+    "jedv_relation": "AND",
+    "jedv_conditions": [
+     {
+      "_id": "5fae49b",
+      "jedv_condition": "exists",
+      "__dynamic__": {
+       "jedv_field": "[elementor-tag id=\"0e67c4e\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22galerij%22%7D\"]"
+      }
+     }
+    ]
+   },
+   "elements": [
+    {
+     "id": "619fafa",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "ff42d4a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "In beeld",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "54e621d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Foto's",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "abd1679",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-field",
+     "settings": {
+      "dynamic_field_source": "meta",
+      "field_tag": "div",
+      "hide_if_empty": "yes",
+      "__globals__": {
+       "field_color": "globals/colors?id=text"
+      },
+      "dynamic_field_post_meta": "galerij",
+      "dynamic_field_filter": "yes",
+      "filter_callback": "jet_engine_img_gallery_grid",
+      "img_columns": 3,
+      "img_gallery_size": "large",
+      "img_gallery_lightbox": "yes",
+      "img_gallery_gap": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "_title": "Galerij (gallery-veld)"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2bcad5e",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "flex_align_items": "center",
+    "html_tag": "section",
+    "_title": "Sponsors",
+    "css_classes": "sp-hide-empty"
+   },
+   "elements": [
+    {
+     "id": "24d3b0e",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "flex_align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "eb9713d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Met dank aan",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "f775dc7",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Sponsors van dit evenement",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "900f6c7",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "LISTING · sponsors via relatie Sponsor ↔ Evenement",
+      "_sp_jet": {
+       "listing": "sponsorlogo",
+       "query": "q_event_sponsors",
+       "cols": 6,
+       "hide_empty": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "13358e6",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Nieuws",
+    "css_classes": "sp-hide-empty"
+   },
+   "elements": [
+    {
+     "id": "1bdcc36",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "3e1a7f3",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Terugblik",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "16c3f4b",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Nieuws over dit evenement",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "0d094cd",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "LISTING · nieuws via relatie Evenement ↔ Bericht",
+      "_sp_jet": {
+       "listing": "nieuwskaart",
+       "query": "q_event_nieuws",
+       "cols": 3,
+       "hide_empty": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2e8df06",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "110",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 60,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "CTA band",
+    "__globals__": {
+     "background_color": "globals/colors?id=primary"
+    }
+   },
+   "elements": [
+    {
+     "id": "19ba584",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "16",
+       "row": "16",
+       "isLinked": true,
+       "unit": "px",
+       "size": 16
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 760,
+       "sizes": []
+      },
+      "flex_align_items": "center",
+      "_title": "CTA inhoud"
+     },
+     "elements": [
+      {
+       "id": "8a5a6f3",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Steun ons werk",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=cf55c96",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "abd9327",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Kun je er niet bij zijn?",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "b4bb919",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Met een donatie help je net zo goed: elke euro gaat naar de scholen in India.</p>",
+        "align": "center",
+        "__globals__": {
+         "text_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "aa169b4",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "content_width": "full",
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "0147bfa",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Doneer",
+          "link": {
+           "url": "/steun-ons/doneren/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=primary",
+           "button_background_hover_color": "globals/colors?id=e64974d",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "a9f1680",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Andere evenementen",
+          "link": {
+           "url": "/evenementen/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=658acb6",
+           "button_background_hover_color": "globals/colors?id=658acb6",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {}
+}

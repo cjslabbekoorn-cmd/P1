@@ -4,14 +4,14 @@
  "type": "page",
  "slug": "doneren",
  "parent": "steun-ons",
- "menu_order": 8,
+ "menu_order": 4,
  "seo": [
   "Doneer aan Stichting Sampark | Onderwijs voor kinderen in India",
   "Doe een eenmalige gift. 95% gaat direct naar onderwijs in India en je gift is aftrekbaar."
  ],
  "content": [
   {
-   "id": "b010e50",
+   "id": "358a9ad",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -62,7 +62,7 @@
    },
    "elements": [
     {
-     "id": "7e2f4a6",
+     "id": "2ea4fca",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -103,7 +103,7 @@
      },
      "elements": [
       {
-       "id": "3d3b63a",
+       "id": "046c1e2",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -129,7 +129,7 @@
        },
        "elements": [
         {
-         "id": "784bb97",
+         "id": "7f86ae8",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -154,7 +154,7 @@
          "elements": []
         },
         {
-         "id": "919db1e",
+         "id": "191154a",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -179,7 +179,7 @@
          "elements": []
         },
         {
-         "id": "881e15a",
+         "id": "a5ac610",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -206,7 +206,7 @@
    "isInner": false
   },
   {
-   "id": "392ef65",
+   "id": "0e2e556",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -244,7 +244,7 @@
    },
    "elements": [
     {
-     "id": "6d0f846",
+     "id": "6636827",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -262,7 +262,7 @@
      },
      "elements": [
       {
-       "id": "a4300b0",
+       "id": "b6f0479",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -287,7 +287,7 @@
        },
        "elements": [
         {
-         "id": "abd9327",
+         "id": "b608866",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -312,7 +312,7 @@
          "elements": []
         },
         {
-         "id": "66f1afb",
+         "id": "1bbbf40",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -322,7 +322,7 @@
          "elements": []
         },
         {
-         "id": "b052f64",
+         "id": "168d140",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
@@ -333,7 +333,7 @@
              "value": "fas fa-heart",
              "library": "fa-solid"
             },
-            "_id": "ba52197"
+            "_id": "3a20226"
            },
            {
             "text": "€ 25 · een schooluniform",
@@ -341,7 +341,7 @@
              "value": "fas fa-heart",
              "library": "fa-solid"
             },
-            "_id": "efb72f4"
+            "_id": "75766ce"
            },
            {
             "text": "€ 60 · een jaar onderwijs voor één kind",
@@ -349,7 +349,7 @@
              "value": "fas fa-heart",
              "library": "fa-solid"
             },
-            "_id": "5f45f2a"
+            "_id": "28dcfa8"
            },
            {
             "text": "€ 100 · bijdrage aan een fiets voor een geslaagde",
@@ -357,7 +357,7 @@
              "value": "fas fa-heart",
              "library": "fa-solid"
             },
-            "_id": "6cf3dbf"
+            "_id": "643791f"
            }
           ],
           "space_between": {
@@ -373,7 +373,7 @@
          "elements": []
         },
         {
-         "id": "a5dfe6e",
+         "id": "5236b5c",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -391,7 +391,7 @@
        "isInner": false
       },
       {
-       "id": "279ec31",
+       "id": "e46441f",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -438,7 +438,7 @@
        },
        "elements": [
         {
-         "id": "9494449",
+         "id": "915db17",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -463,7 +463,7 @@
          "elements": []
         },
         {
-         "id": "5a19c7b",
+         "id": "9ad75ca",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -484,7 +484,7 @@
          "elements": []
         },
         {
-         "id": "573d49f",
+         "id": "c159ae3",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -493,7 +493,7 @@
          "elements": []
         },
         {
-         "id": "da0d111",
+         "id": "8d7d8ee",
          "elType": "container",
          "settings": {
           "flex_direction": "row",
@@ -511,7 +511,7 @@
          },
          "elements": [
           {
-           "id": "7c37bba",
+           "id": "1ebfc18",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -541,7 +541,7 @@
            "elements": []
           },
           {
-           "id": "dbaf374",
+           "id": "2f16d54",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -571,7 +571,7 @@
            "elements": []
           },
           {
-           "id": "cf7a8b9",
+           "id": "df8adf4",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -601,7 +601,7 @@
            "elements": []
           },
           {
-           "id": "d0f1765",
+           "id": "9f7a0fe",
            "elType": "widget",
            "widgetType": "button",
            "settings": {
@@ -634,7 +634,7 @@
          "isInner": false
         },
         {
-         "id": "6850f4f",
+         "id": "584a78f",
          "elType": "widget",
          "widgetType": "button",
          "settings": {

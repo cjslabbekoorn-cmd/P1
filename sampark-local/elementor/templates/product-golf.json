@@ -1,0 +1,537 @@
+{
+ "version": "0.4",
+ "title": "Product · golftoernooi (Super Forms)",
+ "type": "product",
+ "key": "product-golf",
+ "conditions": [
+  "include/product/in_product_cat/{{pcat:golftoernooi}}"
+ ],
+ "content": [
+  {
+   "id": "8036c8e",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "64",
+     "right": "24",
+     "bottom": "64",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Product"
+   },
+   "elements": [
+    {
+     "id": "65cc2c8",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "flex-start"
+     },
+     "elements": [
+      {
+       "id": "d95025e",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 45,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Beeld"
+       },
+       "elements": [
+        {
+         "id": "1dfce8e",
+         "elType": "widget",
+         "widgetType": "woocommerce-product-images",
+         "settings": {
+          "image_border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "spacing": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "_title": "Productbeeld"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "921f9c6",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Product en bestellen",
+        "css_classes": "sp-product"
+       },
+       "elements": [
+        {
+         "id": "095cea7",
+         "elType": "widget",
+         "widgetType": "woocommerce-breadcrumb",
+         "settings": {
+          "_title": "Kruimelpad"
+         },
+         "elements": []
+        },
+        {
+         "id": "59e9525",
+         "elType": "widget",
+         "widgetType": "woocommerce-product-title",
+         "settings": {
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 48,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 34,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "__dynamic__": {
+           "title": "[elementor-tag id=\"a0185ba\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
+          },
+          "_title": "Producttitel"
+         },
+         "elements": []
+        },
+        {
+         "id": "a2eb5b9",
+         "elType": "widget",
+         "widgetType": "woocommerce-product-price",
+         "settings": {
+          "price_typography_typography": "custom",
+          "price_typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          },
+          "__globals__": {
+           "price_color": "globals/colors?id=accent",
+           "price_typography_typography": "globals/typography?id=accent"
+          },
+          "_title": "Prijs"
+         },
+         "elements": []
+        },
+        {
+         "id": "622829f",
+         "elType": "widget",
+         "widgetType": "woocommerce-product-short-description",
+         "settings": {
+          "__globals__": {
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Korte omschrijving"
+         },
+         "elements": []
+        },
+        {
+         "id": "5a56ba2",
+         "elType": "widget",
+         "widgetType": "shortcode",
+         "settings": {
+          "shortcode": "[super_form id=\"{{form:golf}}\"]",
+          "_title": "Super Forms · golf"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "c40878c",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "24",
+     "bottom": "0",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "0",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Beschrijving",
+    "jedv_enabled": "yes",
+    "jedv_type": "show",
+    "jedv_relation": "AND",
+    "jedv_conditions": [
+     {
+      "_id": "56b8215",
+      "jedv_condition": "exists",
+      "__dynamic__": {
+       "jedv_field": "[elementor-tag id=\"a3fd0cb\" name=\"jet-object-property\" settings=\"%7B%22object_prop%22%3A%22post_content%22%7D\"]"
+      }
+     }
+    ]
+   },
+   "elements": [
+    {
+     "id": "00996f5",
+     "elType": "widget",
+     "widgetType": "woocommerce-product-content",
+     "settings": {
+      "_title": "Beschrijving"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "60ab99c",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "html_tag": "section",
+    "_title": "Vertrouwen",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "5bc19a3",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "40",
+       "right": "24",
+       "bottom": "40",
+       "left": "24",
+       "isLinked": false
+      },
+      "flex_justify_content": "space-between",
+      "_title": "Vertrouwen inhoud"
+     },
+     "elements": [
+      {
+       "id": "e085ade",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "_title": "ANBI"
+       },
+       "elements": [
+        {
+         "id": "6613206",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-hand-holding-heart",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5123035",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p><strong>ANBI-erkend</strong><br>Je gift is fiscaal aftrekbaar.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "fbd70d4",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "_title": "Bestemming"
+       },
+       "elements": [
+        {
+         "id": "edacf76",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-school",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "48fd5ef",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p><strong>Naar de scholen</strong><br>Opbrengsten gaan naar onderwijs in India.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "abf338a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 31,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "_title": "Betalen"
+       },
+       "elements": [
+        {
+         "id": "ebdab92",
+         "elType": "widget",
+         "widgetType": "icon",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-lock",
+           "library": "fa-solid"
+          },
+          "size": {
+           "unit": "px",
+           "size": 30,
+           "sizes": []
+          },
+          "align": "left",
+          "__globals__": {
+           "primary_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "34fd1bb",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p><strong>Veilig betalen</strong><br>iDEAL of op factuur.</p>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {}
+}

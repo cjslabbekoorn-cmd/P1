@@ -105,7 +105,24 @@ Daarna bouwt `build-site.php` de pagina's opnieuw. De `LISTING ·`-blokken worde
 
 **Naar staging:** `docker compose run --rm wpcli eval-file /scripts/jetengine-export.php` schrijft `jetengine/sampark-jetengine.json`. Importeer dat op staging via JetEngine › Dashboard › Skins › Import. Let op: staging heeft al posttypes `projecten` en `evenementen` met eigen velden. Kies bij de import per item "vervangen" of "overslaan", en vergelijk eerst de veldnamen, zodat er geen bestaande data verloren gaat. Listing Grids op pagina's moeten na import opnieuw naar de juiste listing en query wijzen, omdat de ID's op staging anders zijn.
 
-**Tijdelijk zonder Elementor Pro:** `mu-plugins/sampark-preview-singles.php` toont op `/ons-werk/{school}/` de gebouwde schoolpagina in plaats van de kale projectsingle. Verwijder die mu-plugin zodra er een Theme Builder Single-template voor projecten is.
+## Single-templates (Elementor Pro Theme Builder)
+
+Detailpagina's zijn geen losse pagina's meer, maar één template per type. De inhoud komt uit de velden van het bericht, dus een nieuwe school of een nieuw evenement aanmaken in JetEngine is genoeg.
+
+| Template | Voorwaarde | Inhoud |
+|---|---|---|
+| Single · Project | alle projecten (`/ons-werk/…`) | hero met uitgelichte afbeelding, feiten, verhaal en voorzieningen, wat Sampark betaalt (checklist met glossary), tijdlijn, kaart met dit project, galerij, gekoppeld nieuws, andere projecten van hetzelfde type |
+| Single · Evenement | alle evenementen | status, praktische info (datum, tijd, locatie, kosten, inschrijven tot, deelnemers), beschrijving en programma, inschrijfkaarten van de gekoppelde producten of de externe inschrijflink, galerij, sponsors, terugblikken |
+| Single · Nieuwsbericht | alle berichten | datum, titel, intro, beeld, tekst, gekoppelde projecten en evenementen, meer nieuws |
+| Product · winkelwagenknop | alle producten | beeld, titel, prijs, korte omschrijving, bestelknop (sponsorpakketten, sponsor een kind) |
+| Product · wijnactie / Sampark Rally / golftoernooi / donatie | productcategorie | idem, maar met het Super Forms-formulier in plaats van de bestelknop |
+
+- Secties met een optioneel veld (feiten, tijdlijn, kaart, galerij, programma …) hebben **Dynamic Visibility** "veld bestaat" en verdwijnen als het veld leeg is.
+- Secties met een gekoppelde lijst (nieuws, sponsors, inschrijven …) hebben een Listing Grid met "Hide widget if: Query is empty" en de CSS-klasse `sp-hide-empty`, zodat ook de kop verdwijnt.
+- De queries hiervoor (`Single · …` in de Query Builder) gebruiken de JetEngine-macro's `%current_id%`, `%current_terms|projecttype%` en `%rel_get_items|…%`.
+- Koppel een product aan een evenement via de relatie **Evenement → Product**; het verschijnt dan als inschrijfkaart op het evenement.
+
+De oude losse schoolpagina's onder `/ons-werk/` gaan bij `build-site.php` naar de prullenbak.
 
 ## Super Forms
 
@@ -113,7 +130,7 @@ Super Forms 6.3 wordt geïnstalleerd, met de meegeleverde add-ons (waaronder Woo
 
 ## Snippets (Code Snippets)
 
-`scripts/snippets-import.php` zet de snippets uit `snippets/` in Code Snippets en zet ze aan. Bestaande snippets met dezelfde naam worden bijgewerkt.
+`scripts/snippets-import.php` zet de snippets uit `snippets/` in Code Snippets en zet ze aan. Bestaande snippets met dezelfde naam worden bijgewerkt. Draai het met `--exec="define('CODE_SNIPPETS_SAFE_MODE', true);"` (zoals `setup.sh` doet), anders weigert Code Snippets het (opnieuw) activeren.
 
 | Snippet | Bron | Wat het doet |
 |---|---|---|

@@ -15,6 +15,7 @@ van het listing item.
 import json
 import hashlib
 from pathlib import Path
+from urllib.parse import quote
 
 OUT = Path(__file__).parent / "pages"
 
@@ -731,98 +732,9 @@ def india_map(focus=None, with_list=True, height=560):
     return html(code, title="KAART · JetEngine Map Listing (Leaflet/OSM) · projecten met Map-veld · clustering aan")
 
 
-FUND_ICONS = [("docent", "fas fa-chalkboard-teacher"), ("sport", "fas fa-futbol"), ("lesmateriaal", "fas fa-book-open"),
-              ("schoolarts", "fas fa-stethoscope"), ("gezondheid", "fas fa-heartbeat"), ("fiets", "fas fa-bicycle"),
-              ("elektriciteit", "fas fa-bolt")]
-
-
-def fund_icon(label):
-    low = label.lower()
-    for key, ic in FUND_ICONS:
-        if key in low:
-            return ic
-    return "fas fa-check"
-
-
 def fa_icon(value, color="accent", px=36):
     return widget("icon", {"selected_icon": {"value": value, "library": "fa-solid"}, "size": size(px),
                            "align": "left", "__globals__": {"primary_color": g_color(color)}})
-
-
-def fact_tile(value, label):
-    num = widget("heading", {"title": value, "header_size": "p", "align": "center",
-                             "typography_typography": "custom", "typography_font_family": "Spectral",
-                             "typography_font_weight": "500", "typography_font_size": size(46),
-                             "typography_font_size_mobile": size(34), "typography_line_height": size(1.1, "em"),
-                             "__globals__": {"title_color": g_color("primary")}})
-    return container(num,
-                     text(f"<p>{label}</p>", align="center"),
-                     title=f"Feit · {label}", align="center", gap_px=0, width=23,
-                     extra={"width_mobile": size(46, "%")})
-
-
-def school_page(s):
-    others = [o for o in SCHOOLS if o["slug"] != s["slug"]]
-    paras = "".join(f"<p>{p}</p>" for p in s["story"])
-    facilities = [container(eyebrow("Voorzieningen"), icon_list(s["facilities"], icon_value="fas fa-school"), gap_px=8)] if s["facilities"] else []
-    news = (listing("nieuws · Related Items via relatie Project ↔ Bericht · verbergen als leeg",
-                    *[media_card(*n) for n in s["news"]], cols=3) if s["news"] else
-            text("<p><em>Nog geen berichten gekoppeld. Deze sectie verschijnt zodra er nieuws aan de school is gekoppeld (relatie Project ↔ Bericht).</em></p>"))
-    page(s["slug"], s["name"],
-         hero(s["name"], s["intro"], s["img"], eye=f"School · {s['village']}, Budaun",
-              buttons=(button("Sponsor een kind", "/product/sponsor-een-kind/"),
-                       button("Doneer voor deze school", "/steun-ons/doneren/", style="light")), height=520),
-         section(container(*[fact_tile(v, l) for v, l in s["facts"]], title="Feiten (meta-velden)", direction="row",
-                           justify="space-between", gap_px=16, wrap=True, mobile_column=False),
-                 title="Feiten", pad=(40, 24)),
-         section(
-             container(
-                 container(eyebrow("Het verhaal"), heading(s["story_title"], "h2"), text(paras),
-                           heading(s["extra_title"], "h3", size_px=26), text(f"<p>{s['extra']}</p>"),
-                           title="Verhaal (post content)", width=55, gap_px=14),
-                 container(image(s["gallery"][0], height=420), *facilities, title="Beeld en voorzieningen", width=40, gap_px=24),
-                 direction="row", gap_px=48, align="flex-start"),
-             title="Verhaal"),
-         section(
-             section_head("Jouw steun", "Wat Sampark hier betaalt",
-                          "Samen met de Vincentian Charitable Trust houden we de school elke dag open."),
-             container(*[card(fa_icon(fund_icon(f)), heading(f, "h4", size_px=22), title=f"Post · {f}", width=23,
-                              pad=22, gap_px=10, bg="e64974d")
-                         for f in s["funds"]],
-                       title="LISTING · checkbox we_financieren", direction="row", wrap=True, gap_px=20,
-                       extra={"flex_align_items": "stretch"}),
-             title="Wat we betalen", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
-             divider_bottom=("curve", "#FFFFFF", 50)),
-         section(
-             section_head("Door de jaren heen", f"Het verhaal van {s['name']}"),
-             container(*[card(eyebrow(m), text(f"<p>{t}</p>"), title=f"Moment · {m}", width=31)
-                         for m, t in s["moments"]],
-                       title="LISTING · repeater momenten (moment + tekst)", direction="row", gap_px=20, wrap=True),
-             title="Tijdlijn"),
-         section(
-             section_head("Waar we zijn", f"{s['village']}, district Budaun",
-                          "Op ongeveer 200 kilometer (hemelsbreed) ten oosten van New Delhi, in de deelstaat Uttar Pradesh."),
-             india_map(focus=s["slug"], with_list=False, height=420),
-             title="Locatie"),
-         section(
-             section_head("In beeld", "Foto's van de school"),
-             container(*[container(image(k, height=300), width=48, title=f"Foto · {k}") for k in s["gallery"]],
-                       title="Galerij (gallery-veld)", direction="row", gap_px=20),
-             title="Galerij", pad=(40, 24)),
-         section(section_head("Nieuws", f"Nieuws over {s['name']}"), news, title="Nieuws"),
-         cta_band(f"Help de kinderen van {s['village']}",
-                  "Voor € 60 per jaar betaal je het lesgeld en de schoolspullen van één kind.",
-                  [button("Sponsor een kind", "/product/sponsor-een-kind/", style="light"),
-                   button("Doneer eenmalig", "/steun-ons/doneren/", style="outline-light")], eye="Steun deze school"),
-         section(
-             section_head("Andere scholen", "Bekijk ook"),
-             listing("projecten · zelfde projecttype · exclude huidige",
-                     *[project_card(o["img"], f"{o['pupils']} leerlingen · {o['work']}", o["name"], o["tagline"] + ".",
-                                    f"/ons-werk/{o['slug']}/") for o in others]),
-             title="Andere scholen"),
-         parent="ons-werk",
-         seo=(f"{s['name']} in {s['village']}, India | Stichting Sampark",
-              f"{s['name']}: {s['pupils']} leerlingen in de regio Budaun. {s['tagline']}."))
 
 
 def project_card(img, meta, title, tagline, link):
@@ -882,8 +794,8 @@ page("ons-werk", "Ons werk",
      seo=("Ons werk | Scholen en opleidingen in India | Stichting Sampark",
           "Vier scholen rond Budaun, drie beroepsopleidingen in New Delhi en initiatieven als fietsen en zonnepanelen."))
 
-for _s in SCHOOLS:
-    school_page(_s)
+# De schoolpagina's zijn geen losse pagina's meer: /ons-werk/{school}/ is de projectsingle met de
+# Theme Builder-template "Single · Project" (zie onderaan).
 
 # EVENEMENTEN -------------------------------------------------------------
 page("evenementen", "Evenementen",
@@ -1152,7 +1064,8 @@ def dyn_link(label, style="outline", source="_permalink"):
 
 
 def listing_card(*kids, title, bg="658acb6", pad=20):
-    c = container(*kids, title=title, bg_global=bg, radius=20, pad=dims(pad), gap_px=12, css_classes="sp-card",
+    colour = {"bg": bg} if bg.startswith("#") else {"bg_global": bg}
+    c = container(*kids, title=title, radius=20, pad=dims(pad), gap_px=12, css_classes="sp-card", **colour,
                   extra={"min_height": size(100, "%")})
     return [c]
 
@@ -1205,6 +1118,14 @@ LISTINGS = {
         dyn_field("object", "post_excerpt", tag="div"),
         dyn_link("Kies dit pakket", style="primary"),
         title="Pakketkaart", bg="e64974d", pad=28)),
+    "inschrijfkaart": ("Inschrijfkaart (product bij evenement)", "product", listing_card(
+        dyn_field("object", "post_title", tag="h3", typo="primary", size_px=26),
+        dyn_field("meta", "_price", tag="span", typo="accent", color="accent", size_px=20,
+                  fmt="€ %s", filt={"filter_callback": "number_format", "num_dec_point": ",",
+                                    "num_thousands_sep": ".", "num_decimals": 2}),
+        dyn_field("object", "post_excerpt", tag="div"),
+        dyn_link("Inschrijven of bestellen", style="primary"),
+        title="Inschrijfkaart", bg="#FFFFFF", pad=24)),
     "kaartpopup": ("Kaart-popup school", "projecten", [container(
         dyn_image(height=120, radius=10),
         container(dyn_field("meta", "aantal", tag="span", typo="accent", color="accent", size_px=16),
@@ -1285,11 +1206,13 @@ def content_json():
         {"slug": "wijnactie", "order": 4, "title": "Wijnactie", "thumb": "event_wijn",
          "excerpt": "Rood, wit en alcoholvrij. € 43,50 per doos van zes flessen, opbrengst naar de scholen.",
          "content": "<p>Ieder jaar stellen we vanuit Stichting Sampark een tweetal wijnen samen, en dit jaar ook een alcoholvrije. Afhalen of laten thuisbezorgen.</p>",
-         "meta": {"status": "doorlopend", "datum_label": "Het hele jaar", "prijs_label": "€ 43,50 per doos"}},
+         "meta": {"status": "doorlopend", "datum_label": "Het hele jaar", "prijs_label": "€ 43,50 per doos"},
+         "products": ["rode-wijn", "witte-wijn", "alcoholvrij"]},
         {"slug": "sampark-rally", "order": 2, "title": "Sampark Rally", "thumb": "event_rally",
          "excerpt": "Een dag met je eigen klassieker door Oost-Nederland. € 600 per equipe.",
          "content": "<p>Een compleet verzorgde dag voor twee personen in een eigen auto, afgesloten met een diner en de prijsuitreiking.</p>",
-         "meta": {"status": "aangekondigd", "datum_label": "September 2027 · datum volgt", "prijs_label": "€ 600 per equipe", "max_deelnemers": 60}},
+         "meta": {"status": "aangekondigd", "datum_label": "September 2027 · datum volgt", "prijs_label": "€ 600 per equipe", "max_deelnemers": 60},
+         "products": ["ticket-sampark-rally"]},
         {"slug": "golftoernooi", "order": 3, "title": "Golftoernooi", "thumb": "event_golf",
          "excerpt": "Wedstrijd, clinic of masterclass op Het Rijk van Nunspeet. Vanaf € 300 p.p.",
          "content": "<p>Speel mee in de wedstrijd om de wisselbeker, of doe mee aan een clinic voor beginners of een masterclass voor gevorderden.</p>",
@@ -1298,7 +1221,8 @@ def content_json():
                   "programma": [{"tijd": "09:30 – 11:00", "onderdeel": "Ontvangst wedstrijdspelers"},
                                 {"tijd": "11:30 – 16:30", "onderdeel": "Wedstrijd (shotgun)"},
                                 {"tijd": "12:00 – 16:30", "onderdeel": "Lunch en clinics"},
-                                {"tijd": "18:00 – 21:00", "onderdeel": "Diner en prijsuitreiking"}]}},
+                                {"tijd": "18:00 – 21:00", "onderdeel": "Diner en prijsuitreiking"}]},
+         "products": ["golftoernooi"]},
         {"slug": "project-en-cultuurreis", "order": 5, "title": "Project- en cultuurreis", "thumb": "event_reis",
          "excerpt": "Reis mee naar India en zie met eigen ogen wat jouw steun doet.",
          "content": "<p>Regelmatig organiseert Stichting Sampark een reis naar India. Deelnemers maken kennis met het kleurrijke leven daar en zien met eigen ogen het verschil dat hulp kan maken.</p>",
@@ -1489,6 +1413,313 @@ footer_content = [
         title="Footer", bg_global="text"),
 ]
 template("footer", "Footer", "footer", footer_content)
+
+
+# ---------------------------------------------------------------- Theme Builder: singles (Elementor Pro + JetEngine)
+# Eén template per posttype in plaats van een losse pagina per school of evenement. Alle inhoud komt uit
+# de velden van het bericht (JetEngine Dynamic-widgets en Elementor Pro-thema-widgets). Secties met een
+# optioneel veld krijgen Dynamic Visibility ("veld bestaat"); secties met een Listing Grid krijgen de klasse
+# sp-hide-empty en verdwijnen als de query leeg is (Listing Grid › Hide widget if › Query is empty).
+
+
+def etag(name, settings=None):
+    """Elementor dynamic tag, zoals de editor die opslaat."""
+    return (f'[elementor-tag id="{_id(name)}" name="{name}" '
+            f'settings="{quote(json.dumps(settings or {}, separators=(",", ":")))}"]')
+
+
+def visible_if(el, *fields, relation="AND"):
+    """JetEngine Dynamic Visibility: alleen tonen als de meta-velden een waarde hebben.
+    Een veld met een @ ervoor is een eigenschap van het bericht zelf, bv. "@post_content"."""
+    def tag(f):
+        if f.startswith("@"):
+            return etag("jet-object-property", {"object_prop": f[1:]})
+        return etag("jet-post-custom-field", {"meta_field": f})
+    el["settings"].update({
+        "jedv_enabled": "yes", "jedv_type": "show", "jedv_relation": relation,
+        "jedv_conditions": [{"_id": _id(f), "jedv_condition": "exists", "__dynamic__": {"jedv_field": tag(f)}}
+                            for f in fields]})
+    return el
+
+
+def jet_grid(listing_key, query_key, cols=3, note=None):
+    """Plek voor een JetEngine Listing Grid; build-site.php zet hier de echte grid neer."""
+    return container(title=f"LISTING · {note or query_key}",
+                     extra={"_sp_jet": {"listing": listing_key, "query": query_key, "cols": cols, "hide_empty": True}})
+
+
+def post_title(size_px=64, color="658acb6", level="h1"):
+    w = heading("", level, color=color, typo="accent", size_px=size_px)
+    w["widgetType"] = "theme-post-title"
+    w["settings"]["title"] = ""
+    w["settings"]["__dynamic__"] = {"title": etag("post-title")}
+    w["settings"]["_title"] = "Titel (post title)"
+    return w
+
+
+def post_content(title="Inhoud (post content)"):
+    return widget("theme-post-content", {"__globals__": {"text_color": g_color("text")}}, title=title)
+
+
+def single_hero(*inner, height=520):
+    """Hero zoals op de pagina's, met de uitgelichte afbeelding als achtergrond."""
+    c = container(
+        container(container(*inner, title="Hero tekst", gap_px=16, width=60),
+                  title="Hero inhoud", direction="row", boxed=True, align="center", gap_px=40,
+                  pad=dims(140, 24, 140, 24), pad_mobile=dims(110, 20, 110, 20)),
+        title="Hero (uitgelichte afbeelding)", overlay=("#46211AE6", "#46211A1A"), min_height=height,
+        align="stretch", justify="center", tag="section", divider_bottom=("curve", "#FFFFFF", 70))
+    c["settings"].update({"background_background": "classic", "background_position": "center center",
+                          "background_size": "cover",
+                          "__dynamic__": {"background_image": etag("post-featured-image")}})
+    return c
+
+
+def hide_empty(sec):
+    sec["settings"]["css_classes"] = (sec["settings"].get("css_classes", "") + " sp-hide-empty").strip()
+    return sec
+
+
+def repeater(field, fmt, css, title, tag="div"):
+    return widget("jet-listing-dynamic-repeater", {
+        "dynamic_field_source": field, "dynamic_field_format": fmt, "item_tag": tag, "items_delimiter": "",
+        "hide_if_empty": "yes", "_css_classes": css}, title=title)
+
+
+def info_item(fa, label, *fields_w, fields=()):
+    c = container(fa_icon(fa, px=26), eyebrow(label), *fields_w, title=f"Info · {label}", gap_px=4, width=31,
+                  css_classes="sp-info", extra={"width_tablet": size(48, "%")})
+    return visible_if(c, *fields, relation="OR") if fields else c
+
+
+def gallery_field(cols=2):
+    w = dyn_field("meta", "galerij", hide=True,
+                  filt={"filter_callback": "jet_engine_img_gallery_grid", "img_columns": cols,
+                        "img_gallery_size": "large", "img_gallery_lightbox": "yes"})
+    w["settings"]["img_gallery_gap"] = size(20)
+    w["settings"]["_title"] = "Galerij (gallery-veld)"
+    return w
+
+
+steun_cta = cta_band("Help een kind naar school",
+                     "Voor € 60 per jaar betaal je het lesgeld en de schoolspullen van één kind.",
+                     [button("Sponsor een kind", "/product/sponsor-een-kind/", style="light"),
+                      button("Doneer eenmalig", "/steun-ons/doneren/", style="outline-light")], eye="Steun ons werk")
+
+# Project (school, opleiding, initiatief) --------------------------------------------------------
+project_single = [
+    single_hero(
+        dyn_field("meta", "dorp", tag="p", typo="accent", color="cf55c96", size_px=20, upper=True),
+        post_title(),
+        dyn_field("object", "post_excerpt", tag="p", color="658acb6", size_px=19),
+        container(button("Sponsor een kind", "/product/sponsor-een-kind/"),
+                  button("Doneer voor dit project", "/steun-ons/doneren/", style="light"),
+                  title="Knoppen", direction="row", gap_px=12, mobile_column=False, wrap=True)),
+    visible_if(section(repeater("feiten", '<div class="sp-fact"><strong>%waarde%</strong><span>%label%</span></div>',
+                                "sp-facts", "Feiten (repeater feiten)"),
+                       title="Feiten", pad=(40, 24)), "feiten"),
+    section(
+        container(
+            container(eyebrow("Het verhaal"), post_content(),
+                      dyn_field("meta", "extra_titel", tag="h3", typo="primary", size_px=26),
+                      dyn_field("meta", "extra_tekst", tag="p", filt={"filter_callback": "wpautop"}),
+                      visible_if(container(dyn_link("Bezoek de website", source="externe_link"), title="Externe link"),
+                                 "externe_link"),
+                      title="Verhaal", width=55, gap_px=14),
+            container(dyn_image(height=420, radius=20, link=False),
+                      visible_if(container(eyebrow("Voorzieningen"),
+                                           repeater("voorzieningen", '<span class="sp-check">%voorziening%</span>',
+                                                    "sp-checks", "Voorzieningen (repeater)"),
+                                           title="Voorzieningen", gap_px=8), "voorzieningen"),
+                      title="Beeld en voorzieningen", width=40, gap_px=24),
+            direction="row", gap_px=48, align="flex-start"),
+        title="Verhaal"),
+    visible_if(section(
+        section_head("Jouw steun", "Wat Sampark hier betaalt",
+                     "Samen met de Vincentian Charitable Trust houden we de school elke dag open."),
+        dyn_field("meta", "we_financieren", tag="div",
+                  filt={"filter_callback": "jet_engine_render_checklist", "checklist_cols_num": 3,
+                        "labels_by_glossary": "{{glossary:financiering}}",
+                        "selected_field_icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+                  extra={"_css_classes": "sp-checklist", "checklist_cols_num_mobile": 1}),
+        title="Wat we betalen", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
+        divider_bottom=("curve", "#FFFFFF", 50)), "we_financieren"),
+    visible_if(section(
+        section_head("Door de jaren heen", "Zo is het gegaan"),
+        repeater("momenten", '<div class="sp-moment"><span class="sp-moment__when">%moment%</span><p>%tekst%</p></div>',
+                 "sp-moments", "Momenten (repeater)"),
+        title="Tijdlijn"), "momenten"),
+    visible_if(section(
+        section_head("Waar we zijn", "Op de kaart",
+                     "Budaun ligt ongeveer 200 kilometer (hemelsbreed) ten oosten van New Delhi, in de deelstaat Uttar Pradesh."),
+        html('<div class="sp-map__canvas" style="min-height:420px"></div>',
+             title="KAART · JetEngine Map Listing · q_dit_project · zoom 9"),
+        title="Locatie"), "locatie"),
+    visible_if(section(section_head("In beeld", "Foto's"), gallery_field(), title="Galerij", pad=(40, 24)), "galerij"),
+    hide_empty(section(section_head("Nieuws", "Nieuws over dit project"),
+                       jet_grid("nieuwskaart", "q_project_nieuws", 3, "nieuws via relatie Project ↔ Bericht"),
+                       title="Nieuws")),
+    steun_cta,
+    hide_empty(section(section_head("Bekijk ook", "Andere projecten"),
+                       jet_grid("projectkaart", "q_andere_projecten", 3, "zelfde projecttype, zonder dit project"),
+                       title="Andere projecten")),
+]
+template("single-project", "Single · Project", "single-post", project_single, conditions=("include/singular/projecten",))
+
+# Evenement ----------------------------------------------------------------------------------
+event_single = [
+    single_hero(
+        dyn_field("meta", "status", tag="span", color="primary",
+                  filt={"filter_callback": "jet_engine_label_by_glossary", "labels_by_glossary": "{{glossary:status}}"},
+                  extra=dict(CHIP, _flex_size="none")),
+        post_title(),
+        dyn_field("object", "post_excerpt", tag="p", color="658acb6", size_px=19),
+        container(button("Doe mee", "#inschrijven"),
+                  button("Alle evenementen", "/evenementen/", style="light"),
+                  title="Knoppen", direction="row", gap_px=12, mobile_column=False, wrap=True)),
+    section(
+        container(
+            info_item("far fa-calendar-alt", "Wanneer",
+                      dyn_field("meta", "datum_start", tag="p", filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+                      dyn_field("meta", "datum_label", tag="p"), fields=("datum_start", "datum_label")),
+            info_item("far fa-clock", "Tijd", dyn_field("meta", "tijd", tag="p"), fields=("tijd",)),
+            info_item("fas fa-map-marker-alt", "Waar", dyn_field("meta", "locatie_tekst", tag="p"), fields=("locatie_tekst",)),
+            info_item("fas fa-euro-sign", "Kosten", dyn_field("meta", "prijs_label", tag="p"), fields=("prijs_label",)),
+            info_item("fas fa-hourglass-half", "Inschrijven tot",
+                      dyn_field("meta", "inschrijving_tot", tag="p", filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+                      fields=("inschrijving_tot",)),
+            info_item("fas fa-users", "Deelnemers",
+                      dyn_field("meta", "max_deelnemers", tag="p", fmt="Maximaal %s"), fields=("max_deelnemers",)),
+            title="Praktische informatie", direction="row", wrap=True, gap_px=20, extra={"flex_align_items": "stretch"}),
+        title="Praktisch", pad=(40, 24)),
+    section(
+        container(
+            container(eyebrow("Over dit evenement"), post_content(), title="Beschrijving", width=55, gap_px=14),
+            visible_if(container(eyebrow("Programma"),
+                                 repeater("programma", '<div class="sp-prog"><span>%tijd%</span><strong>%onderdeel%</strong></div>',
+                                          "sp-programma", "Programma (repeater)"),
+                                 title="Programma", width=40, gap_px=12, bg_global="658acb6", radius=20, pad=dims(28)),
+                       "programma"),
+            direction="row", gap_px=48, align="flex-start"),
+        title="Over"),
+    hide_empty(section(
+        section_head("Doe mee", "Inschrijven of bestellen"),
+        jet_grid("inschrijfkaart", "q_event_producten", 3, "producten via relatie Evenement → Product"),
+        visible_if(container(dyn_link("Schrijf je in via de organisator", style="primary", source="externe_inschrijflink"),
+                             title="Externe inschrijving", css_classes="sp-keep"), "externe_inschrijflink"),
+        title="Inschrijven", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
+        divider_bottom=("curve", "#FFFFFF", 50), extra={"_element_id": "inschrijven"})),
+    visible_if(section(section_head("In beeld", "Foto's"), gallery_field(3), title="Galerij", pad=(40, 24)), "galerij"),
+    hide_empty(section(section_head("Met dank aan", "Sponsors van dit evenement", align="center"),
+                       jet_grid("sponsorlogo", "q_event_sponsors", 6, "sponsors via relatie Sponsor ↔ Evenement"),
+                       title="Sponsors", align="center")),
+    hide_empty(section(section_head("Terugblik", "Nieuws over dit evenement"),
+                       jet_grid("nieuwskaart", "q_event_nieuws", 3, "nieuws via relatie Evenement ↔ Bericht"),
+                       title="Nieuws")),
+    cta_band("Kun je er niet bij zijn?", "Met een donatie help je net zo goed: elke euro gaat naar de scholen in India.",
+             [button("Doneer", "/steun-ons/doneren/", style="light"),
+              button("Andere evenementen", "/evenementen/", style="outline-light")], eye="Steun ons werk"),
+]
+template("single-event", "Single · Evenement", "single-post", event_single, conditions=("include/singular/evenementen",))
+
+# Nieuwsbericht -----------------------------------------------------------------------------
+narrow = {"boxed_width": size(800)}
+post_single = [
+    container(
+        container(
+            dyn_field("object", "post_date", tag="p", typo="accent", color="accent", size_px=20,
+                      filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+            post_title(size_px=52, color="text"),
+            dyn_field("object", "post_excerpt", tag="p", size_px=20),
+            title="Kop", boxed=True, gap_px=12, extra=narrow),
+        title="Berichtkop", pad=dims(72, 24, 32, 24), pad_mobile=dims(48, 20, 24, 20), tag="header"),
+    container(
+        widget("theme-post-featured-image", {"image_size": "full", "width": size(100, "%"), "height": size(520),
+                                             "height_mobile": size(260), "object-fit": "cover",
+                                             "image_border_radius": dims(20),
+                                             "__dynamic__": {"image": etag("post-featured-image")}},
+               title="Uitgelichte afbeelding"),
+        title="Beeld", boxed=True, pad=dims(0, 24), extra={"boxed_width": size(1000)}),
+    container(post_content("Bericht (post content)"), title="Tekst", boxed=True, pad=dims(48, 24, 72, 24), extra=narrow),
+    hide_empty(section(section_head("Over dit project", "Lees meer over het project"),
+                       jet_grid("projectkaart", "q_bericht_projecten", 3, "projecten via relatie Project ↔ Bericht"),
+                       title="Gekoppelde projecten", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50))),
+    hide_empty(section(section_head("Evenement", "Doe volgende keer mee"),
+                       jet_grid("eventkaart", "q_bericht_events", 3, "evenementen via relatie Evenement ↔ Bericht"),
+                       title="Gekoppelde evenementen")),
+    hide_empty(section(section_head("Nieuws", "Meer nieuws"),
+                       jet_grid("nieuwskaart", "q_nieuws_meer", 3, "3 nieuwste, zonder dit bericht"),
+                       title="Meer nieuws")),
+    steun_cta,
+]
+template("single-post", "Single · Nieuwsbericht", "single-post", post_single, conditions=("include/singular/post",))
+
+
+# Product ---------------------------------------------------------------------------------
+# Eén basis-template met de winkelwagenknop (sponsorpakketten, sponsor een kind) en per categorie een
+# variant met het Super Forms-formulier. De categorie-voorwaarde gaat in Elementor Pro voor op "alle producten".
+
+def product_template(key, title, order_widget, cat=None, price=True, note=None):
+    info = [widget("woocommerce-breadcrumb", {}, title="Kruimelpad"),
+            widget("woocommerce-product-title", {"header_size": "h1", "typography_typography": "custom",
+                                                 "typography_font_size": size(48), "typography_font_size_mobile": size(34),
+                                                 "__globals__": {"title_color": g_color("primary"),
+                                                                 "typography_typography": g_type("accent")},
+                                                 "__dynamic__": {"title": etag("woocommerce-product-title-tag")}},
+                   title="Producttitel")]
+    if price:
+        info.append(widget("woocommerce-product-price", {"price_typography_typography": "custom",
+                                                         "price_typography_font_size": size(26),
+                                                         "__globals__": {"price_color": g_color("accent"),
+                                                                         "price_typography_typography": g_type("accent")}},
+                           title="Prijs"))
+    info.append(widget("woocommerce-product-short-description", {"__globals__": {"text_color": g_color("text")}},
+                       title="Korte omschrijving"))
+    if note:
+        info.append(text(f"<p>{note}</p>", size_px=15))
+    info.append(order_widget)
+    content = [
+        section(
+            container(
+                container(widget("woocommerce-product-images", {"image_border_radius": dims(20), "spacing": size(16)},
+                                 title="Productbeeld"), title="Beeld", width=45),
+                container(*info, title="Product en bestellen", width=50, gap_px=16, css_classes="sp-product"),
+                direction="row", gap_px=48, align="flex-start"),
+            title="Product", pad=(64, 24)),
+        # de beschrijving alleen als er een lange tekst is
+        visible_if(section(widget("woocommerce-product-content", {}, title="Beschrijving"),
+                           title="Beschrijving", pad=(0, 24)), "@post_content"),
+        container(
+            container(
+                container(fa_icon("fas fa-hand-holding-heart", color="primary", px=30),
+                          text("<p><strong>ANBI-erkend</strong><br>Je gift is fiscaal aftrekbaar.</p>"),
+                          title="ANBI", direction="row", gap_px=14, mobile_column=False, width=31),
+                container(fa_icon("fas fa-school", color="primary", px=30),
+                          text("<p><strong>Naar de scholen</strong><br>Opbrengsten gaan naar onderwijs in India.</p>"),
+                          title="Bestemming", direction="row", gap_px=14, mobile_column=False, width=31),
+                container(fa_icon("fas fa-lock", color="primary", px=30),
+                          text("<p><strong>Veilig betalen</strong><br>iDEAL of op factuur.</p>"),
+                          title="Betalen", direction="row", gap_px=14, mobile_column=False, width=31),
+                title="Vertrouwen inhoud", boxed=True, direction="row", gap_px=24, justify="space-between",
+                pad=dims(40, 24)),
+            title="Vertrouwen", bg_global="658acb6", tag="section"),
+    ]
+    conditions = (f"include/product/in_product_cat/{{{{pcat:{cat}}}}}",) if cat else ("include/product",)
+    template(key, title, "product", content, conditions=conditions)
+
+
+def super_form(key):
+    return widget("shortcode", {"shortcode": f'[super_form id="{{{{form:{key}}}}}"]'}, title=f"Super Forms · {key}")
+
+
+product_template("product", "Product · winkelwagenknop",
+                 widget("woocommerce-product-add-to-cart", {"show_quantity": "", "button_text": "In winkelmand"},
+                        title="Bestelknop"))
+product_template("product-wijn", "Product · wijnactie (Super Forms)", super_form("wijn"), cat="wijnactie",
+                 note="Per doos van 6 flessen. Afhalen in Genemuiden of laten bezorgen.")
+product_template("product-rally", "Product · Sampark Rally (Super Forms)", super_form("rally"), cat="samparkrally")
+product_template("product-golf", "Product · golftoernooi (Super Forms)", super_form("golf"), cat="golftoernooi")
+product_template("product-donatie", "Product · donatie (Super Forms)", super_form("donatie"), cat="donatie", price=False)
 
 
 def write_templates():

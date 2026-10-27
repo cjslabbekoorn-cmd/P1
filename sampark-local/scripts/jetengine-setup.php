@@ -60,27 +60,40 @@ update_option( 'jet-engine-maps-settings', array_merge( is_array( $maps ) ? $map
 ] ), false );
 WP_CLI::log( '  modules en kaart (Leaflet + OpenStreetMap) ingesteld' );
 
-// ------------------------------------------------------------------ glossary evenementstatus
+// ------------------------------------------------------------------ glossaries
 
-if ( empty( $state['glossary']['status'] ) ) {
-	$out = sp_tool( 'tool-add-glossary', [ 'name' => 'Evenementstatus', 'source' => 'manual', 'fields' => [
-		[ 'value' => 'aangekondigd', 'label' => 'Aangekondigd' ],
-		[ 'value' => 'open', 'label' => 'Inschrijving open' ],
-		[ 'value' => 'vol', 'label' => 'Vol' ],
-		[ 'value' => 'doorlopend', 'label' => 'Het hele jaar' ],
-		[ 'value' => 'afgelopen', 'label' => 'Afgelopen' ],
-	] ] );
-	$state['glossary']['status'] = $out['glossary_id'] ?? $out['item_id'] ?? $out['id'] ?? 0;
-	if ( ! $state['glossary']['status'] ) {
-		$all = jet_engine()->glossaries->settings->get();
-		foreach ( (array) $all as $g ) {
-			if ( ( $g['name'] ?? '' ) === 'Evenementstatus' ) {
-				$state['glossary']['status'] = $g['id'];
+function sp_glossary( &$state, $key, $name, $fields ) {
+	if ( ! empty( $state['glossary'][ $key ] ) ) {
+		return;
+	}
+	$out = sp_tool( 'tool-add-glossary', [ 'name' => $name, 'source' => 'manual', 'fields' => $fields ] );
+	$state['glossary'][ $key ] = $out['glossary_id'] ?? $out['item_id'] ?? $out['id'] ?? 0;
+	if ( ! $state['glossary'][ $key ] ) {
+		foreach ( (array) jet_engine()->glossaries->settings->get() as $g ) {
+			if ( ( $g['name'] ?? '' ) === $name ) {
+				$state['glossary'][ $key ] = $g['id'];
 			}
 		}
 	}
-	WP_CLI::log( '  + glossary Evenementstatus (' . $state['glossary']['status'] . ')' );
+	WP_CLI::log( "  + glossary $name (" . $state['glossary'][ $key ] . ')' );
 }
+sp_glossary( $state, 'status', 'Evenementstatus', [
+	[ 'value' => 'aangekondigd', 'label' => 'Aangekondigd' ],
+	[ 'value' => 'open', 'label' => 'Inschrijving open' ],
+	[ 'value' => 'vol', 'label' => 'Vol' ],
+	[ 'value' => 'doorlopend', 'label' => 'Het hele jaar' ],
+	[ 'value' => 'afgelopen', 'label' => 'Afgelopen' ],
+] );
+// Labels voor de checklist "Wat Sampark hier betaalt" op de projectsingle
+sp_glossary( $state, 'financiering', 'Wat Sampark betaalt', [
+	[ 'value' => 'docenten', 'label' => 'Salarissen van docenten' ],
+	[ 'value' => 'lesmateriaal', 'label' => 'Lesmateriaal' ],
+	[ 'value' => 'sport', 'label' => 'Sportattributen' ],
+	[ 'value' => 'schoolarts', 'label' => 'Schoolarts' ],
+	[ 'value' => 'gezondheidszorg', 'label' => 'Gezondheidszorg' ],
+	[ 'value' => 'fietsen', 'label' => 'Fietsen voor geslaagden' ],
+	[ 'value' => 'vaste_lasten', 'label' => 'Vaste lasten zoals elektriciteit' ],
+] );
 $status_options = [ 'aangekondigd::Aangekondigd', 'open::Inschrijving open', 'vol::Vol', 'doorlopend::Het hele jaar', 'afgelopen::Afgelopen' ];
 
 // ------------------------------------------------------------------ posttypes
@@ -410,6 +423,16 @@ foreach ( $content['news'] as $n ) {
 	}
 }
 
+foreach ( $content['events'] as $e ) {
+	foreach ( $e['products'] ?? [] as $slug ) {
+		$product = get_posts( [ 'post_type' => 'product', 'name' => $slug, 'post_status' => 'any', 'numberposts' => 1, 'fields' => 'ids' ] )
+			?: get_posts( [ 'post_type' => 'product', 'post_status' => 'draft', 'title' => ucfirst( str_replace( '-', ' ', $slug ) ), 'numberposts' => 1, 'fields' => 'ids' ] );
+		if ( $product && ! empty( $ids['evenementen'][ $e['slug'] ] ) && isset( $rel_by_name['Evenement → Product'] ) ) {
+			$rel_by_name['Evenement → Product']->update( $ids['evenementen'][ $e['slug'] ], $product[0] );
+		}
+	}
+}
+
 // Options Page vullen (alleen lege velden)
 $opts = get_option( 'stichting', [] );
 $opts = is_array( $opts ) ? $opts : [];
@@ -462,6 +485,31 @@ $queries = [
 		'post__not_in' => array_filter( [ (int) ( get_page_by_path( 'sponsor-een-kind', OBJECT, 'product' )->ID ?? 0 ) ] ),
 		'orderby' => 'meta_value_num', 'meta_key' => '_price', 'order' => 'DESC' ] ],
 ];
+
+// Queries voor de single-templates. Ze werken op het bericht dat bekeken wordt, via JetEngine-macro's:
+// %current_id%, %current_terms|taxonomie% en %rel_get_items|relatie-ID|wat tonen|current_object%.
+$rel = fn( $name, $what ) => isset( $rel_by_name[ $name ] )
+	? '%rel_get_items|' . $rel_by_name[ $name ]->get_id() . '|' . $what . '|current_object%' : '';
+$queries += [
+	'q_dit_project'       => [ 'Single · dit project (kaart)', 'posts', [ 'post_type' => [ 'projecten' ], 'post__in' => '%current_id%', 'posts_per_page' => 1 ] ],
+	'q_andere_projecten'  => [ 'Single · andere projecten van hetzelfde type', 'posts', [ 'post_type' => [ 'projecten' ], 'posts_per_page' => 3,
+		'post__not_in' => '%current_id%', 'orderby' => 'menu_order', 'order' => 'ASC',
+		'tax_query' => [ [ 'taxonomy' => 'projecttype', 'field' => 'term_id', 'terms' => '%current_terms|projecttype%' ] ] ] ],
+	'q_project_nieuws'    => [ 'Single · nieuws bij dit project', 'posts', [ 'post_type' => [ 'post' ], 'posts_per_page' => 3,
+		'post__in' => $rel( 'Project ↔ Bericht', 'child_object' ), 'orderby' => 'date', 'order' => 'DESC' ] ],
+	'q_event_producten'   => [ 'Single · producten bij dit evenement', 'posts', [ 'post_type' => [ 'product' ], 'posts_per_page' => 6,
+		'post__in' => $rel( 'Evenement → Product', 'child_object' ), 'orderby' => 'title', 'order' => 'DESC' ] ],
+	'q_event_sponsors'    => [ 'Single · sponsors van dit evenement', 'posts', [ 'post_type' => [ 'sponsors' ], 'posts_per_page' => 30,
+		'post__in' => $rel( 'Sponsor ↔ Evenement', 'parent_object' ), 'orderby' => 'menu_order', 'order' => 'ASC' ] ],
+	'q_event_nieuws'      => [ 'Single · nieuws bij dit evenement', 'posts', [ 'post_type' => [ 'post' ], 'posts_per_page' => 3,
+		'post__in' => $rel( 'Evenement ↔ Bericht', 'child_object' ), 'orderby' => 'date', 'order' => 'DESC' ] ],
+	'q_bericht_projecten' => [ 'Single · projecten bij dit bericht', 'posts', [ 'post_type' => [ 'projecten' ], 'posts_per_page' => 3,
+		'post__in' => $rel( 'Project ↔ Bericht', 'parent_object' ) ] ],
+	'q_bericht_events'    => [ 'Single · evenementen bij dit bericht', 'posts', [ 'post_type' => [ 'evenementen' ], 'posts_per_page' => 3,
+		'post__in' => $rel( 'Evenement ↔ Bericht', 'parent_object' ) ] ],
+	'q_nieuws_meer'       => [ 'Single · meer nieuws (zonder dit bericht)', 'posts', [ 'post_type' => [ 'post' ], 'posts_per_page' => 3,
+		'post__not_in' => '%current_id%', 'orderby' => 'date', 'order' => 'DESC' ] ],
+];
 foreach ( $queries as $key => [ $name, $type, $args ] ) {
 	if ( ! empty( $state['queries'][ $key ] ) ) {
 		continue;
@@ -499,6 +547,23 @@ function sp_fix_query( $qid, $meta_key = '' ) {
 			}
 		}
 	}
+	// Macro's (%current_id% enz.) werkt JetEngine alleen uit als ze ook in de dynamische index staan,
+	// zoals de interface dat doet bij het kiezen van een macro
+	$dyn = (array) ( $args['__dynamic_posts'] ?? [] );
+	foreach ( (array) ( $args['posts'] ?? [] ) as $k => $v ) {
+		if ( is_string( $v ) && preg_match( '/^%[a-z_]+(\|[^%]*)?%$/', $v ) ) {
+			$dyn[ $k ] = $v;
+		}
+	}
+	foreach ( (array) ( $args['posts']['tax_query'] ?? [] ) as $row ) {
+		if ( isset( $row['_id'] ) && is_string( $row['terms'] ?? null ) && str_starts_with( $row['terms'], '%' ) ) {
+			$dyn['tax_query'] = (array) ( $dyn['tax_query'] ?? [] );
+			$dyn['tax_query'][ $row['_id'] ] = [ 'terms' => $row['terms'] ];
+		}
+	}
+	if ( $dyn ) {
+		$args['__dynamic_posts'] = $dyn;
+	}
 	if ( $meta_key && ! empty( $args['posts']['orderby'] ) ) {
 		foreach ( $args['posts']['orderby'] as $i => $row ) {
 			if ( in_array( $row['orderby'] ?? '', [ 'meta_value', 'meta_value_num' ], true ) ) {
@@ -517,7 +582,8 @@ foreach ( $queries as $key => [ $name, $type, $args ] ) {
 // ------------------------------------------------------------------ listings
 
 $listing_query = [ 'projectkaart' => 'q_scholen', 'eventkaart' => 'q_events_binnenkort', 'sponsorlogo' => 'q_sponsors',
-	'nieuwskaart' => 'q_nieuws', 'pakketkaart' => 'q_pakketten', 'kaartpopup' => 'q_kaart' ];
+	'nieuwskaart' => 'q_nieuws', 'pakketkaart' => 'q_pakketten', 'kaartpopup' => 'q_kaart',
+	'inschrijfkaart' => 'q_event_producten' ];
 foreach ( glob( SP_LISTINGS . '*.json' ) as $file ) {
 	$doc = json_decode( file_get_contents( $file ), true );
 	$key = $doc['key'];

@@ -6,7 +6,7 @@
             "status": "publish",
             "labels": "a:5:{s:4:\"name\";s:8:\"Sponsors\";s:13:\"singular_name\";s:7:\"Sponsor\";s:9:\"menu_name\";s:8:\"Sponsors\";s:14:\"name_admin_bar\";s:8:\"Sponsors\";s:12:\"add_new_item\";s:14:\"Nieuwe sponsor\";}",
             "args": "a:24:{s:6:\"public\";b:0;s:18:\"publicly_queryable\";b:0;s:7:\"show_ui\";b:1;s:12:\"show_in_menu\";b:1;s:17:\"show_in_nav_menus\";b:0;s:12:\"show_in_rest\";b:1;s:9:\"query_var\";b:1;s:7:\"rewrite\";b:0;s:12:\"map_meta_cap\";b:1;s:11:\"has_archive\";b:0;s:12:\"hierarchical\";b:0;s:19:\"exclude_from_search\";b:1;s:10:\"with_front\";b:1;s:14:\"show_edit_link\";b:1;s:14:\"custom_storage\";b:0;s:16:\"hide_field_names\";b:0;s:15:\"delete_metadata\";b:0;s:12:\"rewrite_slug\";s:8:\"sponsors\";s:15:\"capability_type\";s:4:\"post\";s:13:\"menu_position\";i:23;s:9:\"menu_icon\";s:16:\"dashicons-awards\";s:8:\"supports\";a:3:{i:0;s:5:\"title\";i:1;s:9:\"thumbnail\";i:2;s:15:\"page-attributes\";}s:13:\"admin_columns\";a:0:{}s:13:\"admin_filters\";a:0:{}}",
-            "meta_fields": "a:2:{i:0;a:17:{s:5:\"title\";s:7:\"Website\";s:4:\"name\";s:7:\"website\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:14636;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:15:\"Toon op de site\";s:4:\"name\";s:6:\"actief\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"switcher\";s:2:\"id\";i:28576;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:4:\"true\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}"
+            "meta_fields": "a:2:{i:0;a:17:{s:5:\"title\";s:7:\"Website\";s:4:\"name\";s:7:\"website\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:53759;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:15:\"Toon op de site\";s:4:\"name\";s:6:\"actief\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"switcher\";s:2:\"id\";i:38708;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:4:\"true\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}"
         },
         {
             "id": "3",
@@ -14,7 +14,7 @@
             "status": "publish",
             "labels": "a:5:{s:4:\"name\";s:11:\"Evenementen\";s:13:\"singular_name\";s:9:\"Evenement\";s:9:\"menu_name\";s:11:\"Evenementen\";s:14:\"name_admin_bar\";s:11:\"Evenementen\";s:12:\"add_new_item\";s:15:\"Nieuw evenement\";}",
             "args": "a:24:{s:6:\"public\";b:1;s:18:\"publicly_queryable\";b:1;s:7:\"show_ui\";b:1;s:12:\"show_in_menu\";b:1;s:17:\"show_in_nav_menus\";b:1;s:12:\"show_in_rest\";b:1;s:9:\"query_var\";b:1;s:7:\"rewrite\";b:1;s:12:\"map_meta_cap\";b:1;s:11:\"has_archive\";b:0;s:12:\"hierarchical\";b:0;s:19:\"exclude_from_search\";b:0;s:10:\"with_front\";b:0;s:14:\"show_edit_link\";b:1;s:14:\"custom_storage\";b:0;s:16:\"hide_field_names\";b:0;s:15:\"delete_metadata\";b:0;s:12:\"rewrite_slug\";s:11:\"evenementen\";s:15:\"capability_type\";s:4:\"post\";s:13:\"menu_position\";i:22;s:9:\"menu_icon\";s:22:\"dashicons-calendar-alt\";s:8:\"supports\";a:5:{i:0;s:5:\"title\";i:1;s:6:\"editor\";i:2;s:9:\"thumbnail\";i:3;s:7:\"excerpt\";i:4;s:15:\"page-attributes\";}s:13:\"admin_columns\";a:0:{}s:13:\"admin_filters\";a:0:{}}",
-            "meta_fields": "a:12:{i:0;a:19:{s:5:\"title\";s:6:\"Status\";s:4:\"name\";s:6:\"status\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"select\";s:2:\"id\";i:40689;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:1;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:218:\"aangekondigd::Aangekondigd::aangekondigd::Aangekondigd\nopen::Inschrijving open::open::Inschrijving open\nvol::Vol::vol::Vol\ndoorlopend::Het hele jaar::doorlopend::Het hele jaar\nafgelopen::Afgelopen::afgelopen::Afgelopen\";}i:1;a:20:{s:5:\"title\";s:5:\"Datum\";s:4:\"name\";s:11:\"datum_start\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"date\";s:2:\"id\";i:11943;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:10:\"input_type\";s:4:\"date\";s:12:\"autocomplete\";s:3:\"off\";s:12:\"is_timestamp\";b:1;s:15:\"repeater-fields\";a:0:{}}i:2;a:20:{s:5:\"title\";s:9:\"Einddatum\";s:4:\"name\";s:10:\"datum_eind\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"date\";s:2:\"id\";i:56462;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:10:\"input_type\";s:4:\"date\";s:12:\"autocomplete\";s:3:\"off\";s:12:\"is_timestamp\";b:1;s:15:\"repeater-fields\";a:0:{}}i:3;a:17:{s:5:\"title\";s:37:\"Datumtekst (als er nog geen datum is)\";s:4:\"name\";s:11:\"datum_label\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:29275;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:54:\"Bv. \"Het hele jaar\" of \"September 2027 · datum volgt\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:4;a:20:{s:5:\"title\";s:15:\"Inschrijven tot\";s:4:\"name\";s:16:\"inschrijving_tot\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"date\";s:2:\"id\";i:30735;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:10:\"input_type\";s:4:\"date\";s:12:\"autocomplete\";s:3:\"off\";s:12:\"is_timestamp\";b:1;s:15:\"repeater-fields\";a:0:{}}i:5;a:17:{s:5:\"title\";s:4:\"Tijd\";s:4:\"name\";s:4:\"tijd\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:73433;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:6;a:17:{s:5:\"title\";s:7:\"Locatie\";s:4:\"name\";s:13:\"locatie_tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:73018;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:7;a:17:{s:5:\"title\";s:5:\"Prijs\";s:4:\"name\";s:11:\"prijs_label\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:19245;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:8;a:17:{s:5:\"title\";s:26:\"Maximaal aantal deelnemers\";s:4:\"name\";s:14:\"max_deelnemers\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:37025;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:9;a:17:{s:5:\"title\";s:21:\"Externe inschrijflink\";s:4:\"name\";s:21:\"externe_inschrijflink\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:18329;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:76:\"Alleen als inschrijven niet via een eigen product gaat (bv. padel via Peakz)\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:10;a:17:{s:5:\"title\";s:9:\"Programma\";s:4:\"name\";s:9:\"programma\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:51774;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:2:{i:0;a:17:{s:5:\"title\";s:4:\"Tijd\";s:4:\"name\";s:4:\"tijd\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:71778;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:9:\"Onderdeel\";s:4:\"name\";s:9:\"onderdeel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:21348;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:11;a:18:{s:5:\"title\";s:7:\"Galerij\";s:4:\"name\";s:7:\"galerij\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"gallery\";s:2:\"id\";i:50590;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:2:\"id\";}}"
+            "meta_fields": "a:12:{i:0;a:19:{s:5:\"title\";s:6:\"Status\";s:4:\"name\";s:6:\"status\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"select\";s:2:\"id\";i:69486;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:1;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:218:\"aangekondigd::Aangekondigd::aangekondigd::Aangekondigd\nopen::Inschrijving open::open::Inschrijving open\nvol::Vol::vol::Vol\ndoorlopend::Het hele jaar::doorlopend::Het hele jaar\nafgelopen::Afgelopen::afgelopen::Afgelopen\";}i:1;a:20:{s:5:\"title\";s:5:\"Datum\";s:4:\"name\";s:11:\"datum_start\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"date\";s:2:\"id\";i:90781;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:10:\"input_type\";s:4:\"date\";s:12:\"autocomplete\";s:3:\"off\";s:12:\"is_timestamp\";b:1;s:15:\"repeater-fields\";a:0:{}}i:2;a:20:{s:5:\"title\";s:9:\"Einddatum\";s:4:\"name\";s:10:\"datum_eind\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"date\";s:2:\"id\";i:27284;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:10:\"input_type\";s:4:\"date\";s:12:\"autocomplete\";s:3:\"off\";s:12:\"is_timestamp\";b:1;s:15:\"repeater-fields\";a:0:{}}i:3;a:17:{s:5:\"title\";s:37:\"Datumtekst (als er nog geen datum is)\";s:4:\"name\";s:11:\"datum_label\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:43464;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:54:\"Bv. \"Het hele jaar\" of \"September 2027 · datum volgt\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:4;a:20:{s:5:\"title\";s:15:\"Inschrijven tot\";s:4:\"name\";s:16:\"inschrijving_tot\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"date\";s:2:\"id\";i:56508;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:10:\"input_type\";s:4:\"date\";s:12:\"autocomplete\";s:3:\"off\";s:12:\"is_timestamp\";b:1;s:15:\"repeater-fields\";a:0:{}}i:5;a:17:{s:5:\"title\";s:4:\"Tijd\";s:4:\"name\";s:4:\"tijd\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:28208;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:6;a:17:{s:5:\"title\";s:7:\"Locatie\";s:4:\"name\";s:13:\"locatie_tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:51965;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:7;a:17:{s:5:\"title\";s:5:\"Prijs\";s:4:\"name\";s:11:\"prijs_label\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:99415;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:8;a:17:{s:5:\"title\";s:26:\"Maximaal aantal deelnemers\";s:4:\"name\";s:14:\"max_deelnemers\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:28482;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:9;a:17:{s:5:\"title\";s:21:\"Externe inschrijflink\";s:4:\"name\";s:21:\"externe_inschrijflink\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:77326;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:76:\"Alleen als inschrijven niet via een eigen product gaat (bv. padel via Peakz)\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:10;a:17:{s:5:\"title\";s:9:\"Programma\";s:4:\"name\";s:9:\"programma\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:98851;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:2:{i:0;a:17:{s:5:\"title\";s:4:\"Tijd\";s:4:\"name\";s:4:\"tijd\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:93572;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:9:\"Onderdeel\";s:4:\"name\";s:9:\"onderdeel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:87124;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:11;a:18:{s:5:\"title\";s:7:\"Galerij\";s:4:\"name\";s:7:\"galerij\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"gallery\";s:2:\"id\";i:19253;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:2:\"id\";}}"
         },
         {
             "id": "2",
@@ -22,7 +22,7 @@
             "status": "publish",
             "labels": "a:5:{s:4:\"name\";s:9:\"Projecten\";s:13:\"singular_name\";s:7:\"Project\";s:9:\"menu_name\";s:9:\"Projecten\";s:14:\"name_admin_bar\";s:9:\"Projecten\";s:12:\"add_new_item\";s:13:\"Nieuw project\";}",
             "args": "a:24:{s:6:\"public\";b:1;s:18:\"publicly_queryable\";b:1;s:7:\"show_ui\";b:1;s:12:\"show_in_menu\";b:1;s:17:\"show_in_nav_menus\";b:1;s:12:\"show_in_rest\";b:1;s:9:\"query_var\";b:1;s:7:\"rewrite\";b:1;s:12:\"map_meta_cap\";b:1;s:11:\"has_archive\";b:0;s:12:\"hierarchical\";b:0;s:19:\"exclude_from_search\";b:0;s:10:\"with_front\";b:0;s:14:\"show_edit_link\";b:1;s:14:\"custom_storage\";b:0;s:16:\"hide_field_names\";b:0;s:15:\"delete_metadata\";b:0;s:12:\"rewrite_slug\";s:8:\"ons-werk\";s:15:\"capability_type\";s:4:\"post\";s:13:\"menu_position\";i:21;s:9:\"menu_icon\";s:28:\"dashicons-welcome-learn-more\";s:8:\"supports\";a:5:{i:0;s:5:\"title\";i:1;s:6:\"editor\";i:2;s:9:\"thumbnail\";i:3;s:7:\"excerpt\";i:4;s:15:\"page-attributes\";}s:13:\"admin_columns\";a:0:{}s:13:\"admin_filters\";a:0:{}}",
-            "meta_fields": "a:14:{i:0;a:17:{s:5:\"title\";s:7:\"Tagline\";s:4:\"name\";s:7:\"tagline\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:28461;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:62:\"Korte zin onder de titel, bv. \"Van vijf lokalen naar vijftien\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:6:\"Aantal\";s:4:\"name\";s:6:\"aantal\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:14839;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:19:{s:5:\"title\";s:7:\"Eenheid\";s:4:\"name\";s:7:\"eenheid\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"select\";s:2:\"id\";i:89648;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:104:\"leerlingen::leerlingen::leerlingen::leerlingen\nstudenten::studenten::studenten::studenten\n::geen::::geen\";}i:3;a:19:{s:5:\"title\";s:10:\"Soort werk\";s:4:\"name\";s:10:\"soort_werk\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"select\";s:2:\"id\";i:26268;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:132:\"Nieuwbouw::Nieuwbouw::Nieuwbouw::Nieuwbouw\nRenovatie::Renovatie::Renovatie::Renovatie\nDoorlopend::Doorlopend::Doorlopend::Doorlopend\";}i:4;a:17:{s:5:\"title\";s:12:\"Dorp of stad\";s:4:\"name\";s:4:\"dorp\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:54858;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:5;a:18:{s:5:\"title\";s:19:\"Locatie op de kaart\";s:4:\"name\";s:7:\"locatie\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:3:\"map\";s:2:\"id\";i:17133;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:71:\"Klik de plek aan op de kaart. Wordt gebruikt door de kaart op Ons werk.\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:16:\"map_value_format\";s:15:\"location_string\";}i:6;a:17:{s:5:\"title\";s:16:\"Feiten (4 stuks)\";s:4:\"name\";s:6:\"feiten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:94776;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:2:{i:0;a:17:{s:5:\"title\";s:6:\"Waarde\";s:4:\"name\";s:6:\"waarde\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:50725;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Label\";s:4:\"name\";s:5:\"label\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:14925;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:7;a:17:{s:5:\"title\";s:10:\"Tweede kop\";s:4:\"name\";s:11:\"extra_titel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:82291;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:8;a:17:{s:5:\"title\";s:20:\"Tekst bij tweede kop\";s:4:\"name\";s:11:\"extra_tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:25369;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:9;a:17:{s:5:\"title\";s:13:\"Voorzieningen\";s:4:\"name\";s:13:\"voorzieningen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:17816;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:1:{i:0;a:17:{s:5:\"title\";s:11:\"Voorziening\";s:4:\"name\";s:11:\"voorziening\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:97587;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:10;a:20:{s:5:\"title\";s:24:\"Wat Sampark hier betaalt\";s:4:\"name\";s:14:\"we_financieren\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"checkbox\";s:2:\"id\";i:29919;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:446:\"docenten::Salarissen van docenten::docenten::Salarissen van docenten\nlesmateriaal::Lesmateriaal::lesmateriaal::Lesmateriaal\nsport::Sportattributen::sport::Sportattributen\nschoolarts::Schoolarts::schoolarts::Schoolarts\ngezondheidszorg::Gezondheidszorg::gezondheidszorg::Gezondheidszorg\nfietsen::Fietsen voor geslaagden::fietsen::Fietsen voor geslaagden\nvaste_lasten::Vaste lasten zoals elektriciteit::vaste_lasten::Vaste lasten zoals elektriciteit\";s:8:\"is_array\";b:1;}i:11;a:17:{s:5:\"title\";s:8:\"Momenten\";s:4:\"name\";s:8:\"momenten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:56834;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:2:{i:0;a:17:{s:5:\"title\";s:17:\"Moment of jaartal\";s:4:\"name\";s:6:\"moment\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:36638;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Tekst\";s:4:\"name\";s:5:\"tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:45332;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:12;a:17:{s:5:\"title\";s:24:\"Externe link (optioneel)\";s:4:\"name\";s:12:\"externe_link\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:37481;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:13;a:18:{s:5:\"title\";s:7:\"Galerij\";s:4:\"name\";s:7:\"galerij\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"gallery\";s:2:\"id\";i:99150;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:2:\"id\";}}"
+            "meta_fields": "a:14:{i:0;a:17:{s:5:\"title\";s:7:\"Tagline\";s:4:\"name\";s:7:\"tagline\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:62790;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:62:\"Korte zin onder de titel, bv. \"Van vijf lokalen naar vijftien\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:6:\"Aantal\";s:4:\"name\";s:6:\"aantal\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:46725;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:19:{s:5:\"title\";s:7:\"Eenheid\";s:4:\"name\";s:7:\"eenheid\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"select\";s:2:\"id\";i:60081;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:104:\"leerlingen::leerlingen::leerlingen::leerlingen\nstudenten::studenten::studenten::studenten\n::geen::::geen\";}i:3;a:19:{s:5:\"title\";s:10:\"Soort werk\";s:4:\"name\";s:10:\"soort_werk\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"select\";s:2:\"id\";i:54024;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:132:\"Nieuwbouw::Nieuwbouw::Nieuwbouw::Nieuwbouw\nRenovatie::Renovatie::Renovatie::Renovatie\nDoorlopend::Doorlopend::Doorlopend::Doorlopend\";}i:4;a:17:{s:5:\"title\";s:12:\"Dorp of stad\";s:4:\"name\";s:4:\"dorp\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:58284;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:5;a:18:{s:5:\"title\";s:19:\"Locatie op de kaart\";s:4:\"name\";s:7:\"locatie\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:3:\"map\";s:2:\"id\";i:80409;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:71:\"Klik de plek aan op de kaart. Wordt gebruikt door de kaart op Ons werk.\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:16:\"map_value_format\";s:15:\"location_string\";}i:6;a:17:{s:5:\"title\";s:16:\"Feiten (4 stuks)\";s:4:\"name\";s:6:\"feiten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:21599;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:2:{i:0;a:17:{s:5:\"title\";s:6:\"Waarde\";s:4:\"name\";s:6:\"waarde\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:45283;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Label\";s:4:\"name\";s:5:\"label\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:19581;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:7;a:17:{s:5:\"title\";s:10:\"Tweede kop\";s:4:\"name\";s:11:\"extra_titel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:80551;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:8;a:17:{s:5:\"title\";s:20:\"Tekst bij tweede kop\";s:4:\"name\";s:11:\"extra_tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:40304;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:9;a:17:{s:5:\"title\";s:13:\"Voorzieningen\";s:4:\"name\";s:13:\"voorzieningen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:69867;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:1:{i:0;a:17:{s:5:\"title\";s:11:\"Voorziening\";s:4:\"name\";s:11:\"voorziening\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:88619;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:10;a:20:{s:5:\"title\";s:24:\"Wat Sampark hier betaalt\";s:4:\"name\";s:14:\"we_financieren\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"checkbox\";s:2:\"id\";i:25258;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:14:\"options_source\";s:11:\"manual_bulk\";s:12:\"bulk_options\";s:446:\"docenten::Salarissen van docenten::docenten::Salarissen van docenten\nlesmateriaal::Lesmateriaal::lesmateriaal::Lesmateriaal\nsport::Sportattributen::sport::Sportattributen\nschoolarts::Schoolarts::schoolarts::Schoolarts\ngezondheidszorg::Gezondheidszorg::gezondheidszorg::Gezondheidszorg\nfietsen::Fietsen voor geslaagden::fietsen::Fietsen voor geslaagden\nvaste_lasten::Vaste lasten zoals elektriciteit::vaste_lasten::Vaste lasten zoals elektriciteit\";s:8:\"is_array\";b:1;}i:11;a:17:{s:5:\"title\";s:8:\"Momenten\";s:4:\"name\";s:8:\"momenten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:71706;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:2:{i:0;a:17:{s:5:\"title\";s:17:\"Moment of jaartal\";s:4:\"name\";s:6:\"moment\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:61445;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Tekst\";s:4:\"name\";s:5:\"tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:87971;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:12;a:17:{s:5:\"title\";s:24:\"Externe link (optioneel)\";s:4:\"name\";s:12:\"externe_link\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:11248;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:13;a:18:{s:5:\"title\";s:7:\"Galerij\";s:4:\"name\";s:7:\"galerij\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"gallery\";s:2:\"id\";i:42795;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:2:\"id\";}}"
         }
     ],
     "taxonomies": [
@@ -56,6 +56,22 @@
     ],
     "listings": [
         {
+            "title": "Inschrijfkaart (product bij evenement)",
+            "slug": "inschrijfkaart-product-bij-evenement",
+            "settings": {
+                "listing_source": "posts",
+                "listing_post_type": "product",
+                "listing_tax": "category",
+                "repeater_source": "jet_engine",
+                "repeater_field": "",
+                "repeater_option": ""
+            },
+            "type": "elementor",
+            "html": "",
+            "css": "",
+            "content": "[{\"id\":\"ac72e21\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"24\",\"left\":\"24\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Inschrijfkaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=#FFFFFF\"}},\"elements\":[{\"id\":\"56659b7\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]}},\"elements\":[]},{\"id\":\"c404a2c\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"_price\",\"dynamic_field_custom\":\"yes\",\"dynamic_field_format\":\"€ %s\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]},\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"number_format\",\"num_dec_point\":\",\",\"num_thousands_sep\":\".\",\"num_decimals\":2},\"elements\":[]},{\"id\":\"d02bec4\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"div\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_object\":\"post_excerpt\"},\"elements\":[]},{\"id\":\"c4d9d55\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Inschrijven of bestellen\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_bg_background\":\"classic\",\"link_bg_hover_background\":\"classic\",\"__globals__\":{\"link_color\":\"globals\\/colors?id=658acb6\",\"link_bg_color\":\"globals\\/colors?id=accent\",\"link_bg_hover_color\":\"globals\\/colors?id=primary\",\"link_icon_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[]}],\"isInner\":false}]"
+        },
+        {
             "title": "Sponsorlogo",
             "slug": "sponsorlogo",
             "settings": {
@@ -69,7 +85,7 @@
             "type": "elementor",
             "html": "",
             "css": "",
-            "content": "[{\"id\":\"158f306\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"24\",\"row\":\"24\",\"isLinked\":true,\"unit\":\"px\",\"size\":24},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"24\",\"left\":\"24\",\"isLinked\":true},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"border_radius\":{\"unit\":\"px\",\"top\":\"999\",\"right\":\"999\",\"bottom\":\"999\",\"left\":\"999\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_justify_content\":\"center\",\"_title\":\"Logo\",\"width\":{\"unit\":\"px\",\"size\":140,\"sizes\":[]},\"min_height\":{\"unit\":\"px\",\"size\":140,\"sizes\":[]},\"width_mobile\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]},\"min_height_mobile\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]}},\"elements\":[{\"id\":\"8788ede\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":80,\"sizes\":[]},\"image_object_fit\":\"contain\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"website\",\"open_in_new\":\"yes\"},\"elements\":[]}],\"isInner\":false}]"
+            "content": "[{\"id\":\"a6c4986\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"24\",\"row\":\"24\",\"isLinked\":true,\"unit\":\"px\",\"size\":24},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"24\",\"right\":\"24\",\"bottom\":\"24\",\"left\":\"24\",\"isLinked\":true},\"background_background\":\"classic\",\"background_color\":\"#FFFFFF\",\"border_radius\":{\"unit\":\"px\",\"top\":\"999\",\"right\":\"999\",\"bottom\":\"999\",\"left\":\"999\",\"isLinked\":true},\"flex_align_items\":\"center\",\"flex_justify_content\":\"center\",\"_title\":\"Logo\",\"width\":{\"unit\":\"px\",\"size\":140,\"sizes\":[]},\"min_height\":{\"unit\":\"px\",\"size\":140,\"sizes\":[]},\"width_mobile\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]},\"min_height_mobile\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]}},\"elements\":[{\"id\":\"8779aa2\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":80,\"sizes\":[]},\"image_object_fit\":\"contain\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"website\",\"open_in_new\":\"yes\"},\"elements\":[]}],\"isInner\":false}]"
         },
         {
             "title": "Projectkaart",
@@ -85,7 +101,7 @@
             "type": "elementor",
             "html": "",
             "css": "",
-            "content": "[{\"id\":\"8c16944\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Projectkaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[{\"id\":\"83fb961\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":220,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"14\",\"right\":\"14\",\"bottom\":\"14\",\"left\":\"14\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"87eafd4\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"isLinked\":true,\"unit\":\"px\",\"size\":6},\"content_width\":\"full\",\"flex_direction_tablet\":\"row\",\"flex_direction_mobile\":\"row\",\"flex_wrap\":\"wrap\",\"_title\":\"Kenmerken\"},\"elements\":[{\"id\":\"a7c7451\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"aantal\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]},{\"id\":\"e05f954\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"eenheid\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]},{\"id\":\"cea1ee7\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"soort_werk\",\"dynamic_field_custom\":\"yes\",\"dynamic_field_format\":\"· %s\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]}],\"isInner\":false},{\"id\":\"3965513\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]}},\"elements\":[]},{\"id\":\"104dec8\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"p\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_meta\":\"tagline\"},\"elements\":[]},{\"id\":\"0af3556\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Bekijk dit project\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_border_border\":\"solid\",\"link_border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"__globals__\":{\"link_color\":\"globals\\/colors?id=accent\",\"link_border_color\":\"globals\\/colors?id=accent\",\"link_icon_color\":\"globals\\/colors?id=accent\"}},\"elements\":[]}],\"isInner\":false}]"
+            "content": "[{\"id\":\"829c51a\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Projectkaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[{\"id\":\"5e18822\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":220,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"14\",\"right\":\"14\",\"bottom\":\"14\",\"left\":\"14\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"2c76239\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"isLinked\":true,\"unit\":\"px\",\"size\":6},\"content_width\":\"full\",\"flex_direction_tablet\":\"row\",\"flex_direction_mobile\":\"row\",\"flex_wrap\":\"wrap\",\"_title\":\"Kenmerken\"},\"elements\":[{\"id\":\"3b26ad2\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"aantal\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]},{\"id\":\"d8ba403\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"eenheid\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]},{\"id\":\"5152137\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"soort_werk\",\"dynamic_field_custom\":\"yes\",\"dynamic_field_format\":\"· %s\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]}],\"isInner\":false},{\"id\":\"9bfe608\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]}},\"elements\":[]},{\"id\":\"622a478\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"p\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_meta\":\"tagline\"},\"elements\":[]},{\"id\":\"0cfaca2\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Bekijk dit project\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_border_border\":\"solid\",\"link_border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"__globals__\":{\"link_color\":\"globals\\/colors?id=accent\",\"link_border_color\":\"globals\\/colors?id=accent\",\"link_icon_color\":\"globals\\/colors?id=accent\"}},\"elements\":[]}],\"isInner\":false}]"
         },
         {
             "title": "Sponsorpakket",
@@ -101,7 +117,7 @@
             "type": "elementor",
             "html": "",
             "css": "",
-            "content": "[{\"id\":\"70262c7\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"28\",\"bottom\":\"28\",\"left\":\"28\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Pakketkaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=e64974d\"}},\"elements\":[{\"id\":\"fc96c2a\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"_price\",\"dynamic_field_custom\":\"yes\",\"dynamic_field_format\":\"€ %s per jaar\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"number_format\",\"num_dec_point\":\",\",\"num_thousands_sep\":\".\",\"num_decimals\":0},\"elements\":[]},{\"id\":\"600a21d\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]}},\"elements\":[]},{\"id\":\"7993d0d\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"div\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_object\":\"post_excerpt\"},\"elements\":[]},{\"id\":\"ab824af\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Kies dit pakket\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_bg_background\":\"classic\",\"link_bg_hover_background\":\"classic\",\"__globals__\":{\"link_color\":\"globals\\/colors?id=658acb6\",\"link_bg_color\":\"globals\\/colors?id=accent\",\"link_bg_hover_color\":\"globals\\/colors?id=primary\",\"link_icon_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[]}],\"isInner\":false}]"
+            "content": "[{\"id\":\"37c5f3f\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"28\",\"right\":\"28\",\"bottom\":\"28\",\"left\":\"28\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Pakketkaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=e64974d\"}},\"elements\":[{\"id\":\"2cffce7\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"_price\",\"dynamic_field_custom\":\"yes\",\"dynamic_field_format\":\"€ %s per jaar\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"number_format\",\"num_dec_point\":\",\",\"num_thousands_sep\":\".\",\"num_decimals\":0},\"elements\":[]},{\"id\":\"5cd116e\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":28,\"sizes\":[]}},\"elements\":[]},{\"id\":\"2111983\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"div\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_object\":\"post_excerpt\"},\"elements\":[]},{\"id\":\"e71a164\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Kies dit pakket\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_bg_background\":\"classic\",\"link_bg_hover_background\":\"classic\",\"__globals__\":{\"link_color\":\"globals\\/colors?id=658acb6\",\"link_bg_color\":\"globals\\/colors?id=accent\",\"link_bg_hover_color\":\"globals\\/colors?id=primary\",\"link_icon_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[]}],\"isInner\":false}]"
         },
         {
             "title": "Nieuwskaart",
@@ -117,7 +133,7 @@
             "type": "elementor",
             "html": "",
             "css": "",
-            "content": "[{\"id\":\"88f11e2\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Nieuwskaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[{\"id\":\"3d5b4c4\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":220,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"14\",\"right\":\"14\",\"bottom\":\"14\",\"left\":\"14\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"fb29a3d\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_object\":\"post_date\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"jet_engine_date\",\"date_format\":\"j F Y\"},\"elements\":[]},{\"id\":\"3413f94\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]}},\"elements\":[]},{\"id\":\"0e497e9\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"p\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_object\":\"post_excerpt\"},\"elements\":[]},{\"id\":\"9991c1e\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Lees meer\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_border_border\":\"solid\",\"link_border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"__globals__\":{\"link_color\":\"globals\\/colors?id=accent\",\"link_border_color\":\"globals\\/colors?id=accent\",\"link_icon_color\":\"globals\\/colors?id=accent\"}},\"elements\":[]}],\"isInner\":false}]"
+            "content": "[{\"id\":\"fcdba47\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Nieuwskaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[{\"id\":\"43bf5a6\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":220,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"14\",\"right\":\"14\",\"bottom\":\"14\",\"left\":\"14\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"8c1abd2\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_object\":\"post_date\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"jet_engine_date\",\"date_format\":\"j F Y\"},\"elements\":[]},{\"id\":\"dba495d\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":24,\"sizes\":[]}},\"elements\":[]},{\"id\":\"78443a6\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"p\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_object\":\"post_excerpt\"},\"elements\":[]},{\"id\":\"9202602\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Lees meer\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_border_border\":\"solid\",\"link_border_width\":{\"unit\":\"px\",\"top\":\"1\",\"right\":\"1\",\"bottom\":\"1\",\"left\":\"1\",\"isLinked\":true},\"__globals__\":{\"link_color\":\"globals\\/colors?id=accent\",\"link_border_color\":\"globals\\/colors?id=accent\",\"link_icon_color\":\"globals\\/colors?id=accent\"}},\"elements\":[]}],\"isInner\":false}]"
         },
         {
             "title": "Kaart-popup school",
@@ -133,7 +149,7 @@
             "type": "elementor",
             "html": "",
             "css": "",
-            "content": "[{\"id\":\"cb4cc95\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"isLinked\":true,\"unit\":\"px\",\"size\":8},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"_title\":\"Popup\"},\"elements\":[{\"id\":\"dc2ce85\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"10\",\"bottom\":\"10\",\"left\":\"10\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"ecbfeeb\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"isLinked\":true,\"unit\":\"px\",\"size\":6},\"content_width\":\"full\",\"flex_direction_tablet\":\"row\",\"flex_direction_mobile\":\"row\",\"_title\":\"Aantal\"},\"elements\":[{\"id\":\"905d890\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"aantal\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]}},\"elements\":[]},{\"id\":\"0b6b012\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"eenheid\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]}},\"elements\":[]}],\"isInner\":false},{\"id\":\"3552ab7\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h4\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]}},\"elements\":[]},{\"id\":\"822179a\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Bekijk de school\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_bg_background\":\"classic\",\"link_bg_hover_background\":\"classic\",\"__globals__\":{\"link_color\":\"globals\\/colors?id=658acb6\",\"link_bg_color\":\"globals\\/colors?id=accent\",\"link_bg_hover_color\":\"globals\\/colors?id=primary\",\"link_icon_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[]}],\"isInner\":false}]"
+            "content": "[{\"id\":\"0f4ed23\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"8\",\"row\":\"8\",\"isLinked\":true,\"unit\":\"px\",\"size\":8},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"_title\":\"Popup\"},\"elements\":[{\"id\":\"3412026\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":120,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"10\",\"bottom\":\"10\",\"left\":\"10\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"0a0f24d\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"row\",\"flex_gap\":{\"column\":\"6\",\"row\":\"6\",\"isLinked\":true,\"unit\":\"px\",\"size\":6},\"content_width\":\"full\",\"flex_direction_tablet\":\"row\",\"flex_direction_mobile\":\"row\",\"_title\":\"Aantal\"},\"elements\":[{\"id\":\"66d2b52\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"aantal\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]}},\"elements\":[]},{\"id\":\"7cf8566\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"eenheid\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]}},\"elements\":[]}],\"isInner\":false},{\"id\":\"6eb5828\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h4\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]}},\"elements\":[]},{\"id\":\"c90d78f\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Bekijk de school\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_bg_background\":\"classic\",\"link_bg_hover_background\":\"classic\",\"__globals__\":{\"link_color\":\"globals\\/colors?id=658acb6\",\"link_bg_color\":\"globals\\/colors?id=accent\",\"link_bg_hover_color\":\"globals\\/colors?id=primary\",\"link_icon_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[]}],\"isInner\":false}]"
         },
         {
             "title": "Evenementkaart",
@@ -149,7 +165,7 @@
             "type": "elementor",
             "html": "",
             "css": "",
-            "content": "[{\"id\":\"d4c62ca\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Evenementkaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[{\"id\":\"001825c\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":200,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"14\",\"right\":\"14\",\"bottom\":\"14\",\"left\":\"14\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"7c82b04\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=primary\"},\"dynamic_field_post_meta\":\"status\",\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"jet_engine_label_by_glossary\",\"labels_by_glossary\":\"1\",\"field_bg_background\":\"classic\",\"field_bg_color\":\"#ECC0AE\",\"field_padding\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"12\",\"bottom\":\"4\",\"left\":\"12\",\"isLinked\":false},\"field_border_radius\":{\"unit\":\"px\",\"top\":\"999\",\"right\":\"999\",\"bottom\":\"999\",\"left\":\"999\",\"isLinked\":true},\"field_display\":\"inline\",\"field_typography_typography\":\"custom\",\"field_typography_font_family\":\"Patrick Hand\",\"field_typography_text_transform\":\"uppercase\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]}},\"elements\":[]},{\"id\":\"4e69e21\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"datum_start\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"jet_engine_date\",\"date_format\":\"j F Y\"},\"elements\":[]},{\"id\":\"f3c13f5\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"datum_label\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]},{\"id\":\"f39aee9\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]}},\"elements\":[]},{\"id\":\"c425387\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"p\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_object\":\"post_excerpt\"},\"elements\":[]},{\"id\":\"f3562af\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Meer informatie\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_bg_background\":\"classic\",\"link_bg_hover_background\":\"classic\",\"__globals__\":{\"link_color\":\"globals\\/colors?id=658acb6\",\"link_bg_color\":\"globals\\/colors?id=accent\",\"link_bg_hover_color\":\"globals\\/colors?id=primary\",\"link_icon_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[]}],\"isInner\":false}]"
+            "content": "[{\"id\":\"c979467\",\"elType\":\"container\",\"settings\":{\"flex_direction\":\"column\",\"flex_gap\":{\"column\":\"12\",\"row\":\"12\",\"isLinked\":true,\"unit\":\"px\",\"size\":12},\"content_width\":\"full\",\"padding\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"background_background\":\"classic\",\"border_radius\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"20\",\"bottom\":\"20\",\"left\":\"20\",\"isLinked\":true},\"_title\":\"Evenementkaart\",\"css_classes\":\"sp-card\",\"min_height\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"__globals__\":{\"background_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[{\"id\":\"25d62ff\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-image\",\"settings\":{\"dynamic_image_source\":\"post_thumbnail\",\"dynamic_image_size\":\"large\",\"image_width\":{\"unit\":\"%\",\"size\":100,\"sizes\":[]},\"image_height\":{\"unit\":\"px\",\"size\":200,\"sizes\":[]},\"image_object_fit\":\"cover\",\"image_border_radius\":{\"unit\":\"px\",\"top\":\"14\",\"right\":\"14\",\"bottom\":\"14\",\"left\":\"14\",\"isLinked\":true},\"hide_if_empty\":\"\",\"lazy_load_image\":\"yes\",\"linked_image\":\"yes\",\"image_link_source\":\"_permalink\"},\"elements\":[]},{\"id\":\"b13811a\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=primary\"},\"dynamic_field_post_meta\":\"status\",\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"jet_engine_label_by_glossary\",\"labels_by_glossary\":\"1\",\"field_bg_background\":\"classic\",\"field_bg_color\":\"#ECC0AE\",\"field_padding\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"12\",\"bottom\":\"4\",\"left\":\"12\",\"isLinked\":false},\"field_border_radius\":{\"unit\":\"px\",\"top\":\"999\",\"right\":\"999\",\"bottom\":\"999\",\"left\":\"999\",\"isLinked\":true},\"field_display\":\"inline\",\"field_typography_typography\":\"custom\",\"field_typography_font_family\":\"Patrick Hand\",\"field_typography_text_transform\":\"uppercase\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]}},\"elements\":[]},{\"id\":\"5bd0040\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"datum_start\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"dynamic_field_filter\":\"yes\",\"filter_callback\":\"jet_engine_date\",\"date_format\":\"j F Y\"},\"elements\":[]},{\"id\":\"a9b3e55\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"meta\",\"field_tag\":\"span\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=accent\",\"field_typography_typography\":\"globals\\/typography?id=accent\"},\"dynamic_field_post_meta\":\"datum_label\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]}},\"elements\":[]},{\"id\":\"9fed671\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"h3\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\",\"field_typography_typography\":\"globals\\/typography?id=primary\"},\"dynamic_field_post_object\":\"post_title\",\"field_typography_typography\":\"custom\",\"field_typography_font_size\":{\"unit\":\"px\",\"size\":26,\"sizes\":[]}},\"elements\":[]},{\"id\":\"cc8b0f9\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-field\",\"settings\":{\"dynamic_field_source\":\"object\",\"field_tag\":\"p\",\"hide_if_empty\":\"yes\",\"__globals__\":{\"field_color\":\"globals\\/colors?id=text\"},\"dynamic_field_post_object\":\"post_excerpt\"},\"elements\":[]},{\"id\":\"4d8506c\",\"elType\":\"widget\",\"widgetType\":\"jet-listing-dynamic-link\",\"settings\":{\"dynamic_link_source\":\"_permalink\",\"link_label\":\"Meer informatie\",\"link_wrapper_tag\":\"div\",\"link_padding\":{\"unit\":\"px\",\"top\":\"10\",\"right\":\"22\",\"bottom\":\"10\",\"left\":\"22\",\"isLinked\":false},\"link_border_radius\":{\"unit\":\"px\",\"top\":\"4\",\"right\":\"4\",\"bottom\":\"4\",\"left\":\"4\",\"isLinked\":true},\"link_typography_typography\":\"custom\",\"link_typography_font_family\":\"Patrick Hand\",\"link_typography_text_transform\":\"uppercase\",\"link_typography_font_size\":{\"unit\":\"px\",\"size\":16,\"sizes\":[]},\"link_bg_background\":\"classic\",\"link_bg_hover_background\":\"classic\",\"__globals__\":{\"link_color\":\"globals\\/colors?id=658acb6\",\"link_bg_color\":\"globals\\/colors?id=accent\",\"link_bg_hover_color\":\"globals\\/colors?id=primary\",\"link_icon_color\":\"globals\\/colors?id=658acb6\"}},\"elements\":[]}],\"isInner\":false}]"
         }
     ],
     "components": [],
@@ -195,7 +211,7 @@
             "status": "page",
             "labels": "a:2:{s:4:\"name\";s:9:\"Stichting\";s:9:\"menu_name\";s:9:\"Stichting\";}",
             "args": "a:8:{s:6:\"parent\";s:0:\"\";s:4:\"icon\";s:15:\"dashicons-heart\";s:10:\"capability\";s:10:\"edit_pages\";s:8:\"position\";i:3;s:12:\"storage_type\";s:7:\"default\";s:13:\"option_prefix\";b:0;s:15:\"autoload_option\";b:1;s:16:\"hide_field_names\";b:0;}",
-            "meta_fields": "a:26:{i:0;a:17:{s:5:\"title\";s:11:\"Kerncijfers\";s:4:\"name\";s:11:\"tab_cijfers\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:93380;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:26:\"Leerlingen op onze scholen\";s:4:\"name\";s:17:\"cijfer_leerlingen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:24674;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:17:{s:5:\"title\";s:19:\"Voltooide cursussen\";s:4:\"name\";s:16:\"cijfer_cursussen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:80328;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:3;a:17:{s:5:\"title\";s:16:\"Fietsen per jaar\";s:4:\"name\";s:14:\"cijfer_fietsen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:42516;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:4;a:17:{s:5:\"title\";s:18:\"Studenten in Delhi\";s:4:\"name\";s:22:\"cijfer_studenten_delhi\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:12286;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:5;a:17:{s:5:\"title\";s:22:\"Contact en registratie\";s:4:\"name\";s:11:\"tab_contact\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:53635;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:6;a:17:{s:5:\"title\";s:5:\"Adres\";s:4:\"name\";s:5:\"adres\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:69447;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:7;a:17:{s:5:\"title\";s:8:\"Telefoon\";s:4:\"name\";s:8:\"telefoon\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:37971;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:8;a:17:{s:5:\"title\";s:6:\"E-mail\";s:4:\"name\";s:5:\"email\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:23709;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:9;a:17:{s:5:\"title\";s:14:\"Bereikbaarheid\";s:4:\"name\";s:14:\"bereikbaarheid\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:26769;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:10;a:17:{s:5:\"title\";s:10:\"KvK-nummer\";s:4:\"name\";s:3:\"kvk\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:35201;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:11;a:17:{s:5:\"title\";s:4:\"RSIN\";s:4:\"name\";s:4:\"rsin\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:14359;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:12;a:17:{s:5:\"title\";s:4:\"IBAN\";s:4:\"name\";s:4:\"iban\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:95612;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:13;a:17:{s:5:\"title\";s:8:\"Campagne\";s:4:\"name\";s:12:\"tab_campagne\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:89767;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:14;a:17:{s:5:\"title\";s:19:\"Campagnebadge tonen\";s:4:\"name\";s:12:\"campagne_aan\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"switcher\";s:2:\"id\";i:52925;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:15;a:17:{s:5:\"title\";s:5:\"Titel\";s:4:\"name\";s:14:\"campagne_titel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:71583;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:16;a:17:{s:5:\"title\";s:5:\"Tekst\";s:4:\"name\";s:14:\"campagne_tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:28536;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:17;a:17:{s:5:\"title\";s:4:\"Link\";s:4:\"name\";s:13:\"campagne_link\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:68795;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:18;a:17:{s:5:\"title\";s:11:\"Organisatie\";s:4:\"name\";s:15:\"tab_organisatie\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:45652;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:19;a:17:{s:5:\"title\";s:7:\"Bestuur\";s:4:\"name\";s:7:\"bestuur\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:83292;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:3:{i:0;a:17:{s:5:\"title\";s:4:\"Naam\";s:4:\"name\";s:4:\"naam\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:10295;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:7:\"Functie\";s:4:\"name\";s:7:\"functie\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:76646;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:18:{s:5:\"title\";s:4:\"Foto\";s:4:\"name\";s:4:\"foto\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:5:\"media\";s:2:\"id\";i:74728;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:2:\"id\";}}}i:20;a:17:{s:5:\"title\";s:8:\"Tijdlijn\";s:4:\"name\";s:8:\"tijdlijn\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:55373;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:3:{i:0;a:17:{s:5:\"title\";s:4:\"Jaar\";s:4:\"name\";s:4:\"jaar\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:74503;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Titel\";s:4:\"name\";s:5:\"titel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:40991;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:17:{s:5:\"title\";s:5:\"Tekst\";s:4:\"name\";s:5:\"tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:31974;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:21;a:17:{s:5:\"title\";s:4:\"ANBI\";s:4:\"name\";s:8:\"tab_anbi\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:90183;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:22;a:17:{s:5:\"title\";s:11:\"Beleidsplan\";s:4:\"name\";s:16:\"anbi_beleidsplan\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"wysiwyg\";s:2:\"id\";i:85627;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:23;a:17:{s:5:\"title\";s:15:\"Beloningsbeleid\";s:4:\"name\";s:20:\"anbi_beloningsbeleid\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"wysiwyg\";s:2:\"id\";i:55814;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:24;a:17:{s:5:\"title\";s:24:\"Verslag van activiteiten\";s:4:\"name\";s:17:\"anbi_activiteiten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"wysiwyg\";s:2:\"id\";i:11986;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:25;a:17:{s:5:\"title\";s:10:\"Documenten\";s:4:\"name\";s:15:\"anbi_documenten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:19653;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:3:{i:0;a:17:{s:5:\"title\";s:4:\"Jaar\";s:4:\"name\";s:4:\"jaar\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:33468;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Soort\";s:4:\"name\";s:5:\"soort\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:49257;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:18:{s:5:\"title\";s:7:\"Bestand\";s:4:\"name\";s:7:\"bestand\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:5:\"media\";s:2:\"id\";i:81662;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:3:\"url\";}}}}"
+            "meta_fields": "a:26:{i:0;a:17:{s:5:\"title\";s:11:\"Kerncijfers\";s:4:\"name\";s:11:\"tab_cijfers\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:38791;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:26:\"Leerlingen op onze scholen\";s:4:\"name\";s:17:\"cijfer_leerlingen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:49563;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:17:{s:5:\"title\";s:19:\"Voltooide cursussen\";s:4:\"name\";s:16:\"cijfer_cursussen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:93670;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:3;a:17:{s:5:\"title\";s:16:\"Fietsen per jaar\";s:4:\"name\";s:14:\"cijfer_fietsen\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:12474;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:4;a:17:{s:5:\"title\";s:18:\"Studenten in Delhi\";s:4:\"name\";s:22:\"cijfer_studenten_delhi\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:6:\"number\";s:2:\"id\";i:30225;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:5;a:17:{s:5:\"title\";s:22:\"Contact en registratie\";s:4:\"name\";s:11:\"tab_contact\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:45133;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:6;a:17:{s:5:\"title\";s:5:\"Adres\";s:4:\"name\";s:5:\"adres\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:17350;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:7;a:17:{s:5:\"title\";s:8:\"Telefoon\";s:4:\"name\";s:8:\"telefoon\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:65909;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:8;a:17:{s:5:\"title\";s:6:\"E-mail\";s:4:\"name\";s:5:\"email\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:48678;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:9;a:17:{s:5:\"title\";s:14:\"Bereikbaarheid\";s:4:\"name\";s:14:\"bereikbaarheid\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:66560;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:10;a:17:{s:5:\"title\";s:10:\"KvK-nummer\";s:4:\"name\";s:3:\"kvk\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:70185;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:11;a:17:{s:5:\"title\";s:4:\"RSIN\";s:4:\"name\";s:4:\"rsin\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:42365;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:12;a:17:{s:5:\"title\";s:4:\"IBAN\";s:4:\"name\";s:4:\"iban\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:48399;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:13;a:17:{s:5:\"title\";s:8:\"Campagne\";s:4:\"name\";s:12:\"tab_campagne\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:86358;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:14;a:17:{s:5:\"title\";s:19:\"Campagnebadge tonen\";s:4:\"name\";s:12:\"campagne_aan\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"switcher\";s:2:\"id\";i:66917;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:15;a:17:{s:5:\"title\";s:5:\"Titel\";s:4:\"name\";s:14:\"campagne_titel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:94430;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:16;a:17:{s:5:\"title\";s:5:\"Tekst\";s:4:\"name\";s:14:\"campagne_tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:72719;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:17;a:17:{s:5:\"title\";s:4:\"Link\";s:4:\"name\";s:13:\"campagne_link\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:48887;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:18;a:17:{s:5:\"title\";s:11:\"Organisatie\";s:4:\"name\";s:15:\"tab_organisatie\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:71203;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:19;a:17:{s:5:\"title\";s:7:\"Bestuur\";s:4:\"name\";s:7:\"bestuur\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:20488;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:3:{i:0;a:17:{s:5:\"title\";s:4:\"Naam\";s:4:\"name\";s:4:\"naam\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:91404;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:7:\"Functie\";s:4:\"name\";s:7:\"functie\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:48336;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:18:{s:5:\"title\";s:4:\"Foto\";s:4:\"name\";s:4:\"foto\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:5:\"media\";s:2:\"id\";i:27945;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:2:\"id\";}}}i:20;a:17:{s:5:\"title\";s:8:\"Tijdlijn\";s:4:\"name\";s:8:\"tijdlijn\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:32125;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:3:{i:0;a:17:{s:5:\"title\";s:4:\"Jaar\";s:4:\"name\";s:4:\"jaar\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:66741;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Titel\";s:4:\"name\";s:5:\"titel\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:32180;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:17:{s:5:\"title\";s:5:\"Tekst\";s:4:\"name\";s:5:\"tekst\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"textarea\";s:2:\"id\";i:37952;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}}}i:21;a:17:{s:5:\"title\";s:4:\"ANBI\";s:4:\"name\";s:8:\"tab_anbi\";s:11:\"object_type\";s:3:\"tab\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"html\";s:2:\"id\";i:97439;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:22;a:17:{s:5:\"title\";s:11:\"Beleidsplan\";s:4:\"name\";s:16:\"anbi_beleidsplan\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"wysiwyg\";s:2:\"id\";i:84520;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:23;a:17:{s:5:\"title\";s:15:\"Beloningsbeleid\";s:4:\"name\";s:20:\"anbi_beloningsbeleid\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"wysiwyg\";s:2:\"id\";i:97034;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:24;a:17:{s:5:\"title\";s:24:\"Verslag van activiteiten\";s:4:\"name\";s:17:\"anbi_activiteiten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:7:\"wysiwyg\";s:2:\"id\";i:35427;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:25;a:17:{s:5:\"title\";s:10:\"Documenten\";s:4:\"name\";s:15:\"anbi_documenten\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:8:\"repeater\";s:2:\"id\";i:83369;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:3:{i:0;a:17:{s:5:\"title\";s:4:\"Jaar\";s:4:\"name\";s:4:\"jaar\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:98847;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:1;a:17:{s:5:\"title\";s:5:\"Soort\";s:4:\"name\";s:5:\"soort\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:4:\"text\";s:2:\"id\";i:15749;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}}i:2;a:18:{s:5:\"title\";s:7:\"Bestand\";s:4:\"name\";s:7:\"bestand\";s:11:\"object_type\";s:5:\"field\";s:5:\"width\";s:4:\"100%\";s:4:\"type\";s:5:\"media\";s:2:\"id\";i:35677;s:8:\"isNested\";b:0;s:9:\"is_nested\";b:0;s:7:\"options\";a:0:{}s:14:\"quick_editable\";b:1;s:11:\"is_required\";b:0;s:7:\"default\";s:0:\"\";s:11:\"description\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:4:\"args\";a:0:{}s:10:\"conditions\";a:0:{}s:15:\"repeater-fields\";a:0:{}s:12:\"value_format\";s:3:\"url\";}}}}"
         }
     ],
     "glossaries": [
@@ -234,9 +250,534 @@
             ],
             "source": "manual",
             "name": "Evenementstatus"
+        },
+        {
+            "id": "30",
+            "slug": null,
+            "labels": {
+                "name": "Wat Sampark betaalt"
+            },
+            "fields": [
+                {
+                    "value": "docenten",
+                    "label": "Salarissen van docenten",
+                    "is_checked": false
+                },
+                {
+                    "value": "lesmateriaal",
+                    "label": "Lesmateriaal",
+                    "is_checked": false
+                },
+                {
+                    "value": "sport",
+                    "label": "Sportattributen",
+                    "is_checked": false
+                },
+                {
+                    "value": "schoolarts",
+                    "label": "Schoolarts",
+                    "is_checked": false
+                },
+                {
+                    "value": "gezondheidszorg",
+                    "label": "Gezondheidszorg",
+                    "is_checked": false
+                },
+                {
+                    "value": "fietsen",
+                    "label": "Fietsen voor geslaagden",
+                    "is_checked": false
+                },
+                {
+                    "value": "vaste_lasten",
+                    "label": "Vaste lasten zoals elektriciteit",
+                    "is_checked": false
+                }
+            ],
+            "source": "manual",
+            "name": "Wat Sampark betaalt"
         }
     ],
     "queries": [
+        {
+            "id": "29",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · meer nieuws (zonder dit bericht)"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [
+                        {
+                            "_id": 978996,
+                            "collapsed": false,
+                            "orderby": "date",
+                            "order": "DESC"
+                        }
+                    ],
+                    "post_type": [
+                        "post"
+                    ],
+                    "posts_per_page": "3",
+                    "post__not_in": "%current_id%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__not_in": "%current_id%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "28",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · evenementen bij dit bericht"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [],
+                    "post_type": [
+                        "evenementen"
+                    ],
+                    "posts_per_page": "3",
+                    "post__in": "%rel_get_items|7|parent_object|current_object%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__in": "%rel_get_items|7|parent_object|current_object%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "27",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · projecten bij dit bericht"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [],
+                    "post_type": [
+                        "projecten"
+                    ],
+                    "posts_per_page": "3",
+                    "post__in": "%rel_get_items|8|parent_object|current_object%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__in": "%rel_get_items|8|parent_object|current_object%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "26",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · nieuws bij dit evenement"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [
+                        {
+                            "_id": 125355,
+                            "collapsed": false,
+                            "orderby": "date",
+                            "order": "DESC"
+                        }
+                    ],
+                    "post_type": [
+                        "post"
+                    ],
+                    "posts_per_page": "3",
+                    "post__in": "%rel_get_items|7|child_object|current_object%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__in": "%rel_get_items|7|child_object|current_object%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "25",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · sponsors van dit evenement"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [
+                        {
+                            "_id": 527428,
+                            "collapsed": false,
+                            "orderby": "menu_order",
+                            "order": "ASC"
+                        }
+                    ],
+                    "post_type": [
+                        "sponsors"
+                    ],
+                    "posts_per_page": "30",
+                    "post__in": "%rel_get_items|9|parent_object|current_object%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__in": "%rel_get_items|9|parent_object|current_object%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "24",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · producten bij dit evenement"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [
+                        {
+                            "_id": 887968,
+                            "collapsed": false,
+                            "orderby": "title",
+                            "order": "DESC"
+                        }
+                    ],
+                    "post_type": [
+                        "product"
+                    ],
+                    "posts_per_page": "6",
+                    "post__in": "%rel_get_items|6|child_object|current_object%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__in": "%rel_get_items|6|child_object|current_object%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "23",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · nieuws bij dit project"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [
+                        {
+                            "_id": 459544,
+                            "collapsed": false,
+                            "orderby": "date",
+                            "order": "DESC"
+                        }
+                    ],
+                    "post_type": [
+                        "post"
+                    ],
+                    "posts_per_page": "3",
+                    "post__in": "%rel_get_items|8|child_object|current_object%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__in": "%rel_get_items|8|child_object|current_object%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "22",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · andere projecten van hetzelfde type"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [
+                        {
+                            "_id": 838775,
+                            "collapsed": false,
+                            "orderby": "menu_order",
+                            "order": "ASC"
+                        }
+                    ],
+                    "tax_query": [
+                        {
+                            "_id": 814016,
+                            "collapsed": false,
+                            "taxonomy": "projecttype",
+                            "field": "term_id",
+                            "terms": "%current_terms|projecttype%",
+                            "operator": "IN"
+                        }
+                    ],
+                    "post_type": [
+                        "projecten"
+                    ],
+                    "posts_per_page": "3",
+                    "post__not_in": "%current_id%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": {
+                        "814016": {
+                            "terms": "%current_terms|projecttype%"
+                        }
+                    },
+                    "date_query": [],
+                    "post__not_in": "%current_id%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
+        {
+            "id": "21",
+            "slug": null,
+            "status": "query",
+            "labels": {
+                "name": "Single · dit project (kaart)"
+            },
+            "args": {
+                "query_type": "posts",
+                "posts": {
+                    "orderby": [],
+                    "post_type": [
+                        "projecten"
+                    ],
+                    "posts_per_page": "1",
+                    "post__in": "%current_id%"
+                },
+                "__dynamic_posts": {
+                    "meta_query": [],
+                    "tax_query": [],
+                    "date_query": [],
+                    "post__in": "%current_id%"
+                },
+                "show_preview": false,
+                "cache_query": true,
+                "api_endpoint": false,
+                "avoid_duplicates": false,
+                "preview_page": null,
+                "preview_page_title": null,
+                "preview_query_string": null,
+                "query_id": null,
+                "description": "",
+                "api_namespace": null,
+                "api_path": null,
+                "api_access": null,
+                "api_access_cap": null,
+                "api_access_role": [],
+                "api_schema": [
+                    {
+                        "arg": "",
+                        "value": ""
+                    }
+                ],
+                "cache_expires": 0
+            },
+            "meta_fields": []
+        },
         {
             "id": "20",
             "slug": null,
@@ -249,7 +790,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 379657,
+                            "_id": 511422,
                             "collapsed": false,
                             "orderby": "meta_value_num",
                             "order": "DESC",
@@ -258,7 +799,7 @@
                     ],
                     "tax_query": [
                         {
-                            "_id": 785952,
+                            "_id": 414154,
                             "collapsed": false,
                             "taxonomy": "product_cat",
                             "field": "slug",
@@ -270,12 +811,12 @@
                         "product"
                     ],
                     "posts_per_page": "6",
-                    "post__not_in": "81"
+                    "post__not_in": "84"
                 },
                 "__dynamic_posts": {
                     "meta_query": [],
                     "tax_query": {
-                        "785952": []
+                        "414154": []
                     },
                     "date_query": []
                 },
@@ -315,7 +856,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 506026,
+                            "_id": 582941,
                             "collapsed": false,
                             "orderby": "date",
                             "order": "DESC"
@@ -323,7 +864,7 @@
                     ],
                     "tax_query": [
                         {
-                            "_id": 192226,
+                            "_id": 290440,
                             "collapsed": false,
                             "taxonomy": "category",
                             "field": "slug",
@@ -339,7 +880,7 @@
                 "__dynamic_posts": {
                     "meta_query": [],
                     "tax_query": {
-                        "192226": []
+                        "290440": []
                     },
                     "date_query": []
                 },
@@ -379,7 +920,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 678501,
+                            "_id": 346198,
                             "collapsed": false,
                             "orderby": "date",
                             "order": "DESC"
@@ -431,7 +972,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 357134,
+                            "_id": 824707,
                             "collapsed": false,
                             "orderby": "menu_order",
                             "order": "ASC"
@@ -439,7 +980,7 @@
                     ],
                     "meta_query": [
                         {
-                            "_id": 315339,
+                            "_id": 242165,
                             "collapsed": false,
                             "key": "actief",
                             "compare": "=",
@@ -455,7 +996,7 @@
                 },
                 "__dynamic_posts": {
                     "meta_query": {
-                        "315339": []
+                        "242165": []
                     },
                     "tax_query": [],
                     "date_query": []
@@ -497,7 +1038,7 @@
                     "orderby": [],
                     "meta_query": [
                         {
-                            "_id": 674562,
+                            "_id": 951124,
                             "collapsed": false,
                             "key": "status",
                             "compare": "=",
@@ -513,7 +1054,7 @@
                 },
                 "__dynamic_posts": {
                     "meta_query": {
-                        "674562": []
+                        "951124": []
                     },
                     "tax_query": [],
                     "date_query": []
@@ -554,7 +1095,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 977377,
+                            "_id": 814303,
                             "collapsed": false,
                             "orderby": "menu_order",
                             "order": "ASC"
@@ -562,7 +1103,7 @@
                     ],
                     "meta_query": [
                         {
-                            "_id": 332772,
+                            "_id": 975711,
                             "collapsed": false,
                             "key": "status",
                             "compare": "IN",
@@ -578,7 +1119,7 @@
                 },
                 "__dynamic_posts": {
                     "meta_query": {
-                        "332772": []
+                        "975711": []
                     },
                     "tax_query": [],
                     "date_query": []
@@ -619,7 +1160,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 894442,
+                            "_id": 344986,
                             "collapsed": false,
                             "orderby": "menu_order",
                             "order": "ASC"
@@ -627,7 +1168,7 @@
                     ],
                     "meta_query": [
                         {
-                            "_id": 744159,
+                            "_id": 799885,
                             "collapsed": false,
                             "key": "status",
                             "compare": "IN",
@@ -643,7 +1184,7 @@
                 },
                 "__dynamic_posts": {
                     "meta_query": {
-                        "744159": []
+                        "799885": []
                     },
                     "tax_query": [],
                     "date_query": []
@@ -685,7 +1226,7 @@
                     "orderby": [],
                     "tax_query": [
                         {
-                            "_id": 812825,
+                            "_id": 128267,
                             "collapsed": false,
                             "taxonomy": "projecttype",
                             "field": "slug",
@@ -701,7 +1242,7 @@
                 "__dynamic_posts": {
                     "meta_query": [],
                     "tax_query": {
-                        "812825": []
+                        "128267": []
                     },
                     "date_query": []
                 },
@@ -741,7 +1282,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 592621,
+                            "_id": 556508,
                             "collapsed": false,
                             "orderby": "menu_order",
                             "order": "ASC"
@@ -749,7 +1290,7 @@
                     ],
                     "tax_query": [
                         {
-                            "_id": 289722,
+                            "_id": 475731,
                             "collapsed": false,
                             "taxonomy": "projecttype",
                             "field": "slug",
@@ -765,7 +1306,7 @@
                 "__dynamic_posts": {
                     "meta_query": [],
                     "tax_query": {
-                        "289722": []
+                        "475731": []
                     },
                     "date_query": []
                 },
@@ -805,7 +1346,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 984019,
+                            "_id": 396540,
                             "collapsed": false,
                             "orderby": "menu_order",
                             "order": "ASC"
@@ -813,7 +1354,7 @@
                     ],
                     "tax_query": [
                         {
-                            "_id": 900632,
+                            "_id": 720314,
                             "collapsed": false,
                             "taxonomy": "projecttype",
                             "field": "slug",
@@ -829,7 +1370,7 @@
                 "__dynamic_posts": {
                     "meta_query": [],
                     "tax_query": {
-                        "900632": []
+                        "720314": []
                     },
                     "date_query": []
                 },
@@ -869,7 +1410,7 @@
                 "posts": {
                     "orderby": [
                         {
-                            "_id": 440378,
+                            "_id": 579391,
                             "collapsed": false,
                             "orderby": "menu_order",
                             "order": "ASC"
@@ -877,7 +1418,7 @@
                     ],
                     "tax_query": [
                         {
-                            "_id": 822348,
+                            "_id": 340699,
                             "collapsed": false,
                             "taxonomy": "projecttype",
                             "field": "slug",
@@ -893,7 +1434,7 @@
                 "__dynamic_posts": {
                     "meta_query": [],
                     "tax_query": {
-                        "822348": []
+                        "340699": []
                     },
                     "date_query": []
                 },

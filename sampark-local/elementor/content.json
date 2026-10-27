@@ -457,7 +457,12 @@
     "status": "doorlopend",
     "datum_label": "Het hele jaar",
     "prijs_label": "€ 43,50 per doos"
-   }
+   },
+   "products": [
+    "rode-wijn",
+    "witte-wijn",
+    "alcoholvrij"
+   ]
   },
   {
    "slug": "sampark-rally",
@@ -471,7 +476,10 @@
     "datum_label": "September 2027 · datum volgt",
     "prijs_label": "€ 600 per equipe",
     "max_deelnemers": 60
-   }
+   },
+   "products": [
+    "ticket-sampark-rally"
+   ]
   },
   {
    "slug": "golftoernooi",
@@ -503,7 +511,10 @@
       "onderdeel": "Diner en prijsuitreiking"
      }
     ]
-   }
+   },
+   "products": [
+    "golftoernooi"
+   ]
   },
   {
    "slug": "project-en-cultuurreis",

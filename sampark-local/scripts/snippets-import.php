@@ -17,6 +17,9 @@ $names = [
 ];
 
 $existing = [];
+if ( ! defined( 'CODE_SNIPPETS_SAFE_MODE' ) || ! CODE_SNIPPETS_SAFE_MODE ) {
+	WP_CLI::warning( 'Draai dit script met --exec="define(\'CODE_SNIPPETS_SAFE_MODE\', true);", anders kan activeren mislukken.' );
+}
 foreach ( \Code_Snippets\get_snippets() as $s ) {
 	$existing[ $s->name ] = $s;
 }
@@ -37,9 +40,13 @@ foreach ( glob( '/snippets/*.php' ) as $file ) {
 	}
 
 	$saved = \Code_Snippets\save_snippet( $snippet );
-	// Code Snippets zet een snippet na wijzigen uit; daarom expliciet (opnieuw) activeren
-	if ( $saved ) {
-		\Code_Snippets\activate_snippet( $saved->id );
+	// Code Snippets zet een snippet na wijzigen uit; daarom expliciet (opnieuw) activeren. De validatie daarbij
+	// faalt als de snippets al geladen zijn ("function already declared"): draai dit script daarom in safe mode.
+	if ( $saved && ! \Code_Snippets\get_snippet( $saved->id )->active ) {
+		$result = \Code_Snippets\activate_snippet( $saved->id );
+		if ( is_string( $result ) ) {
+			WP_CLI::warning( "$name: $result" );
+		}
 	}
 	WP_CLI::log( sprintf( '  %s snippet %s (%s)', isset( $existing[ $name ] ) ? '~' : '+', $name, $saved ? $saved->id : 'mislukt' ) );
 }

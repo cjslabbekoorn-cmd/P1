@@ -4,7 +4,7 @@
  "source": "projecten",
  "content": [
   {
-   "id": "8c16944",
+   "id": "829c51a",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -46,7 +46,7 @@
    },
    "elements": [
     {
-     "id": "83fb961",
+     "id": "5e18822",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-image",
      "settings": {
@@ -79,7 +79,7 @@
      "elements": []
     },
     {
-     "id": "87eafd4",
+     "id": "2c76239",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -98,7 +98,7 @@
      },
      "elements": [
       {
-       "id": "a7c7451",
+       "id": "3b26ad2",
        "elType": "widget",
        "widgetType": "jet-listing-dynamic-field",
        "settings": {
@@ -120,7 +120,7 @@
        "elements": []
       },
       {
-       "id": "e05f954",
+       "id": "d8ba403",
        "elType": "widget",
        "widgetType": "jet-listing-dynamic-field",
        "settings": {
@@ -142,7 +142,7 @@
        "elements": []
       },
       {
-       "id": "cea1ee7",
+       "id": "5152137",
        "elType": "widget",
        "widgetType": "jet-listing-dynamic-field",
        "settings": {
@@ -169,7 +169,7 @@
      "isInner": false
     },
     {
-     "id": "3965513",
+     "id": "9bfe608",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -191,7 +191,7 @@
      "elements": []
     },
     {
-     "id": "104dec8",
+     "id": "622a478",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -206,7 +206,7 @@
      "elements": []
     },
     {
-     "id": "0af3556",
+     "id": "0cfaca2",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-link",
      "settings": {

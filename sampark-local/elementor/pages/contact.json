@@ -4,14 +4,14 @@
  "type": "page",
  "slug": "contact",
  "parent": null,
- "menu_order": 12,
+ "menu_order": 8,
  "seo": [
   "Contact | Stichting Sampark",
   "Neem contact op met Stichting Sampark in Genemuiden."
  ],
  "content": [
   {
-   "id": "d49a8ce",
+   "id": "7aea890",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -62,7 +62,7 @@
    },
    "elements": [
     {
-     "id": "21e22c1",
+     "id": "ca92849",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -103,7 +103,7 @@
      },
      "elements": [
       {
-       "id": "1986ce1",
+       "id": "f02bef2",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -129,7 +129,7 @@
        },
        "elements": [
         {
-         "id": "7d953a1",
+         "id": "0c12eb3",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -154,7 +154,7 @@
          "elements": []
         },
         {
-         "id": "b373204",
+         "id": "5fbb94f",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -179,7 +179,7 @@
          "elements": []
         },
         {
-         "id": "8bbcb47",
+         "id": "6a961e5",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -206,7 +206,7 @@
    "isInner": false
   },
   {
-   "id": "ee39866",
+   "id": "148bb7b",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -244,7 +244,7 @@
    },
    "elements": [
     {
-     "id": "69a5b59",
+     "id": "4ffce04",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -261,7 +261,7 @@
      },
      "elements": [
       {
-       "id": "c21002f",
+       "id": "c5ab0bc",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -286,7 +286,7 @@
        },
        "elements": [
         {
-         "id": "242ebe8",
+         "id": "a8b85ff",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -307,7 +307,7 @@
          "elements": []
         },
         {
-         "id": "7fd8a30",
+         "id": "f9f3bcc",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -316,7 +316,7 @@
          "elements": []
         },
         {
-         "id": "dbd258d",
+         "id": "5ab8c0e",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -334,7 +334,7 @@
        "isInner": false
       },
       {
-       "id": "51e2d08",
+       "id": "51f5630",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -381,7 +381,7 @@
        },
        "elements": [
         {
-         "id": "6186c8d",
+         "id": "1b740a6",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -402,7 +402,7 @@
          "elements": []
         },
         {
-         "id": "10a244b",
+         "id": "2789f3a",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

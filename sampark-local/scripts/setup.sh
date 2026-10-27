@@ -218,7 +218,7 @@ product golftoernooi "Golftoernooi" 300 "$C_GOLF" "Per deelnemer. Een tafel voor
 # Na de nieuwscategorieën en producten, want de inhoud en queries verwijzen daarnaar
 if wp plugin is-active code-snippets; then
 	log "Code Snippets: factuuropmaak, donatieprijs en sponsorbetaling"
-	wp eval-file /scripts/snippets-import.php
+	wp eval-file /scripts/snippets-import.php --exec="define('CODE_SNIPPETS_SAFE_MODE', true);"
 fi
 
 # Afrekenen: klassieke winkelwagen en checkout, want de sponsorregel herberekent bij wisselen van betaalmethode.

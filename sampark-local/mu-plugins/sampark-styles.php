@@ -46,6 +46,36 @@ add_action( 'wp_enqueue_scripts', function () {
 .site-header .site-navigation ul.menu li a:hover { color: #963322; }
 .site-footer { background: #46211A; color: #F5EDE3; }
 .site-footer a { color: #ECC0AE; }
+/* Singles: sectie met een lege Listing Grid verbergen (de grid zelf staat op "Hide widget if: Query is empty") */
+.sp-hide-empty:not(:has(.jet-listing-grid__item, .sp-keep)) { display: none; }
+/* Single project: feiten, voorzieningen, momenten. JetEngine zet elk repeater-item op flex; onze blokken niet */
+.sp-facts .jet-listing-dynamic-repeater__item > .sp-fact, .sp-moments .jet-listing-dynamic-repeater__item > .sp-moment { display: block; }
+.sp-programma .jet-listing-dynamic-repeater__item > .sp-prog { display: grid; }
+.sp-facts .jet-listing-dynamic-repeater__item, .sp-moments .jet-listing-dynamic-repeater__item { display: block; }
+.sp-facts .jet-listing-dynamic-repeater__items { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.sp-fact { text-align: center; }
+.sp-fact strong { display: block; font-family: Spectral, serif; font-weight: 500; font-size: 46px; line-height: 1.1; color: #963322; }
+.sp-checks .jet-listing-dynamic-repeater__items { display: flex; flex-direction: column; gap: 8px; }
+.sp-check::before { content: "✓"; color: #ED7404; font-weight: 700; margin-right: 10px; }
+.sp-moments .jet-listing-dynamic-repeater__items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.sp-moment { background: #F5EDE3; border-radius: 20px; padding: 28px; height: 100%; }
+.sp-moment__when { font-family: "Patrick Hand", sans-serif; text-transform: uppercase; font-size: 20px; color: #ED7404; }
+.sp-moment p { margin: 8px 0 0; }
+.sp-checklist .jet-check-list__item { background: #FFFFFF; border-radius: 16px; padding: 18px 20px; font-size: 18px; }
+.sp-checklist .jet-check-list__item-icon { color: #ED7404; }
+/* Single evenement: praktische info en programma */
+.sp-info { background: #F5EDE3; border-radius: 20px; padding: 22px; }
+.sp-info p { margin: 0; }
+.sp-programma .jet-listing-dynamic-repeater__items { display: flex; flex-direction: column; }
+.sp-prog { display: grid; grid-template-columns: 120px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(70, 33, 26, .15); }
+.sp-prog span { font-family: "Patrick Hand", sans-serif; font-size: 18px; color: #ED7404; }
+/* Product: Super Forms-formulier in de kolom */
+.sp-product .super-form { margin-top: 8px; }
+@media (max-width: 767px) {
+	.sp-facts .jet-listing-dynamic-repeater__items { grid-template-columns: repeat(2, 1fr); }
+	.sp-fact strong { font-size: 34px; }
+	.sp-moments .jet-listing-dynamic-repeater__items { grid-template-columns: 1fr; }
+}
 CSS;
 	// Adobe Fonts (Aptos). Met Elementor Pro laadt de Adobe Fonts-integratie de kit zelf.
 	$kit = get_option( 'elementor_typekit-kit-id' );

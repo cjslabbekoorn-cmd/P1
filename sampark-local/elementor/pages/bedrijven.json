@@ -4,14 +4,14 @@
  "type": "page",
  "slug": "bedrijven",
  "parent": "steun-ons",
- "menu_order": 9,
+ "menu_order": 5,
  "seo": [
   "Sponsor worden als bedrijf | Stichting Sampark",
   "Sponsorpakketten vanaf € 500 per jaar met naamsvermelding, deelname aan evenementen en MVO-materiaal."
  ],
  "content": [
   {
-   "id": "31dac16",
+   "id": "64f7811",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -62,7 +62,7 @@
    },
    "elements": [
     {
-     "id": "2b26607",
+     "id": "7b60a56",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -103,7 +103,7 @@
      },
      "elements": [
       {
-       "id": "14cf854",
+       "id": "f8dac36",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -129,7 +129,7 @@
        },
        "elements": [
         {
-         "id": "635055a",
+         "id": "7a81dd3",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -154,7 +154,7 @@
          "elements": []
         },
         {
-         "id": "83f3a40",
+         "id": "97e21c9",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -179,7 +179,7 @@
          "elements": []
         },
         {
-         "id": "c8d2369",
+         "id": "b6ee574",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -206,7 +206,7 @@
    "isInner": false
   },
   {
-   "id": "568a309",
+   "id": "7cb699d",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -244,7 +244,7 @@
    },
    "elements": [
     {
-     "id": "92262bf",
+     "id": "9431c87",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -262,7 +262,7 @@
      },
      "elements": [
       {
-       "id": "e820a45",
+       "id": "1a5b1e4",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -287,7 +287,7 @@
        },
        "elements": [
         {
-         "id": "93ac539",
+         "id": "e8c8850",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -312,7 +312,7 @@
          "elements": []
         },
         {
-         "id": "7200520",
+         "id": "f6012cd",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -322,7 +322,7 @@
          "elements": []
         },
         {
-         "id": "e5c1d4c",
+         "id": "e11d21f",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
@@ -333,7 +333,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "1dd627e"
+            "_id": "1253158"
            },
            {
             "text": "Deelname aan de Sampark Rally en het golftoernooi",
@@ -341,7 +341,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "455a053"
+            "_id": "f8a76b2"
            },
            {
             "text": "Materiaal voor je eigen MVO-communicatie",
@@ -349,7 +349,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "26afa63"
+            "_id": "1f241fb"
            },
            {
             "text": "Een netwerk van ondernemers uit de regio",
@@ -357,7 +357,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "30cd6f7"
+            "_id": "4297aa0"
            }
           ],
           "space_between": {
@@ -376,7 +376,7 @@
        "isInner": false
       },
       {
-       "id": "4bfc5a2",
+       "id": "85d8fc2",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -423,7 +423,7 @@
        },
        "elements": [
         {
-         "id": "21b270a",
+         "id": "d4065ce",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -448,7 +448,7 @@
          "elements": []
         },
         {
-         "id": "9b6f9ee",
+         "id": "0ed537f",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -469,7 +469,7 @@
          "elements": []
         },
         {
-         "id": "964f6cb",
+         "id": "52c96a4",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -478,7 +478,7 @@
          "elements": []
         },
         {
-         "id": "5d1a739",
+         "id": "4167472",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -527,7 +527,7 @@
    "isInner": false
   },
   {
-   "id": "fdadcdd",
+   "id": "ee0326d",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -593,7 +593,7 @@
    },
    "elements": [
     {
-     "id": "e63e606",
+     "id": "1cf3242",
      "elType": "container",
      "settings": {
       "flex_direction": "column",
@@ -610,7 +610,7 @@
      },
      "elements": [
       {
-       "id": "594efca",
+       "id": "6941444",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -636,7 +636,7 @@
        "elements": []
       },
       {
-       "id": "30e99b1",
+       "id": "7e97fb7",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -653,7 +653,7 @@
      "isInner": false
     },
     {
-     "id": "8a9dc1a",
+     "id": "7e9dd6d",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -678,7 +678,7 @@
      },
      "elements": [
       {
-       "id": "0554f58",
+       "id": "b1f3843",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -730,7 +730,7 @@
        },
        "elements": [
         {
-         "id": "30dec4e",
+         "id": "945e304",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -755,7 +755,7 @@
          "elements": []
         },
         {
-         "id": "774a5e5",
+         "id": "83916ae",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -776,7 +776,7 @@
          "elements": []
         },
         {
-         "id": "ed3291f",
+         "id": "fb5272c",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
@@ -787,7 +787,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "fce656a"
+            "_id": "71291d3"
            },
            {
             "text": "Deelname golftoernooi én Sampark Rally",
@@ -795,7 +795,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "7e4b6a3"
+            "_id": "2f081ac"
            },
            {
             "text": "Naamsvermelding bij het gekozen evenement",
@@ -803,7 +803,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "65306cd"
+            "_id": "2c37ad9"
            }
           ],
           "space_between": {
@@ -819,7 +819,7 @@
          "elements": []
         },
         {
-         "id": "ae5297d",
+         "id": "6d1652c",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -837,7 +837,7 @@
        "isInner": false
       },
       {
-       "id": "7fdbf32",
+       "id": "8c5dd31",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -889,7 +889,7 @@
        },
        "elements": [
         {
-         "id": "aa6cded",
+         "id": "a154fb1",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -914,7 +914,7 @@
          "elements": []
         },
         {
-         "id": "572d1ea",
+         "id": "364f937",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -935,7 +935,7 @@
          "elements": []
         },
         {
-         "id": "016485c",
+         "id": "8be32a3",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
@@ -946,7 +946,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "538fa8c"
+            "_id": "34ba7f2"
            },
            {
             "text": "Deelname golftoernooi óf Sampark Rally",
@@ -954,7 +954,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "893f831"
+            "_id": "4a503b4"
            },
            {
             "text": "Naamsvermelding bij dat evenement",
@@ -962,7 +962,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "6eb0512"
+            "_id": "ff70894"
            }
           ],
           "space_between": {
@@ -978,7 +978,7 @@
          "elements": []
         },
         {
-         "id": "f6bcc25",
+         "id": "7c839a6",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -996,7 +996,7 @@
        "isInner": false
       },
       {
-       "id": "7f99fd5",
+       "id": "871375e",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1048,7 +1048,7 @@
        },
        "elements": [
         {
-         "id": "0cd2e89",
+         "id": "05e955e",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1073,7 +1073,7 @@
          "elements": []
         },
         {
-         "id": "1b42f4a",
+         "id": "6c898d0",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -1094,7 +1094,7 @@
          "elements": []
         },
         {
-         "id": "6564014",
+         "id": "e8762ec",
          "elType": "widget",
          "widgetType": "icon-list",
          "settings": {
@@ -1105,7 +1105,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "d8f1308"
+            "_id": "83eb04f"
            },
            {
             "text": "Klikbare Sampark-banner voor je eigen site",
@@ -1113,7 +1113,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "587280c"
+            "_id": "dab548f"
            },
            {
             "text": "Sampark-uitingen voor je MVO",
@@ -1121,7 +1121,7 @@
              "value": "fas fa-check",
              "library": "fa-solid"
             },
-            "_id": "afb22f3"
+            "_id": "6ec0dc1"
            }
           ],
           "space_between": {
@@ -1137,7 +1137,7 @@
          "elements": []
         },
         {
-         "id": "31406bf",
+         "id": "1458792",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -1161,7 +1161,7 @@
    "isInner": false
   },
   {
-   "id": "4aeafb1",
+   "id": "0720b4c",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -1199,7 +1199,7 @@
    },
    "elements": [
     {
-     "id": "8ec7af1",
+     "id": "e0102cc",
      "elType": "container",
      "settings": {
       "flex_direction": "column",
@@ -1216,7 +1216,7 @@
      },
      "elements": [
       {
-       "id": "16ed321",
+       "id": "d2bcaf0",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -1242,7 +1242,7 @@
        "elements": []
       },
       {
-       "id": "67d5a01",
+       "id": "fc10b89",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -1259,7 +1259,7 @@
      "isInner": false
     },
     {
-     "id": "5dc89e9",
+     "id": "cced206",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -1284,7 +1284,7 @@
      },
      "elements": [
       {
-       "id": "cd98d45",
+       "id": "a25ed02",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1350,7 +1350,7 @@
        },
        "elements": [
         {
-         "id": "ee1f648",
+         "id": "fe807d6",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -1391,7 +1391,7 @@
        "isInner": false
       },
       {
-       "id": "9b7cd96",
+       "id": "a9bd447",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1457,7 +1457,7 @@
        },
        "elements": [
         {
-         "id": "5e8332f",
+         "id": "22d8a67",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -1498,7 +1498,7 @@
        "isInner": false
       },
       {
-       "id": "808e527",
+       "id": "734449f",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1564,7 +1564,7 @@
        },
        "elements": [
         {
-         "id": "4edddb6",
+         "id": "415f186",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -1605,7 +1605,7 @@
        "isInner": false
       },
       {
-       "id": "915bb10",
+       "id": "9ec1234",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1671,7 +1671,7 @@
        },
        "elements": [
         {
-         "id": "40ef8a9",
+         "id": "f2d7307",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -1712,7 +1712,7 @@
        "isInner": false
       },
       {
-       "id": "faad792",
+       "id": "d24bb50",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1778,7 +1778,7 @@
        },
        "elements": [
         {
-         "id": "92e8256",
+         "id": "14036c0",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -1819,7 +1819,7 @@
        "isInner": false
       },
       {
-       "id": "8225398",
+       "id": "1e04f5c",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1885,7 +1885,7 @@
        },
        "elements": [
         {
-         "id": "1e02c82",
+         "id": "bbb2ab6",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -1926,7 +1926,7 @@
        "isInner": false
       },
       {
-       "id": "6f42d10",
+       "id": "926d2fc",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -1992,7 +1992,7 @@
        },
        "elements": [
         {
-         "id": "e84858d",
+         "id": "d6ba387",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -2033,7 +2033,7 @@
        "isInner": false
       },
       {
-       "id": "23be186",
+       "id": "d37543e",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -2099,7 +2099,7 @@
        },
        "elements": [
         {
-         "id": "9396ae0",
+         "id": "4610c07",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -2140,7 +2140,7 @@
        "isInner": false
       },
       {
-       "id": "4d6eef3",
+       "id": "a70ced3",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -2206,7 +2206,7 @@
        },
        "elements": [
         {
-         "id": "cc7ea50",
+         "id": "1c488fc",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -2247,7 +2247,7 @@
        "isInner": false
       },
       {
-       "id": "ea9d5f1",
+       "id": "d8bc7f9",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -2313,7 +2313,7 @@
        },
        "elements": [
         {
-         "id": "de77591",
+         "id": "1eb4a73",
          "elType": "widget",
          "widgetType": "image",
          "settings": {

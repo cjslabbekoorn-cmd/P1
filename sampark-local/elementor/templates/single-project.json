@@ -1,0 +1,1802 @@
+{
+ "version": "0.4",
+ "title": "Single · Project",
+ "type": "single-post",
+ "key": "single-project",
+ "conditions": [
+  "include/singular/projecten"
+ ],
+ "content": [
+  {
+   "id": "00ba2f9",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "#46211AE6",
+    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "flex_align_items": "stretch",
+    "flex_justify_content": "center",
+    "min_height": {
+     "unit": "px",
+     "size": 520,
+     "sizes": []
+    },
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Hero (uitgelichte afbeelding)",
+    "background_background": "classic",
+    "background_position": "center center",
+    "background_size": "cover",
+    "__dynamic__": {
+     "background_image": "[elementor-tag id=\"c47e972\" name=\"post-featured-image\" settings=\"%7B%7D\"]"
+    }
+   },
+   "elements": [
+    {
+     "id": "11d6391",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "padding": {
+       "unit": "px",
+       "top": "140",
+       "right": "24",
+       "bottom": "140",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "110",
+       "right": "20",
+       "bottom": "110",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "_title": "Hero inhoud"
+     },
+     "elements": [
+      {
+       "id": "7696aeb",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 60,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Hero tekst"
+       },
+       "elements": [
+        {
+         "id": "3175849",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=cf55c96",
+           "field_typography_typography": "globals/typography?id=accent"
+          },
+          "dynamic_field_post_meta": "dorp",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "field_typography_text_transform": "uppercase"
+         },
+         "elements": []
+        },
+        {
+         "id": "0ea21f1",
+         "elType": "widget",
+         "widgetType": "theme-post-title",
+         "settings": {
+          "title": "",
+          "header_size": "h1",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 64,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 46,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=658acb6",
+           "typography_typography": "globals/typography?id=accent"
+          },
+          "__dynamic__": {
+           "title": "[elementor-tag id=\"9362b19\" name=\"post-title\" settings=\"%7B%7D\"]"
+          },
+          "_title": "Titel (post title)"
+         },
+         "elements": []
+        },
+        {
+         "id": "ba3887e",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "object",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=658acb6"
+          },
+          "dynamic_field_post_object": "post_excerpt",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 19,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "8be5962",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "content_width": "full",
+          "flex_direction_tablet": "row",
+          "flex_direction_mobile": "row",
+          "flex_wrap": "wrap",
+          "_title": "Knoppen"
+         },
+         "elements": [
+          {
+           "id": "4954227",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Sponsor een kind",
+            "link": {
+             "url": "/product/sponsor-een-kind/",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "f2500b8",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Doneer voor dit project",
+            "link": {
+             "url": "/steun-ons/doneren/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "__globals__": {
+             "background_color": "globals/colors?id=658acb6",
+             "button_text_color": "globals/colors?id=primary",
+             "button_background_hover_color": "globals/colors?id=e64974d",
+             "hover_color": "globals/colors?id=primary"
+            }
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2bf49c5",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "24",
+     "bottom": "40",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "40",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Feiten",
+    "jedv_enabled": "yes",
+    "jedv_type": "show",
+    "jedv_relation": "AND",
+    "jedv_conditions": [
+     {
+      "_id": "7044051",
+      "jedv_condition": "exists",
+      "__dynamic__": {
+       "jedv_field": "[elementor-tag id=\"12ed145\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22feiten%22%7D\"]"
+      }
+     }
+    ]
+   },
+   "elements": [
+    {
+     "id": "5bb5162",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-repeater",
+     "settings": {
+      "dynamic_field_source": "feiten",
+      "dynamic_field_format": "<div class=\"sp-fact\"><strong>%waarde%</strong><span>%label%</span></div>",
+      "item_tag": "div",
+      "items_delimiter": "",
+      "hide_if_empty": "yes",
+      "_css_classes": "sp-facts",
+      "_title": "Feiten (repeater feiten)"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "390800e",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Verhaal"
+   },
+   "elements": [
+    {
+     "id": "3a835d3",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "48",
+       "row": "48",
+       "isLinked": true,
+       "unit": "px",
+       "size": 48
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "flex-start"
+     },
+     "elements": [
+      {
+       "id": "48aecca",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "14",
+         "row": "14",
+         "isLinked": true,
+         "unit": "px",
+         "size": 14
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Verhaal"
+       },
+       "elements": [
+        {
+         "id": "8627832",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Het verhaal",
+          "header_size": "p",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 0.5,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=accent",
+           "typography_typography": "globals/typography?id=accent"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "996050a",
+         "elType": "widget",
+         "widgetType": "theme-post-content",
+         "settings": {
+          "__globals__": {
+           "text_color": "globals/colors?id=text"
+          },
+          "_title": "Inhoud (post content)"
+         },
+         "elements": []
+        },
+        {
+         "id": "1ab0954",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "h3",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text",
+           "field_typography_typography": "globals/typography?id=primary"
+          },
+          "dynamic_field_post_meta": "extra_titel",
+          "field_typography_typography": "custom",
+          "field_typography_font_size": {
+           "unit": "px",
+           "size": 26,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b74b688",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-field",
+         "settings": {
+          "dynamic_field_source": "meta",
+          "field_tag": "p",
+          "hide_if_empty": "yes",
+          "__globals__": {
+           "field_color": "globals/colors?id=text"
+          },
+          "dynamic_field_post_meta": "extra_tekst",
+          "dynamic_field_filter": "yes",
+          "filter_callback": "wpautop"
+         },
+         "elements": []
+        },
+        {
+         "id": "04257c4",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "24",
+           "row": "24",
+           "isLinked": true,
+           "unit": "px",
+           "size": 24
+          },
+          "content_width": "full",
+          "_title": "Externe link",
+          "jedv_enabled": "yes",
+          "jedv_type": "show",
+          "jedv_relation": "AND",
+          "jedv_conditions": [
+           {
+            "_id": "f3af5d7",
+            "jedv_condition": "exists",
+            "__dynamic__": {
+             "jedv_field": "[elementor-tag id=\"283ca3d\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22externe_link%22%7D\"]"
+            }
+           }
+          ]
+         },
+         "elements": [
+          {
+           "id": "32569a4",
+           "elType": "widget",
+           "widgetType": "jet-listing-dynamic-link",
+           "settings": {
+            "dynamic_link_source": "externe_link",
+            "link_label": "Bezoek de website",
+            "link_wrapper_tag": "div",
+            "link_padding": {
+             "unit": "px",
+             "top": "10",
+             "right": "22",
+             "bottom": "10",
+             "left": "22",
+             "isLinked": false
+            },
+            "link_border_radius": {
+             "unit": "px",
+             "top": "4",
+             "right": "4",
+             "bottom": "4",
+             "left": "4",
+             "isLinked": true
+            },
+            "link_typography_typography": "custom",
+            "link_typography_font_family": "Patrick Hand",
+            "link_typography_text_transform": "uppercase",
+            "link_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "link_border_border": "solid",
+            "link_border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "__globals__": {
+             "link_color": "globals/colors?id=accent",
+             "link_border_color": "globals/colors?id=accent",
+             "link_icon_color": "globals/colors?id=accent"
+            }
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "ce82d89",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "24",
+         "row": "24",
+         "isLinked": true,
+         "unit": "px",
+         "size": 24
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Beeld en voorzieningen"
+       },
+       "elements": [
+        {
+         "id": "01071af",
+         "elType": "widget",
+         "widgetType": "jet-listing-dynamic-image",
+         "settings": {
+          "dynamic_image_source": "post_thumbnail",
+          "dynamic_image_size": "large",
+          "image_width": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "image_height": {
+           "unit": "px",
+           "size": 420,
+           "sizes": []
+          },
+          "image_object_fit": "cover",
+          "image_border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "hide_if_empty": "",
+          "lazy_load_image": "yes"
+         },
+         "elements": []
+        },
+        {
+         "id": "2001828",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "8",
+           "row": "8",
+           "isLinked": true,
+           "unit": "px",
+           "size": 8
+          },
+          "content_width": "full",
+          "_title": "Voorzieningen",
+          "jedv_enabled": "yes",
+          "jedv_type": "show",
+          "jedv_relation": "AND",
+          "jedv_conditions": [
+           {
+            "_id": "8443e4c",
+            "jedv_condition": "exists",
+            "__dynamic__": {
+             "jedv_field": "[elementor-tag id=\"3cd4a8d\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22voorzieningen%22%7D\"]"
+            }
+           }
+          ]
+         },
+         "elements": [
+          {
+           "id": "d196c62",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Voorzieningen",
+            "header_size": "p",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.5,
+             "sizes": []
+            },
+            "__globals__": {
+             "title_color": "globals/colors?id=accent",
+             "typography_typography": "globals/typography?id=accent"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "3881470",
+           "elType": "widget",
+           "widgetType": "jet-listing-dynamic-repeater",
+           "settings": {
+            "dynamic_field_source": "voorzieningen",
+            "dynamic_field_format": "<span class=\"sp-check\">%voorziening%</span>",
+            "item_tag": "div",
+            "items_delimiter": "",
+            "hide_if_empty": "yes",
+            "_css_classes": "sp-checks",
+            "_title": "Voorzieningen (repeater)"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "471106d",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "curve",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 50,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "Wat we betalen",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    },
+    "jedv_enabled": "yes",
+    "jedv_type": "show",
+    "jedv_relation": "AND",
+    "jedv_conditions": [
+     {
+      "_id": "b568fdb",
+      "jedv_condition": "exists",
+      "__dynamic__": {
+       "jedv_field": "[elementor-tag id=\"f255ea1\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22we_financieren%22%7D\"]"
+      }
+     }
+    ]
+   },
+   "elements": [
+    {
+     "id": "106c237",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "38259a6",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Jouw steun",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "c8afae8",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Wat Sampark hier betaalt",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "5d180fb",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Samen met de Vincentian Charitable Trust houden we de school elke dag open.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "251a268",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-field",
+     "settings": {
+      "dynamic_field_source": "meta",
+      "field_tag": "div",
+      "hide_if_empty": "yes",
+      "__globals__": {
+       "field_color": "globals/colors?id=text"
+      },
+      "dynamic_field_post_meta": "we_financieren",
+      "dynamic_field_filter": "yes",
+      "filter_callback": "jet_engine_render_checklist",
+      "checklist_cols_num": 3,
+      "labels_by_glossary": "{{glossary:financiering}}",
+      "selected_field_icon": {
+       "value": "fas fa-check-circle",
+       "library": "fa-solid"
+      },
+      "_css_classes": "sp-checklist",
+      "checklist_cols_num_mobile": 1
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2f3c470",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Tijdlijn",
+    "jedv_enabled": "yes",
+    "jedv_type": "show",
+    "jedv_relation": "AND",
+    "jedv_conditions": [
+     {
+      "_id": "8f9864d",
+      "jedv_condition": "exists",
+      "__dynamic__": {
+       "jedv_field": "[elementor-tag id=\"cd8f8e4\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22momenten%22%7D\"]"
+      }
+     }
+    ]
+   },
+   "elements": [
+    {
+     "id": "29e2e4b",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "4ae6aff",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Door de jaren heen",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "17decb8",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Zo is het gegaan",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "c629741",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-repeater",
+     "settings": {
+      "dynamic_field_source": "momenten",
+      "dynamic_field_format": "<div class=\"sp-moment\"><span class=\"sp-moment__when\">%moment%</span><p>%tekst%</p></div>",
+      "item_tag": "div",
+      "items_delimiter": "",
+      "hide_if_empty": "yes",
+      "_css_classes": "sp-moments",
+      "_title": "Momenten (repeater)"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d726156",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Locatie",
+    "jedv_enabled": "yes",
+    "jedv_type": "show",
+    "jedv_relation": "AND",
+    "jedv_conditions": [
+     {
+      "_id": "0827d50",
+      "jedv_condition": "exists",
+      "__dynamic__": {
+       "jedv_field": "[elementor-tag id=\"1ba641d\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22locatie%22%7D\"]"
+      }
+     }
+    ]
+   },
+   "elements": [
+    {
+     "id": "9a3f393",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "407e29f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Waar we zijn",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "8a5e34b",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Op de kaart",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "2697ed7",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Budaun ligt ongeveer 200 kilometer (hemelsbreed) ten oosten van New Delhi, in de deelstaat Uttar Pradesh.</p>",
+        "align": "left",
+        "__globals__": {
+         "text_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "b705542",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"sp-map__canvas\" style=\"min-height:420px\"></div>",
+      "_title": "KAART · JetEngine Map Listing · q_dit_project · zoom 9"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "3098421",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "24",
+     "bottom": "40",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "40",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Galerij",
+    "jedv_enabled": "yes",
+    "jedv_type": "show",
+    "jedv_relation": "AND",
+    "jedv_conditions": [
+     {
+      "_id": "90701f1",
+      "jedv_condition": "exists",
+      "__dynamic__": {
+       "jedv_field": "[elementor-tag id=\"c3a7ccf\" name=\"jet-post-custom-field\" settings=\"%7B%22meta_field%22%3A%22galerij%22%7D\"]"
+      }
+     }
+    ]
+   },
+   "elements": [
+    {
+     "id": "78b0fe1",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "db9a814",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "In beeld",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "7cda513",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Foto's",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a975407",
+     "elType": "widget",
+     "widgetType": "jet-listing-dynamic-field",
+     "settings": {
+      "dynamic_field_source": "meta",
+      "field_tag": "div",
+      "hide_if_empty": "yes",
+      "__globals__": {
+       "field_color": "globals/colors?id=text"
+      },
+      "dynamic_field_post_meta": "galerij",
+      "dynamic_field_filter": "yes",
+      "filter_callback": "jet_engine_img_gallery_grid",
+      "img_columns": 2,
+      "img_gallery_size": "large",
+      "img_gallery_lightbox": "yes",
+      "img_gallery_gap": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "_title": "Galerij (gallery-veld)"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "5b96233",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Nieuws",
+    "css_classes": "sp-hide-empty"
+   },
+   "elements": [
+    {
+     "id": "3623f82",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "71609ba",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Nieuws",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "43a9251",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Nieuws over dit project",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "6715d3a",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "LISTING · nieuws via relatie Project ↔ Bericht",
+      "_sp_jet": {
+       "listing": "nieuwskaart",
+       "query": "q_project_nieuws",
+       "cols": 3,
+       "hide_empty": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8323117",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "110",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "curve",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 100,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 60,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "CTA band",
+    "__globals__": {
+     "background_color": "globals/colors?id=primary"
+    }
+   },
+   "elements": [
+    {
+     "id": "7a13d73",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "16",
+       "row": "16",
+       "isLinked": true,
+       "unit": "px",
+       "size": 16
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 760,
+       "sizes": []
+      },
+      "flex_align_items": "center",
+      "_title": "CTA inhoud"
+     },
+     "elements": [
+      {
+       "id": "22485f6",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Steun ons werk",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=cf55c96",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "bedd89d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Help een kind naar school",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "026eb21",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Voor € 60 per jaar betaal je het lesgeld en de schoolspullen van één kind.</p>",
+        "align": "center",
+        "__globals__": {
+         "text_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "e995f98",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "content_width": "full",
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "5ef1ea3",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Sponsor een kind",
+          "link": {
+           "url": "/product/sponsor-een-kind/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=primary",
+           "button_background_hover_color": "globals/colors?id=e64974d",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0d94a3b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Doneer eenmalig",
+          "link": {
+           "url": "/steun-ons/doneren/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=658acb6",
+           "button_background_hover_color": "globals/colors?id=658acb6",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "9fbb123",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "40",
+     "row": "40",
+     "isLinked": true,
+     "unit": "px",
+     "size": 40
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Andere projecten",
+    "css_classes": "sp-hide-empty"
+   },
+   "elements": [
+    {
+     "id": "7f68882",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "8",
+       "row": "8",
+       "isLinked": true,
+       "unit": "px",
+       "size": 8
+      },
+      "content_width": "full",
+      "_title": "Sectiekop",
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "max_width": {
+       "unit": "px",
+       "size": 720,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "0425914",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Bekijk ook",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "left"
+       },
+       "elements": []
+      },
+      {
+       "id": "506219e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Andere projecten",
+        "header_size": "h2",
+        "align": "left",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "dfa632f",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "LISTING · zelfde projecttype, zonder dit project",
+      "_sp_jet": {
+       "listing": "projectkaart",
+       "query": "q_andere_projecten",
+       "cols": 3,
+       "hide_empty": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {}
+}

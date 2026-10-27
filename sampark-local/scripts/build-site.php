@@ -262,21 +262,26 @@ $jetify = function ( array $elements ) use ( &$jetify, $jet ) {
 					'posts_num' => 12, 'equal_columns_height' => 'yes',
 					'horizontal_gap' => [ 'unit' => 'px', 'size' => 24 ], 'vertical_gap' => [ 'unit' => 'px', 'size' => 24 ],
 					'not_found_message' => 'Hier staat nu niets.',
+					'hide_widget_if' => empty( $spec['hide_empty'] ) ? '' : 'empty_query',
 				],
 			];
 			continue;
 		}
-		if ( 'html' === ( $el['widgetType'] ?? '' ) && str_starts_with( $el['settings']['_title'] ?? '', 'KAART' )
-			&& ! empty( $jet['listings']['kaartpopup'] ) && ! empty( $jet['queries']['q_kaart'] ) ) {
+		// Kaart: standaard alle scholen en opleidingen (q_kaart); een andere query en zoom kunnen in de titel staan
+		$map_title = $el['settings']['_title'] ?? '';
+		$map_query = preg_match( '/· (q_[a-z_]+)/', $map_title, $mq ) ? $mq[1] : 'q_kaart';
+		if ( 'html' === ( $el['widgetType'] ?? '' ) && str_starts_with( $map_title, 'KAART' )
+			&& ! empty( $jet['listings']['kaartpopup'] ) && ! empty( $jet['queries'][ $map_query ] ) ) {
 			$h = preg_match( '/sp-map__canvas" style="min-height:(\d+)px/', $el['settings']['html'], $mm ) ? (int) $mm[1] : 520;
+			$zoom = preg_match( '/zoom (\d+)/', $map_title, $mz ) ? (int) $mz[1] : 12;
 			$elements[ $i ] = [
 				'id' => $el['id'], 'elType' => 'widget', 'widgetType' => 'jet-engine-maps-listing', 'elements' => [],
 				'settings' => [
 					'_title' => 'Kaart · JetEngine Map Listing (projecten met Map-veld locatie)',
 					'lisitng_id' => (string) $jet['listings']['kaartpopup'],
-					'custom_query' => 'yes', 'custom_query_id' => (string) $jet['queries']['q_kaart'],
+					'custom_query' => 'yes', 'custom_query_id' => (string) $jet['queries'][ $map_query ],
 					'address_field' => 'locatie', 'posts_num' => 50,
-					'map_height' => [ 'unit' => 'px', 'size' => $h ], 'auto_center' => 'yes', 'max_zoom' => 12, 'min_zoom' => 4,
+					'map_height' => [ 'unit' => 'px', 'size' => $h ], 'auto_center' => 'yes', 'max_zoom' => $zoom, 'min_zoom' => 4,
 					'marker_clustering' => 'yes', 'cluster_radius' => 60,
 					'marker_type' => 'icon', 'marker_icon' => [ 'value' => 'fas fa-map-marker-alt', 'library' => 'fa-solid' ],
 					'marker_icon_size' => [ 'unit' => 'px', 'size' => 34 ], 'marker_icon_color' => '#963322',
@@ -334,11 +339,56 @@ foreach ( $files as $file ) {
 	WP_CLI::log( sprintf( '  %s /%s/ (%d)', $existing ? '~' : '+', $path, $id ) );
 }
 
+// Losse schoolpagina's van eerdere builds opruimen: /ons-werk/{school}/ is nu de projectsingle
+// (Theme Builder-template "Single · Project"). Alleen pagina's met dezelfde slug als een project.
+$ons_werk = get_page_by_path( 'ons-werk' );
+if ( $jet && $ons_werk && post_type_exists( 'projecten' ) && defined( 'ELEMENTOR_PRO_VERSION' ) ) {
+	foreach ( get_pages( [ 'parent' => $ons_werk->ID, 'post_status' => 'publish,draft' ] ) as $old ) {
+		if ( get_page_by_path( $old->post_name, OBJECT, 'projecten' ) ) {
+			wp_trash_post( $old->ID );
+			WP_CLI::log( "  - /ons-werk/{$old->post_name}/ (pagina naar prullenbak, nu projectsingle)" );
+		}
+	}
+}
+
+// Productbeelden (alleen als een product nog geen beeld heeft)
+$product_images = [ 'donatie' => 'steun_doneer', 'sponsor-een-kind' => 'steun_kind', 'peetal-brons' => 'steun_bedrijf',
+	'chandee-zilver' => 'steun_bedrijf', 'sona-goud' => 'steun_bedrijf', 'rode-wijn' => 'event_wijn',
+	'witte-wijn' => 'event_wijn', 'alcoholvrij' => 'event_wijn', 'ticket-sampark-rally' => 'event_rally',
+	'golftoernooi' => 'event_golf' ];
+foreach ( get_posts( [ 'post_type' => 'product', 'post_status' => 'any', 'numberposts' => -1 ] ) as $product ) {
+	$key = $product_images[ $product->post_name ] ?? ( 'Alcoholvrij mousserend' === $product->post_title ? 'event_wijn' : '' );
+	if ( $key && ! empty( $media[ $key ] ) && ! has_post_thumbnail( $product ) ) {
+		set_post_thumbnail( $product, $media[ $key ] );
+	}
+}
+
 // ------------------------------------------------------------------ Theme Builder-templates (Elementor Pro)
 
 if ( defined( 'ELEMENTOR_PRO_VERSION' ) ) {
+	$forms = get_option( 'sampark_forms', [] );
 	foreach ( glob( '/elementor/templates/*.json' ) as $file ) {
 		$doc = json_decode( file_get_contents( $file ), true );
+		// De singles draaien op JetEngine-velden en de productvarianten op Super Forms: zonder die plugins overslaan
+		if ( str_starts_with( $doc['key'], 'single-' ) && ! $jet ) {
+			continue;
+		}
+		$json = wp_json_encode( [ $doc['content'], $doc['conditions'] ], JSON_UNESCAPED_UNICODE );
+		$missing = false;
+		$json = preg_replace_callback( '/\{\{(form|pcat|glossary):([a-z0-9_-]+)\}\}/', function ( $m ) use ( $forms, $jet, &$missing ) {
+			$val = match ( $m[1] ) {
+				'form'     => $forms[ $m[2] ] ?? 0,
+				'pcat'     => get_term_by( 'slug', $m[2], 'product_cat' )->term_id ?? 0,
+				'glossary' => $jet['glossary'][ $m[2] ] ?? 0,
+			};
+			$missing = $missing || ! $val;
+			return (string) $val;
+		}, $json );
+		if ( $missing ) {
+			WP_CLI::log( "  - template {$doc['title']} overgeslagen (formulier, categorie of glossary ontbreekt)" );
+			continue;
+		}
+		[ $doc['content'], $doc['conditions'] ] = json_decode( $json, true );
 		$existing = get_posts( [ 'post_type' => 'elementor_library', 'post_status' => 'any', 'numberposts' => 1, 'fields' => 'ids',
 			'meta_key' => '_sampark_key', 'meta_value' => $doc['key'] ] );
 		$tid = $existing ? $existing[0] : wp_insert_post( [ 'post_type' => 'elementor_library', 'post_status' => 'publish',
