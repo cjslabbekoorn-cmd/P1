@@ -62,6 +62,26 @@ Let op: `build-site.php` overschrijft de Elementor-inhoud van deze pagina's. Wil
 
 Blokken die een JetEngine Listing Grid worden, hebben in de Elementor Navigator een titel die begint met `LISTING ·`, met de query erbij. De kaarten erin zijn het ontwerp van het listing item. De JSON-bestanden zijn ook los te importeren op staging (Elementor › Templates › Importeren); de beeld-placeholders (`{{img:…}}`) zijn dan wel leeg.
 
+## Plugins
+
+Afgesproken set (27-10-2026). Het setupscript installeert alles behalve de live-only plugins.
+
+| Plugin | Status | Opmerking |
+|---|---|---|
+| Elementor + Elementor Pro 4.1.3 | blijft | Pro uit `plugins/premium/` |
+| JetEngine 3.8.10 | blijft | uit `plugins/premium/` |
+| Super Forms 6.3 | blijft | alleen de WooCommerce-add-on in gebruik |
+| WooCommerce | blijft | |
+| Yoast SEO, Redirection | blijft | |
+| Mailchimp for WooCommerce | blijft | koppelen via de wizard met het Mailchimp-account (niet lokaal) |
+| GTM4WP | blijft | container `GTM-5G2QJQS`; lokaal uit, zet `GTM_ID` in `.env` om te testen |
+| Code Snippets | blijft | voor eigen code, o.a. de vervanger van Woo Discount Rules |
+| Mollie, WP Rocket, Wordfence, Cookiebot | alleen staging/live | niet lokaal |
+| Woo Discount Rules (+ Pro) | gaat eruit | regels worden vervangen door een snippet |
+| Ultimate Dashboard | gaat eruit | |
+| JetElements, JetSmartFilters, Product Add-Ons, Donations for WooCommerce | gaat eruit | niet gebruikt in de nieuwe opzet |
+| WP All Import, All-in-One WP Migration, Jetpack | na de migratie weg | |
+
 ## JetEngine (automatisch)
 
 Staat JetEngine in `plugins/premium/`, dan richt `scripts/jetengine-setup.php` het in via de eigen tools van JetEngine (de MCP-features `add-cpt`, `add-taxonomy`, `add-glossary`, `add-query`, `manage-modules`) en de dataklassen voor relaties, de Options Page en listings. Alles staat daarna gewoon in de JetEngine-interface.

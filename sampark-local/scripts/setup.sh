@@ -43,7 +43,8 @@ if [ "$(wp plugin get elementor --field=version 2>/dev/null || true)" != "$ELEME
 	wp plugin install elementor --version="$ELEMENTOR_VERSION" --force
 fi
 wp plugin activate elementor
-for p in woocommerce wordpress-seo redirection; do
+# Vaste plugins (zie README › Plugins). Ultimate Dashboard en Woo Discount Rules zitten er bewust niet in.
+for p in woocommerce wordpress-seo redirection mailchimp-for-woocommerce duracelltomi-google-tag-manager code-snippets; do
 	wp plugin is-installed "$p" || wp plugin install "$p"
 	wp plugin activate "$p"
 done
@@ -82,6 +83,12 @@ for dir in /premium/*/; do
 	wp plugin activate "$slug"
 done
 [ "$found" = 1 ] || echo "  Niets gevonden. Zet Elementor Pro, JetEngine en Super Forms (zip of map) in plugins/premium/ en draai dit script opnieuw."
+
+# Google Tag Manager alleen als GTM_ID is gezet (lokaal standaard uit, zodat er geen testverkeer in de statistieken komt)
+if [ -n "${GTM_ID:-}" ]; then
+	wp eval '$o = get_option( "gtm4wp-options", [] ); $o = is_array( $o ) ? $o : []; $o["gtm-code"] = getenv( "GTM_ID" ); update_option( "gtm4wp-options", $o );'
+	echo "  GTM-container ${GTM_ID} ingesteld"
+fi
 
 # Adobe Fonts (Aptos). Elementor Pro laadt de kit zelf via deze instelling;
 # zonder Pro laadt mu-plugins/sampark-styles.php hem.
