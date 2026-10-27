@@ -216,6 +216,18 @@ product golftoernooi "Golftoernooi" 300 "$C_GOLF" "Per deelnemer. Een tafel voor
 
 # ---------------------------------------------------------------- JetEngine
 # Na de nieuwscategorieën en producten, want de inhoud en queries verwijzen daarnaar
+if wp plugin is-active code-snippets; then
+	log "Code Snippets: factuuropmaak, donatieprijs en sponsorbetaling"
+	wp eval-file /scripts/snippets-import.php
+fi
+
+# Afrekenen: klassieke winkelwagen en checkout, want de sponsorregel herberekent bij wisselen van betaalmethode.
+# "cheque" heet in de winkel "Inbegrepen in mijn sponsorpakket"; overschrijving staat lokaal in voor Mollie.
+wp post update "$(wp option get woocommerce_cart_page_id)" --post_content='<!-- wp:shortcode -->[woocommerce_cart]<!-- /wp:shortcode -->' >/dev/null
+wp post update "$(wp option get woocommerce_checkout_page_id)" --post_content='<!-- wp:shortcode -->[woocommerce_checkout]<!-- /wp:shortcode -->' >/dev/null
+wp option update woocommerce_cheque_settings '{"enabled":"yes","title":"Inbegrepen in mijn sponsorpakket","description":"Alleen voor sponsors met een Sona- of Chandee-pakket: deelname aan het golftoernooi of de rally zit in je pakket.","instructions":""}' --format=json >/dev/null
+wp option update woocommerce_bacs_settings '{"enabled":"yes","title":"Bankoverschrijving (lokaal, in plaats van Mollie iDEAL)","description":"","instructions":""}' --format=json >/dev/null
+
 if wp plugin is-active super-forms; then
 	log "Super Forms: de vier formulieren van staging"
 	wp eval-file /scripts/superforms-import.php 2>&1 | grep -v SERVER_NAME || true

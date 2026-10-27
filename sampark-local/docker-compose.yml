@@ -70,6 +70,7 @@ services:
       - ./assets:/assets:ro
       - ./jetengine:/jetengine
       - ./superforms:/superforms:ro
+      - ./snippets:/snippets:ro
       - ./plugins/premium:/premium:ro
       - ./backups:/backups
 

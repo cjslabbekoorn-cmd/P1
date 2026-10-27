@@ -75,9 +75,11 @@ Afgesproken set (27-10-2026). Het setupscript installeert alles behalve de live-
 | Yoast SEO, Redirection | blijft | |
 | Mailchimp for WooCommerce | blijft | koppelen via de wizard met het Mailchimp-account (niet lokaal) |
 | GTM4WP | blijft | container `GTM-5G2QJQS`; lokaal uit, zet `GTM_ID` in `.env` om te testen |
-| Code Snippets | blijft | voor eigen code, o.a. de vervanger van Woo Discount Rules |
+| Code Snippets | blijft | de 3 Sampark-snippets uit `snippets/` (zie hieronder) |
+| PDF Invoices & Packing Slips | blijft | nodig voor het snippet "factuur en pakbon"; niet lokaal |
+| Invoice Gateway for WooCommerce | blijft | betaalmethode "op factuur"; niet lokaal |
 | Mollie, WP Rocket, Wordfence, Cookiebot | alleen staging/live | niet lokaal |
-| Woo Discount Rules (+ Pro) | gaat eruit | regels worden vervangen door een snippet |
+| Woo Discount Rules (+ Pro) | gaat eruit | vervangen door het snippet "deelname via sponsorpakket" |
 | Ultimate Dashboard | gaat eruit | |
 | JetElements, JetSmartFilters, Product Add-Ons, Donations for WooCommerce | gaat eruit | niet gebruikt in de nieuwe opzet |
 | WP All Import, All-in-One WP Migration, Jetpack | na de migratie weg | |
@@ -107,7 +109,21 @@ Daarna bouwt `build-site.php` de pagina's opnieuw. De `LISTING ·`-blokken worde
 
 ## Super Forms
 
-Super Forms 6.3 wordt geïnstalleerd, met de meegeleverde add-ons (waaronder WooCommerce). De productformulieren van staging staan er nog niet in. Exporteer ze op staging (Super Forms › Forms › Export) en importeer ze lokaal, of zet het exportbestand in `plugins/premium/`. Dan zet ik ze op de producten.
+Super Forms 6.3 wordt geïnstalleerd, met de meegeleverde add-ons (waaronder WooCommerce). `scripts/superforms-import.php` zet de 4 formulieren van staging neer uit `superforms/forms.json`: Wijn, Rally, Golftoernooi en Donatie (zonder de 100 back-ups en zonder opgeslagen geheimen).
+
+## Snippets (Code Snippets)
+
+`scripts/snippets-import.php` zet de snippets uit `snippets/` in Code Snippets en zet ze aan. Bestaande snippets met dezelfde naam worden bijgewerkt.
+
+| Snippet | Bron | Wat het doet |
+|---|---|---|
+| Factuur en pakbon: regelgegevens | staging, ongewijzigd | extra regelgegevens op factuur/pakbon (PDF Invoices & Packing Slips) |
+| Donatiebedrag als prijs | staging, ID 4040 vervangen door slug `donatie` | het bedrag uit het donatieformulier wordt de prijs van de regel |
+| Deelname via sponsorpakket | nieuw, vervangt Woo Discount Rules | golftoernooi en rally-ticket € 0 bij betaalmethode "Inbegrepen in mijn sponsorpakket" (`cheque`) |
+
+Uit Woo Discount Rules was alleen regel "Sponsorpakket" actief (100% korting op golf bij betaalmethode cheque). De uitgeschakelde "Wijnactie" (6+1 gratis) en de 3 voorbeeldregels zijn niet overgenomen. Het snippet "Sponsorpakketten – icoonweergave" vervalt, omdat de organische vormen niet meer gebruikt worden.
+
+Het sponsorsnippet werkt met de klassieke afrekenpagina (shortcode `[woocommerce_checkout]`), die het setupscript instelt; de blok-checkout herberekent niet bij wisselen van betaalmethode.
 
 ## Dagelijks gebruik
 
