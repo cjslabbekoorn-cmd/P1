@@ -68,6 +68,7 @@ services:
       - ./elementor:/elementor:ro
       - ./assets:/assets:ro
       - ./jetengine:/jetengine
+      - ./superforms:/superforms:ro
       - ./plugins/premium:/premium:ro
       - ./backups:/backups
 

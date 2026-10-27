@@ -209,6 +209,11 @@ product golftoernooi "Golftoernooi" 300 "$C_GOLF" "Per deelnemer. Een tafel voor
 
 # ---------------------------------------------------------------- JetEngine
 # Na de nieuwscategorieën en producten, want de inhoud en queries verwijzen daarnaar
+if wp plugin is-active super-forms; then
+	log "Super Forms: de vier formulieren van staging"
+	wp eval-file /scripts/superforms-import.php 2>&1 | grep -v SERVER_NAME || true
+fi
+
 if wp plugin is-active jet-engine; then
 	log "JetEngine: posttypes, velden, relaties, Options Page, queries, listings en inhoud"
 	# twee keer: queries die in de eerste ronde zijn aangemaakt, zijn pas in de tweede ronde geladen
