@@ -55,6 +55,10 @@ def gap(v):
     return {"column": str(v), "row": str(v), "isLinked": True, "unit": "px", "size": v}
 
 
+# Elementor-vormscheiding "Waves": (breedte %, hoogte px) zoals op staging
+WAVES = {"top": (234, 46), "bottom": (169, 34)}
+
+
 def container(*children, title=None, direction="column", boxed=False, width=None, gap_px=24,
               pad=None, pad_mobile=None, bg=None, bg_global=None, bg_image=None, overlay=None,
               radius=None, align=None, justify=None, wrap=False, mobile_column=True,
@@ -109,8 +113,16 @@ def container(*children, title=None, direction="column", boxed=False, width=None
             shape, color, h = d
             s[f"shape_divider_{side}"] = shape
             s[f"shape_divider_{side}_color"] = color
-            s[f"shape_divider_{side}_width"] = size(100, "%")
-            s[f"shape_divider_{side}_height"] = size(h)
+            if shape == "waves":
+                # golfbeweging uit de huisstijl, met de maten van staging: breed uitgerekt, dus rustig
+                w, hh = WAVES[side]
+                s[f"shape_divider_{side}_width"] = size(w, "%")
+                s[f"shape_divider_{side}_height"] = size(hh)
+                s[f"shape_divider_{side}_width_mobile"] = size(500, "%")
+                s[f"shape_divider_{side}_height_mobile"] = size(90)
+            else:
+                s[f"shape_divider_{side}_width"] = size(100, "%")
+                s[f"shape_divider_{side}_height"] = size(h)
     if tag:
         s["html_tag"] = tag
     if title:
@@ -308,7 +320,7 @@ def hero(title, intro, image_key, eye=None, buttons=(), height=560, badge=None):
                   pad_mobile=dims(110, 20, 110, 20)),
         title="Hero", bg_image=image_key, overlay=("#46211AE6", "#46211A1A"),
         min_height=height, align="stretch", justify="center", tag="section",
-        divider_bottom=("curve", "#FFFFFF", 70),
+        divider_bottom=("waves", "#FFFFFF", 70),
     )
 
 
@@ -338,7 +350,7 @@ def cta_band(title, body, buttons, eye=None):
     return container(container(*inner, title="CTA inhoud", boxed=True, gap_px=16, align="center",
                                extra={"boxed_width": size(760)}),
                      title="CTA band", bg_global="primary", pad=dims(110, 24, 96, 24),
-                     pad_mobile=dims(80, 20, 64, 20), tag="section", divider_top=("curve", "#FFFFFF", 60))
+                     pad_mobile=dims(80, 20, 64, 20), tag="section", divider_top=("waves", "#FFFFFF", 60))
 
 
 def stat(icon_key, number, label, suffix="", width=30):
@@ -486,7 +498,7 @@ page("home", "Home",
                        title="Tekst", gap_px=16, width=50),
              container(image("proj_khukdi_gebouw", height=520), title="Beeld", width=46),
              title="Twee kolommen", direction="row", gap_px=48, align="center"),
-         title="Transparantie", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50)),
+         title="Transparantie", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50)),
      section(
          container(section_head("Doe mee", "Steun ons met plezier",
                                 "Een dag achter het stuur, een balletje slaan of een glas wijn met vrienden: bij Sampark begint hulp vaak met plezier."),
@@ -515,8 +527,8 @@ page("home", "Home",
          logo_wall(["logo_venture", "logo_groothuis", "logo_schieven", "logo_w4y", "logo_venttri",
                     "logo_rijk", "logo_arcus", "logo_kvs", "logo_pleijsier", "logo_positie1"]),
          container(button("Word sponsor", "/steun-ons/bedrijven/", style="dark"), align="center"),
-         title="Sponsors", bg_global="cf55c96", divider_top=("curve", "#FFFFFF", 50),
-         divider_bottom=("curve", "#FFFFFF", 50)),
+         title="Sponsors", bg_global="cf55c96", divider_top=("waves", "#FFFFFF", 50),
+         divider_bottom=("waves", "#FFFFFF", 50)),
      section(
          container(section_head("Nieuws", "Het laatste uit India en Nederland"),
                    button("Alle nieuwsberichten", "/nieuws/", style="outline", icon=True, nowrap=True),
@@ -777,8 +789,8 @@ page("ons-werk", "Ons werk",
                  project_card("proj_computer", "20 studenten", "Computerspecialist", "Digitale vaardigheden voor een kantoorbaan.", "/ons-werk/computerspecialist/"),
                  project_card("proj_modinette", "29 studenten", "Modinette", "Kleding maken en een eigen inkomen.", "/ons-werk/modinette/"),
                  project_card("proj_beauty", "24 studenten", "Schoonheidsspecialiste", "Een vak met vraag in de stad.", "/ons-werk/schoonheidsspecialiste/")),
-         title="Opleidingen", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
-         divider_bottom=("curve", "#FFFFFF", 50), extra={"_element_id": "opleidingen"}),
+         title="Opleidingen", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50),
+         divider_bottom=("waves", "#FFFFFF", 50), extra={"_element_id": "opleidingen"}),
      section(
          section_head("Initiatieven", "Kleine projecten, groot verschil"),
          listing("projecten · projecttype=initiatief @@projectkaart,q_initiatieven,4",
@@ -811,8 +823,8 @@ page("evenementen", "Evenementen",
          section_head("Het hele jaar", "Altijd mogelijk"),
          listing("evenementen · status=doorlopend @@eventkaart,q_events_doorlopend,2",event_card("wijn", "Het hele jaar"),
                  event_card("reis", "Op aanvraag"), cols=2),
-         title="Doorlopend", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
-         divider_bottom=("curve", "#FFFFFF", 50)),
+         title="Doorlopend", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50),
+         divider_bottom=("waves", "#FFFFFF", 50)),
      section(
          section_head("Terugblikken", "Zo was het vorig jaar"),
          news_cards("q_nieuws_events"),
@@ -854,7 +866,7 @@ page("steun-ons", "Steun ons",
                  ("Krijg ik een bevestiging?", "<p>Ja, na je betaling ontvang je direct een bevestiging per mail. Die kun je bewaren voor je belastingaangifte.</p>"),
              ]), width=46),
              direction="row", gap_px=48),
-         title="ANBI en vragen", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50)),
+         title="ANBI en vragen", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50)),
      seo=("Steun ons | Doneer of sponsor een kind | Stichting Sampark",
           "Doneer, sponsor een kind voor € 60 per jaar of word bedrijfssponsor. Giften aan Sampark zijn aftrekbaar (ANBI)."))
 
@@ -906,7 +918,7 @@ page("bedrijven", "Voor bedrijven",
                  card(eyebrow("€ 500 per jaar"), heading("Peetal (Brons)", "h3", size_px=28),
                       icon_list(["Naamsvermelding op onze website", "Klikbare Sampark-banner voor je eigen site", "Sampark-uitingen voor je MVO"]),
                       button("Kies Peetal", "/product/peetal-brons/", full=True), title="Kaart · Peetal", bg="e64974d")),
-         title="Pakketten", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50), divider_bottom=("curve", "#FFFFFF", 50)),
+         title="Pakketten", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50), divider_bottom=("waves", "#FFFFFF", 50)),
      section(
          section_head("Onze sponsors", "Zij gingen je voor", align="center"),
          logo_wall(["logo_venture", "logo_groothuis", "logo_schieven", "logo_w4y", "logo_venttri",
@@ -945,7 +957,7 @@ page("over-ons", "Over ons",
                      for n, r, k in BOARD],
                    title="LISTING · Options › bestuur (repeater)", direction="row", wrap=True, justify="center",
                    gap_px=32, mobile_column=False),
-         title="Bestuur", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50), divider_bottom=("curve", "#FFFFFF", 50)),
+         title="Bestuur", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50), divider_bottom=("waves", "#FFFFFF", 50)),
      section(
          section_head("Partners", "Samen met India"),
          text("<p>We werken samen met de Vincentian Charitable Trust (VCT) uit New Delhi en het management van Sampark India. Zij zijn dagelijks bij de scholen en opleidingen betrokken.</p>"),
@@ -984,7 +996,7 @@ page("anbi", "ANBI & financiën",
                  card(heading("2023", "h3", color="primary", size_px=36), text("<p>Jaarrekening</p>"), button("Download (pdf)", "#", style="outline"), title="Document · 2023"),
                  card(heading("2022", "h3", color="primary", size_px=36), text("<p>Jaarrekening</p>"), button("Download (pdf)", "#", style="outline"), title="Document · 2022"),
                  cols=3),
-         title="Documenten", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50)),
+         title="Documenten", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50)),
      parent="over-ons",
      seo=("ANBI-gegevens en jaarverslagen | Stichting Sampark", "RSIN, bestuur, beloningsbeleid, beleidsplan en jaarrekeningen van Stichting Sampark."))
 
@@ -1468,7 +1480,7 @@ def single_hero(*inner, height=520):
                   title="Hero inhoud", direction="row", boxed=True, align="center", gap_px=40,
                   pad=dims(140, 24, 140, 24), pad_mobile=dims(110, 20, 110, 20)),
         title="Hero (uitgelichte afbeelding)", overlay=("#46211AE6", "#46211A1A"), min_height=height,
-        align="stretch", justify="center", tag="section", divider_bottom=("curve", "#FFFFFF", 70))
+        align="stretch", justify="center", tag="section", divider_bottom=("waves", "#FFFFFF", 70))
     c["settings"].update({"background_background": "classic", "background_position": "center center",
                           "background_size": "cover",
                           "__dynamic__": {"background_image": etag("post-featured-image")}})
@@ -1542,8 +1554,8 @@ project_single = [
                         "labels_by_glossary": "{{glossary:financiering}}",
                         "selected_field_icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
                   extra={"_css_classes": "sp-checklist", "checklist_cols_num_mobile": 1}),
-        title="Wat we betalen", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
-        divider_bottom=("curve", "#FFFFFF", 50)), "we_financieren"),
+        title="Wat we betalen", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50),
+        divider_bottom=("waves", "#FFFFFF", 50)), "we_financieren"),
     visible_if(section(
         section_head("Door de jaren heen", "Zo is het gegaan"),
         repeater("momenten", '<div class="sp-moment"><span class="sp-moment__when">%moment%</span><p>%tekst%</p></div>',
@@ -1607,8 +1619,8 @@ event_single = [
         jet_grid("inschrijfkaart", "q_event_producten", 3, "producten via relatie Evenement → Product"),
         visible_if(container(dyn_link("Schrijf je in via de organisator", style="primary", source="externe_inschrijflink"),
                              title="Externe inschrijving", css_classes="sp-keep"), "externe_inschrijflink"),
-        title="Inschrijven", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50),
-        divider_bottom=("curve", "#FFFFFF", 50), extra={"_element_id": "inschrijven"})),
+        title="Inschrijven", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50),
+        divider_bottom=("waves", "#FFFFFF", 50), extra={"_element_id": "inschrijven"})),
     visible_if(section(section_head("In beeld", "Foto's"), gallery_field(3), title="Galerij", pad=(40, 24)), "galerij"),
     hide_empty(section(section_head("Met dank aan", "Sponsors van dit evenement", align="center"),
                        jet_grid("sponsorlogo", "q_event_sponsors", 6, "sponsors via relatie Sponsor ↔ Evenement"),
@@ -1643,7 +1655,7 @@ post_single = [
     container(post_content("Bericht (post content)"), title="Tekst", boxed=True, pad=dims(48, 24, 72, 24), extra=narrow),
     hide_empty(section(section_head("Over dit project", "Lees meer over het project"),
                        jet_grid("projectkaart", "q_bericht_projecten", 3, "projecten via relatie Project ↔ Bericht"),
-                       title="Gekoppelde projecten", bg_global="658acb6", divider_top=("curve", "#FFFFFF", 50))),
+                       title="Gekoppelde projecten", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50))),
     hide_empty(section(section_head("Evenement", "Doe volgende keer mee"),
                        jet_grid("eventkaart", "q_bericht_events", 3, "evenementen via relatie Evenement ↔ Bericht"),
                        title="Gekoppelde evenementen")),

@@ -45,16 +45,26 @@
      "size": 440,
      "sizes": []
     },
-    "shape_divider_bottom": "curve",
+    "shape_divider_bottom": "waves",
     "shape_divider_bottom_color": "#FFFFFF",
     "shape_divider_bottom_width": {
      "unit": "%",
-     "size": 100,
+     "size": 169,
      "sizes": []
     },
     "shape_divider_bottom_height": {
      "unit": "px",
-     "size": 70,
+     "size": 34,
+     "sizes": []
+    },
+    "shape_divider_bottom_width_mobile": {
+     "unit": "%",
+     "size": 500,
+     "sizes": []
+    },
+    "shape_divider_bottom_height_mobile": {
+     "unit": "px",
+     "size": 90,
      "sizes": []
     },
     "html_tag": "section",

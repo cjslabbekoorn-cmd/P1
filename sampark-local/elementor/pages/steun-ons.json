@@ -45,16 +45,26 @@
      "size": 440,
      "sizes": []
     },
-    "shape_divider_bottom": "curve",
+    "shape_divider_bottom": "waves",
     "shape_divider_bottom_color": "#FFFFFF",
     "shape_divider_bottom_width": {
      "unit": "%",
-     "size": 100,
+     "size": 169,
      "sizes": []
     },
     "shape_divider_bottom_height": {
      "unit": "px",
-     "size": 70,
+     "size": 34,
+     "sizes": []
+    },
+    "shape_divider_bottom_width_mobile": {
+     "unit": "%",
+     "size": 500,
+     "sizes": []
+    },
+    "shape_divider_bottom_height_mobile": {
+     "unit": "px",
+     "size": 90,
      "sizes": []
     },
     "html_tag": "section",
@@ -956,16 +966,26 @@
      "isLinked": false
     },
     "background_background": "classic",
-    "shape_divider_top": "curve",
+    "shape_divider_top": "waves",
     "shape_divider_top_color": "#FFFFFF",
     "shape_divider_top_width": {
      "unit": "%",
-     "size": 100,
+     "size": 234,
      "sizes": []
     },
     "shape_divider_top_height": {
      "unit": "px",
-     "size": 50,
+     "size": 46,
+     "sizes": []
+    },
+    "shape_divider_top_width_mobile": {
+     "unit": "%",
+     "size": 500,
+     "sizes": []
+    },
+    "shape_divider_top_height_mobile": {
+     "unit": "px",
+     "size": 90,
      "sizes": []
     },
     "html_tag": "section",
