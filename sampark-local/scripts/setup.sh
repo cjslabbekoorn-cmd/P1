@@ -287,6 +287,6 @@ cat <<EOF
 
   Site:        $WP_URL
   Beheer:      $WP_URL/wp-admin  ($WP_ADMIN_USER / $WP_ADMIN_PASSWORD)
-  phpMyAdmin:  http://localhost:${PMA_PORT:-8081}
-  Mail:        http://localhost:${MAIL_PORT:-8025}
+  phpMyAdmin:  http://localhost:${PMA_PORT:-8601}
+  Mail:        http://localhost:${MAIL_PORT:-8602}
 EOF

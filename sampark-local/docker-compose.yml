@@ -24,7 +24,7 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "${WP_PORT:-8080}:80"
+      - "${WP_PORT:-8600}:80"
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: ${DB_NAME:-sampark}
@@ -54,14 +54,14 @@ services:
       WORDPRESS_DB_NAME: ${DB_NAME:-sampark}
       WORDPRESS_DB_USER: ${DB_USER:-sampark}
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-sampark}
-      WP_URL: ${WP_URL:-http://localhost:8080}
+      WP_URL: ${WP_URL:-http://localhost:8600}
       WP_ADMIN_USER: ${WP_ADMIN_USER:-admin}
       WP_ADMIN_PASSWORD: ${WP_ADMIN_PASSWORD:-admin}
       WP_ADMIN_EMAIL: ${WP_ADMIN_EMAIL:-dev@positie1.local}
       ADOBE_FONTS_PROJECT: ${ADOBE_FONTS_PROJECT:-nnd7fbm}
       GTM_ID: ${GTM_ID:-}
-      PMA_PORT: ${PMA_PORT:-8081}
-      MAIL_PORT: ${MAIL_PORT:-8025}
+      PMA_PORT: ${PMA_PORT:-8601}
+      MAIL_PORT: ${MAIL_PORT:-8602}
       HOME: /tmp
     volumes:
       - wp_data:/var/www/html
@@ -82,7 +82,7 @@ services:
     depends_on:
       - db
     ports:
-      - "${PMA_PORT:-8081}:80"
+      - "${PMA_PORT:-8601}:80"
     environment:
       PMA_HOST: db
       UPLOAD_LIMIT: 256M
@@ -92,7 +92,7 @@ services:
     image: axllent/mailpit:latest
     restart: unless-stopped
     ports:
-      - "${MAIL_PORT:-8025}:8025"
+      - "${MAIL_PORT:-8602}:8025"
 
 volumes:
   db_data:

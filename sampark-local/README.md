@@ -4,10 +4,10 @@ Lokale WordPress-omgeving voor de nieuwe stichtingsampark.nl, volgens `docs/samp
 
 | Dienst      | Adres                         |
 |-------------|-------------------------------|
-| Site        | http://localhost:8080         |
-| Beheer      | http://localhost:8080/wp-admin (admin / admin) |
-| phpMyAdmin  | http://localhost:8081         |
-| Mailpit     | http://localhost:8025 (alle mail van Woo en Superforms komt hier binnen) |
+| Site        | http://localhost:8600         |
+| Beheer      | http://localhost:8600/wp-admin (admin / admin) |
+| phpMyAdmin  | http://localhost:8601         |
+| Mailpit     | http://localhost:8602 (alle mail van Woo en Superforms komt hier binnen) |
 
 ## Eerste keer
 
@@ -155,4 +155,4 @@ docker compose down -v                     # alles weggooien, inclusief database
 
 ## Naar staging of live
 
-Gebruik je gebruikelijke migratietool (bijvoorbeeld All-in-One WP Migration of WP Migrate). Of exporteer de database en vervang de URL met `wp search-replace http://localhost:8080 https://staging.stichtingsampark.nl`.
+Gebruik je gebruikelijke migratietool (bijvoorbeeld All-in-One WP Migration of WP Migrate). Of exporteer de database en vervang de URL met `wp search-replace http://localhost:8600 https://staging.stichtingsampark.nl`.
