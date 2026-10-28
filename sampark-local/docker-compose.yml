@@ -1,5 +1,14 @@
 name: sampark
 
+# Extra wp-config-instellingen; WordPress leest ze bij elke request uit de omgeving,
+# dus de site én wp-cli moeten ze allebei krijgen (anders draait wp-cli als "production").
+x-wp-config-extra: &wp-config-extra |
+  define('WP_ENVIRONMENT_TYPE', 'local');
+  define('WP_DEBUG', true);
+  define('WP_DEBUG_LOG', true);
+  define('WP_DEBUG_DISPLAY', false);
+  define('WP_MEMORY_LIMIT', '512M');
+
 services:
   db:
     image: mariadb:11.4
@@ -30,12 +39,7 @@ services:
       WORDPRESS_DB_NAME: ${DB_NAME:-sampark}
       WORDPRESS_DB_USER: ${DB_USER:-sampark}
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-sampark}
-      WORDPRESS_CONFIG_EXTRA: |
-        define('WP_ENVIRONMENT_TYPE', 'local');
-        define('WP_DEBUG', true);
-        define('WP_DEBUG_LOG', true);
-        define('WP_DEBUG_DISPLAY', false);
-        define('WP_MEMORY_LIMIT', '512M');
+      WORDPRESS_CONFIG_EXTRA: *wp-config-extra
     volumes:
       - wp_data:/var/www/html
       - ./mu-plugins:/var/www/html/wp-content/mu-plugins:ro
@@ -54,6 +58,7 @@ services:
       WORDPRESS_DB_NAME: ${DB_NAME:-sampark}
       WORDPRESS_DB_USER: ${DB_USER:-sampark}
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-sampark}
+      WORDPRESS_CONFIG_EXTRA: *wp-config-extra
       WP_URL: ${WP_URL:-http://localhost:8600}
       WP_ADMIN_USER: ${WP_ADMIN_USER:-admin}
       WP_ADMIN_PASSWORD: ${WP_ADMIN_PASSWORD:-admin}

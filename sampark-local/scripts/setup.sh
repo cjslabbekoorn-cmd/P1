@@ -241,7 +241,8 @@ if wp plugin is-active jet-engine; then
 	wp eval-file /scripts/jetengine-setup.php
 	wp eval-file /scripts/jetengine-setup.php >/dev/null
 	log "Pagina's opnieuw opbouwen met JetEngine Listing Grids en Map Listing"
-	wp eval-file /scripts/build-site.php >/dev/null
+	# alleen templates en waarschuwingen tonen; de pagina's staan al in de eerste ronde
+	wp eval-file /scripts/build-site.php 2>&1 | grep -E "template|Warning|Error" || true
 	wp rewrite flush --hard >/dev/null 2>&1 || true
 fi
 
