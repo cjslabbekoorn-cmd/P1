@@ -1,0 +1,257 @@
+{
+ "version": "0.4",
+ "title": "Mijn account",
+ "type": "page",
+ "slug": "mijn-account",
+ "parent": null,
+ "menu_order": 11,
+ "seo": [
+  "Mijn account | Stichting Sampark",
+  ""
+ ],
+ "content": [
+  {
+   "id": "36ee3bb",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "24",
+     "bottom": "88",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "waves",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 130,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "shape_divider_bottom_width_mobile": {
+     "unit": "%",
+     "size": 260,
+     "sizes": []
+    },
+    "shape_divider_bottom_height_mobile": {
+     "unit": "px",
+     "size": 44,
+     "sizes": []
+    },
+    "html_tag": "header",
+    "_title": "Paginakop",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "40ec02e",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "10",
+       "row": "10",
+       "isLinked": true,
+       "unit": "px",
+       "size": 10
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "_title": "Kop"
+     },
+     "elements": [
+      {
+       "id": "bd94de2",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Voor donateurs en sponsors",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "4e03d79",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Mijn account",
+        "header_size": "h1",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 37,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=primary",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "b795a87",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Bekijk je bestellingen, inschrijvingen en gegevens.</p>",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "bda34ee",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "24",
+     "bottom": "80",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "32",
+     "right": "16",
+     "bottom": "56",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Inhoud"
+   },
+   "elements": [
+    {
+     "id": "5d33d4d",
+     "elType": "widget",
+     "widgetType": "woocommerce-my-account",
+     "settings": {
+      "tabs": [
+       {
+        "_id": "b6d11fe",
+        "field_key": "dashboard",
+        "field_label": "Overzicht",
+        "tab_name": "Overzicht"
+       },
+       {
+        "_id": "b5eb97f",
+        "field_key": "orders",
+        "field_label": "Bestellingen",
+        "tab_name": "Bestellingen"
+       },
+       {
+        "_id": "9c76290",
+        "field_key": "downloads",
+        "field_label": "Downloads",
+        "tab_name": "Downloads"
+       },
+       {
+        "_id": "18179bb",
+        "field_key": "edit-address",
+        "field_label": "Adressen",
+        "tab_name": "Adressen"
+       },
+       {
+        "_id": "a417bdc",
+        "field_key": "edit-account",
+        "field_label": "Accountgegevens",
+        "tab_name": "Accountgegevens"
+       },
+       {
+        "_id": "a3c0ead",
+        "field_key": "customer-logout",
+        "field_label": "Uitloggen",
+        "tab_name": "Uitloggen"
+       }
+      ],
+      "_title": "Mijn account (Elementor Pro)"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes",
+  "custom_css": "/* Mijn account: dezelfde opbouw als winkelwagen en afrekenen (grijze vlakken, witte velden, knop in accentkleur).\n   Staat als Pagina-CSS in Elementor (Pagina-instellingen > Aangepaste CSS); \"selector\" is deze pagina.\n   !important waar de standaardstijl van het widget anders voorgaat. */\nselector .elementor-widget-woocommerce-my-account .woocommerce-form-login,\nselector .elementor-widget-woocommerce-my-account .woocommerce-form-register,\nselector .elementor-widget-woocommerce-my-account .woocommerce-ResetPassword {\n\tbackground: #f6f6f6 !important; border: 0 !important; border-radius: 10px !important;\n\tpadding: 28px 32px !important; margin: 0 auto !important; max-width: 560px;\n}\n/* de paginakop zegt al \"Mijn account\" */\nselector .elementor-widget-woocommerce-my-account .e-my-account-tab > .woocommerce > h2 { display: none; }\nselector .elementor-widget-woocommerce-my-account .woocommerce form .form-row label {\n\tfont-family: aptos, sans-serif; font-size: 14px; color: var(--e-global-color-primary) !important;\n}\nselector .elementor-widget-woocommerce-my-account .woocommerce form .form-row .input-text {\n\tbackground: #fff !important; border: 1px solid #e3e3e3 !important; border-radius: 8px !important;\n\tpadding: 12px 14px !important; font-family: aptos, sans-serif;\n}\nselector .elementor-widget-woocommerce-my-account .woocommerce form .form-row .input-text:focus { border-color: var(--e-global-color-accent) !important; outline: none; }\nselector .elementor-widget-woocommerce-my-account .woocommerce button.button,\nselector .elementor-widget-woocommerce-my-account .woocommerce .woocommerce-form-login__submit,\nselector .elementor-widget-woocommerce-my-account .woocommerce .woocommerce-Button {\n\tbackground: var(--e-global-color-accent) !important; color: #fff !important; border: 0 !important;\n\tborder-radius: 8px !important; padding: 12px 28px !important; font-family: aptos, sans-serif !important; font-weight: 700 !important;\n\ttext-transform: none !important;\n}\nselector .elementor-widget-woocommerce-my-account .woocommerce button.button:hover { background: var(--e-global-color-primary) !important; }\nselector .elementor-widget-woocommerce-my-account .woocommerce-form-login__rememberme { display: inline-flex; align-items: center; gap: 8px; margin: 0 16px; }\nselector .elementor-widget-woocommerce-my-account .lost_password { margin-top: 12px; font-size: 14px; }\nselector .elementor-widget-woocommerce-my-account .lost_password a,\nselector .elementor-widget-woocommerce-my-account .woocommerce a { color: var(--e-global-color-accent) !important; }\n/* ingelogd: menu links als lijst met vlakken, inhoud rechts */\nselector .woocommerce-MyAccount-navigation ul { list-style: none; margin: 0; padding: 16px !important; background: #f6f6f6; border-radius: 10px; }\nselector .woocommerce-MyAccount-navigation li a { display: block; padding: 10px 14px; border-radius: 8px; color: var(--e-global-color-text) !important; }\nselector .woocommerce-MyAccount-navigation li.is-active a,\nselector .woocommerce-MyAccount-navigation li a:hover { background: #fff; color: var(--e-global-color-accent) !important; }\nselector .woocommerce-MyAccount-content { font-family: aptos, sans-serif; }\nselector .woocommerce table.shop_table { border: 0; background: #f6f6f6; border-radius: 10px; overflow: hidden; }\n"
+ },
+ "template": "elementor_header_footer"
+}

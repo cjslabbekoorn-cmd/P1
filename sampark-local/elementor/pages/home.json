@@ -31,11 +31,16 @@
     "background_position": "center center",
     "background_size": "cover",
     "background_overlay_background": "gradient",
-    "background_overlay_color": "#46211AE6",
-    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_color": "#46211AD9",
+    "background_overlay_color_b": "#46211A59",
     "background_overlay_gradient_angle": {
      "unit": "deg",
      "size": 90,
+     "sizes": []
+    },
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 1,
      "sizes": []
     },
     "flex_align_items": "stretch",
@@ -49,22 +54,22 @@
     "shape_divider_bottom_color": "#FFFFFF",
     "shape_divider_bottom_width": {
      "unit": "%",
-     "size": 169,
+     "size": 130,
      "sizes": []
     },
     "shape_divider_bottom_height": {
      "unit": "px",
-     "size": 34,
+     "size": 70,
      "sizes": []
     },
     "shape_divider_bottom_width_mobile": {
      "unit": "%",
-     "size": 500,
+     "size": 260,
      "sizes": []
     },
     "shape_divider_bottom_height_mobile": {
      "unit": "px",
-     "size": 90,
+     "size": 44,
      "sizes": []
     },
     "html_tag": "section",
@@ -280,10 +285,10 @@
         "content_width": "full",
         "padding": {
          "unit": "px",
-         "top": "14",
-         "right": "28",
-         "bottom": "14",
-         "left": "20",
+         "top": "20",
+         "right": "36",
+         "bottom": "20",
+         "left": "24",
          "isLinked": false
         },
         "background_background": "classic",
@@ -296,14 +301,15 @@
          "isLinked": true
         },
         "_title": "Campagnebadge (Dynamic Visibility: Options › campagne aan)",
+        "css_classes": "sp-campagne",
         "width": {
          "unit": "px",
-         "size": 300,
+         "size": 360,
          "sizes": []
         },
         "width_mobile": {
          "unit": "px",
-         "size": 280,
+         "size": 300,
          "sizes": []
         },
         "flex_align_self": "center",
@@ -328,17 +334,22 @@
           "position_mobile": "left",
           "position_tablet": "left",
           "text_align_mobile": "left",
-          "title_text": "Wijnactie",
-          "description_text": "Rood, wit en alcoholvrij",
+          "title_text": "Wijnactie 2026",
+          "description_text": "Rood, wit en alcoholvrij<br><strong>Bestel nu →</strong>",
           "title_size": "p",
           "icon_size": {
+           "unit": "px",
+           "size": 56,
+           "sizes": []
+          },
+          "icon_size_mobile": {
            "unit": "px",
            "size": 44,
            "sizes": []
           },
           "icon_space": {
            "unit": "px",
-           "size": 14,
+           "size": 16,
            "sizes": []
           },
           "link": {
@@ -347,9 +358,26 @@
           "title_typography_typography": "custom",
           "title_typography_font_size": {
            "unit": "px",
-           "size": 22,
+           "size": 28,
            "sizes": []
           },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": 1.1,
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "description_typography_font_weight": "600",
           "__globals__": {
            "primary_color": "globals/colors?id=text",
            "title_color": "globals/colors?id=text",
@@ -1468,22 +1496,22 @@
     "shape_divider_top_color": "#FFFFFF",
     "shape_divider_top_width": {
      "unit": "%",
-     "size": 234,
+     "size": 150,
      "sizes": []
     },
     "shape_divider_top_height": {
      "unit": "px",
-     "size": 46,
+     "size": 80,
      "sizes": []
     },
     "shape_divider_top_width_mobile": {
      "unit": "%",
-     "size": 500,
+     "size": 260,
      "sizes": []
     },
     "shape_divider_top_height_mobile": {
      "unit": "px",
-     "size": 90,
+     "size": 44,
      "sizes": []
     },
     "html_tag": "section",
@@ -3017,44 +3045,44 @@
     "shape_divider_bottom_color": "#FFFFFF",
     "shape_divider_bottom_width": {
      "unit": "%",
-     "size": 169,
+     "size": 130,
      "sizes": []
     },
     "shape_divider_bottom_height": {
      "unit": "px",
-     "size": 34,
+     "size": 70,
      "sizes": []
     },
     "shape_divider_bottom_width_mobile": {
      "unit": "%",
-     "size": 500,
+     "size": 260,
      "sizes": []
     },
     "shape_divider_bottom_height_mobile": {
      "unit": "px",
-     "size": 90,
+     "size": 44,
      "sizes": []
     },
     "shape_divider_top": "waves",
     "shape_divider_top_color": "#FFFFFF",
     "shape_divider_top_width": {
      "unit": "%",
-     "size": 234,
+     "size": 150,
      "sizes": []
     },
     "shape_divider_top_height": {
      "unit": "px",
-     "size": 46,
+     "size": 80,
      "sizes": []
     },
     "shape_divider_top_width_mobile": {
      "unit": "%",
-     "size": 500,
+     "size": 260,
      "sizes": []
     },
     "shape_divider_top_height_mobile": {
      "unit": "px",
-     "size": 90,
+     "size": 44,
      "sizes": []
     },
     "html_tag": "section",
@@ -5040,5 +5068,6 @@
  ],
  "page_settings": {
   "hide_title": "yes"
- }
+ },
+ "template": "elementor_header_footer"
 }

@@ -1,0 +1,694 @@
+/* winkelwagen: overgenomen van staging (pagina 3146), lettertype Inter/Barlow vervangen door Aptos, externe laadanimatie verwijderd.
+   Staat als Pagina-CSS in Elementor (Pagina-instellingen > Aangepaste CSS); "selector" is deze pagina. */
+selector .elementor-widget-woocommerce-cart .shop_table .button {background-color:#F6F6F600;font-size:13px;border-width:1px 1px 1px 1px;}
+selector .elementor-widget-woocommerce-cart .woocommerce .wc-proceed-to-checkout .checkout-button {background-color:var( --e-global-color-accent );}
+selector .elementor-widget-woocommerce-cart > .elementor-widget-container {margin:0px 0px 0px 0px;}
+selector .elementor-widget-woocommerce-cart {--sections-border-type:none;--sections-padding:0px 0px 0px 0px;--sections-title-color:#000000;--links-normal-color:var( --e-global-color-text );--links-hover-color:var( --e-global-color-text );--forms-buttons-normal-text-color:#000000;--forms-buttons-hover-text-color:#000000;--forms-buttons-hover-border-color:#00000000;--forms-buttons-border-type:solid;--forms-buttons-border-color:var( --e-global-color-accent );--forms-buttons-border-radius:10px 10px 10px 10px;--forms-buttons-padding:16px 16px 16px 16px;--forms-buttons-width:auto;--order-summary-title-spacing:24px;--order-summary-items-divider-weight:0px;--order-summary-remove-icon-normal-color:#CFCFCF;--order-summary-remove-icon-hover-color:#DA0000;--totals-color:#000000;--checkout-button-border-radius:10px 10px 10px 10px;}
+selector .elementor-widget-woocommerce-cart .cart_totals h2 {font-family:aptos, sans-serif;font-size:25px;font-weight:700;}
+selector .elementor-widget-woocommerce-cart {--sections-descriptions-color:#000000;}
+selector .elementor-widget-woocommerce-cart .e-cart-content, selector .elementor-widget-woocommerce-cart .woocommerce-shipping-destination, selector .elementor-widget-woocommerce-cart .shipping-calculator-button {font-family:aptos, sans-serif;font-size:15px;}
+selector .elementor-widget-woocommerce-cart .coupon .input-text, selector .elementor-widget-woocommerce-cart .cart-collaterals .input-text, selector .elementor-widget-woocommerce-cart select, selector .elementor-widget-woocommerce-cart .select2-selection--single {font-family:aptos, sans-serif;font-size:15px;font-weight:400;}
+selector .elementor-widget-woocommerce-cart .e-shop-table .cart th, selector .elementor-widget-woocommerce-cart .e-shop-table .cart td:before {font-family:aptos, sans-serif;font-weight:600;}
+selector .elementor-widget-woocommerce-cart .cart td span, selector .elementor-widget-woocommerce-cart .cart td, selector .elementor-widget-woocommerce-cart .input-text.qty {font-family:aptos, sans-serif;font-size:15px;font-weight:500;}
+selector .elementor-widget-woocommerce-cart .product-name .variation {font-weight:400;}
+selector .elementor-widget-woocommerce-cart .cart_totals .shop_table td:before, selector .elementor-widget-woocommerce-cart .cart_totals .shop_table td .woocommerce-Price-amount {font-family:aptos, sans-serif;}
+selector .elementor-widget-woocommerce-cart .checkout-button {font-family:aptos, sans-serif;font-size:19px;font-weight:800;}
+/* ============================================================
+   CART - ALGEMENE LAYOUT & CONTAINER
+   ============================================================ */
+
+@media (min-width: 1150px) {
+    .elementor-widget-woocommerce-cart .e-cart__container {
+        grid-template-columns: 64% auto !important;
+    }
+}
+
+@media (max-width: 1149px) {
+    .elementor-widget-woocommerce-cart .e-cart__container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1149px) {
+    .e-cart__column-inner.e-sticky-right-column {
+        width: 60%;
+        float: right;
+    }
+}
+
+.e-cart__column-inner.e-sticky-right-column {
+    border-radius: 10px;
+    padding: 32px;
+    border: 1px solid #ebebeb;
+}
+
+.e-cart-totals.e-cart-section {
+    border: 0 !important;
+}
+
+.e-shop-table.e-cart-section {
+    margin-bottom: 16px;
+}
+
+/* ============================================================
+   CART - TABEL ALGEMEEN
+   ============================================================ */
+
+.shop_table {
+    border-collapse: separate !important;
+    border-spacing: 0 16px !important;
+}
+
+.shop_table tbody tr td:first-child {
+    border-radius: 12px 0 0 12px !important;
+}
+
+.shop_table tbody tr td:last-child {
+    border-radius: 0 12px 12px 0 !important;
+}
+
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
+    background: #f6f6f6;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.shop_table .button {
+    border-color: black !important;
+    background: transparent !important;
+    color: black !important;
+}
+
+.woocommerce table.shop_table td small {
+    font-weight: 400;
+    font-size: 11px;
+    display: block;
+}
+
+/* ============================================================
+   CART - PRODUCT RIJEN
+   ============================================================ */
+
+tr.woocommerce-cart-form__cart-item.cart_item {
+    background: white;
+    border-radius: 10px !important;
+    border: 0 !important;
+}
+
+td.product-name {
+    font-weight: 800 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.product-name a {
+    text-decoration: none !important;
+}
+
+td.product-thumbnail {
+    width: 13%;
+}
+
+td.product-remove {
+    width: 7%;
+    padding-left: 15px !important;
+}
+
+@media (min-width: 768px) {
+    td.product-name {
+        max-width: 260px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    td.product-name:before {
+        display: none;
+    }
+
+    .woocommerce table.shop_table_responsive td.product-name {
+        text-align: left !important;
+    }
+
+    .elementor-widget-woocommerce-cart .woocommerce table.cart tr {
+        display: block;
+        padding: 0 20px 20px 20px !important;
+        margin-bottom: 20px;
+    }
+
+    .elementor-widget-woocommerce-cart .woocommerce table.cart td {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .elementor-widget-woocommerce-cart .woocommerce table.cart tbody tr td:first-child,
+    .elementor-widget-woocommerce-cart .woocommerce table.cart tbody tr td:nth-child(2) {
+        border: 0 !important;
+    }
+}
+
+/* ============================================================
+   CART - PRODUCT AFBEELDING
+   ============================================================ */
+
+@media (min-width: 768px) {
+    .elementor-widget-woocommerce-cart .woocommerce table.cart img {
+        border-radius: 8px;
+        border: 1px solid #ebebeb;
+        padding: 4px !important;
+        display: block !important;
+        width: 55px !important;
+        height: 55px !important;
+        object-fit: contain !important;
+    }
+}
+
+/* LET OP: in het origineel stonden hier twee blokken die elkaar tegenspraken
+   (width 55px vs min-width 100px). Onderstaande waarden zijn die van het
+   laatste blok, dat in de browser won. Controleer of dit de bedoeling is. */
+@media (max-width: 767px) {
+    .elementor-widget-woocommerce-cart .woocommerce table.cart img {
+        border-radius: 8px;
+        border: 1px solid #ebebeb;
+        padding: 12px !important;
+        display: block !important;
+        min-width: 100px;
+        height: auto;
+        object-fit: contain !important;
+    }
+
+    td.product-thumbnail:before {
+        display: none !important;
+    }
+
+    .woocommerce #content table.cart .product-thumbnail,
+    .woocommerce table.cart .product-thumbnail,
+    .woocommerce-page #content table.cart .product-thumbnail,
+    .woocommerce-page table.cart .product-thumbnail {
+        display: block;
+    }
+}
+
+/* ============================================================
+   CART - VERWIJDER KNOP
+   ============================================================ */
+
+@media (max-width: 767px) {
+    .elementor-widget-woocommerce-cart .woocommerce table.shop_table .product-remove a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: white;
+        margin-top: 5px;
+        margin-right: 20px;
+        margin-left: 10px;
+        border: 0;
+        position: absolute;
+        right: 5px;
+    }
+}
+
+/* ============================================================
+   CART - QUANTITY +/- KNOPPEN
+   ============================================================ */
+
+/* LET OP: het origineel zette de spinners eerst op display:none en daarna
+   op opacity:1 !important. Netto bleven ze verborgen; dat is hier vastgelegd. */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+.woo-qty-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.woo-qty-wrap input.qty {
+    width: 42px !important;
+}
+
+.elementor-widget-woocommerce-cart .woocommerce .input-text.qty {
+    background-color: transparent;
+    border-style: solid;
+    border-width: var(--order-summary-quantity-border-weight, 1px);
+    border-color: var(--order-summary-quantity-border-color, #ebebeb);
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0;
+    color: var(--order-summary-color, #000);
+    font-size: 14px;
+    max-height: 28px;
+    min-height: 34px;
+    padding: 1px 2px;
+    text-align: start;
+    display: block !important;
+    margin-left: 5px !important;
+}
+
+.woo-qty-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 34px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 6px !important;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.woo-qty-btn:active {
+    transform: translateY(1px);
+}
+
+button.woo-qty-btn.woo-qty-minus,
+button.woo-qty-btn.woo-qty-plus {
+    background: white !important;
+    color: black !important;
+    padding-left: 12px;
+    padding-right: 12px;
+    z-index: 10;
+}
+
+button.woo-qty-btn.woo-qty-minus {
+    border-radius: 6px 0 0 6px !important;
+    margin-right: -16px;
+}
+
+button.woo-qty-btn.woo-qty-plus {
+    border-radius: 0 6px 6px 0 !important;
+    margin-left: -16px;
+}
+
+.quantity input {
+    background: white !important;
+    padding-left: 15px !important;
+    border: 1px solid #eaeaea !important;
+}
+
+/* ============================================================
+   CART - COUPON
+   ============================================================ */
+
+input#coupon_code {
+    height: 48px;
+    border-radius: 10px;
+    color: black;
+    font-family: aptos, sans-serif;
+    font-weight: 500;
+    padding-left: 20px;
+    border-color: #ebebeb;
+}
+
+button.button.e-apply-coupon {
+    height: 48px !important;
+}
+
+p#coupon-error-notice {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ============================================================
+   CART - SELECT2 DROPDOWN
+   ============================================================ */
+
+:where(.woocommerce) .select2-container .select2-selection--single .select2-selection__arrow {
+    top: 14px !important;
+}
+
+.elementor-widget-woocommerce-cart .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 41px !important;
+}
+
+.elementor-widget-woocommerce-cart .select2-container--default .select2-selection--single {
+    background: transparent !important;
+}
+
+span.select2-search.select2-search--dropdown {
+    display: none;
+}
+
+span.select2.select2-container.select2-container--default {
+    margin-top: -8px;
+}
+
+.select2-dropdown {
+    background-color: var(--wc-form-color-background, #fff);
+    color: var(--wc-form-color-text, #000);
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -100000px;
+    width: 100%;
+    z-index: 1051;
+    top: -10px;
+}
+
+span#select2-calc_shipping_country-container {
+    background: white !important;
+    border: 1px solid #ebebeb !important;
+    border-radius: 8px !important;
+    color: black !important;
+    height: 42px !important;
+    padding-top: 0 !important;
+}
+
+span.select2-selection__arrow b {
+    top: 20px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.woocommerce form .form-row.woocommerce-validated .select2-container:not(.select2-container--open) .select2-selection {
+    border-color: #e3e3e3;
+}
+
+span.select2-selection.select2-selection--single {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ============================================================
+   CART - VERZENDMETHODE
+   ============================================================ */
+
+form.woocommerce-shipping-calculator {
+    display: none;
+}
+
+form.woocommerce-shipping-calculator button.button {
+    font-family: aptos, sans-serif !important;
+    font-size: 14px !important;
+}
+
+.elementor-widget-woocommerce-cart .woocommerce .cart_totals h2 {
+    color: var(--e-global-color-accent);
+}
+
+section#shipping-calculator-form label {
+    font-size: 15px;
+}
+
+p#calc_shipping_city_field {
+    margin-top: -16px;
+}
+
+input#calc_shipping_city,
+input#calc_shipping_postcode {
+    border: 1px solid #e6e6e6;
+    height: 42px;
+    border-radius: 8px;
+}
+
+p.woocommerce-shipping-destination {
+    font-size: 14px !important;
+}
+
+span.woocommerce-shipping-estimate-html.e-checkout-message.e-cart-content {
+    font-size: 12px !important;
+}
+
+a.shipping-calculator-button {
+    font-size: 13px !important;
+}
+
+tr.woocommerce-shipping-totals.shipping {
+    padding: 0 !important;
+}
+
+.woocommerce-shipping-totals.shipping {
+    display: flex;
+    margin-top: 10px;
+    background: #f6f6f6 !important;
+    border-radius: 10px !important;
+}
+
+.shipping td {
+    padding: 16px !important;
+    border-radius: 10px !important;
+}
+
+.woocommerce-shipping-totals th {
+    display: none !important;
+}
+
+.woocommerce-shipping-totals td {
+    width: 100%;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+ul#shipping_method {
+    margin-top: 10px !important;
+}
+
+ul#shipping_method .amount {
+    font-size: 15px;
+    font-weight: 400 !important;
+}
+
+.woocommerce ul#shipping_method li {
+    display: flex !important;
+    background: #ffffff;
+    padding: 16px;
+    border-bottom: 0;
+    border-radius: 8px;
+    margin-bottom: 9px !important;
+}
+
+.woocommerce ul#shipping_method li label,
+#shipping_method li label {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    font-family: aptos, sans-serif;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.elementor-widget-woocommerce-cart .woocommerce #shipping_method li label {
+    color: black;
+}
+
+#shipping_method span.woocommerce-Price-amount.amount {
+    margin-left: auto;
+}
+
+/* Alleen wanneer er precies 1 verzendmethode in de lijst staat */
+ul#shipping_method > li:only-child label {
+    line-height: 13px;
+}
+
+ul#shipping_method > li:only-child label:before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 800;
+    font-size: 10px;
+    padding-top: 4px;
+    padding-left: 5px;
+    background: var(--e-global-color-accent);
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+small.includes_tax .amount {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+
+/* ============================================================
+   CART - RADIO BUTTONS
+   ============================================================ */
+
+/* Zelfde techniek als op de checkout: box-sizing en een absoluut
+   gepositioneerd vinkje. Zonder die twee groeit de radio als flex-item
+   binnen het label mee met zijn eigen ::before (was 49x47px). */
+.woocommerce-cart .woocommerce input[type="radio"],
+.woocommerce-cart input[type="radio"][name^="shipping_method"] {
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    padding: 0 !important;
+    border: 1px solid #d8cfc7;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 12px 0 0 !important;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.woocommerce-cart .woocommerce input[type="radio"]:checked,
+.woocommerce-cart input[type="radio"][name^="shipping_method"]:checked {
+    background: var(--e-global-color-accent);
+    border-color: var(--e-global-color-accent);
+}
+
+.woocommerce-cart .woocommerce input[type="radio"]:checked::before,
+.woocommerce-cart input[type="radio"][name^="shipping_method"]:checked::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 9px;
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Geselecteerde verzendmethode subtiel markeren, net als op de checkout */
+.woocommerce-cart #shipping_method li:has(input:checked) {
+    box-shadow: inset 0 0 0 1px var(--e-global-color-accent);
+}
+
+/* ============================================================
+   CART - TOTAAL RIJEN
+   ============================================================ */
+
+tr.order-total {
+    font-size: 19px;
+}
+
+a.checkout-button.button.alt.wc-forward.wp-element-button {
+    font-size: 19px !important;
+}
+
+/* ============================================================
+   CART - PRODUCTOPTIES / ITEM META
+   ============================================================ */
+
+/* dl.variation is toegevoegd: Super Forms schrijft item meta weg zonder de
+   tc-epo-metadata klasse, waardoor deze opmaak er eerder niet op aangreep.
+   Het grid is nodig omdat td.product-name op flex/column staat: WooCommerce
+   zet float op de dt, waardoor waarden anders langs de labels omhoog klimmen. */
+dl.tc-epo-metadata.variation,
+td.product-name dl.variation {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 2px 12px;
+    width: 100%;
+    margin: 8px 0 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+td.product-name dl.variation dt {
+    float: none !important;
+    clear: none !important;
+    margin: 0 !important;
+    font-weight: 600;
+}
+
+td.product-name dl.variation dd,
+td.product-name dl.variation dd p {
+    margin: 0 !important;
+}
+
+/* Vangnet: verbergt lege metaregels. De echte oorzaak zijn de veldgroepen
+   (_product_extra_groups_*) die nog op product 5841 staan. */
+td.product-name dl.variation dd:empty,
+td.product-name dl.variation dt:has(+ dd:empty) {
+    display: none;
+}
+
+.tc-associated-table-product .tc-associated-table-product-price::after {
+    content: "" !important;
+}
+
+.tc-associated-table-product .tc-associated-table-product-price::before {
+    content: "\f30b";
+    font-family: 'Font Awesome 6 Free' !important;
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0 0.5em 0 0;
+    padding: 0;
+    opacity: 0.2 !important;
+}
+
+.tc-associated-table-product .tc-associated-table-product-indent {
+    padding-left: 0;
+    display: inline-block;
+}
+
+a.tm-cart-edit-options {
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 13px !important;
+    color: var(--e-global-color-accent) !important;
+    order: 3;
+}
+
+dd.tc-value.variation-Lengteincm,
+dd.tc-value.variation-Breedteincm {
+    display: flex !important;
+}
+
+/* ============================================================
+   FREE SHIPPING NOTIFICATION
+   ============================================================ */
+
+.gratis-verzending-balk {
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.gratis-verzending-balk__tekst {
+    margin: 0 0 10px;
+    color: #2c2c2a;
+}
+
+.gratis-verzending-balk__tekst strong {
+    font-weight: 600;
+}
+
+.gratis-verzending-balk__tekst--bereikt {
+    color: #0f6e56;
+    font-weight: 500;
+}
+
+.gratis-verzending-balk__track {
+    background: #e8e8e8;
+    border-radius: 99px;
+    height: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.gratis-verzending-balk__vulling {
+    height: 100%;
+    background: var(--e-global-color-accent);
+    border-radius: 99px;
+    transition: width 0.4s ease;
+}
+
+a.gratis-verzending-balk__link {
+    color: var(--e-global-color-53133e3) !important;
+}

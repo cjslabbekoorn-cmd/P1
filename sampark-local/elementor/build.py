@@ -55,8 +55,13 @@ def gap(v):
     return {"column": str(v), "row": str(v), "isLinked": True, "unit": "px", "size": v}
 
 
-# Elementor-vormscheiding "Waves": (breedte %, hoogte px) zoals op staging
-WAVES = {"top": (234, 46), "bottom": (169, 34)}
+# Elementor-vormscheiding "Waves": (breedte %, hoogte px). Smaller en hoger dan op staging, zodat de golf
+# duidelijker zichtbaar is.
+WAVES = {"top": (150, 80), "bottom": (130, 70)}
+WAVES_MOBILE = (260, 44)
+
+# Overlay op hero's: van links (tekst) bijna dekkend naar rechts halfdoorzichtig, voor contrast op elke foto
+HERO_OVERLAY = ("#46211AD9", "#46211A59")
 
 
 def container(*children, title=None, direction="column", boxed=False, width=None, gap_px=24,
@@ -100,6 +105,7 @@ def container(*children, title=None, direction="column", boxed=False, width=None
         s["background_overlay_color"] = overlay[0]
         s["background_overlay_color_b"] = overlay[1]
         s["background_overlay_gradient_angle"] = size(90, "deg")
+        s["background_overlay_opacity"] = {"unit": "px", "size": 1, "sizes": []}
     if radius is not None:
         s["border_radius"] = dims(radius)
     if align:
@@ -118,8 +124,8 @@ def container(*children, title=None, direction="column", boxed=False, width=None
                 w, hh = WAVES[side]
                 s[f"shape_divider_{side}_width"] = size(w, "%")
                 s[f"shape_divider_{side}_height"] = size(hh)
-                s[f"shape_divider_{side}_width_mobile"] = size(500, "%")
-                s[f"shape_divider_{side}_height_mobile"] = size(90)
+                s[f"shape_divider_{side}_width_mobile"] = size(WAVES_MOBILE[0], "%")
+                s[f"shape_divider_{side}_height_mobile"] = size(WAVES_MOBILE[1])
             else:
                 s[f"shape_divider_{side}_width"] = size(100, "%")
                 s[f"shape_divider_{side}_height"] = size(h)
@@ -318,7 +324,7 @@ def hero(title, intro, image_key, eye=None, buttons=(), height=560, badge=None):
         container(*kids, title="Hero inhoud", direction="row", boxed=True, align="center",
                   justify="space-between", gap_px=40, pad=dims(140, 24, 140, 24),
                   pad_mobile=dims(110, 20, 110, 20)),
-        title="Hero", bg_image=image_key, overlay=("#46211AE6", "#46211A1A"),
+        title="Hero", bg_image=image_key, overlay=HERO_OVERLAY,
         min_height=height, align="stretch", justify="center", tag="section",
         divider_bottom=("waves", "#FFFFFF", 70),
     )
@@ -440,24 +446,32 @@ def event_card(key, status_label=None):
 PAGES = []
 
 
-def page(slug, title, *content, parent=None, seo=None):
-    PAGES.append({"slug": slug, "title": title, "parent": parent, "seo": seo, "content": list(content)})
+def page(slug, title, *content, parent=None, seo=None, template="elementor_header_footer", css=None):
+    """template: elementor_header_footer (met site-header en -footer) of elementor_canvas (zonder, bv. afrekenen).
+    css: bestandsnaam in elementor/css/, komt als Pagina-CSS in Elementor."""
+    PAGES.append({"slug": slug, "title": title, "parent": parent, "seo": seo, "content": list(content),
+                  "template": template, "css": css})
 
 
 # HOME -------------------------------------------------------------------
 wine_badge = container(
     widget("icon-box", {
         "selected_icon": {"value": {"url": "{{img:icon_wijn}}", "id": "{{imgid:icon_wijn}}"}, "library": "svg"},
-        "position": "left", "position_mobile": "left", "position_tablet": "left", "text_align_mobile": "left", "title_text": "Wijnactie", "description_text": "Rood, wit en alcoholvrij",
-        "title_size": "p", "icon_size": size(44), "icon_space": size(14),
+        "position": "left", "position_mobile": "left", "position_tablet": "left", "text_align_mobile": "left",
+        "title_text": "Wijnactie 2026", "description_text": "Rood, wit en alcoholvrij<br><strong>Bestel nu →</strong>",
+        "title_size": "p", "icon_size": size(56), "icon_size_mobile": size(44), "icon_space": size(16),
         "link": {"url": "/evenementen/wijnactie/"},
-        "title_typography_typography": "custom", "title_typography_font_size": size(22),
+        "title_typography_typography": "custom", "title_typography_font_size": size(28),
+        "title_typography_font_size_mobile": size(24), "title_typography_line_height": size(1.1, "em"),
+        "description_typography_typography": "custom", "description_typography_font_size": size(16),
+        "description_typography_font_weight": "600",
         # donkerbruin op oranje: wit/crème op #ED7404 haalt geen 4,5:1 contrast
         "__globals__": {"primary_color": g_color("text"), "title_color": g_color("text"),
                         "description_color": g_color("text"), "title_typography_typography": g_type("accent")},
     }),
     title="Campagnebadge (Dynamic Visibility: Options › campagne aan)", bg_global="secondary", radius=999,
-    pad=dims(14, 28, 14, 20), extra={"width": size(300), "width_mobile": size(280), "flex_align_self": "center"})
+    pad=dims(20, 36, 20, 24), css_classes="sp-campagne",
+    extra={"width": size(360), "width_mobile": size(300), "flex_align_self": "center"})
 
 page("home", "Home",
      hero("Help een kind naar school",
@@ -878,14 +892,10 @@ page("doneren", "Doneren",
                        icon_list(["€ 10 · lesmateriaal voor een klas", "€ 25 · een schooluniform", "€ 60 · een jaar onderwijs voor één kind", "€ 100 · bijdrage aan een fiets voor een geslaagde"], icon_value="fas fa-heart"),
                        text("<p><em>Bedragen ter illustratie, af te stemmen met het bestuur.</em></p>", size_px=14),
                        width=45, gap_px=14),
-             card(eyebrow("Superforms · product Eenmalige donatie"), heading("Doneer nu", "h3", size_px=30),
-                  text("<p>Op de live site staat hier het Superforms-formulier van het product <strong>Eenmalige donatie</strong> (via een Woo product-shortcode of een knop naar het product met het bedrag als URL-parameter).</p>"),
-                  container(button("€ 10", "/product/donatie/?bedrag=10", style="outline"),
-                            button("€ 25", "/product/donatie/?bedrag=25", style="outline"),
-                            button("€ 50", "/product/donatie/?bedrag=50", style="outline"),
-                            button("€ 100", "/product/donatie/?bedrag=100", style="outline"),
-                            direction="row", wrap=True, gap_px=10, mobile_column=False),
-                  button("Ander bedrag", "/product/donatie/", full=True),
+             card(eyebrow("Doneer nu"), heading("Kies je bedrag", "h3", size_px=30),
+                  text("<p>Kies een bedrag of vul zelf een bedrag in. Je rekent daarna veilig af met iDEAL of op factuur.</p>"),
+                  widget("shortcode", {"shortcode": '[super_form id="{{form:donatie_pagina}}"]'},
+                         title="Super Forms · Donatieformulier (doneerpagina, vast product Eenmalige donatie)"),
                   title="Donatieblok", bg="#FFFFFF", width=50),
              direction="row", gap_px=48, align="flex-start"),
          title="Doneren"),
@@ -1014,6 +1024,136 @@ page("contact", "Contact",
              direction="row", gap_px=48),
          title="Contact"),
      seo=("Contact | Stichting Sampark", "Neem contact op met Stichting Sampark in Genemuiden."))
+
+
+# WINKELWAGEN, AFREKENEN, MIJN ACCOUNT -------------------------------------------
+# Zoals op staging: winkelwagen en afrekenen zonder site-menu (Elementor Canvas), met een eigen smalle kop en voet,
+# de Elementor Pro-widgets en de Pagina-CSS van staging (elementor/css/). Afrekenen blijft de klassieke checkout,
+# nodig voor het sponsorpakket-snippet.
+
+def shop_header(back_label, back_url):
+    logo = widget("image", {"image": {"url": "{{img:logo_sampark}}", "id": "{{imgid:logo_sampark}}", "alt": "Stichting Sampark"},
+                            "width": size(150), "width_mobile": size(120), "image_border_radius": dims(0),
+                            "link_to": "custom", "link": {"url": "/"}}, title="Logo (naar home)")
+    return container(
+        container(logo, button(back_label, back_url, style="outline"),
+                  title="Kop inhoud", boxed=True, direction="row", justify="space-between", align="center",
+                  mobile_column=False, pad=dims(18, 24), pad_mobile=dims(14, 20)),
+        title="Smalle kop (zonder menu)", bg_global="658acb6", tag="header")
+
+
+def shop_footer():
+    return container(
+        container(text("<p>© Stichting Sampark · ANBI-erkend · Veilig betalen met iDEAL of op factuur</p>",
+                       color="658acb6", size_px=14),
+                  title="Voet inhoud", boxed=True, pad=dims(20, 24)),
+        title="Smalle voet", bg_global="accent", tag="footer")
+
+
+def shop_main(*kids):
+    return container(*kids, title="Inhoud", boxed=True, pad=dims(56, 24, 80, 24), pad_mobile=dims(32, 16, 56, 16), gap_px=24)
+
+
+# Teksten van de Elementor Pro-widgets in het Nederlands (Elementor Pro heeft geen Nederlands taalpakket)
+CART_TEXTS = {"update_cart_button_text": "Winkelwagen bijwerken", "apply_coupon_button_text": "Toepassen",
+              "totals_section_title": "Totaal", "update_shipping_button_text": "Bijwerken",
+              "checkout_button_text": "Doorgaan naar afrekenen"}
+
+
+def checkout_fields(prefix, labels, placeholders=None):
+    placeholders = placeholders or {}
+    return [{"_id": _id(k), "field_key": f"{prefix}_{k}", "field_label": l, "label": l,
+             "placeholder": placeholders.get(k, ""), "repeater_state": "locale" if k in ADDRESS_KEYS else ""}
+            for k, l in labels]
+
+
+ADDRESS_KEYS = {"country", "address_1", "postcode", "city", "state"}
+ADDRESS = [("first_name", "Voornaam"), ("last_name", "Achternaam"), ("company", "Bedrijfsnaam"),
+           ("country", "Land/regio"), ("address_1", "Straat en huisnummer"), ("postcode", "Postcode"),
+           ("city", "Plaats"), ("state", "Provincie")]
+CHECKOUT_TEXTS = {
+    "billing_details_section_title": "Factuurgegevens", "shipping_details_section_title": "Verzenden naar een ander adres?",
+    "additional_information_section_title": "Extra informatie", "order_summary_section_title": "Jouw bestelling",
+    "returning_customer_section_title": "Heb je al een account?", "returning_customer_link_text": "Log hier in",
+    "create_account_text": "Account aanmaken?", "coupon_section_title_text": "Heb je een kortingscode?",
+    "coupon_section_title_link_text": "Klik hier om je code in te voeren",
+    "terms_conditions_message_text": "Ik ga akkoord met de", "terms_conditions_link_text": "algemene voorwaarden",
+    "billing_details_form_fields": checkout_fields("billing", ADDRESS + [("phone", "Telefoon"), ("email", "E-mailadres")],
+                                                   {"address_1": "Straatnaam en huisnummer"}),
+    "shipping_details_form_fields": checkout_fields("shipping", ADDRESS, {"address_1": "Straatnaam en huisnummer"}),
+    "additional_information_form_fields": [{"_id": _id("notes"), "field_key": "order_comments",
+                                            "field_label": "Bestelnotities (optioneel)", "label": "Bestelnotities (optioneel)",
+                                            "placeholder": "Bijvoorbeeld een voorkeur voor de bezorging.", "repeater_state": ""}],
+}
+ACCOUNT_TABS = [("dashboard", "Overzicht"), ("orders", "Bestellingen"), ("downloads", "Downloads"),
+                ("edit-address", "Adressen"), ("edit-account", "Accountgegevens"), ("customer-logout", "Uitloggen")]
+
+
+page("winkelwagen", "Winkelwagen",
+     shop_header("Verder kijken", "/steun-ons/"),
+     shop_main(widget("woocommerce-cart", {"cart_layout": "two-column", "sticky_right_column": "yes", **CART_TEXTS},
+                      title="Winkelwagen (Elementor Pro)")),
+     shop_footer(),
+     template="elementor_canvas", css="winkelwagen",
+     seo=("Winkelwagen | Stichting Sampark", ""))
+
+page("afrekenen", "Afrekenen",
+     shop_header("Terug naar winkelwagen", "/winkelwagen/"),
+     shop_main(widget("woocommerce-checkout-page", {"checkout_layout": "two-column", "sticky_right_column": "yes", **CHECKOUT_TEXTS},
+                      title="Afrekenen (Elementor Pro, klassieke checkout)")),
+     shop_footer(),
+     template="elementor_canvas", css="afrekenen",
+     seo=("Afrekenen | Stichting Sampark", ""))
+
+page("mijn-account", "Mijn account",
+     container(
+         container(eyebrow("Voor donateurs en sponsors"), heading("Mijn account", "h1", color="primary", typo="accent", size_px=52),
+                   text("<p>Bekijk je bestellingen, inschrijvingen en gegevens.</p>", size_px=18),
+                   title="Kop", boxed=True, gap_px=10),
+         title="Paginakop", bg_global="658acb6", pad=dims(72, 24, 88, 24), pad_mobile=dims(48, 20, 64, 20), tag="header",
+         divider_bottom=("waves", "#FFFFFF", 50)),
+     shop_main(widget("woocommerce-my-account", {"tabs": [{"_id": _id(k), "field_key": k, "field_label": l, "tab_name": l}
+                                                       for k, l in ACCOUNT_TABS]},
+                      title="Mijn account (Elementor Pro)")),
+     css="mijn-account",
+     seo=("Mijn account | Stichting Sampark", ""))
+
+
+# SITEMAP --------------------------------------------------------------------------
+def sitemap_item(title, kind, source, hierarchical=False):
+    item = {"_id": _id(source), "sitemap_type_selector": kind, "sitemap_title": title,
+            "sitemap_orderby_post_type": "menu_order" if kind == "post_type" else "name", "sitemap_order": "asc"}
+    item["sitemap_source_post_type" if kind == "post_type" else "sitemap_source_taxonomy"] = source
+    if hierarchical:
+        item["sitemap_hierarchical"] = "yes"
+    if source == "post":
+        item.update({"sitemap_orderby_post_type": "post_date", "sitemap_order": "desc"})
+    return item
+
+
+page("sitemap", "Sitemap",
+     container(
+         container(eyebrow("Overzicht"), heading("Sitemap", "h1", color="primary", typo="accent", size_px=52),
+                   text("<p>Alle pagina's, projecten, evenementen en berichten op één plek.</p>", size_px=18),
+                   title="Kop", boxed=True, gap_px=10),
+         title="Paginakop", bg_global="658acb6", pad=dims(72, 24, 88, 24), pad_mobile=dims(48, 20, 64, 20), tag="header",
+         divider_bottom=("waves", "#FFFFFF", 50)),
+     section(widget("sitemap", {
+         "sitemap_items": [sitemap_item("Pagina's", "post_type", "page", hierarchical=True) | {"sitemap_orderby_post_type": "post_title"},
+                           sitemap_item("Ons werk", "post_type", "projecten"),
+                           sitemap_item("Evenementen", "post_type", "evenementen"),
+                           sitemap_item("Doneren en sponsoren", "post_type", "product"),
+                           sitemap_item("Nieuwscategorieën", "taxonomy", "category"),
+                           sitemap_item("Nieuws", "post_type", "post")],
+         "sitemap_columns": "3", "sitemap_columns_tablet": "2", "sitemap_columns_mobile": "1",
+         "sitemap_exclude": ["current_post", "manual_selection"],
+         "sitemap_exclude_ids": "{{pageids:winkelwagen,afrekenen,mijn-account,shop}}",
+         "sitemap_title_tag": "h3", "sitemap_section_padding": dims(0, 0, 24, 0),
+         "sitemap_title_typography_typography": "custom", "sitemap_title_typography_font_size": size(26),
+         "__globals__": {"sitemap_title_color": g_color("primary"), "sitemap_title_typography_typography": g_type("primary"),
+                         "sitemap_list_item_color": g_color("text")}}, title="Sitemap (Elementor Pro)"),
+             title="Sitemap", pad=(48, 24)),
+     seo=("Sitemap | Stichting Sampark", "Overzicht van alle pagina's, projecten, evenementen en berichten van Stichting Sampark."))
 
 
 # ---------------------------------------------------------------- JetEngine listing items
@@ -1479,7 +1619,7 @@ def single_hero(*inner, height=520):
         container(container(*inner, title="Hero tekst", gap_px=16, width=60),
                   title="Hero inhoud", direction="row", boxed=True, align="center", gap_px=40,
                   pad=dims(140, 24, 140, 24), pad_mobile=dims(110, 20, 110, 20)),
-        title="Hero (uitgelichte afbeelding)", overlay=("#46211AE6", "#46211A1A"), min_height=height,
+        title="Hero (uitgelichte afbeelding)", overlay=HERO_OVERLAY, min_height=height,
         align="stretch", justify="center", tag="section", divider_bottom=("waves", "#FFFFFF", 70))
     c["settings"].update({"background_background": "classic", "background_position": "center center",
                           "background_size": "cover",
@@ -1496,12 +1636,6 @@ def repeater(field, fmt, css, title, tag="div"):
     return widget("jet-listing-dynamic-repeater", {
         "dynamic_field_source": field, "dynamic_field_format": fmt, "item_tag": tag, "items_delimiter": "",
         "hide_if_empty": "yes", "_css_classes": css}, title=title)
-
-
-def info_item(fa, label, *fields_w, fields=()):
-    c = container(fa_icon(fa, px=26), eyebrow(label), *fields_w, title=f"Info · {label}", gap_px=4, width=31,
-                  css_classes="sp-info", extra={"width_tablet": size(48, "%")})
-    return visible_if(c, *fields, relation="OR") if fields else c
 
 
 def gallery_field(cols=2):
@@ -1579,6 +1713,25 @@ project_single = [
 template("single-project", "Single · Project", "single-post", project_single, conditions=("include/singular/projecten",))
 
 # Evenement ----------------------------------------------------------------------------------
+def visible_when(el, field, value, equal=True):
+    """JetEngine Dynamic Visibility: tonen als een meta-veld wel (of juist niet) deze waarde heeft."""
+    el["settings"].update({
+        "jedv_enabled": "yes", "jedv_type": "show", "jedv_relation": "AND",
+        "jedv_conditions": [{"_id": _id(field), "jedv_condition": "equal" if equal else "not-equal",
+                             "jedv_value": value, "jedv_data_type": "chars",
+                             "__dynamic__": {"jedv_field": etag("jet-post-custom-field", {"meta_field": field})}}]})
+    return el
+
+
+def info_row(fa, label, *fields_w, fields=()):
+    """Praktische informatie als vlak in de rechterkolom: icoon links, label en waarde rechts."""
+    c = container(fa_icon(fa, px=24),
+                  container(eyebrow(label), *fields_w, title="Label en waarde", gap_px=2),
+                  title=f"Info · {label}", direction="row", gap_px=16, mobile_column=False, align="flex-start",
+                  css_classes="sp-info", extra={"width": size(100, "%")})
+    return visible_if(c, *fields, relation="OR") if fields else c
+
+
 event_single = [
     single_hero(
         dyn_field("meta", "status", tag="span", color="primary",
@@ -1591,36 +1744,51 @@ event_single = [
                   title="Knoppen", direction="row", gap_px=12, mobile_column=False, wrap=True)),
     section(
         container(
-            info_item("far fa-calendar-alt", "Wanneer",
-                      dyn_field("meta", "datum_start", tag="p", filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
-                      dyn_field("meta", "datum_label", tag="p"), fields=("datum_start", "datum_label")),
-            info_item("far fa-clock", "Tijd", dyn_field("meta", "tijd", tag="p"), fields=("tijd",)),
-            info_item("fas fa-map-marker-alt", "Waar", dyn_field("meta", "locatie_tekst", tag="p"), fields=("locatie_tekst",)),
-            info_item("fas fa-euro-sign", "Kosten", dyn_field("meta", "prijs_label", tag="p"), fields=("prijs_label",)),
-            info_item("fas fa-hourglass-half", "Inschrijven tot",
-                      dyn_field("meta", "inschrijving_tot", tag="p", filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
-                      fields=("inschrijving_tot",)),
-            info_item("fas fa-users", "Deelnemers",
-                      dyn_field("meta", "max_deelnemers", tag="p", fmt="Maximaal %s"), fields=("max_deelnemers",)),
-            title="Praktische informatie", direction="row", wrap=True, gap_px=20, extra={"flex_align_items": "stretch"}),
-        title="Praktisch", pad=(40, 24)),
-    section(
-        container(
-            container(eyebrow("Over dit evenement"), post_content(), title="Beschrijving", width=55, gap_px=14),
-            visible_if(container(eyebrow("Programma"),
-                                 repeater("programma", '<div class="sp-prog"><span>%tijd%</span><strong>%onderdeel%</strong></div>',
-                                          "sp-programma", "Programma (repeater)"),
-                                 title="Programma", width=40, gap_px=12, bg_global="658acb6", radius=20, pad=dims(28)),
-                       "programma"),
-            direction="row", gap_px=48, align="flex-start"),
+            container(eyebrow("Over dit evenement"), post_content(),
+                      visible_if(container(eyebrow("Programma"),
+                                           repeater("programma", '<div class="sp-prog"><span>%tijd%</span><strong>%onderdeel%</strong></div>',
+                                                    "sp-programma", "Programma (repeater)"),
+                                           title="Programma", gap_px=12, bg_global="658acb6", radius=20, pad=dims(28),
+                                           extra={"margin": dims(16, 0, 0, 0)}),
+                                 "programma"),
+                      title="Beschrijving en programma", width=60, gap_px=14),
+            container(
+                info_row("far fa-calendar-alt", "Wanneer",
+                         dyn_field("meta", "datum_start", tag="p", filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+                         dyn_field("meta", "datum_label", tag="p"), fields=("datum_start", "datum_label")),
+                info_row("far fa-clock", "Tijd", dyn_field("meta", "tijd", tag="p"), fields=("tijd",)),
+                info_row("fas fa-map-marker-alt", "Waar", dyn_field("meta", "locatie_tekst", tag="p"), fields=("locatie_tekst",)),
+                info_row("fas fa-euro-sign", "Kosten", dyn_field("meta", "prijs_label", tag="p"), fields=("prijs_label",)),
+                info_row("fas fa-hourglass-half", "Inschrijven tot",
+                         dyn_field("meta", "inschrijving_tot", tag="p", filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+                         fields=("inschrijving_tot",)),
+                info_row("fas fa-users", "Deelnemers",
+                         dyn_field("meta", "max_deelnemers", tag="p", fmt="Maximaal %s"), fields=("max_deelnemers",)),
+                title="Praktische informatie (rechts, onder elkaar)", width=34, gap_px=14),
+            direction="row", gap_px=48, align="flex-start", justify="space-between"),
         title="Over"),
+    # Alleen inschrijven: de producten van dit evenement of de externe inschrijflink.
+    # Kop "Bestellen" bij evenementen die het hele jaar lopen (wijnactie), anders "Inschrijven".
     hide_empty(section(
-        section_head("Doe mee", "Inschrijven of bestellen"),
+        container(eyebrow("Doe mee"),
+                  visible_when(heading("Inschrijven", "h2"), "status", "doorlopend", equal=False),
+                  visible_when(heading("Bestellen", "h2"), "status", "doorlopend"),
+                  title="Sectiekop", gap_px=8),
         jet_grid("inschrijfkaart", "q_event_producten", 3, "producten via relatie Evenement → Product"),
         visible_if(container(dyn_link("Schrijf je in via de organisator", style="primary", source="externe_inschrijflink"),
                              title="Externe inschrijving", css_classes="sp-keep"), "externe_inschrijflink"),
         title="Inschrijven", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50),
         divider_bottom=("waves", "#FFFFFF", 50), extra={"_element_id": "inschrijven"})),
+    section(
+        section_head("Ook interessant", "Meer manieren om mee te doen"),
+        container(eyebrow("Andere evenementen"),
+                  jet_grid("eventkaart", "q_andere_events", 3, "andere evenementen (niet afgelopen), zonder dit evenement"),
+                  title="Andere evenementen", gap_px=16, css_classes="sp-hide-empty"),
+        container(eyebrow("Sponsorpakketten"),
+                  jet_grid("pakketkaart", "q_pakketten", 3, "sponsorpakketten"),
+                  title="Sponsorpakketten", gap_px=16, css_classes="sp-hide-empty", bg_global="658acb6", radius=20,
+                  pad=dims(32), pad_mobile=dims(20)),
+        title="Ook interessant", gap_px=48),
     visible_if(section(section_head("In beeld", "Foto's"), gallery_field(3), title="Galerij", pad=(40, 24)), "galerij"),
     hide_empty(section(section_head("Met dank aan", "Sponsors van dit evenement", align="center"),
                        jet_grid("sponsorlogo", "q_event_sponsors", 6, "sponsors via relatie Sponsor ↔ Evenement"),
@@ -1736,8 +1904,16 @@ def product_template(key, title, order_widget, cat=None, price=True, note=None):
                 direction="row", gap_px=48, align="flex-start"),
             title="Product", pad=(64, 24)),
         # de beschrijving alleen als er een lange tekst is
-        visible_if(section(widget("woocommerce-product-content", {}, title="Beschrijving"),
-                           title="Beschrijving", pad=(0, 24)), "@post_content"),
+        visible_if(section(
+            container(eyebrow("Over dit product"),
+                      widget("woocommerce-product-content", {"text_typography_typography": "custom",
+                                                             "text_typography_font_size": size(17),
+                                                             "text_typography_line_height": size(1.7, "em"),
+                                                             "__globals__": {"text_color": g_color("text")}},
+                             title="Beschrijving (lange omschrijving)"),
+                      title="Beschrijving", bg_global="658acb6", radius=20, pad=dims(48, 56), pad_mobile=dims(28, 22),
+                      gap_px=10, css_classes="sp-product-desc", extra={"max_width": size(900)}),
+            title="Beschrijving", pad=(24, 24), gap_px=0), "@post_content"),
         container(
             container(
                 container(fa_icon("fas fa-hand-holding-heart", color="primary", px=30),
@@ -1791,7 +1967,9 @@ def main():
     for i, p in enumerate(PAGES):
         doc = {"version": "0.4", "title": p["title"], "type": "page", "slug": p["slug"],
                "parent": p["parent"], "menu_order": i, "seo": p["seo"], "content": p["content"],
-               "page_settings": {"hide_title": "yes"}}
+               "page_settings": {"hide_title": "yes"}, "template": p["template"]}
+        if p["css"]:
+            doc["page_settings"]["custom_css"] = (OUT.parent / "css" / f"{p['css']}.css").read_text()
         (OUT / f"{p['slug']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1))
     write_listings()
     write_templates()

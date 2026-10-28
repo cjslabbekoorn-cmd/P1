@@ -1,0 +1,835 @@
+/* afrekenen: overgenomen van staging (pagina 3147), lettertype Inter/Barlow vervangen door Aptos, externe laadanimatie verwijderd.
+   Staat als Pagina-CSS in Elementor (Pagina-instellingen > Aangepaste CSS); "selector" is deze pagina. */
+selector .elementor-widget-woocommerce-checkout-page {--additional-information-display:block;--sections-background-color:#02010100;--sections-border-type:none;--sections-border-radius:0px 0px 0px 0px;--sections-padding:0px 0px 0px 0px;--sections-margin:0px 0px 0px 0px;--sections-title-color:#000000;--sections-title-spacing:10px;--sections-secondary-title-color:var( --e-global-color-primary );--sections-descriptions-color:var( --e-global-color-primary );--sections-messages-color:#000000;--sections-checkboxes-color:var( --e-global-color-primary );--sections-radio-buttons-color:var( --e-global-color-primary );--links-normal-color:var( --e-global-color-accent );--forms-columns-gap-padding:calc( 0px/2 );--forms-columns-gap-margin:calc( -0px/2 );--forms-labels-color:var( --e-global-color-primary );--forms-fields-normal-color:#000000;--forms-fields-focus-color:#000000;--forms-fields-border-radius:8px 8px 8px 8px;--forms-fields-padding:14px 12px 14px 12px;--order-summary-items-divider-weight:1px;--order-summary-totals-color:var( --e-global-color-primary );--order-summary-totals-divider-weight:0px;--purchase-button-normal-text-color:#FFFFFF;--purchase-button-border-radius:10px 10px 10px 10px;}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce-shipping-fields {--shipping-heading-padding-start:0px;}
+selector .elementor-widget-woocommerce-checkout-page h3#order_review_heading, selector .elementor-widget-woocommerce-checkout-page .woocommerce-billing-fields h3, selector .elementor-widget-woocommerce-checkout-page .woocommerce-additional-fields h3 {font-family:"Spectral", Sans-serif;font-size:21px;font-weight:700;}
+selector .elementor-widget-woocommerce-checkout-page .e-checkout-secondary-title {font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );}
+selector .elementor-widget-woocommerce-checkout-page .e-description {font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout #payment .payment_box, selector .elementor-widget-woocommerce-checkout-page .woocommerce-privacy-policy-text p, selector .elementor-widget-woocommerce-checkout-page .e-checkout-message {font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce-form__label-for-checkbox span {font-family:"Spectral", Sans-serif;font-weight:500;}
+selector .elementor-widget-woocommerce-checkout-page .wc_payment_method label, selector .elementor-widget-woocommerce-checkout-page #shipping_method li label {font-family:"aptos", Sans-serif;font-size:17px;font-weight:600;}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce-billing-fields .form-row label, selector .elementor-widget-woocommerce-checkout-page .woocommerce-shipping-fields .form-row label, selector .elementor-widget-woocommerce-checkout-page .woocommerce-additional-fields .form-row label, selector .elementor-widget-woocommerce-checkout-page .e-woocommerce-login-anchor .form-row label, selector .elementor-widget-woocommerce-checkout-page .e-coupon-anchor-description {font-family:aptos, sans-serif;font-size:14px;font-weight:400;}
+selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single .select2-selection__arrow b {border-color:#000000 transparent transparent transparent;}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce #customer_details .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page  .woocommerce #customer_details .form-row textarea, selector .elementor-widget-woocommerce-checkout-page .woocommerce form #customer_details select, selector .elementor-widget-woocommerce-checkout-page .woocommerce .e-woocommerce-login-anchor .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page #coupon_code, selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single, selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout #payment .payment_methods .payment_box {background-color:#FFFFFF;}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce #customer_details .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page  .woocommerce #customer_details .form-row textarea, selector .elementor-widget-woocommerce-checkout-page .woocommerce form #customer_details select, selector .elementor-widget-woocommerce-checkout-page .woocommerce .e-woocommerce-login-anchor .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page #coupon_code, selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single {border-style:solid;border-width:1px 1px 1px 1px;border-color:#E3E3E3;}
+selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single .select2-selection__rendered {line-height:calc( (14px*2) + 16px );padding-left:12px;padding-right:12px;}
+selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single .select2-selection__arrow {height:calc( (14px*2) + 16px );right:12px;}
+selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single {height:auto;}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table .cart_item td {font-family:aptos, sans-serif;font-size:15px;}
+selector .elementor-widget-woocommerce-checkout-page .product-name .variation {font-family:aptos, sans-serif;}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table thead tr th, selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table tfoot tr th, selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table tfoot tr td {font-family:aptos, sans-serif;font-size:16px;}
+selector .elementor-widget-woocommerce-checkout-page .woocommerce #payment #place_order {font-family:aptos, sans-serif;font-size:19px;font-weight:800;}
+selector .elementor-widget-woocommerce-checkout-page #payment #place_order {background-color:var( --e-global-color-accent );}
+selector .elementor-widget-woocommerce-checkout-page .col2-set .col-1 {--sections-border-type:solid;}
+selector .elementor-widget-woocommerce-checkout-page .e-checkout__column-start #customer_details .col-1 {border-width:0px 0px 0px 0px;}
+selector .elementor-widget-woocommerce-checkout-page > .elementor-widget-container {padding:0px 0px 0px 0px;}
+/* ============================================================
+   CHECKOUT - ALGEMENE LAYOUT & CONTAINER
+   ============================================================ */
+
+.elementor-widget-woocommerce-checkout-page .e-checkout__container {
+    grid-column-gap: var(--sections-margin, 48px);
+}
+
+.e-checkout__column.e-checkout__column-start {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.elementor-widget-woocommerce-checkout-page #ship-to-different-address span,
+.woocommerce-account-fields span {
+    font-weight: bold;
+    font-size: 16px !important;
+}
+
+.elementor-widget-woocommerce-checkout-page .woocommerce #customer_details .col-1,
+.elementor-widget-woocommerce-checkout-page .woocommerce .shipping_address,
+.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-additional-fields {
+    border: 0 !important;
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+    .e-checkout__column-inner.e-sticky-right-column {
+        margin-left: 72px;
+    }
+}
+
+/* ============================================================
+   CHECKOUT - SECTIES (billing, shipping, payment, terms)
+   ============================================================ */
+
+.woocommerce-billing-fields__field-wrapper,
+.shipping_address,
+ul.wc_payment_methods.payment_methods.methods,
+tr.woocommerce-shipping-totals.shipping,
+p#custom_terms_field,
+div.create-account {
+    padding: 6px 12px !important;
+    background: #f6f6f6 !important;
+    border-radius: 10px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.woocommerce-billing-fields__field-wrapper,
+.shipping_address,
+div.create-account {
+    padding: 12px 16px !important;
+}
+
+div.create-account {
+    margin-bottom: 20px !important;
+}
+
+tr.woocommerce-shipping-totals.shipping {
+    padding: 4px 12px !important;
+}
+
+.woocommerce-terms-and-conditions-wrapper {
+    background: #f6f6f6;
+    margin-top: 20px;
+    margin-bottom: -22px;
+    padding: 0 20px !important;
+    border-radius: 10px;
+}
+
+.woocommerce-additional-fields__field-wrapper {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .woocommerce-additional-fields__field-wrapper {
+        margin-top: 0 !important;
+    }
+}
+
+/* ============================================================
+   CHECKOUT - VELDEN & FORMULIER
+   ============================================================ */
+
+.woocommerce-form-row.woocommerce-form-row--wide.form-row.form-row-wide {
+    padding: 0 !important;
+}
+
+p.form-row.validate-required {
+    padding: 0;
+}
+
+p#checkout_checkbox_field {
+    padding: 0 !important;
+    margin: 0;
+}
+
+#customer_details .form-row textarea {
+    border-radius: 10px !important;
+    min-height: 90px;
+}
+
+input[readonly] {
+    background-color: #fff !important;
+}
+
+.woocommerce form .form-row.woocommerce-validated .select2-container:not(.select2-container--open) .select2-selection {
+    border-color: #e3e3e3;
+}
+
+/* ============================================================
+   CHECKOUT - SELECT2 DROPDOWN
+   ============================================================ */
+
+:where(.woocommerce) .select2-container .select2-selection--single .select2-selection__arrow {
+    top: 14px !important;
+}
+
+span.select2-search.select2-search--dropdown {
+    display: none;
+}
+
+.select2-dropdown {
+    background-color: var(--wc-form-color-background, #fff);
+    color: var(--wc-form-color-text, #000);
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -100000px;
+    width: 100%;
+    z-index: 1051;
+    top: -10px;
+}
+
+.e-woo-select2-wrapper .select2-results__option {
+    color: #69727d;
+    font-family: aptos, sans-serif;
+    font-size: 14px;
+    padding: 12px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+span.select2-selection.select2-selection--single {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span#select2-billing_country-container,
+span#select2-shipping_country-container {
+    height: 46px;
+    padding-top: 2px;
+}
+
+/* ============================================================
+   CHECKOUT - LINKS & TYPOGRAFIE
+   ============================================================ */
+
+.elementor-widget-woocommerce-checkout-page a {
+    color: var(--e-global-color-accent) !important;
+}
+
+span.woocommerce-Price-amount.amount {
+    font-size: 15px;
+    font-family: aptos, sans-serif;
+    font-weight: 400 !important;
+}
+
+#custom_terms_field span {
+    font-size: 14px;
+}
+
+/* ============================================================
+   CHECKOUT - KNOPPEN
+   ============================================================ */
+
+button.woocommerce-button.button.woocommerce-form-login__submit.e-woocommerce-form-login-submit,
+button.woocommerce-button.button.e-apply-coupon {
+    background: var(--e-global-color-accent);
+    border: 0 !important;
+    border-radius: 8px;
+    color: white;
+    font-family: aptos, sans-serif !important;
+}
+
+.woocommerce #payment #place_order {
+    margin-top: 32px;
+}
+
+/* ============================================================
+   CHECKOUT - LOGIN SECTIE
+   ============================================================ */
+
+p.e-woocommerce-login-nudge.e-description {
+    font-size: 13px !important;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.e-woocommerce-login-anchor {
+    background: #f6f6f6;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+span.elementor-woocomemrce-login-rememberme {
+    font-size: 13px !important;
+}
+
+.woocommerce-form-login-toggle.e-checkout-secondary-title {
+    margin-bottom: 20px;
+}
+
+.woocommerce-checkout .woocommerce-form-login .woocommerce-form__label-for-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* ============================================================
+   CHECKOUT - COUPON
+   ============================================================ */
+
+p.e-woocommerce-coupon-nudge.e-checkout-secondary-title {
+    margin-top: 12px;
+    margin-bottom: 32px !important;
+}
+
+.elementor-widget-woocommerce-checkout-page .e-coupon-anchor {
+    margin-top: 0 !important;
+    background: #f6f6f6;
+    padding: 12px;
+    border-radius: 8px !important;
+}
+
+tr.cart-discount {
+    display: flex !important;
+    align-items: center !important;
+    background: #f6f6f6;
+    padding: 0 !important;
+    padding-left: 12px !important;
+}
+
+.cart-discount td {
+    font-weight: 400 !important;
+}
+
+/* ============================================================
+   CHECKOUT - VERZENDMETHODE
+   ============================================================ */
+
+h3#ship-to-different-address {
+    margin-bottom: 24px;
+    padding-left: 0 !important;
+}
+
+.shipping_address {
+    margin-bottom: 20px !important;
+}
+
+ul#shipping_method {
+    margin-top: 10px !important;
+}
+
+.woocommerce ul#shipping_method li {
+    display: flex !important;
+    background: #ffffff;
+    padding: 16px;
+    border-bottom: 0;
+    border-radius: 8px;
+    margin-bottom: 9px !important;
+}
+
+.woocommerce ul#shipping_method li label,
+#shipping_method li label,
+.wc_payment_method label {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    font-family: aptos, sans-serif;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+#shipping_method span.woocommerce-Price-amount.amount {
+    margin-left: auto;
+}
+
+/* Alleen wanneer er precies 1 verzendmethode in de lijst staat */
+ul#shipping_method > li:only-child label {
+    line-height: 13px;
+}
+
+ul#shipping_method > li:only-child label:before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 800;
+    font-size: 10px;
+    padding-top: 4px;
+    padding-left: 5px;
+    background: var(--e-global-color-accent);
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+span.woocommerce-shipping-may-be-available-html.e-checkout-message.e-cart-content {
+    font-size: 14px;
+}
+
+.woocommerce-shipping-totals th {
+    display: none !important;
+}
+
+.woocommerce-shipping-totals td {
+    width: 100%;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+.custom-shipping-heading h3,
+h3.custom-payment-heading {
+    font-family: aptos, sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+}
+
+.custom-shipping-heading {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.custom-shipping-heading th {
+    padding: 0 !important;
+    margin-top: 32px !important;
+    margin-bottom: -16px;
+}
+
+@media (max-width: 991px) {
+    h3#order_review_heading {
+        margin-top: 24px;
+    }
+
+    .shipping_address {
+        margin-bottom: 20px !important;
+    }
+}
+
+/* ============================================================
+   CHECKOUT - BETAALMETHODE
+   ============================================================ */
+
+h3.custom-payment-heading,
+h3.checkout-payment-heading {
+    margin-top: 20px !important;
+}
+
+ul.wc_payment_methods.payment_methods.methods {
+    padding-top: 12px !important;
+}
+
+ul.wc_payment_methods.payment_methods.methods img {
+    width: 32px !important;
+    height: 32px !important;
+    float: right !important;
+}
+
+.payment_methods li {
+    background: #ffffff;
+    padding: 17px 16px 11px 16px;
+    border-bottom: 0;
+    border-radius: 8px;
+    margin-bottom: 9px !important;
+}
+
+.payment_box.payment_method_mollie_wc_gateway_ideal {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .e-checkout__order_review {
+        padding: 0 !important;
+        border: 0 !important;
+    }
+
+    div#payment {
+        padding: 0 !important;
+        border: 0 !important;
+        margin-top: 16px !important;
+    }
+}
+
+/* ============================================================
+   CHECKOUT - RADIO & CHECKBOX STIJLEN
+   ============================================================ */
+
+.woocommerce-form__label-for-checkbox span {
+    font-family: aptos, sans-serif !important;
+}
+
+/* De radio is een flex-item binnen het label. Zonder flex:0 0 auto en een
+   expliciete min-width groeit hij mee met zijn eigen ::before en wordt het
+   een ovaal. Het vinkje wordt absoluut gecentreerd in plaats van met padding
+   geduwd, zodat het altijd midden in de cirkel staat. */
+.woocommerce-checkout input[type="radio"][name^="shipping_method"],
+.woocommerce-checkout input[type="radio"][name="payment_method"] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex: 0 0 auto;
+    position: relative;
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    padding: 0 !important;
+    border: 1px solid #d8cfc7;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 12px 0 0 !important;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.woocommerce-checkout input[type="radio"][name^="shipping_method"]:checked,
+.woocommerce-checkout input[type="radio"][name="payment_method"]:checked {
+    background: var(--e-global-color-accent);
+    border-color: var(--e-global-color-accent);
+}
+
+.woocommerce-checkout input[type="radio"][name^="shipping_method"]:checked::before,
+.woocommerce-checkout input[type="radio"][name="payment_method"]:checked::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 9px;
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Labels waren accentkleurig en lazen als links */
+#shipping_method li label,
+.wc_payment_method label {
+    color: #46211a;
+}
+
+/* Geselecteerde optie subtiel markeren */
+#shipping_method li:has(input:checked),
+.payment_methods li:has(input:checked) {
+    box-shadow: inset 0 0 0 1px var(--e-global-color-accent);
+}
+
+/* Beschrijving onder een betaalmethode netjes inspringen */
+.payment_box {
+    margin: 10px 0 0 32px;
+    padding: 0;
+    background: transparent;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.payment_box p {
+    margin: 0;
+}
+
+/* ActiveCampaign marketing-checkbox */
+#activecampaign_for_woocommerce_accepts_marketing_field .optional {
+    display: none !important;
+}
+
+/* Ship to a different address */
+.woocommerce-checkout #ship-to-different-address {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.woocommerce-checkout #ship-to-different-address label {
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Create account */
+.woocommerce-checkout .woocommerce-account-fields .woocommerce-form__label-for-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.woocommerce-checkout .woocommerce-account-fields .woocommerce-form__label-for-checkbox span {
+    cursor: pointer;
+}
+
+/* Alle checkboxes op de checkout in één keer.
+   box-sizing en de absolute ::before zijn essentieel: zonder die twee rekt
+   het vakje op tot de inhoud past en krijg je een ovaal van 34x26. */
+.woocommerce-checkout #rememberme,
+.woocommerce-checkout #ship-to-different-address-checkbox,
+.woocommerce-checkout #createaccount,
+input#activecampaign_for_woocommerce_accepts_marketing {
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    padding: 0 !important;
+    border: 1px solid #d8cfc7;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 10px 0 0 !important;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.woocommerce-checkout #rememberme:checked,
+.woocommerce-checkout #ship-to-different-address-checkbox:checked,
+.woocommerce-checkout #createaccount:checked,
+input#activecampaign_for_woocommerce_accepts_marketing:checked {
+    background: var(--e-global-color-accent);
+    border-color: var(--e-global-color-accent);
+}
+
+.woocommerce-checkout #rememberme:checked::before,
+.woocommerce-checkout #ship-to-different-address-checkbox:checked::before,
+.woocommerce-checkout #createaccount:checked::before,
+input#activecampaign_for_woocommerce_accepts_marketing:checked::before {
+    content: "";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 9px;
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================================================
+   CHECKOUT - ALGEMENE VOORWAARDEN
+   ============================================================ */
+
+#custom_terms_field input[type="checkbox"] {
+    display: none;
+}
+
+#custom_terms_field label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    padding-left: 52px !important;
+    padding-top: 12px !important;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: white !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+#custom_terms_field label a {
+    color: black !important;
+    text-decoration: underline;
+}
+
+#custom_terms_field label:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+#custom_terms_field input[type="checkbox"]:checked + span {
+    position: relative;
+}
+
+#custom_terms_field input[type="checkbox"]:checked + span:after {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 21px;
+    height: 21px;
+    background: var(--e-global-color-accent);
+    border-radius: 4px;
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 800;
+    font-size: 10px;
+    padding-top: 1px;
+    padding-left: 6px;
+}
+
+.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-privacy-policy-text p {
+    margin-top: 18px;
+    font-size: 13px !important;
+}
+
+/* ============================================================
+   ORDER REVIEW TABLE - ALGEMEEN
+   ============================================================ */
+
+#order_review_heading {
+    margin-bottom: 19px !important;
+}
+
+.elementor-widget-woocommerce-checkout-page .woocommerce .shop_table thead {
+    display: none;
+}
+
+.woocommerce-checkout-review-order-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.woocommerce-checkout-review-order-table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.woocommerce-checkout-review-order-table td,
+.woocommerce-checkout-review-order-table th {
+    display: block;
+    flex: 1 1 auto;
+}
+
+.woocommerce-checkout-review-order-table .product-name,
+.woocommerce-checkout-review-order-table th.product-name {
+    flex: 1 1 70%;
+}
+
+.woocommerce-checkout-review-order-table .product-total,
+.woocommerce-checkout-review-order-table th.product-total {
+    flex: 0 0 auto;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.woocommerce table.shop_table td {
+    padding: 0 !important;
+}
+
+.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-checkout-review-order-table .cart_item td {
+    border: 0 !important;
+}
+
+.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-checkout-review-order-table .cart_item td.product-name {
+    max-width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ============================================================
+   ORDER REVIEW TABLE - PRODUCT RIJEN
+   ============================================================ */
+
+tr.cart_item {
+    border: 1px solid #ebebeb !important;
+    border-radius: 10px;
+    padding: 16px !important;
+    margin-bottom: 8px;
+}
+
+tr.cart-subtotal {
+    display: none;
+}
+
+td.product-name {
+    font-size: 15px !important;
+    line-height: 19px !important;
+    font-weight: bold !important;
+}
+
+.checkout-product-title {
+    width: 100%;
+}
+
+/* dl.variation is toegevoegd: Super Forms schrijft item meta weg zonder de
+   tc-epo-metadata klasse, waardoor deze opmaak er eerder niet op aangreep. */
+dl.tc-epo-metadata.variation,
+td.product-name dl.variation {
+    width: 66%;
+    margin-top: 14px;
+    margin-left: 16px;
+    font-weight: 400;
+}
+
+a.tm-cart-edit-options,
+.tm-cart-edit-options {
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 12px !important;
+    margin-top: 4px !important;
+    order: 4;
+    width: 100%;
+}
+
+.tc-associated-table-product-indent {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    padding-left: 0 !important;
+    margin-top: -8px;
+}
+
+.tc-associated-table-product .tc-associated-table-product-price::after {
+    display: none !important;
+}
+
+/* ============================================================
+   ORDER REVIEW TABLE - PRODUCT AFBEELDING & QUANTITY BADGE
+   ============================================================ */
+
+.checkout-product-block {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.checkout-product-image-wrapper {
+    z-index: 0 !important;
+    margin-left: -18px;
+}
+
+.checkout-product-qty-wrapper {
+    z-index: 100 !important;
+    align-self: flex-end;
+}
+
+span.checkout-qty {
+    max-width: 25px !important;
+    max-height: 25px !important;
+    min-width: 25px !important;
+    min-height: 25px !important;
+    background: var(--e-global-color-accent);
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: -6px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================================================
+   ORDER REVIEW TABLE - TOTAAL RIJEN
+   ============================================================ */
+
+tr.order-total {
+    border-top: 1px solid #ebebeb !important;
+    border-radius: 0;
+    padding-top: 20px !important;
+    margin-top: 35px !important;
+}
+
+.order-total th {
+    font-size: 21px !important;
+}
+
+.order-total td {
+    text-align: right;
+}
+
+.order-total bdi {
+    font-size: 19px;
+    font-weight: bold !important;
+    display: block;
+}
+
+.order-total th,
+.order-total td {
+    padding: 0 !important;
+    margin: 0 !important;
+}

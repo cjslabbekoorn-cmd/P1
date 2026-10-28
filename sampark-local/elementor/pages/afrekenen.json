@@ -1,0 +1,447 @@
+{
+ "version": "0.4",
+ "title": "Afrekenen",
+ "type": "page",
+ "slug": "afrekenen",
+ "parent": null,
+ "menu_order": 10,
+ "seo": [
+  "Afrekenen | Stichting Sampark",
+  ""
+ ],
+ "content": [
+  {
+   "id": "66bcddb",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "html_tag": "header",
+    "_title": "Smalle kop (zonder menu)",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "98c18cf",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "row",
+      "padding": {
+       "unit": "px",
+       "top": "18",
+       "right": "24",
+       "bottom": "18",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "14",
+       "right": "20",
+       "bottom": "14",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "_title": "Kop inhoud"
+     },
+     "elements": [
+      {
+       "id": "d42e5ea",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "{{img:logo_sampark}}",
+         "id": "{{imgid:logo_sampark}}",
+         "alt": "Stichting Sampark"
+        },
+        "width": {
+         "unit": "px",
+         "size": 150,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "px",
+         "size": 120,
+         "sizes": []
+        },
+        "image_border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "link_to": "custom",
+        "link": {
+         "url": "/"
+        },
+        "_title": "Logo (naar home)"
+       },
+       "elements": []
+      },
+      {
+       "id": "b080d74",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Terug naar winkelwagen",
+        "link": {
+         "url": "/winkelwagen/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#00000000",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "__globals__": {
+         "border_color": "globals/colors?id=accent",
+         "button_text_color": "globals/colors?id=accent",
+         "button_background_hover_color": "globals/colors?id=accent",
+         "hover_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "830169e",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "24",
+     "bottom": "80",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "32",
+     "right": "16",
+     "bottom": "56",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Inhoud"
+   },
+   "elements": [
+    {
+     "id": "557f811",
+     "elType": "widget",
+     "widgetType": "woocommerce-checkout-page",
+     "settings": {
+      "checkout_layout": "two-column",
+      "sticky_right_column": "yes",
+      "billing_details_section_title": "Factuurgegevens",
+      "shipping_details_section_title": "Verzenden naar een ander adres?",
+      "additional_information_section_title": "Extra informatie",
+      "order_summary_section_title": "Jouw bestelling",
+      "returning_customer_section_title": "Heb je al een account?",
+      "returning_customer_link_text": "Log hier in",
+      "create_account_text": "Account aanmaken?",
+      "coupon_section_title_text": "Heb je een kortingscode?",
+      "coupon_section_title_link_text": "Klik hier om je code in te voeren",
+      "terms_conditions_message_text": "Ik ga akkoord met de",
+      "terms_conditions_link_text": "algemene voorwaarden",
+      "billing_details_form_fields": [
+       {
+        "_id": "7ad8123",
+        "field_key": "billing_first_name",
+        "field_label": "Voornaam",
+        "label": "Voornaam",
+        "placeholder": "",
+        "repeater_state": ""
+       },
+       {
+        "_id": "07c71d3",
+        "field_key": "billing_last_name",
+        "field_label": "Achternaam",
+        "label": "Achternaam",
+        "placeholder": "",
+        "repeater_state": ""
+       },
+       {
+        "_id": "4e258e5",
+        "field_key": "billing_company",
+        "field_label": "Bedrijfsnaam",
+        "label": "Bedrijfsnaam",
+        "placeholder": "",
+        "repeater_state": ""
+       },
+       {
+        "_id": "447fd05",
+        "field_key": "billing_country",
+        "field_label": "Land/regio",
+        "label": "Land/regio",
+        "placeholder": "",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "ce14bcb",
+        "field_key": "billing_address_1",
+        "field_label": "Straat en huisnummer",
+        "label": "Straat en huisnummer",
+        "placeholder": "Straatnaam en huisnummer",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "55c74d2",
+        "field_key": "billing_postcode",
+        "field_label": "Postcode",
+        "label": "Postcode",
+        "placeholder": "",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "d2d1c7f",
+        "field_key": "billing_city",
+        "field_label": "Plaats",
+        "label": "Plaats",
+        "placeholder": "",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "0a966f5",
+        "field_key": "billing_state",
+        "field_label": "Provincie",
+        "label": "Provincie",
+        "placeholder": "",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "151cb58",
+        "field_key": "billing_phone",
+        "field_label": "Telefoon",
+        "label": "Telefoon",
+        "placeholder": "",
+        "repeater_state": ""
+       },
+       {
+        "_id": "6e47322",
+        "field_key": "billing_email",
+        "field_label": "E-mailadres",
+        "label": "E-mailadres",
+        "placeholder": "",
+        "repeater_state": ""
+       }
+      ],
+      "shipping_details_form_fields": [
+       {
+        "_id": "f701e03",
+        "field_key": "shipping_first_name",
+        "field_label": "Voornaam",
+        "label": "Voornaam",
+        "placeholder": "",
+        "repeater_state": ""
+       },
+       {
+        "_id": "5325d7e",
+        "field_key": "shipping_last_name",
+        "field_label": "Achternaam",
+        "label": "Achternaam",
+        "placeholder": "",
+        "repeater_state": ""
+       },
+       {
+        "_id": "629ba3c",
+        "field_key": "shipping_company",
+        "field_label": "Bedrijfsnaam",
+        "label": "Bedrijfsnaam",
+        "placeholder": "",
+        "repeater_state": ""
+       },
+       {
+        "_id": "388aa60",
+        "field_key": "shipping_country",
+        "field_label": "Land/regio",
+        "label": "Land/regio",
+        "placeholder": "",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "158f216",
+        "field_key": "shipping_address_1",
+        "field_label": "Straat en huisnummer",
+        "label": "Straat en huisnummer",
+        "placeholder": "Straatnaam en huisnummer",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "962d27e",
+        "field_key": "shipping_postcode",
+        "field_label": "Postcode",
+        "label": "Postcode",
+        "placeholder": "",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "229bd76",
+        "field_key": "shipping_city",
+        "field_label": "Plaats",
+        "label": "Plaats",
+        "placeholder": "",
+        "repeater_state": "locale"
+       },
+       {
+        "_id": "4f027d7",
+        "field_key": "shipping_state",
+        "field_label": "Provincie",
+        "label": "Provincie",
+        "placeholder": "",
+        "repeater_state": "locale"
+       }
+      ],
+      "additional_information_form_fields": [
+       {
+        "_id": "bfb2819",
+        "field_key": "order_comments",
+        "field_label": "Bestelnotities (optioneel)",
+        "label": "Bestelnotities (optioneel)",
+        "placeholder": "Bijvoorbeeld een voorkeur voor de bezorging.",
+        "repeater_state": ""
+       }
+      ],
+      "_title": "Afrekenen (Elementor Pro, klassieke checkout)"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "e9bb704",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "background_background": "classic",
+    "html_tag": "footer",
+    "_title": "Smalle voet",
+    "__globals__": {
+     "background_color": "globals/colors?id=accent"
+    }
+   },
+   "elements": [
+    {
+     "id": "ed050f4",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "20",
+       "right": "24",
+       "bottom": "20",
+       "left": "24",
+       "isLinked": false
+      },
+      "_title": "Voet inhoud"
+     },
+     "elements": [
+      {
+       "id": "6d833be",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>© Stichting Sampark · ANBI-erkend · Veilig betalen met iDEAL of op factuur</p>",
+        "__globals__": {
+         "text_color": "globals/colors?id=658acb6"
+        },
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes",
+  "custom_css": "/* afrekenen: overgenomen van staging (pagina 3147), lettertype Inter/Barlow vervangen door Aptos, externe laadanimatie verwijderd.\n   Staat als Pagina-CSS in Elementor (Pagina-instellingen > Aangepaste CSS); \"selector\" is deze pagina. */\nselector .elementor-widget-woocommerce-checkout-page {--additional-information-display:block;--sections-background-color:#02010100;--sections-border-type:none;--sections-border-radius:0px 0px 0px 0px;--sections-padding:0px 0px 0px 0px;--sections-margin:0px 0px 0px 0px;--sections-title-color:#000000;--sections-title-spacing:10px;--sections-secondary-title-color:var( --e-global-color-primary );--sections-descriptions-color:var( --e-global-color-primary );--sections-messages-color:#000000;--sections-checkboxes-color:var( --e-global-color-primary );--sections-radio-buttons-color:var( --e-global-color-primary );--links-normal-color:var( --e-global-color-accent );--forms-columns-gap-padding:calc( 0px/2 );--forms-columns-gap-margin:calc( -0px/2 );--forms-labels-color:var( --e-global-color-primary );--forms-fields-normal-color:#000000;--forms-fields-focus-color:#000000;--forms-fields-border-radius:8px 8px 8px 8px;--forms-fields-padding:14px 12px 14px 12px;--order-summary-items-divider-weight:1px;--order-summary-totals-color:var( --e-global-color-primary );--order-summary-totals-divider-weight:0px;--purchase-button-normal-text-color:#FFFFFF;--purchase-button-border-radius:10px 10px 10px 10px;}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce-shipping-fields {--shipping-heading-padding-start:0px;}\nselector .elementor-widget-woocommerce-checkout-page h3#order_review_heading, selector .elementor-widget-woocommerce-checkout-page .woocommerce-billing-fields h3, selector .elementor-widget-woocommerce-checkout-page .woocommerce-additional-fields h3 {font-family:\"Spectral\", Sans-serif;font-size:21px;font-weight:700;}\nselector .elementor-widget-woocommerce-checkout-page .e-checkout-secondary-title {font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );text-transform:var( --e-global-typography-secondary-text-transform );}\nselector .elementor-widget-woocommerce-checkout-page .e-description {font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout #payment .payment_box, selector .elementor-widget-woocommerce-checkout-page .woocommerce-privacy-policy-text p, selector .elementor-widget-woocommerce-checkout-page .e-checkout-message {font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce-form__label-for-checkbox span {font-family:\"Spectral\", Sans-serif;font-weight:500;}\nselector .elementor-widget-woocommerce-checkout-page .wc_payment_method label, selector .elementor-widget-woocommerce-checkout-page #shipping_method li label {font-family:\"aptos\", Sans-serif;font-size:17px;font-weight:600;}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce-billing-fields .form-row label, selector .elementor-widget-woocommerce-checkout-page .woocommerce-shipping-fields .form-row label, selector .elementor-widget-woocommerce-checkout-page .woocommerce-additional-fields .form-row label, selector .elementor-widget-woocommerce-checkout-page .e-woocommerce-login-anchor .form-row label, selector .elementor-widget-woocommerce-checkout-page .e-coupon-anchor-description {font-family:aptos, sans-serif;font-size:14px;font-weight:400;}\nselector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single .select2-selection__arrow b {border-color:#000000 transparent transparent transparent;}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce #customer_details .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page  .woocommerce #customer_details .form-row textarea, selector .elementor-widget-woocommerce-checkout-page .woocommerce form #customer_details select, selector .elementor-widget-woocommerce-checkout-page .woocommerce .e-woocommerce-login-anchor .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page #coupon_code, selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single, selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout #payment .payment_methods .payment_box {background-color:#FFFFFF;}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce #customer_details .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page  .woocommerce #customer_details .form-row textarea, selector .elementor-widget-woocommerce-checkout-page .woocommerce form #customer_details select, selector .elementor-widget-woocommerce-checkout-page .woocommerce .e-woocommerce-login-anchor .form-row .input-text, selector .elementor-widget-woocommerce-checkout-page #coupon_code, selector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single {border-style:solid;border-width:1px 1px 1px 1px;border-color:#E3E3E3;}\nselector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single .select2-selection__rendered {line-height:calc( (14px*2) + 16px );padding-left:12px;padding-right:12px;}\nselector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single .select2-selection__arrow {height:calc( (14px*2) + 16px );right:12px;}\nselector .elementor-widget-woocommerce-checkout-page .select2-container--default .select2-selection--single {height:auto;}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table .cart_item td {font-family:aptos, sans-serif;font-size:15px;}\nselector .elementor-widget-woocommerce-checkout-page .product-name .variation {font-family:aptos, sans-serif;}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table thead tr th, selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table tfoot tr th, selector .elementor-widget-woocommerce-checkout-page .woocommerce-checkout-review-order-table tfoot tr td {font-family:aptos, sans-serif;font-size:16px;}\nselector .elementor-widget-woocommerce-checkout-page .woocommerce #payment #place_order {font-family:aptos, sans-serif;font-size:19px;font-weight:800;}\nselector .elementor-widget-woocommerce-checkout-page #payment #place_order {background-color:var( --e-global-color-accent );}\nselector .elementor-widget-woocommerce-checkout-page .col2-set .col-1 {--sections-border-type:solid;}\nselector .elementor-widget-woocommerce-checkout-page .e-checkout__column-start #customer_details .col-1 {border-width:0px 0px 0px 0px;}\nselector .elementor-widget-woocommerce-checkout-page > .elementor-widget-container {padding:0px 0px 0px 0px;}\n/* ============================================================\n   CHECKOUT - ALGEMENE LAYOUT & CONTAINER\n   ============================================================ */\n\n.elementor-widget-woocommerce-checkout-page .e-checkout__container {\n    grid-column-gap: var(--sections-margin, 48px);\n}\n\n.e-checkout__column.e-checkout__column-start {\n    padding: 0;\n    border: 0;\n    border-radius: 0;\n}\n\n.elementor-widget-woocommerce-checkout-page #ship-to-different-address span,\n.woocommerce-account-fields span {\n    font-weight: bold;\n    font-size: 16px !important;\n}\n\n.elementor-widget-woocommerce-checkout-page .woocommerce #customer_details .col-1,\n.elementor-widget-woocommerce-checkout-page .woocommerce .shipping_address,\n.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-additional-fields {\n    border: 0 !important;\n    padding: 0;\n}\n\n@media (min-width: 992px) {\n    .e-checkout__column-inner.e-sticky-right-column {\n        margin-left: 72px;\n    }\n}\n\n/* ============================================================\n   CHECKOUT - SECTIES (billing, shipping, payment, terms)\n   ============================================================ */\n\n.woocommerce-billing-fields__field-wrapper,\n.shipping_address,\nul.wc_payment_methods.payment_methods.methods,\ntr.woocommerce-shipping-totals.shipping,\np#custom_terms_field,\ndiv.create-account {\n    padding: 6px 12px !important;\n    background: #f6f6f6 !important;\n    border-radius: 10px !important;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n\n.woocommerce-billing-fields__field-wrapper,\n.shipping_address,\ndiv.create-account {\n    padding: 12px 16px !important;\n}\n\ndiv.create-account {\n    margin-bottom: 20px !important;\n}\n\ntr.woocommerce-shipping-totals.shipping {\n    padding: 4px 12px !important;\n}\n\n.woocommerce-terms-and-conditions-wrapper {\n    background: #f6f6f6;\n    margin-top: 20px;\n    margin-bottom: -22px;\n    padding: 0 20px !important;\n    border-radius: 10px;\n}\n\n.woocommerce-additional-fields__field-wrapper {\n    margin-top: 20px;\n}\n\n@media (max-width: 767px) {\n    .woocommerce-additional-fields__field-wrapper {\n        margin-top: 0 !important;\n    }\n}\n\n/* ============================================================\n   CHECKOUT - VELDEN & FORMULIER\n   ============================================================ */\n\n.woocommerce-form-row.woocommerce-form-row--wide.form-row.form-row-wide {\n    padding: 0 !important;\n}\n\np.form-row.validate-required {\n    padding: 0;\n}\n\np#checkout_checkbox_field {\n    padding: 0 !important;\n    margin: 0;\n}\n\n#customer_details .form-row textarea {\n    border-radius: 10px !important;\n    min-height: 90px;\n}\n\ninput[readonly] {\n    background-color: #fff !important;\n}\n\n.woocommerce form .form-row.woocommerce-validated .select2-container:not(.select2-container--open) .select2-selection {\n    border-color: #e3e3e3;\n}\n\n/* ============================================================\n   CHECKOUT - SELECT2 DROPDOWN\n   ============================================================ */\n\n:where(.woocommerce) .select2-container .select2-selection--single .select2-selection__arrow {\n    top: 14px !important;\n}\n\nspan.select2-search.select2-search--dropdown {\n    display: none;\n}\n\n.select2-dropdown {\n    background-color: var(--wc-form-color-background, #fff);\n    color: var(--wc-form-color-text, #000);\n    border: 1px solid #ebebeb;\n    border-radius: 4px;\n    box-sizing: border-box;\n    display: block;\n    position: absolute;\n    left: -100000px;\n    width: 100%;\n    z-index: 1051;\n    top: -10px;\n}\n\n.e-woo-select2-wrapper .select2-results__option {\n    color: #69727d;\n    font-family: aptos, sans-serif;\n    font-size: 14px;\n    padding: 12px;\n}\n\n.select2-container--default .select2-results__option--highlighted[aria-selected],\n.select2-container--default .select2-results__option--highlighted[data-selected] {\n    background-color: #f1f1f1;\n    color: #000;\n}\n\nspan.select2-selection.select2-selection--single {\n    margin-top: 10px;\n    margin-bottom: 10px;\n}\n\nspan#select2-billing_country-container,\nspan#select2-shipping_country-container {\n    height: 46px;\n    padding-top: 2px;\n}\n\n/* ============================================================\n   CHECKOUT - LINKS & TYPOGRAFIE\n   ============================================================ */\n\n.elementor-widget-woocommerce-checkout-page a {\n    color: var(--e-global-color-accent) !important;\n}\n\nspan.woocommerce-Price-amount.amount {\n    font-size: 15px;\n    font-family: aptos, sans-serif;\n    font-weight: 400 !important;\n}\n\n#custom_terms_field span {\n    font-size: 14px;\n}\n\n/* ============================================================\n   CHECKOUT - KNOPPEN\n   ============================================================ */\n\nbutton.woocommerce-button.button.woocommerce-form-login__submit.e-woocommerce-form-login-submit,\nbutton.woocommerce-button.button.e-apply-coupon {\n    background: var(--e-global-color-accent);\n    border: 0 !important;\n    border-radius: 8px;\n    color: white;\n    font-family: aptos, sans-serif !important;\n}\n\n.woocommerce #payment #place_order {\n    margin-top: 32px;\n}\n\n/* ============================================================\n   CHECKOUT - LOGIN SECTIE\n   ============================================================ */\n\np.e-woocommerce-login-nudge.e-description {\n    font-size: 13px !important;\n    margin-top: 0;\n    margin-bottom: 0;\n}\n\n.e-woocommerce-login-anchor {\n    background: #f6f6f6;\n    padding: 16px;\n    border-radius: 10px;\n    margin-bottom: 20px !important;\n}\n\nspan.elementor-woocomemrce-login-rememberme {\n    font-size: 13px !important;\n}\n\n.woocommerce-form-login-toggle.e-checkout-secondary-title {\n    margin-bottom: 20px;\n}\n\n.woocommerce-checkout .woocommerce-form-login .woocommerce-form__label-for-checkbox {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    cursor: pointer;\n    margin: 0;\n}\n\n/* ============================================================\n   CHECKOUT - COUPON\n   ============================================================ */\n\np.e-woocommerce-coupon-nudge.e-checkout-secondary-title {\n    margin-top: 12px;\n    margin-bottom: 32px !important;\n}\n\n.elementor-widget-woocommerce-checkout-page .e-coupon-anchor {\n    margin-top: 0 !important;\n    background: #f6f6f6;\n    padding: 12px;\n    border-radius: 8px !important;\n}\n\ntr.cart-discount {\n    display: flex !important;\n    align-items: center !important;\n    background: #f6f6f6;\n    padding: 0 !important;\n    padding-left: 12px !important;\n}\n\n.cart-discount td {\n    font-weight: 400 !important;\n}\n\n/* ============================================================\n   CHECKOUT - VERZENDMETHODE\n   ============================================================ */\n\nh3#ship-to-different-address {\n    margin-bottom: 24px;\n    padding-left: 0 !important;\n}\n\n.shipping_address {\n    margin-bottom: 20px !important;\n}\n\nul#shipping_method {\n    margin-top: 10px !important;\n}\n\n.woocommerce ul#shipping_method li {\n    display: flex !important;\n    background: #ffffff;\n    padding: 16px;\n    border-bottom: 0;\n    border-radius: 8px;\n    margin-bottom: 9px !important;\n}\n\n.woocommerce ul#shipping_method li label,\n#shipping_method li label,\n.wc_payment_method label {\n    display: flex !important;\n    align-items: center;\n    width: 100%;\n    font-family: aptos, sans-serif;\n    font-size: 14px !important;\n    font-weight: 400 !important;\n}\n\n#shipping_method span.woocommerce-Price-amount.amount {\n    margin-left: auto;\n}\n\n/* Alleen wanneer er precies 1 verzendmethode in de lijst staat */\nul#shipping_method > li:only-child label {\n    line-height: 13px;\n}\n\nul#shipping_method > li:only-child label:before {\n    content: \"\";\n    font-family: 'Font Awesome 5 Free';\n    font-weight: 800;\n    font-size: 10px;\n    padding-top: 4px;\n    padding-left: 5px;\n    background: var(--e-global-color-accent);\n    height: 20px !important;\n    width: 20px !important;\n    border-radius: 50%;\n    color: white;\n    display: inline-block;\n    margin-right: 12px;\n}\n\nspan.woocommerce-shipping-may-be-available-html.e-checkout-message.e-cart-content {\n    font-size: 14px;\n}\n\n.woocommerce-shipping-totals th {\n    display: none !important;\n}\n\n.woocommerce-shipping-totals td {\n    width: 100%;\n    min-width: 100% !important;\n    max-width: 100% !important;\n}\n\n.custom-shipping-heading h3,\nh3.custom-payment-heading {\n    font-family: aptos, sans-serif !important;\n    font-size: 21px !important;\n    font-weight: 700 !important;\n}\n\n.custom-shipping-heading {\n    padding: 0 !important;\n    margin: 0 !important;\n}\n\n.custom-shipping-heading th {\n    padding: 0 !important;\n    margin-top: 32px !important;\n    margin-bottom: -16px;\n}\n\n@media (max-width: 991px) {\n    h3#order_review_heading {\n        margin-top: 24px;\n    }\n\n    .shipping_address {\n        margin-bottom: 20px !important;\n    }\n}\n\n/* ============================================================\n   CHECKOUT - BETAALMETHODE\n   ============================================================ */\n\nh3.custom-payment-heading,\nh3.checkout-payment-heading {\n    margin-top: 20px !important;\n}\n\nul.wc_payment_methods.payment_methods.methods {\n    padding-top: 12px !important;\n}\n\nul.wc_payment_methods.payment_methods.methods img {\n    width: 32px !important;\n    height: 32px !important;\n    float: right !important;\n}\n\n.payment_methods li {\n    background: #ffffff;\n    padding: 17px 16px 11px 16px;\n    border-bottom: 0;\n    border-radius: 8px;\n    margin-bottom: 9px !important;\n}\n\n.payment_box.payment_method_mollie_wc_gateway_ideal {\n    display: none !important;\n}\n\n@media (max-width: 767px) {\n    .e-checkout__order_review {\n        padding: 0 !important;\n        border: 0 !important;\n    }\n\n    div#payment {\n        padding: 0 !important;\n        border: 0 !important;\n        margin-top: 16px !important;\n    }\n}\n\n/* ============================================================\n   CHECKOUT - RADIO & CHECKBOX STIJLEN\n   ============================================================ */\n\n.woocommerce-form__label-for-checkbox span {\n    font-family: aptos, sans-serif !important;\n}\n\n/* De radio is een flex-item binnen het label. Zonder flex:0 0 auto en een\n   expliciete min-width groeit hij mee met zijn eigen ::before en wordt het\n   een ovaal. Het vinkje wordt absoluut gecentreerd in plaats van met padding\n   geduwd, zodat het altijd midden in de cirkel staat. */\n.woocommerce-checkout input[type=\"radio\"][name^=\"shipping_method\"],\n.woocommerce-checkout input[type=\"radio\"][name=\"payment_method\"] {\n    appearance: none;\n    -webkit-appearance: none;\n    flex: 0 0 auto;\n    position: relative;\n    display: inline-block;\n    width: 20px !important;\n    height: 20px !important;\n    min-width: 20px !important;\n    min-height: 20px !important;\n    padding: 0 !important;\n    border: 1px solid #d8cfc7;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    vertical-align: middle;\n    margin: 0 12px 0 0 !important;\n    transition: background 0.15s ease, border-color 0.15s ease;\n}\n\n.woocommerce-checkout input[type=\"radio\"][name^=\"shipping_method\"]:checked,\n.woocommerce-checkout input[type=\"radio\"][name=\"payment_method\"]:checked {\n    background: var(--e-global-color-accent);\n    border-color: var(--e-global-color-accent);\n}\n\n.woocommerce-checkout input[type=\"radio\"][name^=\"shipping_method\"]:checked::before,\n.woocommerce-checkout input[type=\"radio\"][name=\"payment_method\"]:checked::before {\n    content: \"\";\n    font-family: 'Font Awesome 5 Free';\n    font-weight: 900;\n    font-size: 9px;\n    color: #fff;\n    position: absolute;\n    inset: 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n/* Labels waren accentkleurig en lazen als links */\n#shipping_method li label,\n.wc_payment_method label {\n    color: #46211a;\n}\n\n/* Geselecteerde optie subtiel markeren */\n#shipping_method li:has(input:checked),\n.payment_methods li:has(input:checked) {\n    box-shadow: inset 0 0 0 1px var(--e-global-color-accent);\n}\n\n/* Beschrijving onder een betaalmethode netjes inspringen */\n.payment_box {\n    margin: 10px 0 0 32px;\n    padding: 0;\n    background: transparent;\n    font-size: 13px;\n    line-height: 1.5;\n}\n\n.payment_box p {\n    margin: 0;\n}\n\n/* ActiveCampaign marketing-checkbox */\n#activecampaign_for_woocommerce_accepts_marketing_field .optional {\n    display: none !important;\n}\n\n/* Ship to a different address */\n.woocommerce-checkout #ship-to-different-address {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.woocommerce-checkout #ship-to-different-address label {\n    cursor: pointer;\n    margin: 0;\n}\n\n/* Create account */\n.woocommerce-checkout .woocommerce-account-fields .woocommerce-form__label-for-checkbox {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.woocommerce-checkout .woocommerce-account-fields .woocommerce-form__label-for-checkbox span {\n    cursor: pointer;\n}\n\n/* Alle checkboxes op de checkout in één keer.\n   box-sizing en de absolute ::before zijn essentieel: zonder die twee rekt\n   het vakje op tot de inhoud past en krijg je een ovaal van 34x26. */\n.woocommerce-checkout #rememberme,\n.woocommerce-checkout #ship-to-different-address-checkbox,\n.woocommerce-checkout #createaccount,\ninput#activecampaign_for_woocommerce_accepts_marketing {\n    appearance: none;\n    -webkit-appearance: none;\n    box-sizing: border-box;\n    flex: 0 0 auto;\n    position: relative;\n    display: inline-block;\n    width: 20px !important;\n    height: 20px !important;\n    min-width: 20px !important;\n    min-height: 20px !important;\n    padding: 0 !important;\n    border: 1px solid #d8cfc7;\n    border-radius: 4px;\n    background: #fff;\n    cursor: pointer;\n    vertical-align: middle;\n    margin: 0 10px 0 0 !important;\n    transition: background 0.15s ease, border-color 0.15s ease;\n}\n\n.woocommerce-checkout #rememberme:checked,\n.woocommerce-checkout #ship-to-different-address-checkbox:checked,\n.woocommerce-checkout #createaccount:checked,\ninput#activecampaign_for_woocommerce_accepts_marketing:checked {\n    background: var(--e-global-color-accent);\n    border-color: var(--e-global-color-accent);\n}\n\n.woocommerce-checkout #rememberme:checked::before,\n.woocommerce-checkout #ship-to-different-address-checkbox:checked::before,\n.woocommerce-checkout #createaccount:checked::before,\ninput#activecampaign_for_woocommerce_accepts_marketing:checked::before {\n    content: \"\";\n    font-family: 'Font Awesome 5 Free';\n    font-weight: 900;\n    font-size: 9px;\n    color: #fff;\n    position: absolute;\n    inset: 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n/* ============================================================\n   CHECKOUT - ALGEMENE VOORWAARDEN\n   ============================================================ */\n\n#custom_terms_field input[type=\"checkbox\"] {\n    display: none;\n}\n\n#custom_terms_field label {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    padding: 16px;\n    padding-left: 52px !important;\n    padding-top: 12px !important;\n    margin-bottom: 10px;\n    border-radius: 8px;\n    background: white !important;\n    color: black !important;\n    cursor: pointer;\n}\n\n#custom_terms_field label a {\n    color: black !important;\n    text-decoration: underline;\n}\n\n#custom_terms_field label:before {\n    content: \"\";\n    position: absolute;\n    left: 20px;\n    top: 14px;\n    width: 19px;\n    height: 19px;\n    border: 1px solid #bbb;\n    border-radius: 4px;\n    background: #fff;\n    margin-top: 5px;\n}\n\n#custom_terms_field input[type=\"checkbox\"]:checked + span {\n    position: relative;\n}\n\n#custom_terms_field input[type=\"checkbox\"]:checked + span:after {\n    content: \"\";\n    position: absolute;\n    left: -32px;\n    top: 0;\n    width: 21px;\n    height: 21px;\n    background: var(--e-global-color-accent);\n    border-radius: 4px;\n    color: white;\n    font-family: 'Font Awesome 5 Free';\n    font-weight: 800;\n    font-size: 10px;\n    padding-top: 1px;\n    padding-left: 6px;\n}\n\n.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-privacy-policy-text p {\n    margin-top: 18px;\n    font-size: 13px !important;\n}\n\n/* ============================================================\n   ORDER REVIEW TABLE - ALGEMEEN\n   ============================================================ */\n\n#order_review_heading {\n    margin-bottom: 19px !important;\n}\n\n.elementor-widget-woocommerce-checkout-page .woocommerce .shop_table thead {\n    display: none;\n}\n\n.woocommerce-checkout-review-order-table {\n    border-collapse: separate;\n    border-spacing: 0;\n    width: 100%;\n}\n\n.woocommerce-checkout-review-order-table tr {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    gap: 12px;\n}\n\n.woocommerce-checkout-review-order-table td,\n.woocommerce-checkout-review-order-table th {\n    display: block;\n    flex: 1 1 auto;\n}\n\n.woocommerce-checkout-review-order-table .product-name,\n.woocommerce-checkout-review-order-table th.product-name {\n    flex: 1 1 70%;\n}\n\n.woocommerce-checkout-review-order-table .product-total,\n.woocommerce-checkout-review-order-table th.product-total {\n    flex: 0 0 auto;\n    text-align: right;\n    white-space: nowrap;\n}\n\n.woocommerce table.shop_table td {\n    padding: 0 !important;\n}\n\n.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-checkout-review-order-table .cart_item td {\n    border: 0 !important;\n}\n\n.elementor-widget-woocommerce-checkout-page .woocommerce .woocommerce-checkout-review-order-table .cart_item td.product-name {\n    max-width: 100% !important;\n    display: flex;\n    flex-wrap: wrap;\n}\n\n/* ============================================================\n   ORDER REVIEW TABLE - PRODUCT RIJEN\n   ============================================================ */\n\ntr.cart_item {\n    border: 1px solid #ebebeb !important;\n    border-radius: 10px;\n    padding: 16px !important;\n    margin-bottom: 8px;\n}\n\ntr.cart-subtotal {\n    display: none;\n}\n\ntd.product-name {\n    font-size: 15px !important;\n    line-height: 19px !important;\n    font-weight: bold !important;\n}\n\n.checkout-product-title {\n    width: 100%;\n}\n\n/* dl.variation is toegevoegd: Super Forms schrijft item meta weg zonder de\n   tc-epo-metadata klasse, waardoor deze opmaak er eerder niet op aangreep. */\ndl.tc-epo-metadata.variation,\ntd.product-name dl.variation {\n    width: 66%;\n    margin-top: 14px;\n    margin-left: 16px;\n    font-weight: 400;\n}\n\na.tm-cart-edit-options,\n.tm-cart-edit-options {\n    font-weight: 400 !important;\n    font-style: normal !important;\n    font-size: 12px !important;\n    margin-top: 4px !important;\n    order: 4;\n    width: 100%;\n}\n\n.tc-associated-table-product-indent {\n    display: flex !important;\n    flex-direction: row !important;\n    flex-wrap: wrap !important;\n    padding-left: 0 !important;\n    margin-top: -8px;\n}\n\n.tc-associated-table-product .tc-associated-table-product-price::after {\n    display: none !important;\n}\n\n/* ============================================================\n   ORDER REVIEW TABLE - PRODUCT AFBEELDING & QUANTITY BADGE\n   ============================================================ */\n\n.checkout-product-block {\n    display: flex;\n    flex-direction: row-reverse;\n    justify-content: flex-end;\n    margin-top: 8px;\n}\n\n.checkout-product-image-wrapper {\n    z-index: 0 !important;\n    margin-left: -18px;\n}\n\n.checkout-product-qty-wrapper {\n    z-index: 100 !important;\n    align-self: flex-end;\n}\n\nspan.checkout-qty {\n    max-width: 25px !important;\n    max-height: 25px !important;\n    min-width: 25px !important;\n    min-height: 25px !important;\n    background: var(--e-global-color-accent);\n    color: white;\n    border-radius: 50%;\n    font-size: 14px;\n    margin-top: -20px;\n    margin-left: -6px;\n    display: flex !important;\n    align-items: center;\n    justify-content: center;\n}\n\n/* ============================================================\n   ORDER REVIEW TABLE - TOTAAL RIJEN\n   ============================================================ */\n\ntr.order-total {\n    border-top: 1px solid #ebebeb !important;\n    border-radius: 0;\n    padding-top: 20px !important;\n    margin-top: 35px !important;\n}\n\n.order-total th {\n    font-size: 21px !important;\n}\n\n.order-total td {\n    text-align: right;\n}\n\n.order-total bdi {\n    font-size: 19px;\n    font-weight: bold !important;\n    display: block;\n}\n\n.order-total th,\n.order-total td {\n    padding: 0 !important;\n    margin: 0 !important;\n}\n"
+ },
+ "template": "elementor_canvas"
+}

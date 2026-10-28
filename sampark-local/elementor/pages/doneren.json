@@ -31,11 +31,16 @@
     "background_position": "center center",
     "background_size": "cover",
     "background_overlay_background": "gradient",
-    "background_overlay_color": "#46211AE6",
-    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_color": "#46211AD9",
+    "background_overlay_color_b": "#46211A59",
     "background_overlay_gradient_angle": {
      "unit": "deg",
      "size": 90,
+     "sizes": []
+    },
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 1,
      "sizes": []
     },
     "flex_align_items": "stretch",
@@ -49,22 +54,22 @@
     "shape_divider_bottom_color": "#FFFFFF",
     "shape_divider_bottom_width": {
      "unit": "%",
-     "size": 169,
+     "size": 130,
      "sizes": []
     },
     "shape_divider_bottom_height": {
      "unit": "px",
-     "size": 34,
+     "size": 70,
      "sizes": []
     },
     "shape_divider_bottom_width_mobile": {
      "unit": "%",
-     "size": 500,
+     "size": 260,
      "sizes": []
     },
     "shape_divider_bottom_height_mobile": {
      "unit": "px",
-     "size": 90,
+     "size": 44,
      "sizes": []
     },
     "html_tag": "section",
@@ -216,7 +221,7 @@
    "isInner": false
   },
   {
-   "id": "0e2e556",
+   "id": "e9f6125",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -254,7 +259,7 @@
    },
    "elements": [
     {
-     "id": "6636827",
+     "id": "6ecbdd6",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -401,7 +406,7 @@
        "isInner": false
       },
       {
-       "id": "e46441f",
+       "id": "0d0653c",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -452,7 +457,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Superforms · product Eenmalige donatie",
+          "title": "Doneer nu",
           "header_size": "p",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -477,7 +482,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Doneer nu",
+          "title": "Kies je bedrag",
           "header_size": "h3",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -498,163 +503,17 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Op de live site staat hier het Superforms-formulier van het product <strong>Eenmalige donatie</strong> (via een Woo product-shortcode of een knop naar het product met het bedrag als URL-parameter).</p>"
+          "editor": "<p>Kies een bedrag of vul zelf een bedrag in. Je rekent daarna veilig af met iDEAL of op factuur.</p>"
          },
          "elements": []
         },
         {
-         "id": "8d7d8ee",
-         "elType": "container",
-         "settings": {
-          "flex_direction": "row",
-          "flex_gap": {
-           "column": "10",
-           "row": "10",
-           "isLinked": true,
-           "unit": "px",
-           "size": 10
-          },
-          "content_width": "full",
-          "flex_direction_tablet": "row",
-          "flex_direction_mobile": "row",
-          "flex_wrap": "wrap"
-         },
-         "elements": [
-          {
-           "id": "1ebfc18",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "€ 10",
-            "link": {
-             "url": "/product/donatie/?bedrag=10",
-             "is_external": "",
-             "nofollow": ""
-            },
-            "background_color": "#00000000",
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "1",
-             "right": "1",
-             "bottom": "1",
-             "left": "1",
-             "isLinked": true
-            },
-            "__globals__": {
-             "border_color": "globals/colors?id=accent",
-             "button_text_color": "globals/colors?id=accent",
-             "button_background_hover_color": "globals/colors?id=accent",
-             "hover_color": "globals/colors?id=658acb6"
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "2f16d54",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "€ 25",
-            "link": {
-             "url": "/product/donatie/?bedrag=25",
-             "is_external": "",
-             "nofollow": ""
-            },
-            "background_color": "#00000000",
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "1",
-             "right": "1",
-             "bottom": "1",
-             "left": "1",
-             "isLinked": true
-            },
-            "__globals__": {
-             "border_color": "globals/colors?id=accent",
-             "button_text_color": "globals/colors?id=accent",
-             "button_background_hover_color": "globals/colors?id=accent",
-             "hover_color": "globals/colors?id=658acb6"
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "df8adf4",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "€ 50",
-            "link": {
-             "url": "/product/donatie/?bedrag=50",
-             "is_external": "",
-             "nofollow": ""
-            },
-            "background_color": "#00000000",
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "1",
-             "right": "1",
-             "bottom": "1",
-             "left": "1",
-             "isLinked": true
-            },
-            "__globals__": {
-             "border_color": "globals/colors?id=accent",
-             "button_text_color": "globals/colors?id=accent",
-             "button_background_hover_color": "globals/colors?id=accent",
-             "hover_color": "globals/colors?id=658acb6"
-            }
-           },
-           "elements": []
-          },
-          {
-           "id": "9f7a0fe",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "€ 100",
-            "link": {
-             "url": "/product/donatie/?bedrag=100",
-             "is_external": "",
-             "nofollow": ""
-            },
-            "background_color": "#00000000",
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "1",
-             "right": "1",
-             "bottom": "1",
-             "left": "1",
-             "isLinked": true
-            },
-            "__globals__": {
-             "border_color": "globals/colors?id=accent",
-             "button_text_color": "globals/colors?id=accent",
-             "button_background_hover_color": "globals/colors?id=accent",
-             "hover_color": "globals/colors?id=658acb6"
-            }
-           },
-           "elements": []
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "584a78f",
+         "id": "39a4428",
          "elType": "widget",
-         "widgetType": "button",
+         "widgetType": "shortcode",
          "settings": {
-          "text": "Ander bedrag",
-          "link": {
-           "url": "/product/donatie/",
-           "is_external": "",
-           "nofollow": ""
-          },
-          "align": "justify"
+          "shortcode": "[super_form id=\"{{form:donatie_pagina}}\"]",
+          "_title": "Super Forms · Donatieformulier (doneerpagina, vast product Eenmalige donatie)"
          },
          "elements": []
         }
@@ -670,5 +529,6 @@
  ],
  "page_settings": {
   "hide_title": "yes"
- }
+ },
+ "template": "elementor_header_footer"
 }

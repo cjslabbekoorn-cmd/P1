@@ -4,7 +4,7 @@
  "source": "product",
  "content": [
   {
-   "id": "ac72e21",
+   "id": "e6bba10",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -44,7 +44,7 @@
    },
    "elements": [
     {
-     "id": "56659b7",
+     "id": "1b3aa96",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -66,7 +66,7 @@
      "elements": []
     },
     {
-     "id": "c404a2c",
+     "id": "3e26973",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -95,7 +95,7 @@
      "elements": []
     },
     {
-     "id": "d02bec4",
+     "id": "f3f9594",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -110,7 +110,7 @@
      "elements": []
     },
     {
-     "id": "c4d9d55",
+     "id": "8f32cd7",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-link",
      "settings": {

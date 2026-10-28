@@ -4,7 +4,7 @@
  "source": "sponsors",
  "content": [
   {
-   "id": "a6c4986",
+   "id": "e3bc60e",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -60,7 +60,7 @@
    },
    "elements": [
     {
-     "id": "8779aa2",
+     "id": "77ecb81",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-image",
      "settings": {

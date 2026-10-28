@@ -8,7 +8,7 @@
  ],
  "content": [
   {
-   "id": "718b83d",
+   "id": "c292d71",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -29,7 +29,7 @@
    },
    "elements": [
     {
-     "id": "a77bdb7",
+     "id": "71a98c7",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -62,7 +62,7 @@
      },
      "elements": [
       {
-       "id": "3d5b258",
+       "id": "866cd68",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -80,7 +80,7 @@
        "elements": []
       },
       {
-       "id": "7c9de6a",
+       "id": "1f77dfe",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -99,7 +99,7 @@
        },
        "elements": [
         {
-         "id": "12d490e",
+         "id": "521976c",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -136,7 +136,7 @@
          "elements": []
         },
         {
-         "id": "703ecbc",
+         "id": "a99a091",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -173,7 +173,7 @@
          "elements": []
         },
         {
-         "id": "dae625f",
+         "id": "e8bed36",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -219,7 +219,7 @@
    "isInner": false
   },
   {
-   "id": "8e11ce6",
+   "id": "fc6c783",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -254,7 +254,7 @@
    },
    "elements": [
     {
-     "id": "8f69666",
+     "id": "dc95e71",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -304,7 +304,7 @@
      },
      "elements": [
       {
-       "id": "de5411a",
+       "id": "2d743ca",
        "elType": "widget",
        "widgetType": "image",
        "settings": {
@@ -344,7 +344,7 @@
        "elements": []
       },
       {
-       "id": "c6b367a",
+       "id": "b894f55",
        "elType": "widget",
        "widgetType": "nav-menu",
        "settings": {
@@ -432,7 +432,7 @@
        "elements": []
       },
       {
-       "id": "433a902",
+       "id": "eb8059c",
        "elType": "widget",
        "widgetType": "button",
        "settings": {
@@ -447,7 +447,7 @@
        "elements": []
       },
       {
-       "id": "4097f70",
+       "id": "cb78f92",
        "elType": "widget",
        "widgetType": "woocommerce-menu-cart",
        "settings": {

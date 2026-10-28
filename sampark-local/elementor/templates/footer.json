@@ -8,7 +8,7 @@
  ],
  "content": [
   {
-   "id": "493bce4",
+   "id": "ffc13ec",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -28,7 +28,7 @@
    },
    "elements": [
     {
-     "id": "2ba164c",
+     "id": "8dabc89",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -69,7 +69,7 @@
      },
      "elements": [
       {
-       "id": "f69885d",
+       "id": "685b698",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -100,7 +100,7 @@
        },
        "elements": [
         {
-         "id": "5f70462",
+         "id": "5835157",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -134,7 +134,7 @@
          "elements": []
         },
         {
-         "id": "95fe2e6",
+         "id": "bf9b753",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -159,13 +159,13 @@
          "elements": []
         },
         {
-         "id": "2bf9e3d",
+         "id": "a0818a8",
          "elType": "widget",
          "widgetType": "social-icons",
          "settings": {
           "social_icon_list": [
            {
-            "_id": "5d2b429",
+            "_id": "9de702b",
             "social_icon": {
              "value": "fab fa-facebook-f",
              "library": "fa-brands"
@@ -177,7 +177,7 @@
             "item_icon_color": "custom"
            },
            {
-            "_id": "83ab150",
+            "_id": "829be6d",
             "social_icon": {
              "value": "fab fa-instagram",
              "library": "fa-brands"
@@ -189,7 +189,7 @@
             "item_icon_color": "custom"
            },
            {
-            "_id": "d44cd4f",
+            "_id": "2c16b46",
             "social_icon": {
              "value": "fab fa-linkedin-in",
              "library": "fa-brands"
@@ -201,7 +201,7 @@
             "item_icon_color": "custom"
            },
            {
-            "_id": "916c63d",
+            "_id": "a8395fe",
             "social_icon": {
              "value": "fab fa-youtube",
              "library": "fa-brands"
@@ -243,7 +243,7 @@
        "isInner": false
       },
       {
-       "id": "1df5b88",
+       "id": "dfdf5ca",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -274,7 +274,7 @@
        },
        "elements": [
         {
-         "id": "0f7bd9b",
+         "id": "6340d6e",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -298,7 +298,7 @@
          "elements": []
         },
         {
-         "id": "20b78c7",
+         "id": "e6c970e",
          "elType": "widget",
          "widgetType": "jet-listing-dynamic-field",
          "settings": {
@@ -322,7 +322,7 @@
          "elements": []
         },
         {
-         "id": "3d6ad62",
+         "id": "aa1c638",
          "elType": "widget",
          "widgetType": "jet-listing-dynamic-field",
          "settings": {
@@ -344,7 +344,7 @@
          "elements": []
         },
         {
-         "id": "289c5da",
+         "id": "1da5b3f",
          "elType": "widget",
          "widgetType": "jet-listing-dynamic-field",
          "settings": {
@@ -366,7 +366,7 @@
          "elements": []
         },
         {
-         "id": "45aace3",
+         "id": "cf3eeee",
          "elType": "widget",
          "widgetType": "jet-listing-dynamic-field",
          "settings": {
@@ -391,7 +391,7 @@
        "isInner": false
       },
       {
-       "id": "e14c343",
+       "id": "15b8ec0",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -422,7 +422,7 @@
        },
        "elements": [
         {
-         "id": "a97dbca",
+         "id": "59281b3",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -446,7 +446,7 @@
          "elements": []
         },
         {
-         "id": "fbf6511",
+         "id": "49d3b3f",
          "elType": "widget",
          "widgetType": "nav-menu",
          "settings": {
@@ -531,7 +531,7 @@
        "isInner": false
       },
       {
-       "id": "76f9c2b",
+       "id": "9776d36",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -562,7 +562,7 @@
        },
        "elements": [
         {
-         "id": "6c5f2db",
+         "id": "a21c6eb",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -586,7 +586,7 @@
          "elements": []
         },
         {
-         "id": "78098be",
+         "id": "42081a4",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -604,14 +604,14 @@
          "elements": []
         },
         {
-         "id": "95b7e36",
+         "id": "f3d2528",
          "elType": "widget",
          "widgetType": "form",
          "settings": {
           "form_name": "Nieuwsbrief",
           "form_fields": [
            {
-            "_id": "fdb5bb3",
+            "_id": "6ff5d7e",
             "custom_id": "email",
             "field_type": "email",
             "field_label": "E-mailadres",
@@ -661,7 +661,7 @@
      "isInner": false
     },
     {
-     "id": "fff5ddd",
+     "id": "cfe1749",
      "elType": "container",
      "settings": {
       "flex_direction": "column",
@@ -687,7 +687,7 @@
      },
      "elements": [
       {
-       "id": "6a7934a",
+       "id": "956a0c5",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -721,7 +721,7 @@
        },
        "elements": [
         {
-         "id": "afb93be",
+         "id": "6819984",
          "elType": "container",
          "settings": {
           "flex_direction": "row",
@@ -740,7 +740,7 @@
          },
          "elements": [
           {
-           "id": "4a63a87",
+           "id": "4b02cab",
            "elType": "widget",
            "widgetType": "jet-listing-dynamic-field",
            "settings": {
@@ -764,7 +764,7 @@
            "elements": []
           },
           {
-           "id": "205f4ac",
+           "id": "f994073",
            "elType": "widget",
            "widgetType": "jet-listing-dynamic-field",
            "settings": {
@@ -788,7 +788,7 @@
            "elements": []
           },
           {
-           "id": "cab5638",
+           "id": "f560358",
            "elType": "widget",
            "widgetType": "jet-listing-dynamic-field",
            "settings": {
@@ -815,7 +815,7 @@
          "isInner": false
         },
         {
-         "id": "fdf28be",
+         "id": "06d7575",
          "elType": "widget",
          "widgetType": "nav-menu",
          "settings": {
@@ -898,7 +898,7 @@
          "elements": []
         },
         {
-         "id": "fc2ced2",
+         "id": "1c98081",
          "elType": "widget",
          "widgetType": "image",
          "settings": {

@@ -31,4 +31,27 @@ foreach ( $forms as $form ) {
 	$map[ $form['key'] ] = $id;
 	WP_CLI::log( "  + formulier {$form['title']} ($id, op staging {$form['staging_id']})" );
 }
+// Donatieformulier voor de doneerpagina: hetzelfde formulier, maar met het product "Eenmalige donatie" vast ingevuld.
+// Het origineel vult product_id met {post_id}; dat werkt alleen op de productpagina zelf.
+$product = get_page_by_path( 'donatie', OBJECT, 'product' );
+if ( $product && ! empty( $map['donatie'] ) && ( empty( $map['donatie_pagina'] ) || ! get_post( $map['donatie_pagina'] ) ) ) {
+	$fix = function ( $items ) use ( &$fix, $product ) {
+		foreach ( $items as $k => $item ) {
+			if ( is_array( $item ) ) {
+				if ( 'product_id' === ( $item['data']['name'] ?? '' ) ) {
+					$item['data']['value'] = (string) $product->ID;
+				}
+				$items[ $k ] = $fix( $item );
+			}
+		}
+		return $items;
+	};
+	$id = wp_insert_post( [ 'post_type' => 'super_form', 'post_status' => 'publish', 'post_title' => 'Donatieformulier (doneerpagina)' ] );
+	foreach ( get_post_meta( $map['donatie'] ) as $key => $values ) {
+		$value = maybe_unserialize( $values[0] );
+		update_post_meta( $id, $key, '_super_elements' === $key && is_array( $value ) ? $fix( $value ) : $value );
+	}
+	$map['donatie_pagina'] = $id;
+	WP_CLI::log( "  + formulier Donatieformulier (doneerpagina) ($id, product {$product->ID})" );
+}
 update_option( 'sampark_forms', $map, false );

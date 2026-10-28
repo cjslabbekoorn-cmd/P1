@@ -507,6 +507,9 @@ $queries += [
 		'post__in' => $rel( 'Project ↔ Bericht', 'parent_object' ) ] ],
 	'q_bericht_events'    => [ 'Single · evenementen bij dit bericht', 'posts', [ 'post_type' => [ 'evenementen' ], 'posts_per_page' => 3,
 		'post__in' => $rel( 'Evenement ↔ Bericht', 'parent_object' ) ] ],
+	'q_andere_events'     => [ 'Single · andere evenementen (niet afgelopen)', 'posts', [ 'post_type' => [ 'evenementen' ], 'posts_per_page' => 3,
+		'post__not_in' => '%current_id%', 'orderby' => 'menu_order', 'order' => 'ASC',
+		'meta_query' => [ [ 'key' => 'status', 'value' => [ 'aangekondigd', 'open', 'vol', 'doorlopend' ], 'compare' => 'IN' ] ] ] ],
 	'q_nieuws_meer'       => [ 'Single · meer nieuws (zonder dit bericht)', 'posts', [ 'post_type' => [ 'post' ], 'posts_per_page' => 3,
 		'post__not_in' => '%current_id%', 'orderby' => 'date', 'order' => 'DESC' ] ],
 ];
@@ -609,8 +612,12 @@ foreach ( glob( SP_LISTINGS . '*.json' ) as $file ) {
 		}
 		WP_CLI::log( "  + listing {$doc['title']} ($lid)" );
 	}
+	$is_new = empty( $state['listings'][ $key ] );
 	$state['listings'][ $key ] = $lid;
 	update_option( 'sampark_jet', $state, false );
+	if ( ! $is_new && get_option( 'sampark_handwerk' ) ) {
+		continue; // bestaande listing kan met de hand zijn aangepast
+	}
 	$json = wp_json_encode( $doc['content'], JSON_UNESCAPED_UNICODE );
 	$json = str_replace( '{{glossary:status}}', (string) ( $state['glossary']['status'] ?? '' ), $json );
 	update_post_meta( $lid, '_elementor_data', wp_slash( $json ) );

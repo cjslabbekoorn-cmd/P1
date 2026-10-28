@@ -11,7 +11,7 @@
  ],
  "content": [
   {
-   "id": "7aea890",
+   "id": "1187468",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -31,11 +31,16 @@
     "background_position": "center center",
     "background_size": "cover",
     "background_overlay_background": "gradient",
-    "background_overlay_color": "#46211AE6",
-    "background_overlay_color_b": "#46211A1A",
+    "background_overlay_color": "#46211AD9",
+    "background_overlay_color_b": "#46211A59",
     "background_overlay_gradient_angle": {
      "unit": "deg",
      "size": 90,
+     "sizes": []
+    },
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 1,
      "sizes": []
     },
     "flex_align_items": "stretch",
@@ -49,22 +54,22 @@
     "shape_divider_bottom_color": "#FFFFFF",
     "shape_divider_bottom_width": {
      "unit": "%",
-     "size": 169,
+     "size": 130,
      "sizes": []
     },
     "shape_divider_bottom_height": {
      "unit": "px",
-     "size": 34,
+     "size": 70,
      "sizes": []
     },
     "shape_divider_bottom_width_mobile": {
      "unit": "%",
-     "size": 500,
+     "size": 260,
      "sizes": []
     },
     "shape_divider_bottom_height_mobile": {
      "unit": "px",
-     "size": 90,
+     "size": 44,
      "sizes": []
     },
     "html_tag": "section",
@@ -72,7 +77,7 @@
    },
    "elements": [
     {
-     "id": "ca92849",
+     "id": "bc98940",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -113,7 +118,7 @@
      },
      "elements": [
       {
-       "id": "f02bef2",
+       "id": "10f05fe",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -139,7 +144,7 @@
        },
        "elements": [
         {
-         "id": "0c12eb3",
+         "id": "ff3b61c",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -164,7 +169,7 @@
          "elements": []
         },
         {
-         "id": "5fbb94f",
+         "id": "04ab6aa",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -189,7 +194,7 @@
          "elements": []
         },
         {
-         "id": "6a961e5",
+         "id": "489f032",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -216,7 +221,7 @@
    "isInner": false
   },
   {
-   "id": "148bb7b",
+   "id": "81b1fc1",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -254,7 +259,7 @@
    },
    "elements": [
     {
-     "id": "4ffce04",
+     "id": "6a10bbd",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -271,7 +276,7 @@
      },
      "elements": [
       {
-       "id": "c5ab0bc",
+       "id": "b7bb35b",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -296,7 +301,7 @@
        },
        "elements": [
         {
-         "id": "a8b85ff",
+         "id": "5fbb94f",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -317,7 +322,7 @@
          "elements": []
         },
         {
-         "id": "f9f3bcc",
+         "id": "6a961e5",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -326,7 +331,7 @@
          "elements": []
         },
         {
-         "id": "5ab8c0e",
+         "id": "bc1454b",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -344,7 +349,7 @@
        "isInner": false
       },
       {
-       "id": "51f5630",
+       "id": "7e66f2d",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -391,7 +396,7 @@
        },
        "elements": [
         {
-         "id": "1b740a6",
+         "id": "dd50c58",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -412,7 +417,7 @@
          "elements": []
         },
         {
-         "id": "2789f3a",
+         "id": "6392f4e",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -432,5 +437,6 @@
  ],
  "page_settings": {
   "hide_title": "yes"
- }
+ },
+ "template": "elementor_header_footer"
 }

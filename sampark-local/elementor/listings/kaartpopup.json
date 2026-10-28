@@ -4,7 +4,7 @@
  "source": "projecten",
  "content": [
   {
-   "id": "0f4ed23",
+   "id": "265c330",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -28,7 +28,7 @@
    },
    "elements": [
     {
-     "id": "3412026",
+     "id": "6336da7",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-image",
      "settings": {
@@ -61,7 +61,7 @@
      "elements": []
     },
     {
-     "id": "0a0f24d",
+     "id": "9dc6476",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -79,7 +79,7 @@
      },
      "elements": [
       {
-       "id": "66d2b52",
+       "id": "5afe93a",
        "elType": "widget",
        "widgetType": "jet-listing-dynamic-field",
        "settings": {
@@ -101,7 +101,7 @@
        "elements": []
       },
       {
-       "id": "7cf8566",
+       "id": "3175849",
        "elType": "widget",
        "widgetType": "jet-listing-dynamic-field",
        "settings": {
@@ -126,7 +126,7 @@
      "isInner": false
     },
     {
-     "id": "6eb5828",
+     "id": "301bcff",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -148,7 +148,7 @@
      "elements": []
     },
     {
-     "id": "c90d78f",
+     "id": "e445562",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-link",
      "settings": {

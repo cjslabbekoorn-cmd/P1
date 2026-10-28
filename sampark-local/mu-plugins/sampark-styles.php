@@ -87,6 +87,17 @@ add_action( 'wp_enqueue_scripts', function () {
 .sp-cats .elementor-button { padding: 8px 16px; font-size: 15px; }
 /* Product: hoge flesfoto's niet langer dan het scherm */
 .elementor-widget-woocommerce-product-images .woocommerce-product-gallery__image img { max-height: 620px; object-fit: contain; }
+/* Home: wijnactie-badge als opvallende "sticker" op de hero */
+.sp-campagne { box-shadow: 0 16px 40px rgba(0, 0, 0, .35); transform: rotate(-3deg); transition: transform .25s ease, box-shadow .25s ease; }
+.sp-campagne:hover, .sp-campagne:focus-within { transform: rotate(0) scale(1.04); box-shadow: 0 20px 48px rgba(0, 0, 0, .4); }
+@media (prefers-reduced-motion: reduce) { .sp-campagne, .sp-campagne:hover { transform: none; transition: none; } }
+/* Super Forms wijnformulier: de berekening "leeftijd" stuurt alleen de leeftijdscheck aan; niet tonen */
+.super-form .super-field.super-calculator:has(input[name="leeftijd"]) { display: none !important; }
+/* Evenement: praktische informatie als vlakken rechts naast de omschrijving */
+.sp-info .elementor-widget-icon { flex: 0 0 auto; margin-top: 2px; }
+/* Product: lange omschrijving */
+.sp-product-desc p:last-child { margin-bottom: 0; }
+.sp-product-desc h2, .sp-product-desc h3 { margin-top: 1.2em; }
 CSS;
 	// Adobe Fonts (Aptos). Met Elementor Pro laadt de Adobe Fonts-integratie de kit zelf.
 	$kit = get_option( 'elementor_typekit-kit-id' );

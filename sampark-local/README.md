@@ -58,9 +58,16 @@ Na de eerste opbouw wordt de site **met de hand in Elementor** verder gebouwd. D
 | Nieuwe templates uit `elementor/templates/` toevoegen (bestaande blijven staan) | `docker compose run --rm wpcli eval-file /scripts/templates-add.php` |
 | Inhoud van live (opnieuw) binnenhalen | `docker compose run --rm wpcli eval-file /scripts/content-import.php` |
 | Een back-up van de database | `docker compose run --rm wpcli db export /backups/sampark-$(date +%F).sql` |
+| Pagina's en templates opnieuw opbouwen uit de generator, zolang er nog geen handwerk is (maakt eerst een back-up, zet daarna de live-inhoud terug) | `docker compose run --rm wpcli sh /scripts/rebuild.sh` |
 | Toch alles opnieuw genereren (overschrijft je handwerk!) | `docker compose run --rm wpcli eval-file /scripts/build-site.php --exec="define('SP_FORCE', true);"` |
 
 Blokken die een JetEngine Listing Grid zijn, hebben in de Elementor Navigator een titel die begint met `LISTING ·`, met de query erbij.
+
+## Winkel: winkelwagen, afrekenen en Mijn account
+
+Zoals op staging: winkelwagen en afrekenen zijn Elementor-pagina's zonder site-menu (Elementor Canvas) met een smalle eigen kop en voet en de Elementor Pro-widgets Cart en Checkout. De opmaak (grijze vlakken, betaal- en verzendmethodes als kaarten) is de Pagina-CSS van staging, overgenomen in `elementor/css/` met Aptos in plaats van Inter/Barlow. Mijn account heeft dezelfde vormgeving. De widgetteksten staan in het Nederlands in de widget-instellingen (Elementor Pro heeft geen Nederlands taalpakket).
+
+`scripts/shop-settings.php`: geen kortingscodes, verzendzone Nederland met "Gratis verzending" en "Lokaal afhalen", en de wijnen als fysiek product (bezorgen of afhalen). Afrekenen blijft de klassieke checkout, nodig voor het sponsorpakket-snippet.
 
 ## Inhoud van live
 

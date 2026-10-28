@@ -8,7 +8,7 @@
  ],
  "content": [
   {
-   "id": "940de34",
+   "id": "07e891b",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -46,7 +46,7 @@
    },
    "elements": [
     {
-     "id": "299a23a",
+     "id": "8a3363a",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -64,7 +64,7 @@
      },
      "elements": [
       {
-       "id": "e8b0ae3",
+       "id": "1332b8b",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -90,7 +90,7 @@
        },
        "elements": [
         {
-         "id": "f32503b",
+         "id": "c6bc189",
          "elType": "widget",
          "widgetType": "woocommerce-product-images",
          "settings": {
@@ -115,7 +115,7 @@
        "isInner": false
       },
       {
-       "id": "54be9b9",
+       "id": "21e0767",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -142,7 +142,7 @@
        },
        "elements": [
         {
-         "id": "a3a8b8e",
+         "id": "4a7dbfa",
          "elType": "widget",
          "widgetType": "woocommerce-breadcrumb",
          "settings": {
@@ -151,7 +151,7 @@
          "elements": []
         },
         {
-         "id": "b3888da",
+         "id": "76126d8",
          "elType": "widget",
          "widgetType": "woocommerce-product-title",
          "settings": {
@@ -172,14 +172,14 @@
            "typography_typography": "globals/typography?id=accent"
           },
           "__dynamic__": {
-           "title": "[elementor-tag id=\"b901ba4\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
+           "title": "[elementor-tag id=\"edfd9a1\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
           },
           "_title": "Producttitel"
          },
          "elements": []
         },
         {
-         "id": "557e7ac",
+         "id": "2201fe2",
          "elType": "widget",
          "widgetType": "woocommerce-product-short-description",
          "settings": {
@@ -191,7 +191,7 @@
          "elements": []
         },
         {
-         "id": "f6e1156",
+         "id": "e369e2e",
          "elType": "widget",
          "widgetType": "shortcode",
          "settings": {
@@ -210,16 +210,16 @@
    "isInner": false
   },
   {
-   "id": "915ffc7",
+   "id": "f4b32c7",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
     "flex_gap": {
-     "column": "40",
-     "row": "40",
+     "column": "0",
+     "row": "0",
      "isLinked": true,
      "unit": "px",
-     "size": 40
+     "size": 0
     },
     "content_width": "boxed",
     "boxed_width": {
@@ -229,17 +229,17 @@
     },
     "padding": {
      "unit": "px",
-     "top": "0",
+     "top": "24",
      "right": "24",
-     "bottom": "0",
+     "bottom": "24",
      "left": "24",
-     "isLinked": false
+     "isLinked": true
     },
     "padding_mobile": {
      "unit": "px",
-     "top": "0",
+     "top": "24",
      "right": "20",
-     "bottom": "0",
+     "bottom": "24",
      "left": "20",
      "isLinked": false
     },
@@ -250,29 +250,121 @@
     "jedv_relation": "AND",
     "jedv_conditions": [
      {
-      "_id": "1214ad7",
+      "_id": "d6cf7b8",
       "jedv_condition": "exists",
       "__dynamic__": {
-       "jedv_field": "[elementor-tag id=\"d549ebe\" name=\"jet-object-property\" settings=\"%7B%22object_prop%22%3A%22post_content%22%7D\"]"
+       "jedv_field": "[elementor-tag id=\"72b24f8\" name=\"jet-object-property\" settings=\"%7B%22object_prop%22%3A%22post_content%22%7D\"]"
       }
      }
     ]
    },
    "elements": [
     {
-     "id": "54ae34f",
-     "elType": "widget",
-     "widgetType": "woocommerce-product-content",
+     "id": "693f58c",
+     "elType": "container",
      "settings": {
-      "_title": "Beschrijving"
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "10",
+       "row": "10",
+       "isLinked": true,
+       "unit": "px",
+       "size": 10
+      },
+      "content_width": "full",
+      "padding": {
+       "unit": "px",
+       "top": "48",
+       "right": "56",
+       "bottom": "48",
+       "left": "56",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "28",
+       "right": "22",
+       "bottom": "28",
+       "left": "22",
+       "isLinked": false
+      },
+      "background_background": "classic",
+      "border_radius": {
+       "unit": "px",
+       "top": "20",
+       "right": "20",
+       "bottom": "20",
+       "left": "20",
+       "isLinked": true
+      },
+      "_title": "Beschrijving",
+      "css_classes": "sp-product-desc",
+      "max_width": {
+       "unit": "px",
+       "size": 900,
+       "sizes": []
+      },
+      "__globals__": {
+       "background_color": "globals/colors?id=658acb6"
+      }
      },
-     "elements": []
+     "elements": [
+      {
+       "id": "ec7d9e1",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Over dit product",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "6a15e4f",
+       "elType": "widget",
+       "widgetType": "woocommerce-product-content",
+       "settings": {
+        "text_typography_typography": "custom",
+        "text_typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "text_typography_line_height": {
+         "unit": "em",
+         "size": 1.7,
+         "sizes": []
+        },
+        "__globals__": {
+         "text_color": "globals/colors?id=text"
+        },
+        "_title": "Beschrijving (lange omschrijving)"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
     }
    ],
    "isInner": false
   },
   {
-   "id": "ad5d59b",
+   "id": "c7067b5",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -293,7 +385,7 @@
    },
    "elements": [
     {
-     "id": "1d642a2",
+     "id": "c4598ee",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -325,7 +417,7 @@
      },
      "elements": [
       {
-       "id": "debe4e5",
+       "id": "1958a7b",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -353,7 +445,7 @@
        },
        "elements": [
         {
-         "id": "ecd126e",
+         "id": "3e53e24",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -374,7 +466,7 @@
          "elements": []
         },
         {
-         "id": "2c3cfb4",
+         "id": "3cf8ecc",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -386,7 +478,7 @@
        "isInner": false
       },
       {
-       "id": "88dad60",
+       "id": "babbece",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -414,7 +506,7 @@
        },
        "elements": [
         {
-         "id": "54e9cce",
+         "id": "082d3d9",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -435,7 +527,7 @@
          "elements": []
         },
         {
-         "id": "2dcc0c8",
+         "id": "eba7378",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -447,7 +539,7 @@
        "isInner": false
       },
       {
-       "id": "45bf7e6",
+       "id": "8200451",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -475,7 +567,7 @@
        },
        "elements": [
         {
-         "id": "eed85ae",
+         "id": "7848c3b",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -496,7 +588,7 @@
          "elements": []
         },
         {
-         "id": "7dc9acd",
+         "id": "03fdf8a",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

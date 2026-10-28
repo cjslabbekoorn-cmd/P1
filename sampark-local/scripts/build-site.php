@@ -250,6 +250,13 @@ if ( ! empty( $media['logo_sampark'] ) ) {
 // ------------------------------------------------------------------ pagina's
 
 $fill = function ( string $json ) use ( $media ) {
+	// Super Forms-formulier op een gewone pagina (ID uit superforms-import.php)
+	$forms = get_option( 'sampark_forms', [] );
+	$json  = preg_replace_callback( '/\{\{form:([a-z_]+)\}\}/', fn( $m ) => (string) (int) ( $forms[ $m[1] ] ?? 0 ), $json );
+	// pagina-ID's op slug, bv. om de winkelpagina's uit de sitemap te laten
+	// (als JSON-lijst, zoals het Search & Select-veld van Elementor het bewaart)
+	$json  = preg_replace_callback( '/"\{\{pageids:([a-z0-9,-]+)\}\}"/', fn( $m ) => wp_json_encode( array_values( array_filter( array_map(
+		fn( $slug ) => (string) ( get_page_by_path( $slug )->ID ?? '' ), explode( ',', $m[1] ) ) ) ) ), $json );
 	$json = preg_replace_callback( '/"\{\{imgid:([a-z0-9_]+)\}\}"/', fn( $m ) => (string) (int) ( $media[ $m[1] ] ?? 0 ), $json );
 	$json = preg_replace_callback( '/\{\{img:([a-z0-9_]+)\}\}/', function ( $m ) use ( $media ) {
 		$url = empty( $media[ $m[1] ] ) ? '' : wp_get_attachment_url( $media[ $m[1] ] );
@@ -360,7 +367,7 @@ foreach ( $files as $file ) {
 	update_post_meta( $id, '_elementor_edit_mode', 'builder' );
 	update_post_meta( $id, '_elementor_template_type', 'wp-page' );
 	update_post_meta( $id, '_elementor_page_settings', $doc['page_settings'] ?? [] );
-	update_post_meta( $id, '_wp_page_template', 'elementor_header_footer' );
+	update_post_meta( $id, '_wp_page_template', $doc['template'] ?? 'elementor_header_footer' );
 	if ( defined( 'ELEMENTOR_VERSION' ) ) {
 		update_post_meta( $id, '_elementor_version', ELEMENTOR_VERSION );
 	}

@@ -4,7 +4,7 @@
  "source": "post",
  "content": [
   {
-   "id": "fcdba47",
+   "id": "ddf580a",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -46,7 +46,7 @@
    },
    "elements": [
     {
-     "id": "43bf5a6",
+     "id": "ea6d59a",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-image",
      "settings": {
@@ -79,7 +79,7 @@
      "elements": []
     },
     {
-     "id": "8c1abd2",
+     "id": "4a63a87",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -104,7 +104,7 @@
      "elements": []
     },
     {
-     "id": "dba495d",
+     "id": "205f4ac",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -126,7 +126,7 @@
      "elements": []
     },
     {
-     "id": "78443a6",
+     "id": "cab5638",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-field",
      "settings": {
@@ -141,7 +141,7 @@
      "elements": []
     },
     {
-     "id": "9202602",
+     "id": "35cf32a",
      "elType": "widget",
      "widgetType": "jet-listing-dynamic-link",
      "settings": {

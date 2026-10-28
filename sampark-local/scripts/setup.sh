@@ -215,6 +215,9 @@ product alcoholvrij "Alcoholvrij mousserend" 0 "$C_WIJN" "Per doos (6 flessen). 
 product ticket-sampark-rally "Ticket Sampark Rally" 600 "$C_RALLY" "1 ticket per auto, twee deelnemers."
 product golftoernooi "Golftoernooi" 300 "$C_GOLF" "Per deelnemer. Een tafel voor 4 personen is € 1.200."
 
+log "Winkelinstellingen: geen kortingscodes, verzending voor de wijn"
+wp eval-file /scripts/shop-settings.php
+
 # ---------------------------------------------------------------- JetEngine
 # Na de nieuwscategorieën en producten, want de inhoud en queries verwijzen daarnaar
 if wp plugin is-active code-snippets; then
