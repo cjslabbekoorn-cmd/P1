@@ -69,6 +69,8 @@ Zoals op staging: winkelwagen en afrekenen zijn Elementor-pagina's zonder site-m
 
 **Bedankpagina** `/bedankt/`: na elke bestelling stuurt Elementor Pro (Site-instellingen › WooCommerce › Purchase Summary) de klant hierheen. Links de bestelling (Purchase Summary-widget, Nederlandse teksten, bankgegevens bij "Op factuur"), rechts "Wat gebeurt er nu?" met IBAN, RSIN en contact uit de Options Page; de stap over betalen op factuur verschijnt alleen bij een bestelling op factuur. Onderaan de sponsorpakketten.
 
+**Betaling mislukt** `/betaling-mislukt/`: is een bestelling mislukt of geannuleerd (bv. iDEAL afgebroken), dan stuurt de snippet `snippets/betaling-mislukt.php` de bedankpagina hierheen. De shortcode `[sampark_betaling_mislukt]` toont bestelnummer, bedrag en de knop "Opnieuw betalen" (de betaalpagina van WooCommerce, waar ook op factuur kan); bij een geannuleerde bestelling "Opnieuw bestellen". Beide pagina's staan op noindex en niet in de sitemap.
+
 `scripts/shop-settings.php`: geen kortingscodes, verzendzone Nederland met "Gratis verzending" en "Lokaal afhalen", en de wijnen als fysiek product (bezorgen of afhalen). Afrekenen blijft de klassieke checkout, nodig voor het sponsorpakket-snippet.
 
 ## Inhoud van live

@@ -262,7 +262,7 @@
        "current_post",
        "manual_selection"
       ],
-      "sitemap_exclude_ids": "{{pageids:winkelwagen,afrekenen,mijn-account,shop}}",
+      "sitemap_exclude_ids": "{{pageids:winkelwagen,afrekenen,mijn-account,shop,bedankt,betaling-mislukt}}",
       "sitemap_title_tag": "h3",
       "sitemap_section_padding": {
        "unit": "px",

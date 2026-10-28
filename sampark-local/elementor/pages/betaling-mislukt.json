@@ -1,0 +1,838 @@
+{
+ "version": "0.4",
+ "title": "Betaling mislukt",
+ "type": "page",
+ "slug": "betaling-mislukt",
+ "parent": null,
+ "menu_order": 14,
+ "seo": [
+  "Betaling mislukt | Stichting Sampark",
+  ""
+ ],
+ "content": [
+  {
+   "id": "be01f55",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "24",
+     "bottom": "88",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "waves",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 130,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 70,
+     "sizes": []
+    },
+    "shape_divider_bottom_width_mobile": {
+     "unit": "%",
+     "size": 260,
+     "sizes": []
+    },
+    "shape_divider_bottom_height_mobile": {
+     "unit": "px",
+     "size": 44,
+     "sizes": []
+    },
+    "html_tag": "header",
+    "_title": "Paginakop",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "b1c3c10",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "10",
+       "row": "10",
+       "isLinked": true,
+       "unit": "px",
+       "size": 10
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "_title": "Kop"
+     },
+     "elements": [
+      {
+       "id": "d890b94",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Betaling niet gelukt",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "224d374",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Je betaling is niet gelukt",
+        "header_size": "h1",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 37,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=primary",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "75678ac",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Geen zorgen: er is niets afgeschreven en je bestelling is bewaard. Je kunt het meteen nog een keer proberen.</p>",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "eb48149",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "24",
+     "bottom": "80",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "32",
+     "right": "16",
+     "bottom": "56",
+     "left": "16",
+     "isLinked": false
+    },
+    "_title": "Inhoud"
+   },
+   "elements": [
+    {
+     "id": "3e31a7b",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "isLinked": true,
+       "unit": "px",
+       "size": 40
+      },
+      "content_width": "full",
+      "flex_direction_tablet": "row",
+      "flex_direction_mobile": "column",
+      "flex_align_items": "flex-start",
+      "flex_justify_content": "space-between",
+      "_title": "Bestelling en uitleg"
+     },
+     "elements": [
+      {
+       "id": "1398793",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 60,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "28",
+         "bottom": "28",
+         "left": "28",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#F6F6F6",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_title": "Bestelling"
+       },
+       "elements": [
+        {
+         "id": "15f6202",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Je bestelling",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5168461",
+         "elType": "widget",
+         "widgetType": "shortcode",
+         "settings": {
+          "shortcode": "[sampark_betaling_mislukt]",
+          "_title": "Bestelling (snippet betaling-mislukt)"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "695bf5d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "20",
+         "row": "20",
+         "isLinked": true,
+         "unit": "px",
+         "size": 20
+        },
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 36,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "_title": "Uitleg (rechts)"
+       },
+       "elements": [
+        {
+         "id": "9f694fb",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "14",
+           "row": "14",
+           "isLinked": true,
+           "unit": "px",
+           "size": 14
+          },
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "background_background": "classic",
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "_title": "Hoe kan dat",
+          "css_classes": "sp-card",
+          "__globals__": {
+           "background_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": [
+          {
+           "id": "4ad0776",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Hoe kan dat?",
+            "header_size": "p",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.5,
+             "sizes": []
+            },
+            "__globals__": {
+             "title_color": "globals/colors?id=accent",
+             "typography_typography": "globals/typography?id=accent"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "d172fcb",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+             "column": "14",
+             "row": "14",
+             "isLinked": true,
+             "unit": "px",
+             "size": 14
+            },
+            "content_width": "full",
+            "flex_direction_tablet": "row",
+            "flex_direction_mobile": "row",
+            "flex_align_items": "flex-start",
+            "_title": "Stap · afgebroken",
+            "css_classes": "sp-stap sp-stap-afgebroken"
+           },
+           "elements": [
+            {
+             "id": "2b62d9c",
+             "elType": "widget",
+             "widgetType": "icon",
+             "settings": {
+              "selected_icon": {
+               "value": "fas fa-ban",
+               "library": "fa-solid"
+              },
+              "size": {
+               "unit": "px",
+               "size": 22,
+               "sizes": []
+              },
+              "align": "left",
+              "__globals__": {
+               "primary_color": "globals/colors?id=accent"
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "87f690c",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "2",
+               "row": "2",
+               "isLinked": true,
+               "unit": "px",
+               "size": 2
+              },
+              "content_width": "full",
+              "_title": "Stap tekst"
+             },
+             "elements": [
+              {
+               "id": "6ccb886",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Betaling afgebroken",
+                "header_size": "h3",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 19,
+                 "sizes": []
+                },
+                "typography_font_size_mobile": {
+                 "unit": "px",
+                 "size": 14,
+                 "sizes": []
+                },
+                "__globals__": {
+                 "title_color": "globals/colors?id=text"
+                }
+               },
+               "elements": []
+              },
+              {
+               "id": "cd84953",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Je hebt in de bank-app of bij iDEAL op annuleren of terug gedrukt.</p>",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": []
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "6077001",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+             "column": "14",
+             "row": "14",
+             "isLinked": true,
+             "unit": "px",
+             "size": 14
+            },
+            "content_width": "full",
+            "flex_direction_tablet": "row",
+            "flex_direction_mobile": "row",
+            "flex_align_items": "flex-start",
+            "_title": "Stap · verlopen",
+            "css_classes": "sp-stap sp-stap-verlopen"
+           },
+           "elements": [
+            {
+             "id": "10480f4",
+             "elType": "widget",
+             "widgetType": "icon",
+             "settings": {
+              "selected_icon": {
+               "value": "far fa-clock",
+               "library": "fa-solid"
+              },
+              "size": {
+               "unit": "px",
+               "size": 22,
+               "sizes": []
+              },
+              "align": "left",
+              "__globals__": {
+               "primary_color": "globals/colors?id=accent"
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "d6b8e73",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "2",
+               "row": "2",
+               "isLinked": true,
+               "unit": "px",
+               "size": 2
+              },
+              "content_width": "full",
+              "_title": "Stap tekst"
+             },
+             "elements": [
+              {
+               "id": "414cbf6",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Te lang gewacht",
+                "header_size": "h3",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 19,
+                 "sizes": []
+                },
+                "typography_font_size_mobile": {
+                 "unit": "px",
+                 "size": 14,
+                 "sizes": []
+                },
+                "__globals__": {
+                 "title_color": "globals/colors?id=text"
+                }
+               },
+               "elements": []
+              },
+              {
+               "id": "d630712",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Na een paar minuten verloopt een betaling vanzelf.</p>",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": []
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "afe408f",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+             "column": "14",
+             "row": "14",
+             "isLinked": true,
+             "unit": "px",
+             "size": 14
+            },
+            "content_width": "full",
+            "flex_direction_tablet": "row",
+            "flex_direction_mobile": "row",
+            "flex_align_items": "flex-start",
+            "_title": "Stap · geweigerd",
+            "css_classes": "sp-stap sp-stap-geweigerd"
+           },
+           "elements": [
+            {
+             "id": "cdd9687",
+             "elType": "widget",
+             "widgetType": "icon",
+             "settings": {
+              "selected_icon": {
+               "value": "fas fa-university",
+               "library": "fa-solid"
+              },
+              "size": {
+               "unit": "px",
+               "size": 22,
+               "sizes": []
+              },
+              "align": "left",
+              "__globals__": {
+               "primary_color": "globals/colors?id=accent"
+              }
+             },
+             "elements": []
+            },
+            {
+             "id": "02f124a",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "column": "2",
+               "row": "2",
+               "isLinked": true,
+               "unit": "px",
+               "size": 2
+              },
+              "content_width": "full",
+              "_title": "Stap tekst"
+             },
+             "elements": [
+              {
+               "id": "4a0c68c",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Geweigerd door de bank",
+                "header_size": "h3",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 19,
+                 "sizes": []
+                },
+                "typography_font_size_mobile": {
+                 "unit": "px",
+                 "size": 14,
+                 "sizes": []
+                },
+                "__globals__": {
+                 "title_color": "globals/colors?id=text"
+                }
+               },
+               "elements": []
+              },
+              {
+               "id": "8c4040a",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Bijvoorbeeld door een limiet of onvoldoende saldo. Probeer een andere rekening of kies voor betalen op factuur.</p>",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": []
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "5aca4d1",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "column": "8",
+           "row": "8",
+           "isLinked": true,
+           "unit": "px",
+           "size": 8
+          },
+          "content_width": "full",
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "background_background": "classic",
+          "border_radius": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          },
+          "_title": "Hulp",
+          "css_classes": "sp-card",
+          "__globals__": {
+           "background_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": [
+          {
+           "id": "8be3ded",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Lukt het niet?",
+            "header_size": "p",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.5,
+             "sizes": []
+            },
+            "__globals__": {
+             "title_color": "globals/colors?id=accent",
+             "typography_typography": "globals/typography?id=accent"
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "04d54be",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Neem contact met ons op, dan helpen we je verder.</p>",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "84d3190",
+           "elType": "widget",
+           "widgetType": "jet-listing-dynamic-field",
+           "settings": {
+            "dynamic_field_source": "options_page",
+            "dynamic_field_option": "stichting::telefoon",
+            "field_tag": "p",
+            "hide_if_empty": "yes",
+            "field_typography_typography": "custom",
+            "field_typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "__globals__": {
+             "field_color": "globals/colors?id=text"
+            },
+            "_title": "Options › telefoon"
+           },
+           "elements": []
+          },
+          {
+           "id": "915a29b",
+           "elType": "widget",
+           "widgetType": "jet-listing-dynamic-field",
+           "settings": {
+            "dynamic_field_source": "options_page",
+            "dynamic_field_option": "stichting::email",
+            "field_tag": "p",
+            "hide_if_empty": "yes",
+            "field_typography_typography": "custom",
+            "field_typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "__globals__": {
+             "field_color": "globals/colors?id=text"
+            },
+            "_title": "Options › email"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes",
+  "custom_css": "/* Betaling mislukt: de bestelling (shortcode van de snippet betaling-mislukt) in de vormgeving van de bedankpagina.\n   Staat als Pagina-CSS in Elementor (Pagina-instellingen > Aangepaste CSS); \"selector\" is deze pagina. */\nselector .sp-mislukt { font-family: aptos, sans-serif; font-size: 15px; color: var(--e-global-color-text); }\nselector .sp-mislukt-gegevens { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 0 0 16px; padding: 0; }\nselector .sp-mislukt-gegevens li { list-style: none; background: #fff; border-radius: 10px; padding: 14px 16px; font-size: 13px; }\nselector .sp-mislukt-gegevens li strong { display: block; margin-top: 4px; font-size: 16px; font-weight: 700; color: var(--e-global-color-primary); }\nselector .sp-mislukt-items { margin: 0 0 20px; line-height: 1.6; }\nselector .sp-mislukt-noot { margin: 10px 0 0; font-size: 14px; }\nselector .sp-stap p { margin-bottom: 0; }\n"
+ },
+ "template": "elementor_header_footer"
+}

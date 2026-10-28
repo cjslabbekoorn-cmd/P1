@@ -14,6 +14,7 @@ $names = [
 	'factuur-opmaak'   => 'Sampark — factuur en pakbon: regelgegevens',
 	'donatie-prijs'    => 'Sampark — donatiebedrag als prijs',
 	'sponsor-betaling' => 'Sampark — deelname via sponsorpakket (vervangt Woo Discount Rules)',
+	'betaling-mislukt' => 'Sampark — pagina bij een mislukte betaling',
 ];
 
 $existing = [];

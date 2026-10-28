@@ -1147,7 +1147,7 @@ page("sitemap", "Sitemap",
                            sitemap_item("Nieuws", "post_type", "post")],
          "sitemap_columns": "3", "sitemap_columns_tablet": "2", "sitemap_columns_mobile": "1",
          "sitemap_exclude": ["current_post", "manual_selection"],
-         "sitemap_exclude_ids": "{{pageids:winkelwagen,afrekenen,mijn-account,shop}}",
+         "sitemap_exclude_ids": "{{pageids:winkelwagen,afrekenen,mijn-account,shop,bedankt,betaling-mislukt}}",
          "sitemap_title_tag": "h3", "sitemap_section_padding": dims(0, 0, 24, 0),
          "sitemap_title_typography_typography": "custom", "sitemap_title_typography_font_size": size(26),
          "__globals__": {"sitemap_title_color": g_color("primary"), "sitemap_title_typography_typography": g_type("primary"),
@@ -2019,6 +2019,43 @@ page("bedankt", "Bedankt",
          title="Nog meer doen", gap_px=28),
      css="bedankt",
      seo=("Bedankt voor je bestelling | Stichting Sampark", ""))
+
+
+# BETALING MISLUKT ------------------------------------------------------------------
+# De snippet betaling-mislukt.php stuurt de bedankpagina hierheen als de bestelling mislukt of geannuleerd is;
+# de shortcode toont de bestelling met de knop "Opnieuw betalen".
+page("betaling-mislukt", "Betaling mislukt",
+     container(
+         container(eyebrow("Betaling niet gelukt"),
+                   heading("Je betaling is niet gelukt", "h1", color="primary", typo="accent", size_px=52),
+                   text("<p>Geen zorgen: er is niets afgeschreven en je bestelling is bewaard. "
+                        "Je kunt het meteen nog een keer proberen.</p>", size_px=18),
+                   title="Kop", boxed=True, gap_px=10, extra={"boxed_width": size(1140)}),
+         title="Paginakop", bg_global="658acb6", pad=dims(72, 24, 88, 24), pad_mobile=dims(48, 20, 64, 20), tag="header",
+         divider_bottom=("waves", "#FFFFFF", 50)),
+     shop_main(container(
+         container(heading("Je bestelling", "h2", color="primary", size_px=28),
+                   widget("shortcode", {"shortcode": "[sampark_betaling_mislukt]"}, title="Bestelling (snippet betaling-mislukt)"),
+                   title="Bestelling", width=60, bg="#F6F6F6", radius=10, pad=dims(28), gap_px=16),
+         container(
+             card(eyebrow("Hoe kan dat?"),
+                  next_step("fas fa-ban", "Betaling afgebroken",
+                            small("<p>Je hebt in de bank-app of bij iDEAL op annuleren of terug gedrukt.</p>"), key="afgebroken"),
+                  next_step("far fa-clock", "Te lang gewacht",
+                            small("<p>Na een paar minuten verloopt een betaling vanzelf.</p>"), key="verlopen"),
+                  next_step("fas fa-university", "Geweigerd door de bank",
+                            small("<p>Bijvoorbeeld door een limiet of onvoldoende saldo. Probeer een andere rekening "
+                                  "of kies voor betalen op factuur.</p>"), key="geweigerd"),
+                  title="Hoe kan dat", pad=28, gap_px=14),
+             card(eyebrow("Lukt het niet?"),
+                  small("<p>Neem contact met ons op, dan helpen we je verder.</p>"),
+                  option_field("telefoon", tag="p", color="text", size_px=15),
+                  option_field("email", tag="p", color="text", size_px=15),
+                  title="Hulp", pad=28, gap_px=8),
+             title="Uitleg (rechts)", width=36, gap_px=20),
+         title="Bestelling en uitleg", direction="row", gap_px=40, align="flex-start", justify="space-between")),
+     css="betaling-mislukt",
+     seo=("Betaling mislukt | Stichting Sampark", ""))
 
 
 def write_templates():

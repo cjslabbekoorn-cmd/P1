@@ -1,0 +1,9 @@
+/* Betaling mislukt: de bestelling (shortcode van de snippet betaling-mislukt) in de vormgeving van de bedankpagina.
+   Staat als Pagina-CSS in Elementor (Pagina-instellingen > Aangepaste CSS); "selector" is deze pagina. */
+selector .sp-mislukt { font-family: aptos, sans-serif; font-size: 15px; color: var(--e-global-color-text); }
+selector .sp-mislukt-gegevens { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 0 0 16px; padding: 0; }
+selector .sp-mislukt-gegevens li { list-style: none; background: #fff; border-radius: 10px; padding: 14px 16px; font-size: 13px; }
+selector .sp-mislukt-gegevens li strong { display: block; margin-top: 4px; font-size: 16px; font-weight: 700; color: var(--e-global-color-primary); }
+selector .sp-mislukt-items { margin: 0 0 20px; line-height: 1.6; }
+selector .sp-mislukt-noot { margin: 10px 0 0; font-size: 14px; }
+selector .sp-stap p { margin-bottom: 0; }

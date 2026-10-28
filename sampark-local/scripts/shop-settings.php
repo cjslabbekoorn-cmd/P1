@@ -49,4 +49,12 @@ if ( $thanks && (int) get_option( 'elementor_woocommerce_purchase_summary_page_i
 	update_option( 'elementor_woocommerce_purchase_summary_page_id', $thanks->ID );
 	WP_CLI::log( "  + bedankpagina na bestelling: /bedankt/ ({$thanks->ID})" );
 }
+// Bedankpagina en betaling mislukt niet in zoekmachines (Yoast)
+foreach ( [ 'bedankt', 'betaling-mislukt' ] as $slug ) {
+	$p = get_page_by_path( $slug );
+	if ( $p && '1' !== get_post_meta( $p->ID, '_yoast_wpseo_meta-robots-noindex', true ) ) {
+		update_post_meta( $p->ID, '_yoast_wpseo_meta-robots-noindex', '1' );
+		WP_CLI::log( "  + /$slug/ niet indexeren" );
+	}
+}
 WP_CLI::success( 'Winkelinstellingen gezet.' );
