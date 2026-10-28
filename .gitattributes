@@ -1,0 +1,6 @@
+# Altijd LF: de scripts draaien in Linux-containers (Docker), ook als je op Windows werkt
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.zip binary
