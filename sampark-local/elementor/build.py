@@ -1666,6 +1666,43 @@ post_single = [
 ]
 template("single-post", "Single · Nieuwsbericht", "single-post", post_single, conditions=("include/singular/post",))
 
+# Nieuwsarchief: de berichtenpagina /nieuws/ en de categoriepagina's. De Listing Grid gebruikt de query van het
+# archief zelf ("Use as Archive Template"), met een knop "Meer nieuws" die via JetEngine Load more werkt.
+NEWS_CATS = [("Alles", "/nieuws/"), ("Scholen & leerlingen", "/category/scholen-leerlingen/"),
+             ("Evenementen", "/category/evenementen/"), ("Sponsors & partners", "/category/sponsors-partners/"),
+             ("Stichting", "/category/stichting/")]
+
+
+def archive_title():
+    w = heading("", "h1", color="primary", typo="accent", size_px=56)
+    w["widgetType"] = "theme-archive-title"
+    w["settings"]["title"] = ""
+    w["settings"]["__dynamic__"] = {"title": etag("archive-title", {"include_context": "", "fallback": "Nieuws"})}
+    w["settings"]["_title"] = "Titel (archieftitel: Nieuws of de categorie)"
+    return w
+
+
+more = button("Meer nieuws", "#", style="outline", align="center")
+more["settings"]["_element_id"] = "sp-meer-nieuws"
+more["settings"]["_title"] = "Load more-knop (ID sp-meer-nieuws)"
+news_archive = [
+    container(
+        container(
+            eyebrow("Uit India en Nederland"),
+            archive_title(),
+            text("<p>Verhalen van de scholen, terugblikken op onze evenementen en nieuws over de stichting.</p>", size_px=19),
+            container(*[button(l, u, style="outline") for l, u in NEWS_CATS], title="Categorieën", direction="row",
+                      gap_px=10, wrap=True, mobile_column=False, css_classes="sp-cats"),
+            title="Kop", boxed=True, gap_px=14, extra={"boxed_width": size(1140)}),
+        title="Archiefkop", bg_global="658acb6", pad=dims(80, 24, 96, 24), pad_mobile=dims(56, 20, 72, 20), tag="header",
+        divider_bottom=("waves", "#FFFFFF", 50)),
+    section(jet_grid("nieuwskaart", "archive", 3, "berichten van dit archief, 9 per keer"),
+            more, title="Berichten", pad=(48, 24), gap_px=32),
+    steun_cta,
+]
+template("archive-news", "Archief · Nieuws", "archive", news_archive,
+         conditions=("include/archive/post_archive", "include/archive/category"))
+
 
 # Product ---------------------------------------------------------------------------------
 # Eén basis-template met de winkelwagenknop (sponsorpakketten, sponsor een kind) en per categorie een

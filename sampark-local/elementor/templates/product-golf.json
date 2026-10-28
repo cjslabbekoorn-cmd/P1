@@ -8,7 +8,7 @@
  ],
  "content": [
   {
-   "id": "8036c8e",
+   "id": "f6dc7af",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -46,7 +46,7 @@
    },
    "elements": [
     {
-     "id": "65cc2c8",
+     "id": "a34bacf",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -64,7 +64,7 @@
      },
      "elements": [
       {
-       "id": "d95025e",
+       "id": "1602b5f",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -90,7 +90,7 @@
        },
        "elements": [
         {
-         "id": "1dfce8e",
+         "id": "56723a7",
          "elType": "widget",
          "widgetType": "woocommerce-product-images",
          "settings": {
@@ -115,7 +115,7 @@
        "isInner": false
       },
       {
-       "id": "921f9c6",
+       "id": "ecfd9be",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -142,7 +142,7 @@
        },
        "elements": [
         {
-         "id": "095cea7",
+         "id": "0c70050",
          "elType": "widget",
          "widgetType": "woocommerce-breadcrumb",
          "settings": {
@@ -151,7 +151,7 @@
          "elements": []
         },
         {
-         "id": "59e9525",
+         "id": "4daaa3e",
          "elType": "widget",
          "widgetType": "woocommerce-product-title",
          "settings": {
@@ -172,14 +172,14 @@
            "typography_typography": "globals/typography?id=accent"
           },
           "__dynamic__": {
-           "title": "[elementor-tag id=\"a0185ba\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
+           "title": "[elementor-tag id=\"5c397da\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
           },
           "_title": "Producttitel"
          },
          "elements": []
         },
         {
-         "id": "a2eb5b9",
+         "id": "673328b",
          "elType": "widget",
          "widgetType": "woocommerce-product-price",
          "settings": {
@@ -198,7 +198,7 @@
          "elements": []
         },
         {
-         "id": "622829f",
+         "id": "e7cae28",
          "elType": "widget",
          "widgetType": "woocommerce-product-short-description",
          "settings": {
@@ -210,7 +210,7 @@
          "elements": []
         },
         {
-         "id": "5a56ba2",
+         "id": "6a233f7",
          "elType": "widget",
          "widgetType": "shortcode",
          "settings": {
@@ -229,7 +229,7 @@
    "isInner": false
   },
   {
-   "id": "c40878c",
+   "id": "0cb84ec",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -269,17 +269,17 @@
     "jedv_relation": "AND",
     "jedv_conditions": [
      {
-      "_id": "56b8215",
+      "_id": "2df619f",
       "jedv_condition": "exists",
       "__dynamic__": {
-       "jedv_field": "[elementor-tag id=\"a3fd0cb\" name=\"jet-object-property\" settings=\"%7B%22object_prop%22%3A%22post_content%22%7D\"]"
+       "jedv_field": "[elementor-tag id=\"0b8e7aa\" name=\"jet-object-property\" settings=\"%7B%22object_prop%22%3A%22post_content%22%7D\"]"
       }
      }
     ]
    },
    "elements": [
     {
-     "id": "00996f5",
+     "id": "cf3bcb3",
      "elType": "widget",
      "widgetType": "woocommerce-product-content",
      "settings": {
@@ -291,7 +291,7 @@
    "isInner": false
   },
   {
-   "id": "60ab99c",
+   "id": "64e9ae2",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -312,7 +312,7 @@
    },
    "elements": [
     {
-     "id": "5bc19a3",
+     "id": "bf189ac",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -344,7 +344,7 @@
      },
      "elements": [
       {
-       "id": "e085ade",
+       "id": "f70a62b",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -372,7 +372,7 @@
        },
        "elements": [
         {
-         "id": "6613206",
+         "id": "1fb80b6",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -393,7 +393,7 @@
          "elements": []
         },
         {
-         "id": "5123035",
+         "id": "b383f01",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -405,7 +405,7 @@
        "isInner": false
       },
       {
-       "id": "fbd70d4",
+       "id": "0831cb2",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -433,7 +433,7 @@
        },
        "elements": [
         {
-         "id": "edacf76",
+         "id": "5ad4a71",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -454,7 +454,7 @@
          "elements": []
         },
         {
-         "id": "48fd5ef",
+         "id": "f64cb9a",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -466,7 +466,7 @@
        "isInner": false
       },
       {
-       "id": "abf338a",
+       "id": "13544f8",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -494,7 +494,7 @@
        },
        "elements": [
         {
-         "id": "ebdab92",
+         "id": "1b1ba26",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -515,7 +515,7 @@
          "elements": []
         },
         {
-         "id": "34fd1bb",
+         "id": "ba5c8ef",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

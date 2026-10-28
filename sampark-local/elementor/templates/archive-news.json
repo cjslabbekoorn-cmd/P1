@@ -1,0 +1,651 @@
+{
+ "version": "0.4",
+ "title": "Archief · Nieuws",
+ "type": "archive",
+ "key": "archive-news",
+ "conditions": [
+  "include/archive/post_archive",
+  "include/archive/category"
+ ],
+ "content": [
+  {
+   "id": "c53cdee",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "56",
+     "right": "20",
+     "bottom": "72",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_bottom": "waves",
+    "shape_divider_bottom_color": "#FFFFFF",
+    "shape_divider_bottom_width": {
+     "unit": "%",
+     "size": 169,
+     "sizes": []
+    },
+    "shape_divider_bottom_height": {
+     "unit": "px",
+     "size": 34,
+     "sizes": []
+    },
+    "shape_divider_bottom_width_mobile": {
+     "unit": "%",
+     "size": 500,
+     "sizes": []
+    },
+    "shape_divider_bottom_height_mobile": {
+     "unit": "px",
+     "size": 90,
+     "sizes": []
+    },
+    "html_tag": "header",
+    "_title": "Archiefkop",
+    "__globals__": {
+     "background_color": "globals/colors?id=658acb6"
+    }
+   },
+   "elements": [
+    {
+     "id": "ee34d7c",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "14",
+       "row": "14",
+       "isLinked": true,
+       "unit": "px",
+       "size": 14
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "_title": "Kop"
+     },
+     "elements": [
+      {
+       "id": "fb16e84",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Uit India en Nederland",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=accent",
+         "typography_typography": "globals/typography?id=accent"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "8003aa5",
+       "elType": "widget",
+       "widgetType": "theme-archive-title",
+       "settings": {
+        "title": "",
+        "header_size": "h1",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 56,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=primary",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "__dynamic__": {
+         "title": "[elementor-tag id=\"dadc1c0\" name=\"archive-title\" settings=\"%7B%22include_context%22%3A%22%22%2C%22fallback%22%3A%22Nieuws%22%7D\"]"
+        },
+        "_title": "Titel (archieftitel: Nieuws of de categorie)"
+       },
+       "elements": []
+      },
+      {
+       "id": "7c3d773",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Verhalen van de scholen, terugblikken op onze evenementen en nieuws over de stichting.</p>",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "945a7cc",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "10",
+         "row": "10",
+         "isLinked": true,
+         "unit": "px",
+         "size": 10
+        },
+        "content_width": "full",
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "flex_wrap": "wrap",
+        "_title": "Categorieën",
+        "css_classes": "sp-cats"
+       },
+       "elements": [
+        {
+         "id": "ec39765",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Alles",
+          "link": {
+           "url": "/nieuws/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "3197a7b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Scholen & leerlingen",
+          "link": {
+           "url": "/category/scholen-leerlingen/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "5d1a739",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Evenementen",
+          "link": {
+           "url": "/category/evenementen/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "fe8970f",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Sponsors & partners",
+          "link": {
+           "url": "/category/sponsors-partners/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "a845b5d",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Stichting",
+          "link": {
+           "url": "/category/stichting/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=accent",
+           "button_text_color": "globals/colors?id=accent",
+           "button_background_hover_color": "globals/colors?id=accent",
+           "hover_color": "globals/colors?id=658acb6"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "6a50335",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "32",
+     "row": "32",
+     "isLinked": true,
+     "unit": "px",
+     "size": 32
+    },
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "24",
+     "bottom": "48",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    },
+    "html_tag": "section",
+    "_title": "Berichten"
+   },
+   "elements": [
+    {
+     "id": "d3b8870",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "content_width": "full",
+      "_title": "LISTING · berichten van dit archief, 9 per keer",
+      "_sp_jet": {
+       "listing": "nieuwskaart",
+       "query": "archive",
+       "cols": 3,
+       "hide_empty": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "db212e1",
+     "elType": "widget",
+     "widgetType": "button",
+     "settings": {
+      "text": "Meer nieuws",
+      "link": {
+       "url": "#",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "align": "center",
+      "background_color": "#00000000",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "1",
+       "bottom": "1",
+       "left": "1",
+       "isLinked": true
+      },
+      "__globals__": {
+       "border_color": "globals/colors?id=accent",
+       "button_text_color": "globals/colors?id=accent",
+       "button_background_hover_color": "globals/colors?id=accent",
+       "hover_color": "globals/colors?id=658acb6"
+      },
+      "_element_id": "sp-meer-nieuws",
+      "_title": "Load more-knop (ID sp-meer-nieuws)"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8323117",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "110",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "64",
+     "left": "20",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "shape_divider_top": "waves",
+    "shape_divider_top_color": "#FFFFFF",
+    "shape_divider_top_width": {
+     "unit": "%",
+     "size": 234,
+     "sizes": []
+    },
+    "shape_divider_top_height": {
+     "unit": "px",
+     "size": 46,
+     "sizes": []
+    },
+    "shape_divider_top_width_mobile": {
+     "unit": "%",
+     "size": 500,
+     "sizes": []
+    },
+    "shape_divider_top_height_mobile": {
+     "unit": "px",
+     "size": 90,
+     "sizes": []
+    },
+    "html_tag": "section",
+    "_title": "CTA band",
+    "__globals__": {
+     "background_color": "globals/colors?id=primary"
+    }
+   },
+   "elements": [
+    {
+     "id": "7a13d73",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "flex_gap": {
+       "column": "16",
+       "row": "16",
+       "isLinked": true,
+       "unit": "px",
+       "size": 16
+      },
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 760,
+       "sizes": []
+      },
+      "flex_align_items": "center",
+      "_title": "CTA inhoud"
+     },
+     "elements": [
+      {
+       "id": "22485f6",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Steun ons werk",
+        "header_size": "p",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 0.5,
+         "sizes": []
+        },
+        "__globals__": {
+         "title_color": "globals/colors?id=cf55c96",
+         "typography_typography": "globals/typography?id=accent"
+        },
+        "align": "center"
+       },
+       "elements": []
+      },
+      {
+       "id": "bedd89d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Help een kind naar school",
+        "header_size": "h2",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "026eb21",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Voor € 60 per jaar betaal je het lesgeld en de schoolspullen van één kind.</p>",
+        "align": "center",
+        "__globals__": {
+         "text_color": "globals/colors?id=658acb6"
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "e995f98",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "content_width": "full",
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "5ef1ea3",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Sponsor een kind",
+          "link": {
+           "url": "/product/sponsor-een-kind/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "__globals__": {
+           "background_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=primary",
+           "button_background_hover_color": "globals/colors?id=e64974d",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0d94a3b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Doneer eenmalig",
+          "link": {
+           "url": "/steun-ons/doneren/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#00000000",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=658acb6",
+           "button_text_color": "globals/colors?id=658acb6",
+           "button_background_hover_color": "globals/colors?id=658acb6",
+           "hover_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {}
+}

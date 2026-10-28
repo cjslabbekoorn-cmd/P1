@@ -9,6 +9,17 @@ require_once ABSPATH . 'wp-admin/includes/file.php';
 require_once ABSPATH . 'wp-admin/includes/media.php';
 require_once ABSPATH . 'wp-admin/includes/image.php';
 
+// Alleen nieuwe templates toevoegen (scripts/templates-add.php): pagina's, kit en bestaande templates blijven ongemoeid
+$only_templates = defined( 'SP_ALLEEN_NIEUWE_TEMPLATES' ) && SP_ALLEEN_NIEUWE_TEMPLATES;
+
+// Na de eerste opbouw wordt de site met de hand in Elementor verder gebouwd. Een volledige run zou die pagina's
+// overschrijven, dus dat kan alleen nog bewust: --exec="define('SP_FORCE', true);"
+if ( ! $only_templates && get_option( 'sampark_handwerk' ) && ! defined( 'SP_FORCE' ) ) {
+	WP_CLI::error( "Deze site wordt met de hand verder gebouwd; build-site.php zou pagina's en templates overschrijven.\n" .
+		"Nieuwe templates toevoegen:  wp eval-file /scripts/templates-add.php\n" .
+		"Toch alles opnieuw opbouwen: wp eval-file /scripts/build-site.php --exec=\"define('SP_FORCE', true);\"" );
+}
+
 const SP_STAGING  = 'https://staging.stichtingsampark.nl/wp-content/uploads/';
 const SP_ICONS    = '/assets/icons/';
 const SP_PAGES    = '/elementor/pages/';
@@ -130,6 +141,7 @@ foreach ( $sp_images as $key => $src ) {
 }
 update_option( 'sampark_media', $media, false );
 
+if ( ! $only_templates ) {
 // ------------------------------------------------------------------ huisstijl (Elementor-kit)
 
 $kit_id = (int) get_option( 'elementor_active_kit' );
@@ -233,6 +245,8 @@ if ( ! empty( $media['logo_sampark'] ) ) {
 	update_option( 'site_icon', $media['logo_sampark'] );
 }
 
+} // huisstijl
+
 // ------------------------------------------------------------------ pagina's
 
 $fill = function ( string $json ) use ( $media ) {
@@ -250,6 +264,23 @@ $jet = function_exists( 'jet_engine' ) ? get_option( 'sampark_jet', [] ) : [];
 $jetify = function ( array $elements ) use ( &$jetify, $jet ) {
 	foreach ( $elements as $i => $el ) {
 		$spec = $el['settings']['_sp_jet'] ?? null;
+		if ( $spec && 'archive' === $spec['query'] && ! empty( $jet['listings'][ $spec['listing'] ] ) ) {
+			// Archief: de Listing Grid toont de berichten van het archief zelf, met "Meer nieuws" (Load more)
+			$cols = (int) $spec['cols'];
+			$elements[ $i ] = [
+				'id' => $el['id'], 'elType' => 'widget', 'widgetType' => 'jet-listing-grid', 'elements' => [],
+				'settings' => [
+					'_title' => $el['settings']['_title'] ?? 'Listing Grid',
+					'lisitng_id' => (string) $jet['listings'][ $spec['listing'] ],
+					'columns' => (string) $cols, 'columns_tablet' => (string) min( 2, $cols ), 'columns_mobile' => '1',
+					'is_archive_template' => 'yes', 'posts_num' => 9, 'equal_columns_height' => 'yes',
+					'use_load_more' => 'yes', 'load_more_type' => 'click', 'load_more_id' => 'sp-meer-nieuws',
+					'horizontal_gap' => [ 'unit' => 'px', 'size' => 24 ], 'vertical_gap' => [ 'unit' => 'px', 'size' => 24 ],
+					'not_found_message' => 'Nog geen berichten in deze categorie.',
+				],
+			];
+			continue;
+		}
 		if ( $spec && ! empty( $jet['listings'][ $spec['listing'] ] ) && ! empty( $jet['queries'][ $spec['query'] ] ) ) {
 			$cols = (int) $spec['cols'];
 			$elements[ $i ] = [
@@ -298,6 +329,7 @@ $jetify = function ( array $elements ) use ( &$jetify, $jet ) {
 	return $elements;
 };
 
+if ( ! $only_templates ) {
 $files = glob( SP_PAGES . '*.json' );
 usort( $files, fn( $a, $b ) => ( json_decode( file_get_contents( $a ), true )['menu_order'] ?? 0 ) <=> ( json_decode( file_get_contents( $b ), true )['menu_order'] ?? 0 ) );
 
@@ -363,6 +395,8 @@ foreach ( get_posts( [ 'post_type' => 'product', 'post_status' => 'any', 'number
 	}
 }
 
+} // pagina's
+
 // ------------------------------------------------------------------ Theme Builder-templates (Elementor Pro)
 
 if ( defined( 'ELEMENTOR_PRO_VERSION' ) ) {
@@ -391,6 +425,9 @@ if ( defined( 'ELEMENTOR_PRO_VERSION' ) ) {
 		[ $doc['content'], $doc['conditions'] ] = json_decode( $json, true );
 		$existing = get_posts( [ 'post_type' => 'elementor_library', 'post_status' => 'any', 'numberposts' => 1, 'fields' => 'ids',
 			'meta_key' => '_sampark_key', 'meta_value' => $doc['key'] ] );
+		if ( $existing && $only_templates ) {
+			continue; // bestaat al en kan met de hand zijn aangepast
+		}
 		$tid = $existing ? $existing[0] : wp_insert_post( [ 'post_type' => 'elementor_library', 'post_status' => 'publish',
 			'post_title' => $doc['title'] ] );
 		if ( ! $tid || is_wp_error( $tid ) ) {

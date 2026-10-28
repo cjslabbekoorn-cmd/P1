@@ -78,6 +78,7 @@ services:
       - ./jetengine:/jetengine
       - ./superforms:/superforms:ro
       - ./snippets:/snippets:ro
+      - ./content:/content:ro
       - ./plugins/premium:/premium:ro
       - ./backups:/backups
 

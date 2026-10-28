@@ -76,6 +76,17 @@ add_action( 'wp_enqueue_scripts', function () {
 	.sp-fact strong { font-size: 34px; }
 	.sp-moments .jet-listing-dynamic-repeater__items { grid-template-columns: 1fr; }
 }
+/* Nieuwsberichten: fotoseries als grid, alle foto's even groot; klik opent de Elementor-lightbox */
+.sp-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+.sp-gallery a, .sp-gallery img { display: block; }
+.sp-gallery > br, .sp-gallery > p:empty { display: none; }
+.sp-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
+.elementor-widget-theme-post-content img { border-radius: 12px; height: auto; }
+@media (max-width: 767px) { .sp-gallery { grid-template-columns: repeat(2, 1fr); } }
+/* Nieuwsarchief: categorieknoppen compact */
+.sp-cats .elementor-button { padding: 8px 16px; font-size: 15px; }
+/* Product: hoge flesfoto's niet langer dan het scherm */
+.elementor-widget-woocommerce-product-images .woocommerce-product-gallery__image img { max-height: 620px; object-fit: contain; }
 CSS;
 	// Adobe Fonts (Aptos). Met Elementor Pro laadt de Adobe Fonts-integratie de kit zelf.
 	$kit = get_option( 'elementor_typekit-kit-id' );

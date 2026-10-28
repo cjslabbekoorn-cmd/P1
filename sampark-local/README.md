@@ -49,18 +49,31 @@ Het setupscript kun je altijd opnieuw draaien, bijvoorbeeld nadat je zips hebt t
 
 Zonder Elementor Pro valt de site terug op de header en footer van Hello Elementor (met wat CSS uit `mu-plugins/sampark-styles.php`). Die CSS hoort in productie in Site Settings › Custom CSS.
 
-## Pagina's aanpassen of opnieuw genereren
+## Verder bouwen: Elementor is leidend
 
-De pagina-indeling staat als code in `elementor/build.py`. Dat script schrijft per pagina een Elementor-JSON naar `elementor/pages/`. `scripts/build-site.php` zet die in WordPress en vult de beelden in.
+Na de eerste opbouw wordt de site **met de hand in Elementor** verder gebouwd. De generator (`elementor/build.py` → `scripts/build-site.php`) is alleen nog voor een volledig nieuwe, lege installatie: hij overschrijft pagina's, templates en de kit. `setup.sh` zet daarom aan het eind de markering `sampark_handwerk`; daarna weigert `build-site.php` een volledige run.
 
-```sh
-python3 elementor/build.py                                     # JSON opnieuw genereren
-docker compose run --rm wpcli eval-file /scripts/build-site.php  # pagina's bijwerken
-```
+| Wil je … | Commando |
+|---|---|
+| Nieuwe templates uit `elementor/templates/` toevoegen (bestaande blijven staan) | `docker compose run --rm wpcli eval-file /scripts/templates-add.php` |
+| Inhoud van live (opnieuw) binnenhalen | `docker compose run --rm wpcli eval-file /scripts/content-import.php` |
+| Een back-up van de database | `docker compose run --rm wpcli db export /backups/sampark-$(date +%F).sql` |
+| Toch alles opnieuw genereren (overschrijft je handwerk!) | `docker compose run --rm wpcli eval-file /scripts/build-site.php --exec="define('SP_FORCE', true);"` |
 
-Let op: `build-site.php` overschrijft de Elementor-inhoud van deze pagina's. Wil je een pagina met de hand in Elementor verder bouwen, haal hem dan uit `elementor/pages/` of draai het script niet meer.
+Blokken die een JetEngine Listing Grid zijn, hebben in de Elementor Navigator een titel die begint met `LISTING ·`, met de query erbij.
 
-Blokken die een JetEngine Listing Grid worden, hebben in de Elementor Navigator een titel die begint met `LISTING ·`, met de query erbij. De kaarten erin zijn het ontwerp van het listing item. De JSON-bestanden zijn ook los te importeren op staging (Elementor › Templates › Importeren); de beeld-placeholders (`{{img:…}}`) zijn dan wel leeg.
+## Inhoud van live
+
+`content/build-live.py` haalt de actuele inhoud van www.stichtingsampark.nl (en staging) op en schrijft `content/live.json`; `scripts/content-import.php` zet die in de site.
+
+- **Nieuws:** alle 38 berichten met volledige tekst, uitgelicht beeld en beelden in de tekst (het originele bestand, niet de miniatuur). Opgeschoond: geen Elementor-opmaak of inline stijl van live, geen kruimelpad of dubbele titel. Fotoseries worden een fotogrid (`.sp-gallery`), YouTube-video's een embed. Indeling in de categorieën Scholen & leerlingen, Evenementen, Sponsors & partners en Stichting, en gekoppeld aan evenementen en projecten via de JetEngine-relaties.
+- **Documenten:** algemene voorwaarden en jaarrekening 2024 (pdf). De voorwaarden staan op `/algemene-voorwaarden/`, de jaarrekening in Options › Stichting › ANBI › Documenten en op de ANBI-pagina.
+- **Wijnactie 2026:** de drie wijnen van live (Ruteiro Verdejo, Palazzo Mio Rosso, Free Pass alcoholvrij) met naam, productpagina-URL van live, € 43,95, teksten en foto.
+- **Evenementen:** tijdloze teksten voor golf, rally, wijnactie en reis (zonder de data van 2026, die voorbij zijn), het volledige golfprogramma.
+
+Veilig om opnieuw te draaien: de import onthoudt per bericht een vingerafdruk van wat hij neerzette. Zelf aangepaste berichten, evenementen en producten blijven staan. Draai `python3 content/build-live.py` opnieuw om nieuwe berichten van live mee te nemen.
+
+Nog niet op live te vinden, dus nog te leveren: een **privacyverklaring** (er is alleen de WordPress-standaardpagina), het **beleidsplan en verslag van activiteiten** voor de ANBI-pagina en eerdere **jaarrekeningen**.
 
 ## Plugins
 

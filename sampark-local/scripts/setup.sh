@@ -26,6 +26,7 @@ wp option update timezone_string "Europe/Amsterdam"
 wp option update date_format "j F Y"
 wp option update blog_public 0
 wp option update default_comment_status closed
+wp option update posts_per_page 9   # nieuwsarchief in drie kolommen
 wp rewrite structure '/%postname%/' --hard
 
 log "Standaardinhoud opruimen"
@@ -282,6 +283,14 @@ for id in "$VOORW_ID" "$PRIVACY_ID" "$(page_id sitemap)"; do
 done
 
 wp rewrite flush --hard >/dev/null 2>&1 || true
+
+# ---------------------------------------------------------------- inhoud van live
+if [ -f /content/live.json ]; then
+	log "Inhoud van live: nieuws, documenten, wijnen en evenementteksten"
+	wp eval-file /scripts/content-import.php 2>&1 | grep -E "nieuws:|Warning|Success|\+ |~ " || true
+fi
+# Vanaf hier wordt de site met de hand in Elementor verder gebouwd; build-site.php weigert dan een volledige run
+wp option update sampark_handwerk 1 >/dev/null
 
 log "Klaar"
 cat <<EOF
