@@ -43,4 +43,10 @@ if ( $wine ) {
 		}
 	}
 }
+// Bedankpagina na een bestelling: /bedankt/ met het Purchase Summary-widget (Elementor Pro › Site-instellingen › WooCommerce)
+$thanks = get_page_by_path( 'bedankt' );
+if ( $thanks && (int) get_option( 'elementor_woocommerce_purchase_summary_page_id' ) !== $thanks->ID ) {
+	update_option( 'elementor_woocommerce_purchase_summary_page_id', $thanks->ID );
+	WP_CLI::log( "  + bedankpagina na bestelling: /bedankt/ ({$thanks->ID})" );
+}
 WP_CLI::success( 'Winkelinstellingen gezet.' );

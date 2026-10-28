@@ -1,7 +1,7 @@
 <?php
 /**
- * Voegt Theme Builder-templates uit elementor/templates/ toe die nog niet in de site staan.
- * Bestaande templates, pagina's en de Elementor-kit blijven ongemoeid, dus veilig op een site die met de hand
+ * Voegt pagina's (elementor/pages/) en Theme Builder-templates (elementor/templates/) toe die nog niet in de site staan.
+ * Bestaande pagina's, templates en de Elementor-kit blijven ongemoeid, dus veilig op een site die met de hand
  * in Elementor verder wordt gebouwd.
  *
  *   docker compose run --rm wpcli eval-file /scripts/templates-add.php

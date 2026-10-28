@@ -9,7 +9,7 @@ require_once ABSPATH . 'wp-admin/includes/file.php';
 require_once ABSPATH . 'wp-admin/includes/media.php';
 require_once ABSPATH . 'wp-admin/includes/image.php';
 
-// Alleen nieuwe templates toevoegen (scripts/templates-add.php): pagina's, kit en bestaande templates blijven ongemoeid
+// Alleen nieuwe pagina's en templates toevoegen (scripts/templates-add.php): kit en alles wat al bestaat blijft ongemoeid
 $only_templates = defined( 'SP_ALLEEN_NIEUWE_TEMPLATES' ) && SP_ALLEEN_NIEUWE_TEMPLATES;
 
 // Na de eerste opbouw wordt de site met de hand in Elementor verder gebouwd. Een volledige run zou die pagina's
@@ -336,7 +336,7 @@ $jetify = function ( array $elements ) use ( &$jetify, $jet ) {
 	return $elements;
 };
 
-if ( ! $only_templates ) {
+// Pagina's. In de modus "alleen nieuwe" (templates-add.php) worden alleen pagina's aangemaakt die er nog niet zijn.
 $files = glob( SP_PAGES . '*.json' );
 usort( $files, fn( $a, $b ) => ( json_decode( file_get_contents( $a ), true )['menu_order'] ?? 0 ) <=> ( json_decode( file_get_contents( $b ), true )['menu_order'] ?? 0 ) );
 
@@ -349,6 +349,9 @@ foreach ( $files as $file ) {
 	}
 	$path = ( $doc['parent'] ? $doc['parent'] . '/' : '' ) . $doc['slug'];
 	$existing = get_page_by_path( $path );
+	if ( $existing && $only_templates ) {
+		continue; // bestaat al en kan met de hand zijn aangepast
+	}
 	$postarr = [
 		'post_type' => 'page', 'post_status' => 'publish', 'post_title' => $doc['title'],
 		'post_name' => $doc['slug'], 'post_parent' => $parent, 'menu_order' => $doc['menu_order'],
@@ -378,6 +381,7 @@ foreach ( $files as $file ) {
 	WP_CLI::log( sprintf( '  %s /%s/ (%d)', $existing ? '~' : '+', $path, $id ) );
 }
 
+if ( ! $only_templates ) {
 // Losse schoolpagina's van eerdere builds opruimen: /ons-werk/{school}/ is nu de projectsingle
 // (Theme Builder-template "Single · Project"). Alleen pagina's met dezelfde slug als een project.
 $ons_werk = get_page_by_path( 'ons-werk' );

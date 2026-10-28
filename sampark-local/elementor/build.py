@@ -1947,6 +1947,80 @@ product_template("product-golf", "Product · golftoernooi (Super Forms)", super_
 product_template("product-donatie", "Product · donatie (Super Forms)", super_form("donatie"), cat="donatie", price=False)
 
 
+# BEDANKPAGINA NA EEN BESTELLING ----------------------------------------------------
+# Elementor Pro › Site-instellingen › WooCommerce › Purchase Summary-pagina wijst naar deze pagina (shop-settings.php):
+# na elke bestelling toont WooCommerce hier de bestelling, met daarnaast wat er nu gebeurt.
+SUMMARY_TEXTS = {
+    "confirmation_message_active": "", "payment_details_number": "Bestelnummer:", "payment_details_date": "Datum:",
+    "payment_details_email": "E-mailadres:", "payment_details_total": "Totaal:", "payment_details_payment": "Betaalmethode:",
+    "bank_details_text": "Onze bankgegevens", "downloads_text": "Downloads", "order_summary_text": "Je bestelling",
+    "billing_details_text": "Factuurgegevens", "shipping_details_text": "Bezorgadres",
+    "sections_background_color": "#F6F6F6", "sections_border_type": "none", "sections_border_radius": dims(10),
+    "sections_padding": dims(24), "sections_spacing": size(20),
+    "__globals__": {"titles_color": g_color("primary"), "general_text_color": g_color("text"),
+                    "payment_details_titles_color": g_color("text"), "payment_details_items_color": g_color("primary")},
+}
+
+
+def next_step(fa, title, *body, key):
+    return container(fa_icon(fa, px=22),
+                     container(heading(title, "h3", size_px=19, color="text"), *body, title="Stap tekst", gap_px=2),
+                     title=f"Stap · {key}", direction="row", gap_px=14, mobile_column=False, align="flex-start",
+                     css_classes=f"sp-stap sp-stap-{key}")
+
+
+def small(html_text):
+    return text(html_text, size_px=15)
+
+
+page("bedankt", "Bedankt",
+     container(
+         container(eyebrow("Bestelling ontvangen"),
+                   heading("Bedankt voor jouw steun!", "h1", color="primary", typo="accent", size_px=52),
+                   text("<p>Fijn dat je ons helpt kinderen in India een betere toekomst te geven. Hieronder zie je je "
+                        "bestelling; dezelfde gegevens staan in de bevestiging in je mailbox.</p>", size_px=18),
+                   title="Kop", boxed=True, gap_px=10, extra={"boxed_width": size(1140)}),
+         title="Paginakop", bg_global="658acb6", pad=dims(72, 24, 88, 24), pad_mobile=dims(48, 20, 64, 20), tag="header",
+         divider_bottom=("waves", "#FFFFFF", 50)),
+     shop_main(container(
+         container(widget("woocommerce-purchase-summary", SUMMARY_TEXTS, title="Bestelling (Elementor Pro Purchase Summary)"),
+                   title="Bestelling", width=60),
+         container(
+             card(eyebrow("Wat gebeurt er nu?"),
+                  next_step("far fa-envelope", "Bevestiging per e-mail",
+                            small("<p>Je krijgt binnen een paar minuten een e-mail met je bestelling en de factuur.</p>"), key="mail"),
+                  next_step("fas fa-file-invoice", "Betaal je op factuur?",
+                            small("<p>Maak het bedrag binnen 14 dagen over, met je bestelnummer erbij, naar:</p>"),
+                            option_field("iban", tag="p", color="text", size_px=15, fmt="<strong>%s</strong> t.n.v. Stichting Sampark"),
+                            key="factuur"),
+                  next_step("far fa-calendar-check", "Ingeschreven voor een evenement?",
+                            small("<p>Vlak voor het evenement sturen we je de praktische informatie.</p>"), key="evenement"),
+                  next_step("fas fa-wine-bottle", "Wijn besteld?",
+                            small("<p>Kies je voor afhalen, dan maken we een afspraak. Bij bezorgen hoor je van ons wanneer de wijn komt.</p>"),
+                            key="wijn"),
+                  title="Wat gebeurt er nu", pad=28, gap_px=14),
+             card(eyebrow("Goed om te weten"),
+                  small("<p>Stichting Sampark is een ANBI. Je gift is daardoor fiscaal aftrekbaar.</p>"),
+                  option_field("rsin", tag="p", color="text", size_px=14, fmt="RSIN %s"),
+                  heading("Vragen over je bestelling?", "h3", size_px=19, color="text"),
+                  option_field("telefoon", tag="p", color="text", size_px=15),
+                  option_field("email", tag="p", color="text", size_px=15),
+                  title="Goed om te weten", pad=28, gap_px=8),
+             title="Wat nu (rechts)", width=36, gap_px=20),
+         title="Bestelling en vervolg", direction="row", gap_px=40, align="flex-start", justify="space-between")),
+     section(
+         section_head("Nog meer doen?", "Steun Sampark het hele jaar",
+                      "Met een sponsorpakket of een vaste gift help je de scholen structureel."),
+         container(jet_grid("pakketkaart", "q_pakketten", 3, "sponsorpakketten"),
+                   title="Sponsorpakketten", bg_global="658acb6", radius=20, pad=dims(32), pad_mobile=dims(20),
+                   css_classes="sp-hide-empty"),
+         container(button("Doneer", "/steun-ons/doneren/"), button("Bekijk de evenementen", "/evenementen/", style="outline"),
+                   title="Knoppen", direction="row", gap_px=12, wrap=True, mobile_column=False),
+         title="Nog meer doen", gap_px=28),
+     css="bedankt",
+     seo=("Bedankt voor je bestelling | Stichting Sampark", ""))
+
+
 def write_templates():
     out = OUT.parent / "templates"
     out.mkdir(exist_ok=True)

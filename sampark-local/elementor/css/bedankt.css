@@ -1,0 +1,29 @@
+/* Bedankpagina: de bestelling in dezelfde vormgeving als afrekenen (grijze vlakken, Spectral-koppen, Aptos).
+   Staat als Pagina-CSS in Elementor (Pagina-instellingen > Aangepaste CSS); "selector" is deze pagina. */
+selector .elementor-widget-woocommerce-purchase-summary h2,
+selector .elementor-widget-woocommerce-purchase-summary .woocommerce-column__title {
+	font-family: Spectral, serif; font-weight: 500; font-size: 24px; margin: 0 0 12px;
+}
+selector .elementor-widget-woocommerce-purchase-summary,
+selector .elementor-widget-woocommerce-purchase-summary table { font-family: aptos, sans-serif; font-size: 15px; }
+/* kerngegevens als rij vlakjes */
+selector .woocommerce-order-overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 0 0 20px; padding: 0; }
+selector .woocommerce-order-overview li { list-style: none; background: #f6f6f6; border: 0 !important; border-radius: 10px; padding: 14px 16px !important; margin: 0 !important; font-size: 13px; text-transform: none; color: var(--e-global-color-text); }
+selector .woocommerce-order-overview li strong { display: block; margin-top: 4px; font-size: 16px; color: var(--e-global-color-primary); }
+/* bestelregels: zonder kolomkoppen, product links en bedrag rechts */
+selector .woocommerce-table--order-details { border: 0 !important; border-collapse: separate; width: 100%; }
+selector .woocommerce-table--order-details th,
+selector .woocommerce-table--order-details td { border: 0 !important; padding: 8px 0 !important; background: transparent !important; }
+selector .woocommerce-table--order-details tfoot tr:last-child th,
+selector .woocommerce-table--order-details tfoot tr:last-child td { font-size: 18px; font-weight: 700; color: var(--e-global-color-primary); border-top: 1px solid #e3e3e3 !important; padding-top: 14px !important; }
+selector .wc-item-meta { margin: 4px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--e-global-color-text); }
+selector .wc-item-meta li p { display: inline; }
+/* bankgegevens (op factuur) duidelijk zichtbaar */
+selector .wc-bacs-bank-details-heading { color: var(--e-global-color-primary); }
+selector .wc-bacs-bank-details { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 16px; }
+selector address { font-style: normal; line-height: 1.6; border: 0 !important; padding: 16px 20px !important; }
+selector .elementor-widget-woocommerce-purchase-summary a { color: var(--e-global-color-accent); }
+selector .woocommerce-order-overview li strong, selector .woocommerce-order-overview li .woocommerce-Price-amount { font-weight: 700; }
+/* "Betaal je op factuur?" alleen als de bestelling op factuur is: WooCommerce toont dan de bankgegevens */
+selector:not(:has(.wc-bacs-bank-details)) .sp-stap-factuur { display: none; }
+selector .sp-stap p { margin-bottom: 0; }
