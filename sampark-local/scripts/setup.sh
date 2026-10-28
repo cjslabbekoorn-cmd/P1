@@ -287,8 +287,6 @@ cat <<EOF
 
   Site:        $WP_URL
   Beheer:      $WP_URL/wp-admin  ($WP_ADMIN_USER / $WP_ADMIN_PASSWORD)
-  phpMyAdmin:  http://localhost:8081
-  Mail:        http://localhost:8025
-
-  Volgende stap: JetEngine-structuur aanmaken (zie README.md, "Handmatig in JetEngine").
+  phpMyAdmin:  http://localhost:${PMA_PORT:-8081}
+  Mail:        http://localhost:${MAIL_PORT:-8025}
 EOF

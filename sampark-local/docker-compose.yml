@@ -60,6 +60,8 @@ services:
       WP_ADMIN_EMAIL: ${WP_ADMIN_EMAIL:-dev@positie1.local}
       ADOBE_FONTS_PROJECT: ${ADOBE_FONTS_PROJECT:-nnd7fbm}
       GTM_ID: ${GTM_ID:-}
+      PMA_PORT: ${PMA_PORT:-8081}
+      MAIL_PORT: ${MAIL_PORT:-8025}
       HOME: /tmp
     volumes:
       - wp_data:/var/www/html

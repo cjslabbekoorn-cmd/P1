@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Local Mailpit
- * Description: Stuurt alle mail lokaal naar Mailpit (http://localhost:8025).
+ * Description: Stuurt alle mail lokaal naar Mailpit (http://localhost:8025, of de MAIL_PORT uit .env).
  */
 
 if ( wp_get_environment_type() !== 'local' ) {
