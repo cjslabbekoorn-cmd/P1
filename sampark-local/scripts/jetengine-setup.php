@@ -517,6 +517,10 @@ foreach ( $queries as $key => [ $name, $type, $args ] ) {
 	if ( ! empty( $state['queries'][ $key ] ) ) {
 		continue;
 	}
+	if ( array_key_exists( 'post__in', $args ) && '' === $args['post__in'] ) {
+		WP_CLI::warning( "query $key overgeslagen: relatie nog niet geregistreerd. Draai jetengine-setup.php nog een keer." );
+		continue;
+	}
 	$out = sp_tool( 'tool-add-query', [ 'name' => $name, 'query_type' => $type, 'query_args' => $args ] );
 	$qid = $out['query_id'] ?? $out['item_id'] ?? $out['id'] ?? 0;
 	if ( $qid ) {
@@ -529,7 +533,7 @@ foreach ( $queries as $key => [ $name, $type, $args ] ) {
 
 // De MCP-converter van JetEngine 3.8.10 slaat lege dynamische tax-clauses op als stdClass (fatal bij gebruik)
 // en neemt meta_key niet over in de sortering. Dat herstellen we direct in de opgeslagen query.
-function sp_fix_query( $qid, $meta_key = '' ) {
+function sp_fix_query( $qid, $meta_key = '', $post_in = '' ) {
 	global $wpdb;
 	$table = $wpdb->prefix . 'jet_post_types';
 	$raw   = $wpdb->get_var( $wpdb->prepare( "SELECT args FROM $table WHERE id = %d", $qid ) );
@@ -549,6 +553,12 @@ function sp_fix_query( $qid, $meta_key = '' ) {
 				}
 			}
 		}
+	}
+	// Relatie-queries die bij de eerste run zijn aangemaakt voordat JetEngine de relaties kende, missen hun filter
+	// (post__in leeg) en tonen dan alle producten of berichten: zet de macro er alsnog in
+	if ( $post_in && ( $args['posts']['post__in'] ?? '' ) !== $post_in ) {
+		$args['posts']['post__in'] = $post_in;
+		WP_CLI::log( "  ~ query $qid: filter op relatie hersteld" );
 	}
 	// Macro's (%current_id% enz.) werkt JetEngine alleen uit als ze ook in de dynamische index staan,
 	// zoals de interface dat doet bij het kiezen van een macro
@@ -578,7 +588,8 @@ function sp_fix_query( $qid, $meta_key = '' ) {
 }
 foreach ( $queries as $key => [ $name, $type, $args ] ) {
 	if ( ! empty( $state['queries'][ $key ] ) ) {
-		sp_fix_query( $state['queries'][ $key ], $args['meta_key'] ?? '' );
+		$post_in = is_string( $args['post__in'] ?? null ) && str_starts_with( $args['post__in'], '%rel_get_items' ) ? $args['post__in'] : '';
+		sp_fix_query( $state['queries'][ $key ], $args['meta_key'] ?? '', $post_in );
 	}
 }
 
