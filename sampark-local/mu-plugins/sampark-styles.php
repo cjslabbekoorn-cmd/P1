@@ -98,6 +98,37 @@ add_action( 'wp_enqueue_scripts', function () {
 /* Product: lange omschrijving */
 .sp-product-desc p:last-child { margin-bottom: 0; }
 .sp-product-desc h2, .sp-product-desc h3 { margin-top: 1.2em; }
+/* Inschrijfsectie op de evenementpagina: de kaart rechts valt op, de rest ondersteunt */
+.sp-inschrijfkaart { box-shadow: 0 18px 48px rgba(70, 33, 26, .14); border: 2px solid var(--e-global-color-accent); }
+.sp-inschrijfkaart .sp-card { padding: 0 !important; }
+.sp-inschrijfkaart .jet-listing-grid__item + .jet-listing-grid__item { border-top: 1px solid #eee; padding-top: 20px; margin-top: 20px; }
+.sp-cta-full, .sp-cta-full .jet-listing-dynamic-link__link { width: 100%; justify-content: center; text-align: center; }
+.sp-inschrijf-later { display: none !important; }
+.sp-inschrijfkaart:not(:has(.jet-listing-grid__item, .sp-extern, .sp-vol)) .sp-inschrijf-later { display: flex !important; }
+.sp-vragen p { margin: 0; }
+.sp-vragen { border-top: 1px solid #eee; padding-top: 14px; }
+.sp-fact { font-size: 17px; }
+.sp-fact.e-con { --flex-wrap: nowrap !important; --flex-direction: row !important; }
+.sp-fact > .elementor-widget:last-child { flex: 1 1 auto; }
+.sp-fact .elementor-widget-icon, .sp-urgent .elementor-widget-icon { flex: 0 0 22px; }
+.sp-urgent { background: #FFFFFF; border-radius: 999px; padding: 8px 18px; width: auto !important; align-self: flex-start; }
+/* "Bestel nu" (wijnactie, producten in drie kolommen) of "Schrijf je in": hangt af van of er bestelproducten op de pagina staan */
+body:not(:has(.sp-bestellen .jet-listing-grid__item)) .sp-als-bestel,
+body:has(.sp-bestellen .jet-listing-grid__item) .sp-als-inschrijf,
+body:has(.sp-bestellen .jet-listing-grid__item) .sp-inschrijfkaart { display: none !important; }
+body:has(.sp-bestellen .jet-listing-grid__item) .sp-waarom { width: 100% !important; }
+body:has(.sp-bestellen .jet-listing-grid__item) .sp-kerngegevens.e-con { --flex-direction: row !important; --flex-wrap: wrap !important; column-gap: 32px; }
+body:has(.sp-bestellen .jet-listing-grid__item) .sp-kerngegevens > .sp-fact { --width: auto !important; width: auto !important; }
+/* knoppen naar de inschrijfsectie: naast elkaar in de hero, en de sectie niet onder de vaste header */
+.sp-knop-inschrijven.e-con { padding: 0 !important; }
+.sp-knop-auto.e-con { --width: auto !important; width: auto !important; flex: 0 0 auto; }
+#inschrijven { scroll-margin-top: 90px; }
+/* zekerheden over betalen alleen als je hier ook echt kunt inschrijven of bestellen */
+.sp-inschrijven:not(:has(.jet-listing-grid__item)) .sp-voordelen { display: none; }
+.sp-voordelen { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 8px; }
+.sp-voordelen li { position: relative; padding-left: 30px; }
+.sp-voordelen li::before { content: ""; position: absolute; left: 0; top: 3px; width: 20px; height: 20px; border-radius: 50%;
+	background: var(--e-global-color-accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3' d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center / 12px no-repeat; }
 CSS;
 	// Adobe Fonts (Aptos). Met Elementor Pro laadt de Adobe Fonts-integratie de kit zelf.
 	$kit = get_option( 'elementor_typekit-kit-id' );

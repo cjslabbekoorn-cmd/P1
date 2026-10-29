@@ -1199,11 +1199,13 @@ def dyn_image(source="post_thumbnail", height=220, fit="cover", radius=14, link=
     return widget("jet-listing-dynamic-image", st)
 
 
-def dyn_link(label, style="outline", source="_permalink"):
+def dyn_link(label, style="outline", source="_permalink", full=False):
     st = {"dynamic_link_source": source, "link_label": label, "link_wrapper_tag": "div",
           "link_padding": dims(10, 22), "link_border_radius": dims(4),
           "link_typography_typography": "custom", "link_typography_font_family": "Patrick Hand",
           "link_typography_text_transform": "uppercase", "link_typography_font_size": size(16)}
+    if full:  # grote knop over de volle breedte (inschrijven)
+        st.update({"link_padding": dims(18, 28), "link_typography_font_size": size(22), "_css_classes": "sp-cta-full"})
     if style == "outline":
         st.update({"link_border_border": "solid", "link_border_width": dims(1)})
         st["__globals__"] = {"link_color": g_color("accent"), "link_border_color": g_color("accent"),
@@ -1278,6 +1280,26 @@ LISTINGS = {
         dyn_field("object", "post_excerpt", tag="div"),
         dyn_link("Inschrijven of bestellen", style="primary"),
         title="Inschrijfkaart", bg="#FFFFFF", pad=24)),
+    # Conversiekaart in de inschrijfsectie van een evenement: één product, groot bedrag, knop over de volle breedte
+    "inschrijfkaart-groot": ("Inschrijfkaart groot (evenement)", "product", listing_card(
+        dyn_field("object", "post_title", tag="h3", typo="primary", size_px=30),
+        dyn_field("meta", "_price", tag="p", color="accent", size_px=44,
+                  fmt="€ %s", filt={"filter_callback": "number_format", "num_dec_point": ",",
+                                    "num_thousands_sep": ".", "num_decimals": 2},
+                  extra={"field_typography_font_family": "Patrick Hand", "field_typography_line_height": size(1, "em")}),
+        dyn_field("object", "post_excerpt", tag="div"),
+        dyn_link("Schrijf je nu in", style="primary", full=True),
+        title="Inschrijfkaart groot", bg="#FFFFFF", pad=0)),
+    "bestelkaart": ("Bestelkaart (evenement het hele jaar)", "product", listing_card(
+        dyn_image(height=220, radius=14, fit="contain"),
+        dyn_field("object", "post_title", tag="h3", typo="primary", size_px=24),
+        dyn_field("meta", "_price", tag="span", color="accent", size_px=28,
+                  fmt="€ %s per doos", filt={"filter_callback": "number_format", "num_dec_point": ",",
+                                             "num_thousands_sep": ".", "num_decimals": 2},
+                  extra={"field_typography_font_family": "Patrick Hand"}),
+        dyn_field("object", "post_excerpt", tag="div"),
+        dyn_link("Bestel nu", style="primary", full=True),
+        title="Bestelkaart", bg="#FFFFFF", pad=24)),
     "kaartpopup": ("Kaart-popup school", "projecten", [container(
         dyn_image(height=120, radius=10),
         container(dyn_field("meta", "aantal", tag="span", typo="accent", color="accent", size_px=16),
@@ -1732,6 +1754,37 @@ def info_row(fa, label, *fields_w, fields=()):
     return visible_if(c, *fields, relation="OR") if fields else c
 
 
+def not_if(el, field):
+    """JetEngine Dynamic Visibility: alleen tonen als het meta-veld leeg is."""
+    el["settings"].update({
+        "jedv_enabled": "yes", "jedv_type": "show", "jedv_relation": "AND",
+        "jedv_conditions": [{"_id": _id(field), "jedv_condition": "not-exists",
+                             "__dynamic__": {"jedv_field": etag("jet-post-custom-field", {"meta_field": field})}}]})
+    return el
+
+
+def css(el, classes):
+    """Extra CSS-klasse op een widget of container."""
+    key = "css_classes" if el.get("elType") == "container" else "_css_classes"
+    el["settings"][key] = (el["settings"].get(key, "") + " " + classes).strip()
+    return el
+
+
+def fact(fa, *fields_w, fields=()):
+    """Kerngegeven in de inschrijfsectie: klein icoon en waarde op één regel."""
+    c = container(fa_icon(fa, px=18), *fields_w, title="Kerngegeven", direction="row", gap_px=10, mobile_column=False,
+                  align="center", css_classes="sp-fact")
+    return visible_if(c, *fields, relation="OR") if fields else c
+
+
+def inschrijf_knop(**kw):
+    """Knop naar de inschrijfsectie: "Schrijf je in", of "Bestel nu" als er producten te bestellen zijn (wijnactie)."""
+    return container(css(button("Schrijf je in", "#inschrijven", **kw), "sp-als-inschrijf"),
+                     css(button("Bestel nu", "#inschrijven", **kw), "sp-als-bestel"),
+                     title="Knop naar inschrijven", gap_px=0,
+                     css_classes="sp-knop-inschrijven" + ("" if kw.get("full") else " sp-knop-auto"))
+
+
 event_single = [
     single_hero(
         dyn_field("meta", "status", tag="span", color="primary",
@@ -1739,7 +1792,7 @@ event_single = [
                   extra=dict(CHIP, _flex_size="none")),
         post_title(),
         dyn_field("object", "post_excerpt", tag="p", color="658acb6", size_px=19),
-        container(button("Doe mee", "#inschrijven"),
+        container(visible_when(inschrijf_knop(), "status", "afgelopen", equal=False),
                   button("Alle evenementen", "/evenementen/", style="light"),
                   title="Knoppen", direction="row", gap_px=12, mobile_column=False, wrap=True)),
     section(
@@ -1764,31 +1817,76 @@ event_single = [
                          fields=("inschrijving_tot",)),
                 info_row("fas fa-users", "Deelnemers",
                          dyn_field("meta", "max_deelnemers", tag="p", fmt="Maximaal %s"), fields=("max_deelnemers",)),
+                visible_when(inschrijf_knop(full=True), "status", "afgelopen", equal=False),
                 title="Praktische informatie (rechts, onder elkaar)", width=34, gap_px=14),
             direction="row", gap_px=48, align="flex-start", justify="space-between"),
         title="Over"),
-    # Alleen inschrijven: de producten van dit evenement of de externe inschrijflink.
-    # Kop "Bestellen" bij evenementen die het hele jaar lopen (wijnactie), anders "Inschrijven".
-    hide_empty(section(
-        container(eyebrow("Doe mee"),
-                  visible_when(heading("Inschrijven", "h2"), "status", "doorlopend", equal=False),
-                  visible_when(heading("Bestellen", "h2"), "status", "doorlopend"),
-                  title="Sectiekop", gap_px=8),
-        jet_grid("inschrijfkaart", "q_event_producten", 3, "producten via relatie Evenement → Product"),
-        visible_if(container(dyn_link("Schrijf je in via de organisator", style="primary", source="externe_inschrijflink"),
-                             title="Externe inschrijving", css_classes="sp-keep"), "externe_inschrijflink"),
-        title="Inschrijven", bg_global="658acb6", divider_top=("waves", "#FFFFFF", 50),
-        divider_bottom=("waves", "#FFFFFF", 50), extra={"_element_id": "inschrijven"})),
-    section(
-        section_head("Ook interessant", "Meer manieren om mee te doen"),
-        container(eyebrow("Andere evenementen"),
-                  jet_grid("eventkaart", "q_andere_events", 3, "andere evenementen (niet afgelopen), zonder dit evenement"),
-                  title="Andere evenementen", gap_px=16, css_classes="sp-hide-empty"),
-        container(eyebrow("Sponsorpakketten"),
-                  jet_grid("pakketkaart", "q_pakketten", 3, "sponsorpakketten"),
-                  title="Sponsorpakketten", gap_px=16, css_classes="sp-hide-empty", bg_global="658acb6", radius=20,
-                  pad=dims(32), pad_mobile=dims(20)),
-        title="Ook interessant", gap_px=48),
+    # Inschrijven: alleen dit evenement, gericht op aanmelden. Links waarom en wanneer, rechts de inschrijfkaart.
+    # Evenementen die het hele jaar lopen (wijnactie) tonen "Bestel nu" met de producten in drie kolommen; zonder product of
+    # link (cultuurreis op aanvraag) vraagt de kaart om contact. Het wisselen gebeurt met CSS (sampark-styles.php).
+    visible_when(section(
+        container(
+            container(eyebrow("Doe mee"),
+                      css(heading("Schrijf je nu in", "h2", color="primary", typo="accent", size_px=56), "sp-als-inschrijf"),
+                      css(heading("Bestel nu", "h2", color="primary", typo="accent", size_px=56), "sp-als-bestel"),
+                      dyn_field("object", "post_title", tag="p", typo="primary", color="accent", size_px=28),
+                      css(text("<p>Je hebt een mooie dag en je helpt een kind in India naar school: "
+                               "de opbrengst gaat naar de scholen van Sampark.</p>", size_px=18), "sp-als-inschrijf"),
+                      css(text("<p>Met elke bestelling help je een kind in India naar school: "
+                               "de opbrengst gaat naar de scholen van Sampark.</p>", size_px=18), "sp-als-bestel"),
+                      container(
+                          fact("far fa-calendar-alt",
+                               dyn_field("meta", "datum_start", tag="span", filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+                               dyn_field("meta", "datum_label", tag="span"), fields=("datum_start", "datum_label")),
+                          fact("fas fa-map-marker-alt", dyn_field("meta", "locatie_tekst", tag="span"), fields=("locatie_tekst",)),
+                          fact("fas fa-euro-sign", dyn_field("meta", "prijs_label", tag="span"), fields=("prijs_label",)),
+                          title="Kerngegevens", gap_px=4, css_classes="sp-kerngegevens"),
+                      visible_if(container(
+                          fa_icon("fas fa-hourglass-half", px=18),
+                          dyn_field("meta", "inschrijving_tot", tag="span", color="primary", fmt="<strong>Inschrijven kan tot %s</strong>",
+                                    filt={"filter_callback": "jet_engine_date", "date_format": "j F Y"}),
+                          title="Deadline", direction="row", gap_px=10, mobile_column=False, align="center",
+                          css_classes="sp-urgent"), "inschrijving_tot"),
+                      visible_if(container(
+                          fa_icon("fas fa-users", px=18),
+                          dyn_field("meta", "max_deelnemers", tag="span", color="primary", fmt="<strong>Maximaal %s deelnemers: vol is vol</strong>"),
+                          title="Maximum", direction="row", gap_px=10, mobile_column=False, align="center",
+                          css_classes="sp-urgent"), "max_deelnemers"),
+                      not_if(html('<ul class="sp-voordelen"><li>Direct een bevestiging per e-mail</li>'
+                                  '<li>Veilig betalen met iDEAL of op factuur</li></ul>',
+                                  title="Zekerheden (niet bij inschrijven via de organisator)"), "externe_inschrijflink"),
+                      title="Waarom meedoen (links)", width=50, gap_px=14, css_classes="sp-waarom"),
+            container(
+                visible_when(container(visible_when(container(
+                    jet_grid("inschrijfkaart-groot", "q_event_producten", 1, "product(en) van dit evenement"),
+                    title="Inschrijfkaart"), "status", "doorlopend", equal=False), title="Niet vol"),
+                    "status", "vol", equal=False),
+                visible_when(container(
+                    heading("Dit evenement is vol", "h3", color="primary", size_px=26),
+                    text("<p>Neem contact met ons op: we zetten je graag op de wachtlijst.</p>"),
+                    button("Zet me op de wachtlijst", "/contact/", full=True),
+                    title="Vol", gap_px=12, css_classes="sp-keep sp-vol"), "status", "vol"),
+                visible_if(container(
+                    text("<p>Inschrijven voor dit evenement gaat via de organisator.</p>"),
+                    dyn_link("Schrijf je nu in", style="primary", source="externe_inschrijflink", full=True),
+                    title="Externe inschrijving", gap_px=12, css_classes="sp-keep sp-extern"), "externe_inschrijflink"),
+                container(
+                    heading("Interesse?", "h3", color="primary", size_px=26),
+                    text("<p>Laat het ons weten, dan nemen we contact met je op over de mogelijkheden en de data.</p>"),
+                    button("Neem contact op", "/contact/", full=True),
+                    title="Nog geen inschrijving (alleen zonder product of link)", gap_px=12, css_classes="sp-keep sp-inschrijf-later"),
+                container(text("<p>Vragen over inschrijven?</p>", size_px=14),
+                          option_field("telefoon", tag="span", color="text", size_px=14),
+                          title="Vragen", direction="row", gap_px=6, wrap=True, mobile_column=False,
+                          css_classes="sp-keep sp-vragen"),
+                title="Inschrijfkaart (rechts)", width=42, bg="#FFFFFF", radius=20, pad=dims(36), pad_mobile=dims(24),
+                gap_px=16, css_classes="sp-inschrijfkaart"),
+            title="Inschrijven: tekst en kaart", direction="row", gap_px=48, align="center", justify="space-between"),
+        visible_when(container(jet_grid("bestelkaart", "q_event_producten", 3, "producten van dit evenement"),
+                               title="Bestellen (het hele jaar)", css_classes="sp-bestellen"), "status", "doorlopend"),
+        title="Inschrijven", bg_global="658acb6", pad=(72, 24), divider_top=("waves", "#FFFFFF", 50),
+        divider_bottom=("waves", "#FFFFFF", 50), gap_px=40, extra={"_element_id": "inschrijven", "css_classes": "sp-inschrijven"}),
+        "status", "afgelopen", equal=False),
     visible_if(section(section_head("In beeld", "Foto's"), gallery_field(3), title="Galerij", pad=(40, 24)), "galerij"),
     hide_empty(section(section_head("Met dank aan", "Sponsors van dit evenement", align="center"),
                        jet_grid("sponsorlogo", "q_event_sponsors", 6, "sponsors via relatie Sponsor ↔ Evenement"),
@@ -1796,6 +1894,16 @@ event_single = [
     hide_empty(section(section_head("Terugblik", "Nieuws over dit evenement"),
                        jet_grid("nieuwskaart", "q_event_nieuws", 3, "nieuws via relatie Evenement ↔ Bericht"),
                        title="Nieuws")),
+    section(
+        section_head("Ook interessant", "Andere manieren om Sampark te steunen"),
+        container(eyebrow("Andere evenementen"),
+                  jet_grid("eventkaart", "q_andere_events", 3, "andere evenementen (niet afgelopen), zonder dit evenement"),
+                  title="Andere evenementen", gap_px=16, css_classes="sp-hide-empty"),
+        container(eyebrow("Sponsorpakketten"),
+                  jet_grid("pakketkaart", "q_pakketten", 3, "sponsorpakketten"),
+                  title="Sponsorpakketten", gap_px=16, css_classes="sp-hide-empty", bg_global="658acb6", radius=20,
+                  pad=dims(32), pad_mobile=dims(20)),
+        title="Ook interessant (ondergeschikt)", gap_px=40, pad=(64, 24)),
     cta_band("Kun je er niet bij zijn?", "Met een donatie help je net zo goed: elke euro gaat naar de scholen in India.",
              [button("Doneer", "/steun-ons/doneren/", style="light"),
               button("Andere evenementen", "/evenementen/", style="outline-light")], eye="Steun ons werk"),

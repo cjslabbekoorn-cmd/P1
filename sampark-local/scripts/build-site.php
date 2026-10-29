@@ -11,6 +11,8 @@ require_once ABSPATH . 'wp-admin/includes/image.php';
 
 // Alleen nieuwe pagina's en templates toevoegen (scripts/templates-add.php): kit en alles wat al bestaat blijft ongemoeid
 $only_templates = defined( 'SP_ALLEEN_NIEUWE_TEMPLATES' ) && SP_ALLEEN_NIEUWE_TEMPLATES;
+// Bestaande templates die toch vervangen moeten worden: --exec="define('SP_VERVANG', 'single-event');" (komma's voor meer)
+$vervang = defined( 'SP_VERVANG' ) ? array_map( 'trim', explode( ',', SP_VERVANG ) ) : [];
 
 // Na de eerste opbouw wordt de site met de hand in Elementor verder gebouwd. Een volledige run zou die pagina's
 // overschrijven, dus dat kan alleen nog bewust: --exec="define('SP_FORCE', true);"
@@ -436,8 +438,18 @@ if ( defined( 'ELEMENTOR_PRO_VERSION' ) ) {
 		[ $doc['content'], $doc['conditions'] ] = json_decode( $json, true );
 		$existing = get_posts( [ 'post_type' => 'elementor_library', 'post_status' => 'any', 'numberposts' => 1, 'fields' => 'ids',
 			'meta_key' => '_sampark_key', 'meta_value' => $doc['key'] ] );
-		if ( $existing && $only_templates ) {
+		if ( $existing && $only_templates && ! in_array( $doc['key'], $vervang, true ) ) {
 			continue; // bestaat al en kan met de hand zijn aangepast
+		}
+		if ( $existing && in_array( $doc['key'], $vervang, true ) ) {
+			// eerst een kopie van de huidige versie bewaren, als concept in Templates
+			$copy = wp_insert_post( [ 'post_type' => 'elementor_library', 'post_status' => 'draft',
+				'post_title' => get_the_title( $existing[0] ) . ' (kopie ' . wp_date( 'j-n-Y H:i' ) . ')' ] );
+			foreach ( [ '_elementor_data', '_elementor_template_type', '_elementor_edit_mode', '_elementor_page_settings', '_elementor_version' ] as $mk ) {
+				update_post_meta( $copy, $mk, wp_slash( get_post_meta( $existing[0], $mk, true ) ) );
+			}
+			wp_set_object_terms( $copy, wp_get_object_terms( $existing[0], 'elementor_library_type', [ 'fields' => 'slugs' ] ), 'elementor_library_type' );
+			WP_CLI::log( "  ~ template {$doc['title']} vervangen; oude versie bewaard als concept ($copy)" );
 		}
 		$tid = $existing ? $existing[0] : wp_insert_post( [ 'post_type' => 'elementor_library', 'post_status' => 'publish',
 			'post_title' => $doc['title'] ] );

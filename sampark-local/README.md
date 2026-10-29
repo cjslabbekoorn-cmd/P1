@@ -56,6 +56,7 @@ Na de eerste opbouw wordt de site **met de hand in Elementor** verder gebouwd. D
 | Wil je … | Commando |
 |---|---|
 | Nieuwe pagina's en templates uit `elementor/` toevoegen (bestaande blijven staan) | `docker compose run --rm wpcli eval-file /scripts/templates-add.php` |
+| Eén bestaand template vervangen door de versie uit de repo (oude blijft als concept) | `docker compose run --rm wpcli eval-file /scripts/templates-add.php --exec="define('SP_VERVANG', 'single-event');"` |
 | Inhoud van live (opnieuw) binnenhalen | `docker compose run --rm wpcli eval-file /scripts/content-import.php` |
 | Een back-up van de database | `docker compose run --rm wpcli db export /backups/sampark-$(date +%F).sql` |
 | Pagina's en templates opnieuw opbouwen uit de generator, zolang er nog geen handwerk is (maakt eerst een back-up, zet daarna de live-inhoud terug) | `docker compose run --rm wpcli sh /scripts/rebuild.sh` |
@@ -136,7 +137,7 @@ Detailpagina's zijn geen losse pagina's meer, maar één template per type. De i
 | Template | Voorwaarde | Inhoud |
 |---|---|---|
 | Single · Project | alle projecten (`/ons-werk/…`) | hero met uitgelichte afbeelding, feiten, verhaal en voorzieningen, wat Sampark betaalt (checklist met glossary), tijdlijn, kaart met dit project, galerij, gekoppeld nieuws, andere projecten van hetzelfde type |
-| Single · Evenement | alle evenementen | status, praktische info (datum, tijd, locatie, kosten, inschrijven tot, deelnemers), beschrijving en programma, inschrijfkaarten van de gekoppelde producten of de externe inschrijflink, galerij, sponsors, terugblikken |
+| Single · Evenement | alle evenementen | status, beschrijving en programma met de praktische info ernaast; daaronder de inschrijfsectie die alleen over dit evenement gaat: waarom meedoen, kerngegevens, deadline en maximum, en rechts één opvallende inschrijfkaart (product, externe link, "vol" met wachtlijst, of "Interesse?" met contact). Evenementen die het hele jaar lopen (wijnactie) tonen "Bestel nu" met de producten in drie kolommen. Daarna galerij, sponsors, terugblikken en pas onderaan, ondergeschikt, andere evenementen en sponsorpakketten |
 | Single · Nieuwsbericht | alle berichten | datum, titel, intro, beeld, tekst, gekoppelde projecten en evenementen, meer nieuws |
 | Product · winkelwagenknop | alle producten | beeld, titel, prijs, korte omschrijving, bestelknop (sponsorpakketten, sponsor een kind) |
 | Product · wijnactie / Sampark Rally / golftoernooi / donatie | productcategorie | idem, maar met het Super Forms-formulier in plaats van de bestelknop |

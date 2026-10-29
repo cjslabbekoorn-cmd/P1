@@ -9,7 +9,7 @@
  ],
  "content": [
   {
-   "id": "8b0c4f2",
+   "id": "534d866",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -68,7 +68,7 @@
    },
    "elements": [
     {
-     "id": "f76d655",
+     "id": "752e235",
      "elType": "container",
      "settings": {
       "flex_direction": "column",
@@ -89,7 +89,7 @@
      },
      "elements": [
       {
-       "id": "c750e22",
+       "id": "e3538c0",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -114,7 +114,7 @@
        "elements": []
       },
       {
-       "id": "f84b3cc",
+       "id": "fd0472e",
        "elType": "widget",
        "widgetType": "theme-archive-title",
        "settings": {
@@ -136,14 +136,14 @@
          "typography_typography": "globals/typography?id=accent"
         },
         "__dynamic__": {
-         "title": "[elementor-tag id=\"ee90dee\" name=\"archive-title\" settings=\"%7B%22include_context%22%3A%22%22%2C%22fallback%22%3A%22Nieuws%22%7D\"]"
+         "title": "[elementor-tag id=\"40507d8\" name=\"archive-title\" settings=\"%7B%22include_context%22%3A%22%22%2C%22fallback%22%3A%22Nieuws%22%7D\"]"
         },
         "_title": "Titel (archieftitel: Nieuws of de categorie)"
        },
        "elements": []
       },
       {
-       "id": "930759b",
+       "id": "cf2b3cb",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -158,7 +158,7 @@
        "elements": []
       },
       {
-       "id": "b8b37fd",
+       "id": "1517313",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -178,7 +178,7 @@
        },
        "elements": [
         {
-         "id": "4686459",
+         "id": "07c5d11",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -208,7 +208,7 @@
          "elements": []
         },
         {
-         "id": "3d979c5",
+         "id": "13fb23b",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -238,7 +238,7 @@
          "elements": []
         },
         {
-         "id": "0fb3a2f",
+         "id": "0a744bf",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -268,7 +268,7 @@
          "elements": []
         },
         {
-         "id": "80308fb",
+         "id": "7f3f127",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -298,7 +298,7 @@
          "elements": []
         },
         {
-         "id": "e7ee2e1",
+         "id": "d504462",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -337,7 +337,7 @@
    "isInner": false
   },
   {
-   "id": "b61cb86",
+   "id": "d1f2e8f",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -375,7 +375,7 @@
    },
    "elements": [
     {
-     "id": "e725b66",
+     "id": "92b844f",
      "elType": "container",
      "settings": {
       "flex_direction": "column",
@@ -399,7 +399,7 @@
      "isInner": false
     },
     {
-     "id": "8362434",
+     "id": "d309e0b",
      "elType": "widget",
      "widgetType": "button",
      "settings": {
@@ -435,7 +435,7 @@
    "isInner": false
   },
   {
-   "id": "ea24a6d",
+   "id": "ecaf57a",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -494,7 +494,7 @@
    },
    "elements": [
     {
-     "id": "2527dad",
+     "id": "a0ed87c",
      "elType": "container",
      "settings": {
       "flex_direction": "column",
@@ -516,7 +516,7 @@
      },
      "elements": [
       {
-       "id": "d089ffa",
+       "id": "71609ba",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -542,7 +542,7 @@
        "elements": []
       },
       {
-       "id": "6e1e7c7",
+       "id": "43a9251",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -556,7 +556,7 @@
        "elements": []
       },
       {
-       "id": "e7ab922",
+       "id": "a7f5a91",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
@@ -569,7 +569,7 @@
        "elements": []
       },
       {
-       "id": "96ea64f",
+       "id": "1aa48fc",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -588,7 +588,7 @@
        },
        "elements": [
         {
-         "id": "19e9146",
+         "id": "b6ec63b",
          "elType": "widget",
          "widgetType": "button",
          "settings": {
@@ -608,7 +608,7 @@
          "elements": []
         },
         {
-         "id": "d176ba5",
+         "id": "9fad582",
          "elType": "widget",
          "widgetType": "button",
          "settings": {

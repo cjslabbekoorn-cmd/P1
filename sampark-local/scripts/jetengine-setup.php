@@ -586,11 +586,12 @@ foreach ( $queries as $key => [ $name, $type, $args ] ) {
 
 $listing_query = [ 'projectkaart' => 'q_scholen', 'eventkaart' => 'q_events_binnenkort', 'sponsorlogo' => 'q_sponsors',
 	'nieuwskaart' => 'q_nieuws', 'pakketkaart' => 'q_pakketten', 'kaartpopup' => 'q_kaart',
-	'inschrijfkaart' => 'q_event_producten' ];
+	'inschrijfkaart' => 'q_event_producten', 'inschrijfkaart-groot' => 'q_event_producten', 'bestelkaart' => 'q_event_producten' ];
 foreach ( glob( SP_LISTINGS . '*.json' ) as $file ) {
 	$doc = json_decode( file_get_contents( $file ), true );
 	$key = $doc['key'];
-	$lid = (int) ( $state['listings'][ $key ] ?? 0 );
+	$lid     = (int) ( $state['listings'][ $key ] ?? 0 );
+	$created = false;
 	if ( ! $lid || ! get_post( $lid ) ) {
 		$existing = get_posts( [ 'post_type' => jet_engine()->post_type->slug(), 'title' => $doc['title'], 'post_status' => 'any', 'numberposts' => 1, 'fields' => 'ids' ] );
 		$lid = $existing ? $existing[0] : 0;
@@ -611,8 +612,9 @@ foreach ( glob( SP_LISTINGS . '*.json' ) as $file ) {
 			continue;
 		}
 		WP_CLI::log( "  + listing {$doc['title']} ($lid)" );
+		$created = true;
 	}
-	$is_new = empty( $state['listings'][ $key ] );
+	$is_new = $created || empty( $state['listings'][ $key ] );
 	$state['listings'][ $key ] = $lid;
 	update_option( 'sampark_jet', $state, false );
 	if ( ! $is_new && get_option( 'sampark_handwerk' ) ) {

@@ -8,7 +8,7 @@
  ],
  "content": [
   {
-   "id": "a3af6a3",
+   "id": "38976ba",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -46,7 +46,7 @@
    },
    "elements": [
     {
-     "id": "6c340f2",
+     "id": "8ce6790",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -64,7 +64,7 @@
      },
      "elements": [
       {
-       "id": "c077436",
+       "id": "e3963c4",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -90,7 +90,7 @@
        },
        "elements": [
         {
-         "id": "b286cb4",
+         "id": "3de0d4d",
          "elType": "widget",
          "widgetType": "woocommerce-product-images",
          "settings": {
@@ -115,7 +115,7 @@
        "isInner": false
       },
       {
-       "id": "f9b1497",
+       "id": "878b24c",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -142,7 +142,7 @@
        },
        "elements": [
         {
-         "id": "47295d3",
+         "id": "fcec0e5",
          "elType": "widget",
          "widgetType": "woocommerce-breadcrumb",
          "settings": {
@@ -151,7 +151,7 @@
          "elements": []
         },
         {
-         "id": "22c045b",
+         "id": "71eedc8",
          "elType": "widget",
          "widgetType": "woocommerce-product-title",
          "settings": {
@@ -172,14 +172,14 @@
            "typography_typography": "globals/typography?id=accent"
           },
           "__dynamic__": {
-           "title": "[elementor-tag id=\"c0033f9\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
+           "title": "[elementor-tag id=\"5071bbe\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
           },
           "_title": "Producttitel"
          },
          "elements": []
         },
         {
-         "id": "7dc82f0",
+         "id": "90c285c",
          "elType": "widget",
          "widgetType": "woocommerce-product-price",
          "settings": {
@@ -198,7 +198,7 @@
          "elements": []
         },
         {
-         "id": "9b440d7",
+         "id": "bd4f90e",
          "elType": "widget",
          "widgetType": "woocommerce-product-short-description",
          "settings": {
@@ -210,7 +210,7 @@
          "elements": []
         },
         {
-         "id": "d6b5769",
+         "id": "cf35105",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -225,7 +225,7 @@
          "elements": []
         },
         {
-         "id": "4bce900",
+         "id": "82c43b1",
          "elType": "widget",
          "widgetType": "shortcode",
          "settings": {
@@ -244,7 +244,7 @@
    "isInner": false
   },
   {
-   "id": "1797d7e",
+   "id": "1fa983f",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -284,17 +284,17 @@
     "jedv_relation": "AND",
     "jedv_conditions": [
      {
-      "_id": "b020441",
+      "_id": "5ebb57d",
       "jedv_condition": "exists",
       "__dynamic__": {
-       "jedv_field": "[elementor-tag id=\"5844759\" name=\"jet-object-property\" settings=\"%7B%22object_prop%22%3A%22post_content%22%7D\"]"
+       "jedv_field": "[elementor-tag id=\"e95c2fc\" name=\"jet-object-property\" settings=\"%7B%22object_prop%22%3A%22post_content%22%7D\"]"
       }
      }
     ]
    },
    "elements": [
     {
-     "id": "85c1676",
+     "id": "b3b7704",
      "elType": "container",
      "settings": {
       "flex_direction": "column",
@@ -344,7 +344,7 @@
      },
      "elements": [
       {
-       "id": "663b994",
+       "id": "511aeaf",
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
@@ -369,7 +369,7 @@
        "elements": []
       },
       {
-       "id": "ff13363",
+       "id": "8b333c3",
        "elType": "widget",
        "widgetType": "woocommerce-product-content",
        "settings": {
@@ -398,7 +398,7 @@
    "isInner": false
   },
   {
-   "id": "9baf8d9",
+   "id": "5c5aea9",
    "elType": "container",
    "settings": {
     "flex_direction": "column",
@@ -419,7 +419,7 @@
    },
    "elements": [
     {
-     "id": "5cc7b62",
+     "id": "efa4676",
      "elType": "container",
      "settings": {
       "flex_direction": "row",
@@ -451,7 +451,7 @@
      },
      "elements": [
       {
-       "id": "04006f6",
+       "id": "22ea46b",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -479,7 +479,7 @@
        },
        "elements": [
         {
-         "id": "54c1223",
+         "id": "c567858",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -500,7 +500,7 @@
          "elements": []
         },
         {
-         "id": "72715f2",
+         "id": "0a76a81",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -512,7 +512,7 @@
        "isInner": false
       },
       {
-       "id": "3667746",
+       "id": "7963c4b",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -540,7 +540,7 @@
        },
        "elements": [
         {
-         "id": "b3c9812",
+         "id": "de1018d",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -561,7 +561,7 @@
          "elements": []
         },
         {
-         "id": "13235dd",
+         "id": "7a0a9e8",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -573,7 +573,7 @@
        "isInner": false
       },
       {
-       "id": "d8fff54",
+       "id": "d1e8f95",
        "elType": "container",
        "settings": {
         "flex_direction": "row",
@@ -601,7 +601,7 @@
        },
        "elements": [
         {
-         "id": "8766b87",
+         "id": "af5aa34",
          "elType": "widget",
          "widgetType": "icon",
          "settings": {
@@ -622,7 +622,7 @@
          "elements": []
         },
         {
-         "id": "ed0cb6d",
+         "id": "55c3c08",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

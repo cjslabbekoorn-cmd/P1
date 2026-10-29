@@ -6,6 +6,9 @@
  *
  *   docker compose run --rm wpcli eval-file /scripts/templates-add.php
  *
+ * Eén bestaand template toch vervangen door de versie uit de repo (de oude blijft als concept bewaard):
+ *   docker compose run --rm wpcli eval-file /scripts/templates-add.php --exec="define('SP_VERVANG', 'single-event');"
+ *
  * Zet ook de markering "met de hand verder gebouwd", zodat build-site.php niet per ongeluk alles overschrijft.
  */
 
