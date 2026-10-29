@@ -1,141 +1,28 @@
 <?php
 /**
  * Plugin Name: Sampark styles
- * Description: Kleine aanvullingen op de Elementor-kit. In productie hoort deze CSS in
- *              Elementor > Site Settings > Custom CSS (Pro); lokaal laden we hem hier.
+ * Description: Kleine aanvullingen op de Elementor-kit (sampark-styles.css). Op staging en live staan ze in
+ *              Elementor > Site-instellingen > Aangepaste CSS (scripts/staging-klaar.php zet ze daar);
+ *              dan laadt deze plugin ze niet nog een keer.
  */
 
-add_action( 'wp_enqueue_scripts', function () {
-	$css = <<<'CSS'
-/* Kaarten: knop altijd onderaan, ook bij ongelijke tekstlengte */
-.sp-card > .elementor-widget-button:last-child, .sp-card > .elementor-widget-wrap > .elementor-widget-button:last-child { margin-top: auto; }
-/* JetEngine Listing Grid: kaarten even hoog, knop onderaan */
-.jet-listing-grid__item > .jet-engine-listing-overlay-wrap,
-.jet-listing-grid__item > .jet-engine-listing-overlay-wrap > .elementor,
-.jet-listing-grid__item > .jet-engine-listing-overlay-wrap > .elementor > .e-con { height: 100%; }
-.sp-card > .elementor-widget-jet-listing-dynamic-link:last-child { margin-top: auto; }
-/* JetEngine Map Listing in huisstijl */
-.jet-map-listing { border-radius: 20px; overflow: hidden; }
-.jet-map-listing .leaflet-tile-pane { filter: sepia(.35) saturate(.75) brightness(1.03); }
-.jet-map-listing .leaflet-popup-content-wrapper { border-radius: 16px; }
-.jet-map-listing .jet-map-marker { color: #963322; }
-.jet-map-listing .marker-cluster { background: rgba(150, 51, 34, .25) !important; }
-.jet-map-listing .marker-cluster div { background: #963322 !important; color: #F5EDE3 !important;
-	font-family: "Patrick Hand", sans-serif; font-size: 16px; }
-/* Statuschip in event-kaarten */
-.sp-chip { display: inline-block; padding: 4px 12px; border-radius: 999px; background: #ECC0AE; color: #963322;
-	font-family: "Patrick Hand", sans-serif; text-transform: uppercase; font-size: 15px; letter-spacing: .3px; }
-/* Footer: logo in crème op donker */
-.sp-logo-light img { filter: brightness(0) invert(.94); }
-.elementor-location-footer .jet-listing-dynamic-field__content p { margin: 0; }
-/* Topbalk: tekst op één regel */
-.elementor-location-header .elementor-widget-text-editor p { white-space: nowrap; margin: 0; }
-@media (max-width: 767px) { .elementor-location-header .elementor-button { padding: 10px 16px; } }
-/* Topbalk-links zonder schaduw van de kit-knoppen */
-.elementor-location-header .elementor-button:hover { box-shadow: none; }
-/* Gegevenslijst ANBI */
-.sp-dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 0; }
-.sp-dl dt { font-weight: 600; }
-.sp-dl dd { margin: 0; }
-/* Hello Elementor: header en footer in huisstijl (lokaal; in productie Theme Builder) */
-.site-header { background: #F5EDE3; padding-block: 12px; }
-.site-header .header-inner { display: flex; flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-.site-header .site-logo img, .site-header .custom-logo { max-height: 56px; width: auto; }
-.site-footer .site-logo img, .site-footer .custom-logo { max-height: 44px; width: auto; filter: brightness(0) invert(.96); }
-.site-header .site-navigation ul.menu li a { color: #46211A; font-weight: 600; }
-.site-header .site-navigation ul.menu li a:hover { color: #963322; }
-.site-footer { background: #46211A; color: #F5EDE3; }
-.site-footer a { color: #ECC0AE; }
-/* Singles: sectie met een lege Listing Grid verbergen (de grid zelf staat op "Hide widget if: Query is empty") */
-.sp-hide-empty:not(:has(.jet-listing-grid__item, .sp-keep)) { display: none; }
-/* Single project: feiten, voorzieningen, momenten. JetEngine zet elk repeater-item op flex; onze blokken niet */
-.sp-facts .jet-listing-dynamic-repeater__item > .sp-fact, .sp-moments .jet-listing-dynamic-repeater__item > .sp-moment { display: block; }
-.sp-programma .jet-listing-dynamic-repeater__item > .sp-prog { display: grid; }
-.sp-facts .jet-listing-dynamic-repeater__item, .sp-moments .jet-listing-dynamic-repeater__item { display: block; }
-.sp-facts .jet-listing-dynamic-repeater__items { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.sp-fact { text-align: center; }
-.sp-fact strong { display: block; font-family: Spectral, serif; font-weight: 500; font-size: 46px; line-height: 1.1; color: #963322; }
-.sp-checks .jet-listing-dynamic-repeater__items { display: flex; flex-direction: column; gap: 8px; }
-.sp-check::before { content: "✓"; color: #ED7404; font-weight: 700; margin-right: 10px; }
-.sp-moments .jet-listing-dynamic-repeater__items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.sp-moment { background: #F5EDE3; border-radius: 20px; padding: 28px; height: 100%; }
-.sp-moment__when { font-family: "Patrick Hand", sans-serif; text-transform: uppercase; font-size: 20px; color: #ED7404; }
-.sp-moment p { margin: 8px 0 0; }
-.sp-checklist .jet-check-list__item { background: #FFFFFF; border-radius: 16px; padding: 18px 20px; font-size: 18px; }
-.sp-checklist .jet-check-list__item-icon { color: #ED7404; }
-/* Single evenement: praktische info en programma */
-.sp-info { background: #F5EDE3; border-radius: 20px; padding: 22px; }
-.sp-info p { margin: 0; }
-.sp-programma .jet-listing-dynamic-repeater__items { display: flex; flex-direction: column; }
-.sp-prog { display: grid; grid-template-columns: 120px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(70, 33, 26, .15); }
-.sp-prog span { font-family: "Patrick Hand", sans-serif; font-size: 18px; color: #ED7404; }
-/* Product: Super Forms-formulier in de kolom */
-.sp-product .super-form { margin-top: 8px; }
-@media (max-width: 767px) {
-	.sp-facts .jet-listing-dynamic-repeater__items { grid-template-columns: repeat(2, 1fr); }
-	.sp-fact strong { font-size: 34px; }
-	.sp-moments .jet-listing-dynamic-repeater__items { grid-template-columns: 1fr; }
+/** Staat de CSS al in de Elementor-kit? Dan niet dubbel laden. */
+function sampark_styles_in_kit() {
+	$kit = (int) get_option( 'elementor_active_kit' );
+	$set = $kit ? get_post_meta( $kit, '_elementor_page_settings', true ) : [];
+	return is_array( $set ) && str_contains( (string) ( $set['custom_css'] ?? '' ), '/* sampark-styles' );
 }
-/* Nieuwsberichten: fotoseries als grid, alle foto's even groot; klik opent de Elementor-lightbox */
-.sp-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
-.sp-gallery a, .sp-gallery img { display: block; }
-.sp-gallery > br, .sp-gallery > p:empty { display: none; }
-.sp-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
-.elementor-widget-theme-post-content img { border-radius: 12px; height: auto; }
-@media (max-width: 767px) { .sp-gallery { grid-template-columns: repeat(2, 1fr); } }
-/* Nieuwsarchief: categorieknoppen compact */
-.sp-cats .elementor-button { padding: 8px 16px; font-size: 15px; }
-/* Product: hoge flesfoto's niet langer dan het scherm */
-.elementor-widget-woocommerce-product-images .woocommerce-product-gallery__image img { max-height: 620px; object-fit: contain; }
-/* Home: wijnactie-badge als opvallende "sticker" op de hero */
-.sp-campagne { box-shadow: 0 16px 40px rgba(0, 0, 0, .35); transform: rotate(-3deg); transition: transform .25s ease, box-shadow .25s ease; }
-.sp-campagne:hover, .sp-campagne:focus-within { transform: rotate(0) scale(1.04); box-shadow: 0 20px 48px rgba(0, 0, 0, .4); }
-@media (prefers-reduced-motion: reduce) { .sp-campagne, .sp-campagne:hover { transform: none; transition: none; } }
-/* Super Forms wijnformulier: de berekening "leeftijd" stuurt alleen de leeftijdscheck aan; niet tonen */
-.super-form .super-field.super-calculator:has(input[name="leeftijd"]) { display: none !important; }
-/* Evenement: praktische informatie als vlakken rechts naast de omschrijving */
-.sp-info .elementor-widget-icon { flex: 0 0 auto; margin-top: 2px; }
-/* Product: lange omschrijving */
-.sp-product-desc p:last-child { margin-bottom: 0; }
-.sp-product-desc h2, .sp-product-desc h3 { margin-top: 1.2em; }
-/* Inschrijfsectie op de evenementpagina: de kaart rechts valt op, de rest ondersteunt */
-.sp-inschrijfkaart { box-shadow: 0 18px 48px rgba(70, 33, 26, .14); border: 2px solid var(--e-global-color-accent); }
-.sp-inschrijfkaart .sp-card { padding: 0 !important; }
-.sp-inschrijfkaart .jet-listing-grid__item + .jet-listing-grid__item { border-top: 1px solid #eee; padding-top: 20px; margin-top: 20px; }
-.sp-cta-full, .sp-cta-full .jet-listing-dynamic-link__link { width: 100%; justify-content: center; text-align: center; }
-.sp-inschrijf-later { display: none !important; }
-.sp-inschrijfkaart:not(:has(.jet-listing-grid__item, .sp-extern, .sp-vol)) .sp-inschrijf-later { display: flex !important; }
-.sp-vragen p { margin: 0; }
-.sp-vragen { border-top: 1px solid #eee; padding-top: 14px; }
-.sp-fact { font-size: 17px; }
-.sp-fact.e-con { --flex-wrap: nowrap !important; --flex-direction: row !important; }
-.sp-fact > .elementor-widget:last-child { flex: 1 1 auto; }
-.sp-fact .elementor-widget-icon, .sp-urgent .elementor-widget-icon { flex: 0 0 22px; }
-.sp-urgent { background: #FFFFFF; border-radius: 999px; padding: 8px 18px; width: auto !important; align-self: flex-start; }
-/* "Bestel nu" (wijnactie, producten in drie kolommen) of "Schrijf je in": hangt af van of er bestelproducten op de pagina staan */
-body:not(:has(.sp-bestellen .jet-listing-grid__item)) .sp-als-bestel,
-body:has(.sp-bestellen .jet-listing-grid__item) .sp-als-inschrijf,
-body:has(.sp-bestellen .jet-listing-grid__item) .sp-inschrijfkaart { display: none !important; }
-body:has(.sp-bestellen .jet-listing-grid__item) .sp-waarom { width: 100% !important; }
-body:has(.sp-bestellen .jet-listing-grid__item) .sp-kerngegevens.e-con { --flex-direction: row !important; --flex-wrap: wrap !important; column-gap: 32px; }
-body:has(.sp-bestellen .jet-listing-grid__item) .sp-kerngegevens > .sp-fact { --width: auto !important; width: auto !important; }
-/* knoppen naar de inschrijfsectie: naast elkaar in de hero, en de sectie niet onder de vaste header */
-.sp-knop-inschrijven.e-con { padding: 0 !important; }
-.sp-knop-auto.e-con { --width: auto !important; width: auto !important; flex: 0 0 auto; }
-#inschrijven { scroll-margin-top: 90px; }
-/* zekerheden over betalen alleen als je hier ook echt kunt inschrijven of bestellen */
-.sp-inschrijven:not(:has(.jet-listing-grid__item)) .sp-voordelen { display: none; }
-.sp-voordelen { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 8px; }
-.sp-voordelen li { position: relative; padding-left: 30px; }
-.sp-voordelen li::before { content: ""; position: absolute; left: 0; top: 3px; width: 20px; height: 20px; border-radius: 50%;
-	background: var(--e-global-color-accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3' d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center / 12px no-repeat; }
-CSS;
+
+add_action( 'wp_enqueue_scripts', function () {
+	$css = sampark_styles_in_kit() ? '' : (string) file_get_contents( __DIR__ . '/sampark-styles.css' );
 	// Adobe Fonts (Aptos). Met Elementor Pro laadt de Adobe Fonts-integratie de kit zelf.
 	$kit = get_option( 'elementor_typekit-kit-id' );
 	if ( $kit && ! defined( 'ELEMENTOR_PRO_VERSION' ) ) {
 		wp_enqueue_style( 'sampark-adobe-fonts', 'https://use.typekit.net/' . rawurlencode( $kit ) . '.css', [], null );
 	}
-	wp_register_style( 'sampark', false );
-	wp_enqueue_style( 'sampark' );
-	wp_add_inline_style( 'sampark', $css );
+	if ( $css ) {
+		wp_register_style( 'sampark', false );
+		wp_enqueue_style( 'sampark' );
+		wp_add_inline_style( 'sampark', $css );
+	}
 }, 20 );

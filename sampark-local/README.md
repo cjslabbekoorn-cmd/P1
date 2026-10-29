@@ -180,4 +180,39 @@ docker compose down -v                     # alles weggooien, inclusief database
 
 ## Naar staging of live
 
-Gebruik je gebruikelijke migratietool (bijvoorbeeld All-in-One WP Migration of WP Migrate). Of exporteer de database en vervang de URL met `wp search-replace http://localhost:8600 https://staging.stichtingsampark.nl`.
+Het volledige plan (fasen, draaiboek voor de livegang, redirects) staat in het migratieplan. Kort voor staging:
+
+**1. Klaarzetten en controleren** (veilig om vaker te draaien):
+
+```bash
+docker compose run --rm wpcli eval-file /scripts/staging-klaar.php
+```
+
+Dit zet de CSS uit `mu-plugins/sampark-styles.css` in Elementor › Site-instellingen › Aangepaste CSS (de mu-plugin
+draait alleen in Docker en laadt de CSS daarna niet meer dubbel), zet de 21 redirects uit `content/redirects.csv` in
+Redirection, blokkeert zoekmachines en genereert de Elementor-CSS opnieuw. Daarna volgt een lijst met controles:
+✔ in orde, ! let op, ✖ moet nog. Pas je later `sampark-styles.css` aan, draai het script dan opnieuw.
+
+**2. Testdata opruimen**, vlak voor de export (bestellingen, klantaccounts en formulierinzendingen):
+
+```bash
+docker compose run --rm wpcli eval-file /scripts/staging-klaar.php --exec="define('SP_OPRUIMEN', true);"
+```
+
+**3. Exporteren** met All-in-One WP Migration:
+
+```bash
+docker compose run --rm wpcli plugin install all-in-one-wp-migration --activate
+```
+
+Daarna in wp-admin › All-in-One WP Migration › Exporteren › Bestand. De export is ongeveer 500 MB (vooral foto's).
+Is de uploadlimiet op staging lager, vraag de hoster die te verhogen of zet het bestand via FTP in
+`wp-content/ai1wm-backups` op staging en herstel het daar via Back-ups.
+
+**4. Op staging**: importeren (AIOM vervangt `http://localhost:8600` zelf door het staging-adres), opnieuw inloggen
+met de lokale gebruiker, meteen een eigen beheerder met een sterk wachtwoord maken en `admin` verwijderen. Dan Mollie
+(testmodus), PDF Invoices & Packing Slips, WP Rocket, Wordfence en Cookiebot installeren, de licenties van Elementor
+Pro, JetEngine en Super Forms activeren, permalinks opslaan en Elementor › Tools › CSS opnieuw genereren.
+
+Wat niet meegaat met de export: `local-mailpit.php` en `sampark-styles.php` (alleen Docker; op staging verstuurt de
+server de mail zelf en staat de CSS in Elementor) en de instellingen in `wp-config.php`.
